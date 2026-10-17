@@ -33,7 +33,7 @@ function Disable-Local {
 }
 if ($Mode -eq 'Status') {
  $load=Read-Load
- [pscustomobject]@{Mounted=(Test-Path -LiteralPath $descriptor);Enabled=(@($load.enabled_mods) -contains $entry);ModPath=$ModPath;Descriptor=$descriptor}
+ [pscustomobject]@{Mounted=(Test-Path -LiteralPath $descriptor);Enabled=(@($load.enabled_mods) -contains $entry);ModPath=$ModPath;Descriptor=$descriptor} | Format-List | Out-Host
  exit 0
 }
 if ($Mode -in @('Mount','Enable')) {
