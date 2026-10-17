@@ -1,0 +1,15 @@
+capital = 5
+oob = "NVN_1965"
+set_research_slots = 3
+set_stability = 0.6
+set_war_support = 0.7
+set_politics = { ruling_party = communism elections_allowed = no }
+set_popularities = { communism = 100 }
+create_country_leader = { picture = "gfx/leaders/Asia/Portrait_Asia_Generic_1.dds" name = "Ho Chi Minh" ideology = marxism expire = "1990.1.1" }
+set_technology = { infantry_weapons = 1 infantry_weapons1 = 1 infantry_weapons2 = 1 tech_support = 1 tech_trucks = 1 }
+add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 20000 producer = NVN }
+# Theater starting logistics
+add_ideas = { limited_conscription partial_economic_mobilisation export_focus }
+add_political_power = 150
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 500 producer = NVN }
+add_equipment_to_stockpile = { type = train_equipment_1 amount = 40 producer = NVN }

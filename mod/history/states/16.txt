@@ -1,0 +1,1 @@
+state = { id = 16 name = "V65_STATE_16" manpower = 550000 state_category = town provinces = { 226 227 228 229 230 231 232 233 234 235 } history = { owner = SVN add_core_of = SVN victory_points = { 228 3 } buildings = { infrastructure = 3 industrial_complex = 1 arms_factory = 1 air_base = 1  } } }

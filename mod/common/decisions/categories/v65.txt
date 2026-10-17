@@ -1,0 +1,5 @@
+v65_theater = {
+ icon = GFX_decision_generic_military
+ allowed = { OR = { original_tag = SVN original_tag = NVN } }
+ visible = { always = yes }
+}

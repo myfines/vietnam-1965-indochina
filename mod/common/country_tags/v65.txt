@@ -1,0 +1,4 @@
+NVN = "countries/NVN.txt"
+SVN = "countries/SVN.txt"
+KHM = "countries/KHM.txt"
+XTR = "countries/XTR.txt"

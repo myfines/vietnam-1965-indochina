@@ -1,0 +1,12 @@
+bookmarks = {
+ bookmark = {
+  name = V65_BOOKMARK
+  desc = V65_BOOKMARK_DESC
+  date = 1965.10.28.12
+  picture = GFX_select_date_1936
+  default_country = SVN
+  default = yes
+  SVN = { history = V65_SVN_DESC ideology = neutrality }
+  NVN = { history = V65_NVN_DESC ideology = communism }
+ }
+}

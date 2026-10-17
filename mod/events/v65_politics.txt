@@ -1,0 +1,12 @@
+add_namespace = v65politics
+country_event = { id = v65politics.1 title = v65politics.1.t desc = v65politics.1.d is_triggered_only = yes option = { name = v65politics.1.a set_country_flag = v65_crisis_active } }
+country_event = { id = v65politics.2 title = v65politics.2.t desc = v65politics.2.d is_triggered_only = yes option = { name = v65politics.2.a add_to_variable = { v65_park_influence = 1 } } }
+country_event = { id = v65politics.3 title = v65politics.3.t desc = v65politics.3.d is_triggered_only = yes option = { name = v65politics.3.a  } }
+country_event = { id = v65politics.4 title = v65politics.4.t desc = v65politics.4.d is_triggered_only = yes option = { name = v65politics.4.a  } }
+country_event = { id = v65politics.5 title = v65politics.5.t desc = v65politics.5.d is_triggered_only = yes option = { name = v65politics.5.a  } }
+country_event = { id = v65politics.6 title = v65politics.6.t desc = v65politics.6.d is_triggered_only = yes option = { name = v65politics.6.a  } }
+country_event = { id = v65politics.7 title = v65politics.7.t desc = v65politics.7.d is_triggered_only = yes
+ option = { name = v65politics.7.a set_country_flag = v65_park_presidential add_to_variable = { v65_park_influence = 2 } add_political_power = 100 add_stability = -0.03 ai_chance = { factor = 60 } }
+ option = { name = v65politics.7.b set_country_flag = v65_park_autonomy army_experience = 10 add_stability = 0.05 add_to_variable = { v65_park_influence = -1 } ai_chance = { factor = 40 } }
+}
+country_event = { id = v65politics.8 hidden = yes is_triggered_only = yes immediate = { clr_country_flag = v65_raid_cooldown } }

@@ -1,0 +1,15 @@
+NDefines.NFrontend.CAMERA_LOOKAT_X = 1024
+NDefines.NFrontend.CAMERA_LOOKAT_Y = 0
+NDefines.NFrontend.CAMERA_LOOKAT_Z = 1600
+NDefines.NFrontend.CAMERA_START_X = 1024
+NDefines.NFrontend.CAMERA_START_Y = 1200
+NDefines.NFrontend.CAMERA_START_Z = 1400
+NDefines.NFrontend.CAMERA_END_X = 1024
+NDefines.NFrontend.CAMERA_END_Y = 1200
+NDefines.NFrontend.CAMERA_END_Z = 1400
+NDefines.NFrontend.FRONTEND_POS_X = 1024
+NDefines.NFrontend.FRONTEND_POS_Y = 1200
+NDefines.NFrontend.FRONTEND_POS_Z = 1400
+NDefines.NFrontend.FRONTEND_LOOK_X = 1024
+NDefines.NFrontend.FRONTEND_LOOK_Y = 0
+NDefines.NFrontend.FRONTEND_LOOK_Z = 1600

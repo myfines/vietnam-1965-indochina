@@ -1,0 +1,1 @@
+state = { id = 35 name = "V65_STATE_35" manpower = 550000 state_category = town provinces = { 390 391 392 393 394 395 396 397 398 399 400 401 402 403 404 } history = { owner = KHM add_core_of = KHM victory_points = { 395 3 } buildings = { infrastructure = 3 industrial_complex = 1 arms_factory = 1 air_base = 1  } } }

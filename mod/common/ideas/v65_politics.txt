@@ -1,0 +1,6 @@
+ideas = { country = {
+ v65_martial_law = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.08 political_power_gain = -0.25 production_factory_efficiency_gain_factor = -0.05 } }
+ v65_guard_network = { picture = generic_army_chief allowed = { always = no } modifier = { political_power_gain = 0.15 army_org_factor = 0.03 } }
+ v65_trail_network = { picture = generic_motorized allowed = { always = no } modifier = { supply_consumption_factor = -0.05 } }
+ v65_civil_admin = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.05 } }
+} }

@@ -1,0 +1,27 @@
+v65_theater = {
+ v65_supply_request = {
+  icon = generic_prepare_civil_war
+  visible = { tag = SVN }
+  cost = 50
+  days_re_enable = 30
+  complete_effect = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 1000 producer = SVN } }
+  ai_will_do = { factor = 1 }
+ }
+ v65_northern_supply = {
+  icon = generic_prepare_civil_war
+  visible = { tag = NVN }
+  cost = 50
+  days_re_enable = 30
+  complete_effect = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 1000 producer = NVN } }
+  ai_will_do = { factor = 1 }
+ }
+ v65_local_cooperation = {
+  icon = generic_political_discourse
+  visible = { tag = SVN }
+  available = { NOT = { has_idea = v65_local_partnership } }
+  cost = 75
+  fire_only_once = yes
+  complete_effect = { add_ideas = v65_local_partnership }
+  ai_will_do = { factor = 1 }
+ }
+}

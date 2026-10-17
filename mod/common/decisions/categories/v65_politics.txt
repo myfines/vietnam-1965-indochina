@@ -1,0 +1,3 @@
+v65_politics = { icon = GFX_decision_generic_military allowed = { tag = SVN } visible = { always = yes } }
+v65_park = { icon = GFX_decision_generic_military allowed = { tag = SVN } visible = { always = yes } }
+v65_trail = { icon = GFX_decision_generic_military allowed = { OR = { tag = SVN tag = NVN } } visible = { always = yes } }

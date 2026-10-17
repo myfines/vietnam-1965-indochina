@@ -1,0 +1,11 @@
+on_actions = {
+ on_startup = {
+  effect = {
+   if = {
+    limit = { date > 1965.10.27 SVN = { exists = yes NOT = { has_country_flag = v65_intro_seen } } NVN = { exists = yes } }
+    SVN = { set_country_flag = v65_intro_seen country_event = { id = v65.1 days = 1 } }
+    NVN = { declare_war_on = { target = SVN type = annex_everything } }
+   }
+  }
+ }
+}

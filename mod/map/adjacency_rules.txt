@@ -1,0 +1,1 @@
+# no adjacency rules (the base game's name its own canals' provinces)

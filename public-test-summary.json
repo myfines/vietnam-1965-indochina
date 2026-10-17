@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "markers": [
+    "V65_PASS_COUP_CIVIL_WAR",
+    "V65_PASS_COUP_FAILURE",
+    "V65_PASS_COUP_PEACE",
+    "V65_PASS_DMZ_EXCEPTION",
+    "V65_PASS_INTRO",
+    "V65_PASS_KHM_FOCUS_TREE",
+    "V65_PASS_KHM_UNITS",
+    "V65_PASS_NVN_FOCUS_TREE",
+    "V65_PASS_NVN_UNITS",
+    "V65_PASS_PARK_PORTRAIT_IDEA",
+    "V65_PASS_PARK_STORY_BRANCH",
+    "V65_PASS_REAR_UNITS",
+    "V65_PASS_SVN_FOCUS_TREE",
+    "V65_PASS_SVN_UNITS",
+    "V65_PASS_WAR"
+  ],
+  "last_date": "1965.11.05.24",
+  "method": "engine -hands_off -start_tag=SVN; no desktop automation",
+  "checked_at": "2026-10-18T01:44:26.299062",
+  "mod_runtime_errors": []
+}

@@ -1,0 +1,14 @@
+ideas = {
+ country = {
+  v65_external_supply = {
+   picture = generic_military_staff
+   allowed = { OR = { original_tag = SVN original_tag = NVN } }
+   modifier = { supply_consumption_factor = -0.1 }
+  }
+  v65_local_partnership = {
+   picture = generic_military_staff
+   allowed = { original_tag = SVN }
+   modifier = { stability_factor = 0.05 }
+  }
+ }
+}

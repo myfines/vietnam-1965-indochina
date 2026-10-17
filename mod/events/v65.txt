@@ -1,0 +1,9 @@
+add_namespace = v65
+country_event = {
+ id = v65.1
+ title = v65.1.t
+ desc = v65.1.d
+ picture = GFX_report_event_generic_read_write
+ is_triggered_only = yes
+ option = { name = v65.1.a add_political_power = 50 }
+}

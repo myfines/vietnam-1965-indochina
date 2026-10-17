@@ -1,0 +1,1086 @@
+[
+  {
+    "path": "descriptor.mod",
+    "sha256": "d5562e59a4a100579fb2ab027d1f865a8532a057652797927d937d21a9a2daaf"
+  },
+  {
+    "path": "events/v65.txt",
+    "sha256": "3a970a74e4ec06acee178930d5986268b6fbb1c42f7d0085b56f3a9468a88e1c"
+  },
+  {
+    "path": "events/v65_politics.txt",
+    "sha256": "9b52b695a40c28b6d34b54176f6a4a99c3207e5c1be7b17cf95eb7f2fe549ac9"
+  },
+  {
+    "path": "interface/v65_portraits.gfx",
+    "sha256": "c8cfe1ad7690ced4fac58c11440e345d9cafddf1fd933af1dc3531891d61a808"
+  },
+  {
+    "path": "map/adjacencies.csv",
+    "sha256": "b4a0e9a7ff7cfd926d62220e03a8169059a40ab25621f9318e62fd02479ac29e"
+  },
+  {
+    "path": "map/adjacency_rules.txt",
+    "sha256": "adf018cf1163a9c53eee586fa1b6488595b16c4410827aea905afa114715675d"
+  },
+  {
+    "path": "map/buildings.txt",
+    "sha256": "ddfc638ec43b2ec747ead8acdbe3661691613be6d7c046a3a80a61d56ba120d9"
+  },
+  {
+    "path": "map/cities.bmp",
+    "sha256": "0993f3d71ce3f48dd686f513acb475ef84800103c6211d68024f63db5016af63"
+  },
+  {
+    "path": "map/continent.txt",
+    "sha256": "81570f2f3ca60513561c2073b776f0c9eb944730e4b058769923f815d13ddc54"
+  },
+  {
+    "path": "map/definition.csv",
+    "sha256": "10113e7d667a493b37b8c66e0848c21e71e3b53b5f80f5cb374f91cd873fccb5"
+  },
+  {
+    "path": "map/heightmap.bmp",
+    "sha256": "26b6eac1c9b53c01df76de15ba0d5151d063bb35c02486be37c5dcb2b8159523"
+  },
+  {
+    "path": "map/positions.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "map/provinces.bmp",
+    "sha256": "5dd2bc70ca14d44f1ad3333f93cee0d181008fb9cd1960defc7d9045562fc8a2"
+  },
+  {
+    "path": "map/railways.txt",
+    "sha256": "f9a13c5010b6eba67f0fe21a26ec504a7d4a6d8dbc62d5d92d2358b6a7f4a12d"
+  },
+  {
+    "path": "map/rivers.bmp",
+    "sha256": "b9a356b93126ae5cc62cd2653ccee0942502171d27979e6fc754b22a1430b1b6"
+  },
+  {
+    "path": "map/supply_nodes.txt",
+    "sha256": "5ff36938206c3d739eab990762787e50f90c2bb81e0f1c7355fa20aa4a05f955"
+  },
+  {
+    "path": "map/terrain.bmp",
+    "sha256": "7c162e674911391aabb913634af2c91a2ba600785ede5b40cf425232fbb6025b"
+  },
+  {
+    "path": "map/trees.bmp",
+    "sha256": "c7fa362d015553a260d17e70c75a922ac86ad9e200edaf9090293c00c43ff86f"
+  },
+  {
+    "path": "map/unitstacks.txt",
+    "sha256": "9a83e8c8660fdf4d1bde96319e3e4366ad1995e9d145fe34a8d0512664cee774"
+  },
+  {
+    "path": "map/weatherpositions.txt",
+    "sha256": "5394641bc96cc8ee521a8fd16118fe60a93a030f7abca142ef450addf19960b2"
+  },
+  {
+    "path": "map/world_normal.bmp",
+    "sha256": "6a7dc373a28679327ace5ea8216d164e36d632b537e1a3d7042bdfd0ce10af82"
+  },
+  {
+    "path": "tutorial/tutorial.txt",
+    "sha256": "948e294f73f3720a139202d0d188cd93fdf466163bf1a67374331994e64041b6"
+  },
+  {
+    "path": "common/ai_faction_theaters/ai_faction_theaters.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  {
+    "path": "common/ai_strategy_plans/BLT_alternate_strategy_plan.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/ai_strategy_plans/GUAY_historical_strategy_plan.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/ai_strategy_plans/SPA_alternate_strategy_plan.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/ai_strategy_plans/SPB_alternate_strategy_plan.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/ai_strategy_plans/SPC_alternate_strategy_plan.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/ai_strategy_plans/SPD_alternate_strategy_plan.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/ai_strategy_plans/SPD_historical_strategy_plan.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/aat_defense_council_member.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/taog_associated_dominion_puppet.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/taog_indonesian_union_state.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/wtt_imperial_associate.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/wtt_imperial_protectorate.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/wtt_imperial_subject.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/wuw_austro_hungarian_subject.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/wuw_european_union_puppet.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/autonomous_states/wuw_volkskommissariat.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/bookmarks/v65.txt",
+    "sha256": "f48ef5a210784a67d8a5d016c9592e09f73c899740426c8143c77c2fd99a43c1"
+  },
+  {
+    "path": "common/countries/KHM.txt",
+    "sha256": "6e03ff4746d02d9e9518409b6d7376c090658315a7f7c1e6a5711a1bd85c33f9"
+  },
+  {
+    "path": "common/countries/NVN.txt",
+    "sha256": "1a75634d4766d578a9ba72727ee7b541f85cce4bbd2898e45497a08bf9840ae7"
+  },
+  {
+    "path": "common/countries/SVN.txt",
+    "sha256": "78997b6aa80d624b237e8735a836496f63e2be682708a80acb53656149424b7b"
+  },
+  {
+    "path": "common/countries/V65 North Vietnam.txt",
+    "sha256": "d6ae5c0295496ac2c309dcf6677e081dbe862cbe1f5d5aec37f2391f0e9975a7"
+  },
+  {
+    "path": "common/countries/V65 South Vietnam.txt",
+    "sha256": "63062e70b28cc9a5a9c66d203d02e2df413c9ae67b40b0983d721f1ca02e48d9"
+  },
+  {
+    "path": "common/countries/XTR.txt",
+    "sha256": "5d699d98fe36ebfd9e318251a7a26a3858216189c04f5a6b5bf6baaf2ff91e04"
+  },
+  {
+    "path": "common/country_tags/v65.txt",
+    "sha256": "7280587fc96d3b19a6176e40112adee478557a9c84d75423af915d06ff68eb6a"
+  },
+  {
+    "path": "common/decisions/v65.txt",
+    "sha256": "93423d5469b5811c32d0566d66f2d27e372a41adc29e1a2210f6952fdc5cdfa2"
+  },
+  {
+    "path": "common/decisions/v65_politics.txt",
+    "sha256": "47ee81fb7c17ffc2e6c6a874c3611555e8cb296c7dcea80a0efdaff85ea6a148"
+  },
+  {
+    "path": "common/decisions/v65_trail.txt",
+    "sha256": "34bad73c5919af649cdabe6676c2361936d9496497398a63b7c529d8f8e9a9dc"
+  },
+  {
+    "path": "common/defines/v65.lua",
+    "sha256": "2e0100e0fbc98f3dd8c1e0ff51b5d1b87c0b913a714378cfd73ad80d1b151033"
+  },
+  {
+    "path": "common/defines/zz_v65_camera.lua",
+    "sha256": "e034bf9acb41cc263a7a3ab54828fdfb6094be3a5a822650a0c025640e58c406"
+  },
+  {
+    "path": "common/ideas/v65.txt",
+    "sha256": "5552259be58b826dc96ffe81956f4e742c7174f3f348a92667d4aa2eec3e30e7"
+  },
+  {
+    "path": "common/ideas/v65_park.txt",
+    "sha256": "48a5577345c5bf950e70b96506b0371fb3c302bb9f89dc30640eb30e1f2f6701"
+  },
+  {
+    "path": "common/ideas/v65_politics.txt",
+    "sha256": "98503f52ba83f6e7fb79d44342a49bffb973741e5e37d5f92b159f01709870b7"
+  },
+  {
+    "path": "common/national_focus/v65_KHM.txt",
+    "sha256": "b81f28cda0122fc86268670f1392f0f37b6cf6f6e5b25713f00fa5e856029560"
+  },
+  {
+    "path": "common/national_focus/v65_NVN.txt",
+    "sha256": "2e65f11d33e2efaf29af29c6c630d0d4c4b40f098abb5041323912e2e3d9ae2e"
+  },
+  {
+    "path": "common/national_focus/v65_SVN.txt",
+    "sha256": "175eed305739e9dc6f7efa66bea1cecac1b03f9dd324dca27a65c913f84da501"
+  },
+  {
+    "path": "common/on_actions/00_on_actions.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/on_actions/v65.txt",
+    "sha256": "0a5bbff977ef8d7dc708f4d3097f89a5d91d081babaa80b6b71457122e515fc4"
+  },
+  {
+    "path": "common/on_actions/v65_politics.txt",
+    "sha256": "ce2d6bf7e9052826f5f0cc3cc7d6b585c35cdba8bbbd22f00c248c0d5f7bb9b7"
+  },
+  {
+    "path": "common/operations/LaR_historical_operations.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/operations/NSB_historical_operations.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/scripted_effects/v65_politics.txt",
+    "sha256": "defb96f2098d1de150199d6add8b0d7246ab12222deefe1f865922f2807e4481"
+  },
+  {
+    "path": "common/scripted_triggers/unit_medals_scripted_triggers.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/script_constants/country_groups.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/technology_sharing/01_dod_tech_sharing_groups.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/technology_sharing/02_wtt_tech_sharing_groups.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/technology_sharing/12_wuw_tech_sharing_groups.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/technology_sharing/14_tsr_tech_sharing_groups.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/decisions/categories/BALTIC_decision_categories.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/decisions/categories/GUAY_decision_categories.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/decisions/categories/infiltration_decision_categories.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/decisions/categories/NORDIC_decision_categories.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/decisions/categories/SS_decision_categories.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/decisions/categories/v65.txt",
+    "sha256": "ad93ae0efdd2286c227a8c9253ea21e1173efccf4f9826e363e4b3b1e29d27f5"
+  },
+  {
+    "path": "common/decisions/categories/v65_politics.txt",
+    "sha256": "d2e8bf282bc7b4ea29cdf329d39553cd2597f96c6e3c35daed95c1f7f3b320da"
+  },
+  {
+    "path": "common/factions/templates/government_of_national_defense.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/military_industrial_organization/organizations/baltic_organization.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/units/codenames_operatives/generic_opertive_codenames.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/units/names_divisions/ARBC_names_divisions.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/units/names_divisions/BYZ_names_divisions.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/units/names_divisions/ENGL_names_divisions.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/units/names_divisions/FREN_names_divisions.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/units/names_divisions/SPAN_names_divisions.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/units/names_divisions/SPQR_names_divisions.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "gfx/flags/KHM.tga",
+    "sha256": "cf3637e276d3a9c552cab7cb246606f489966cbd03f6fd2d8bba5670c67ab3bc"
+  },
+  {
+    "path": "gfx/flags/KHM_communism.tga",
+    "sha256": "cf3637e276d3a9c552cab7cb246606f489966cbd03f6fd2d8bba5670c67ab3bc"
+  },
+  {
+    "path": "gfx/flags/KHM_democratic.tga",
+    "sha256": "cf3637e276d3a9c552cab7cb246606f489966cbd03f6fd2d8bba5670c67ab3bc"
+  },
+  {
+    "path": "gfx/flags/KHM_fascism.tga",
+    "sha256": "cf3637e276d3a9c552cab7cb246606f489966cbd03f6fd2d8bba5670c67ab3bc"
+  },
+  {
+    "path": "gfx/flags/KHM_neutrality.tga",
+    "sha256": "cf3637e276d3a9c552cab7cb246606f489966cbd03f6fd2d8bba5670c67ab3bc"
+  },
+  {
+    "path": "gfx/flags/NVN.tga",
+    "sha256": "6a137fd2741aa042060d88355cb1c4480698e3bf7771f384996e22cb90b2d110"
+  },
+  {
+    "path": "gfx/flags/NVN_communism.tga",
+    "sha256": "6a137fd2741aa042060d88355cb1c4480698e3bf7771f384996e22cb90b2d110"
+  },
+  {
+    "path": "gfx/flags/NVN_democratic.tga",
+    "sha256": "6a137fd2741aa042060d88355cb1c4480698e3bf7771f384996e22cb90b2d110"
+  },
+  {
+    "path": "gfx/flags/NVN_fascism.tga",
+    "sha256": "6a137fd2741aa042060d88355cb1c4480698e3bf7771f384996e22cb90b2d110"
+  },
+  {
+    "path": "gfx/flags/NVN_neutrality.tga",
+    "sha256": "6a137fd2741aa042060d88355cb1c4480698e3bf7771f384996e22cb90b2d110"
+  },
+  {
+    "path": "gfx/flags/SVN.tga",
+    "sha256": "2fb4ae7c85989d8ab76c91caab1612cd705422c0a7212eeca28ecb45f2c1bb1d"
+  },
+  {
+    "path": "gfx/flags/SVN_communism.tga",
+    "sha256": "2fb4ae7c85989d8ab76c91caab1612cd705422c0a7212eeca28ecb45f2c1bb1d"
+  },
+  {
+    "path": "gfx/flags/SVN_democratic.tga",
+    "sha256": "2fb4ae7c85989d8ab76c91caab1612cd705422c0a7212eeca28ecb45f2c1bb1d"
+  },
+  {
+    "path": "gfx/flags/SVN_fascism.tga",
+    "sha256": "2fb4ae7c85989d8ab76c91caab1612cd705422c0a7212eeca28ecb45f2c1bb1d"
+  },
+  {
+    "path": "gfx/flags/SVN_neutrality.tga",
+    "sha256": "2fb4ae7c85989d8ab76c91caab1612cd705422c0a7212eeca28ecb45f2c1bb1d"
+  },
+  {
+    "path": "gfx/flags/XTR.tga",
+    "sha256": "93b3ad31d52c18a0d9ae7e85a5e75e4e90d5a756abe0b0a21dbd38ee7ba83b3d"
+  },
+  {
+    "path": "gfx/flags/XTR_communism.tga",
+    "sha256": "93b3ad31d52c18a0d9ae7e85a5e75e4e90d5a756abe0b0a21dbd38ee7ba83b3d"
+  },
+  {
+    "path": "gfx/flags/XTR_democratic.tga",
+    "sha256": "93b3ad31d52c18a0d9ae7e85a5e75e4e90d5a756abe0b0a21dbd38ee7ba83b3d"
+  },
+  {
+    "path": "gfx/flags/XTR_fascism.tga",
+    "sha256": "93b3ad31d52c18a0d9ae7e85a5e75e4e90d5a756abe0b0a21dbd38ee7ba83b3d"
+  },
+  {
+    "path": "gfx/flags/XTR_neutrality.tga",
+    "sha256": "93b3ad31d52c18a0d9ae7e85a5e75e4e90d5a756abe0b0a21dbd38ee7ba83b3d"
+  },
+  {
+    "path": "gfx/flags/medium/KHM.tga",
+    "sha256": "9327f9172d1554b0812dd9307c2d48c9711fa5372b30f75e8b34c42f5fe7cd9c"
+  },
+  {
+    "path": "gfx/flags/medium/KHM_communism.tga",
+    "sha256": "9327f9172d1554b0812dd9307c2d48c9711fa5372b30f75e8b34c42f5fe7cd9c"
+  },
+  {
+    "path": "gfx/flags/medium/KHM_democratic.tga",
+    "sha256": "9327f9172d1554b0812dd9307c2d48c9711fa5372b30f75e8b34c42f5fe7cd9c"
+  },
+  {
+    "path": "gfx/flags/medium/KHM_fascism.tga",
+    "sha256": "9327f9172d1554b0812dd9307c2d48c9711fa5372b30f75e8b34c42f5fe7cd9c"
+  },
+  {
+    "path": "gfx/flags/medium/KHM_neutrality.tga",
+    "sha256": "9327f9172d1554b0812dd9307c2d48c9711fa5372b30f75e8b34c42f5fe7cd9c"
+  },
+  {
+    "path": "gfx/flags/medium/NVN.tga",
+    "sha256": "2a0d8c3c0e3265204cd4ba7b18cacf8481cbd026a5cd09a17cf0e9018d39ee40"
+  },
+  {
+    "path": "gfx/flags/medium/NVN_communism.tga",
+    "sha256": "2a0d8c3c0e3265204cd4ba7b18cacf8481cbd026a5cd09a17cf0e9018d39ee40"
+  },
+  {
+    "path": "gfx/flags/medium/NVN_democratic.tga",
+    "sha256": "2a0d8c3c0e3265204cd4ba7b18cacf8481cbd026a5cd09a17cf0e9018d39ee40"
+  },
+  {
+    "path": "gfx/flags/medium/NVN_fascism.tga",
+    "sha256": "2a0d8c3c0e3265204cd4ba7b18cacf8481cbd026a5cd09a17cf0e9018d39ee40"
+  },
+  {
+    "path": "gfx/flags/medium/NVN_neutrality.tga",
+    "sha256": "2a0d8c3c0e3265204cd4ba7b18cacf8481cbd026a5cd09a17cf0e9018d39ee40"
+  },
+  {
+    "path": "gfx/flags/medium/SVN.tga",
+    "sha256": "e19946f2bf19113a4e7386df0bc3e010994d6fd69d79e092bcc4b561aa3129cb"
+  },
+  {
+    "path": "gfx/flags/medium/SVN_communism.tga",
+    "sha256": "e19946f2bf19113a4e7386df0bc3e010994d6fd69d79e092bcc4b561aa3129cb"
+  },
+  {
+    "path": "gfx/flags/medium/SVN_democratic.tga",
+    "sha256": "e19946f2bf19113a4e7386df0bc3e010994d6fd69d79e092bcc4b561aa3129cb"
+  },
+  {
+    "path": "gfx/flags/medium/SVN_fascism.tga",
+    "sha256": "e19946f2bf19113a4e7386df0bc3e010994d6fd69d79e092bcc4b561aa3129cb"
+  },
+  {
+    "path": "gfx/flags/medium/SVN_neutrality.tga",
+    "sha256": "e19946f2bf19113a4e7386df0bc3e010994d6fd69d79e092bcc4b561aa3129cb"
+  },
+  {
+    "path": "gfx/flags/medium/XTR.tga",
+    "sha256": "caee2018a7fed55835b27c333a8a7a8811fd47b53a6d6f17639d74f114c2d50e"
+  },
+  {
+    "path": "gfx/flags/medium/XTR_communism.tga",
+    "sha256": "caee2018a7fed55835b27c333a8a7a8811fd47b53a6d6f17639d74f114c2d50e"
+  },
+  {
+    "path": "gfx/flags/medium/XTR_democratic.tga",
+    "sha256": "caee2018a7fed55835b27c333a8a7a8811fd47b53a6d6f17639d74f114c2d50e"
+  },
+  {
+    "path": "gfx/flags/medium/XTR_fascism.tga",
+    "sha256": "caee2018a7fed55835b27c333a8a7a8811fd47b53a6d6f17639d74f114c2d50e"
+  },
+  {
+    "path": "gfx/flags/medium/XTR_neutrality.tga",
+    "sha256": "caee2018a7fed55835b27c333a8a7a8811fd47b53a6d6f17639d74f114c2d50e"
+  },
+  {
+    "path": "gfx/flags/small/KHM.tga",
+    "sha256": "9a65bebd4591599adf3c8e56bc7c7cb0f0ba39d29f0ee3b21e73d0e9aedf78b7"
+  },
+  {
+    "path": "gfx/flags/small/KHM_communism.tga",
+    "sha256": "9a65bebd4591599adf3c8e56bc7c7cb0f0ba39d29f0ee3b21e73d0e9aedf78b7"
+  },
+  {
+    "path": "gfx/flags/small/KHM_democratic.tga",
+    "sha256": "9a65bebd4591599adf3c8e56bc7c7cb0f0ba39d29f0ee3b21e73d0e9aedf78b7"
+  },
+  {
+    "path": "gfx/flags/small/KHM_fascism.tga",
+    "sha256": "9a65bebd4591599adf3c8e56bc7c7cb0f0ba39d29f0ee3b21e73d0e9aedf78b7"
+  },
+  {
+    "path": "gfx/flags/small/KHM_neutrality.tga",
+    "sha256": "9a65bebd4591599adf3c8e56bc7c7cb0f0ba39d29f0ee3b21e73d0e9aedf78b7"
+  },
+  {
+    "path": "gfx/flags/small/NVN.tga",
+    "sha256": "eb586a196469e9b9c69e2db961dce1095ba355dd20f258bc1d8f407a22286001"
+  },
+  {
+    "path": "gfx/flags/small/NVN_communism.tga",
+    "sha256": "eb586a196469e9b9c69e2db961dce1095ba355dd20f258bc1d8f407a22286001"
+  },
+  {
+    "path": "gfx/flags/small/NVN_democratic.tga",
+    "sha256": "eb586a196469e9b9c69e2db961dce1095ba355dd20f258bc1d8f407a22286001"
+  },
+  {
+    "path": "gfx/flags/small/NVN_fascism.tga",
+    "sha256": "eb586a196469e9b9c69e2db961dce1095ba355dd20f258bc1d8f407a22286001"
+  },
+  {
+    "path": "gfx/flags/small/NVN_neutrality.tga",
+    "sha256": "eb586a196469e9b9c69e2db961dce1095ba355dd20f258bc1d8f407a22286001"
+  },
+  {
+    "path": "gfx/flags/small/SVN.tga",
+    "sha256": "ebe84d226af8cc629b1263ef40886d04f14ba20ead353fcdf259e76c9c32548f"
+  },
+  {
+    "path": "gfx/flags/small/SVN_communism.tga",
+    "sha256": "ebe84d226af8cc629b1263ef40886d04f14ba20ead353fcdf259e76c9c32548f"
+  },
+  {
+    "path": "gfx/flags/small/SVN_democratic.tga",
+    "sha256": "ebe84d226af8cc629b1263ef40886d04f14ba20ead353fcdf259e76c9c32548f"
+  },
+  {
+    "path": "gfx/flags/small/SVN_fascism.tga",
+    "sha256": "ebe84d226af8cc629b1263ef40886d04f14ba20ead353fcdf259e76c9c32548f"
+  },
+  {
+    "path": "gfx/flags/small/SVN_neutrality.tga",
+    "sha256": "ebe84d226af8cc629b1263ef40886d04f14ba20ead353fcdf259e76c9c32548f"
+  },
+  {
+    "path": "gfx/flags/small/XTR.tga",
+    "sha256": "abce2a66a4596b1763a81623c34a5f88c44482cc04c31b7674335b67be21cb5f"
+  },
+  {
+    "path": "gfx/flags/small/XTR_communism.tga",
+    "sha256": "abce2a66a4596b1763a81623c34a5f88c44482cc04c31b7674335b67be21cb5f"
+  },
+  {
+    "path": "gfx/flags/small/XTR_democratic.tga",
+    "sha256": "abce2a66a4596b1763a81623c34a5f88c44482cc04c31b7674335b67be21cb5f"
+  },
+  {
+    "path": "gfx/flags/small/XTR_fascism.tga",
+    "sha256": "abce2a66a4596b1763a81623c34a5f88c44482cc04c31b7674335b67be21cb5f"
+  },
+  {
+    "path": "gfx/flags/small/XTR_neutrality.tga",
+    "sha256": "abce2a66a4596b1763a81623c34a5f88c44482cc04c31b7674335b67be21cb5f"
+  },
+  {
+    "path": "gfx/interface/equipmentdesigner/graphic_db/04_plane_icons.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "gfx/interface/equipmentdesigner/graphic_db/06_NCNS_plane_icons.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "gfx/interface/equipmentdesigner/graphic_db/10_tank_icons.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "gfx/interface/equipmentdesigner/graphic_db/12_NCNS_tank_icons.txt",
+    "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "history/countries/KHM - Theater.txt",
+    "sha256": "a04a2d1c4c3b7593614e32f8a55bbfe1ebfc67c81a842443f9cf36c5f73b3d56"
+  },
+  {
+    "path": "history/countries/NVN - Theater.txt",
+    "sha256": "9b76cb82dbe2dada3eadeb00f4df38a400ef51bfad9e0a5bccebc014febd2d8a"
+  },
+  {
+    "path": "history/countries/SVN - Theater.txt",
+    "sha256": "9bcb0f5ab39b73c2e6e95a9deba6259e1ad85cde3f390a1708c420dfd3d6b1d3"
+  },
+  {
+    "path": "history/countries/XTR - Theater.txt",
+    "sha256": "d21aa21ed171c0b7597ddbbdf2c4b1405b7ac84dd5f58ba33875d007d75cff2e"
+  },
+  {
+    "path": "history/states/1.txt",
+    "sha256": "8589be998e3484913c00121fa9acd1af6dc9d0a5df5a742de31f23415673144c"
+  },
+  {
+    "path": "history/states/10.txt",
+    "sha256": "d68872b0b7a29513a5f99bab2365bb3b4893c55c8d36c1f6cc7786a2bd14f2ce"
+  },
+  {
+    "path": "history/states/11.txt",
+    "sha256": "b22ed31a974dde1f1bf71fb3613bf43b181a78a91ff35437e193d5e0ef356093"
+  },
+  {
+    "path": "history/states/12.txt",
+    "sha256": "33b93d901d33501de8a1ecb6edaaf5a59cd99b187077479188d9aec2af0508fb"
+  },
+  {
+    "path": "history/states/13.txt",
+    "sha256": "0c596dc5c4fc99312edd7fd0886d89e4b96df69ad19419cc6fb66a296ca48763"
+  },
+  {
+    "path": "history/states/14.txt",
+    "sha256": "174fc89794db3b6e9e56da025cc292c443be49ba286d34f8cb5e44c80e52e96c"
+  },
+  {
+    "path": "history/states/15.txt",
+    "sha256": "291cd9419a9e4c3df45730208ea226254e72290ddac35fa02ecf7f629e69e25e"
+  },
+  {
+    "path": "history/states/16.txt",
+    "sha256": "d3a9cc6b6a58ced3251faca9cb695e971d41f9db0ff3f49ffbb18be2b12048a9"
+  },
+  {
+    "path": "history/states/17.txt",
+    "sha256": "8a6d17e9b1871da5b3a0b8eada33c6358fd43b71f26c8031bdee7cc982dccb70"
+  },
+  {
+    "path": "history/states/18.txt",
+    "sha256": "cd6e2c1c38eaedbd3b70171a89ec052dae0ee2de1787553e946502f08d1f53d5"
+  },
+  {
+    "path": "history/states/19.txt",
+    "sha256": "433aa38e83fbb1273544c0d7d45c2822831522b232a5dc8727dfa3fab6f35bd8"
+  },
+  {
+    "path": "history/states/2.txt",
+    "sha256": "b486f2a454087374296287e6c13357e9a4f31d42a80a8ac81ce16e09804e1358"
+  },
+  {
+    "path": "history/states/20.txt",
+    "sha256": "f979ea49496fc4d423b4d0f4e61a56893413e07081fae8c49aab479a48823ac3"
+  },
+  {
+    "path": "history/states/21.txt",
+    "sha256": "25e252bb2449f12e30e17a231e553e20282e5dd17a9c625943b71523755127f3"
+  },
+  {
+    "path": "history/states/22.txt",
+    "sha256": "437dd7d87e5ef3ab188415b5aef15f461d6cfddc126e4c998d4969d05bb529c1"
+  },
+  {
+    "path": "history/states/23.txt",
+    "sha256": "bdc568a90e14995e8bf24df27d720ef916284c4f6c9e9c941bac59957f283c29"
+  },
+  {
+    "path": "history/states/24.txt",
+    "sha256": "9514df8b5002f306e3527c47fc03b7db7fdc4fe12823192d349bbd9345b287fe"
+  },
+  {
+    "path": "history/states/25.txt",
+    "sha256": "1c0394f566b61ec5ec0ca9cd84c104821b17f9f08c952cc5b4393b52ff1f75a0"
+  },
+  {
+    "path": "history/states/26.txt",
+    "sha256": "e45fd837de88bec8ae6c9935184a9ae1b46833fe4a263f88414c4e036aab1b99"
+  },
+  {
+    "path": "history/states/27.txt",
+    "sha256": "3a2b180e82479349c861686db9beac087290fe052780b1204d6a6bd8ede2c48c"
+  },
+  {
+    "path": "history/states/28.txt",
+    "sha256": "f71ee56874279ece120d65d3a3d5d92475b9a76a60b4e66ca87a22ca83a8a161"
+  },
+  {
+    "path": "history/states/29.txt",
+    "sha256": "3c6dd88c11b5057215dd725e685dbd210b674a6106bb7a34e419d96dada0c2c1"
+  },
+  {
+    "path": "history/states/3.txt",
+    "sha256": "c561c5ac5d41e227f33c0a11f756003e8828cd3e0839ef0d0e0d8239f016e27b"
+  },
+  {
+    "path": "history/states/30.txt",
+    "sha256": "93e79debb4d5dbc298e5201b0ad90ad18b810b7143a33113527547c66ed40a61"
+  },
+  {
+    "path": "history/states/31.txt",
+    "sha256": "91618f6c6d993a086c4af23d2ff00e154487c076533de0085db75ef52fddd733"
+  },
+  {
+    "path": "history/states/32.txt",
+    "sha256": "82d8a7977bb94c2bf5da9a2c6430ae5f1e374bde63081acde2874bc05b79bfeb"
+  },
+  {
+    "path": "history/states/33.txt",
+    "sha256": "4fe9bb7c0585143453e2a4ffdc780777fdfa2b9440ae4ca1c772997bce3bd0df"
+  },
+  {
+    "path": "history/states/34.txt",
+    "sha256": "78f65d30c2fd8b7c4feadecbe939f1c9bbf810b26cfa4c563d4f9f0a0d369d31"
+  },
+  {
+    "path": "history/states/35.txt",
+    "sha256": "122dd51200bff5ffa31460074a97a38c88f05f3b51279de9cc15257700a4f2d2"
+  },
+  {
+    "path": "history/states/36.txt",
+    "sha256": "fd71a6ec55f00b84b90ba92882e44bf6f2c3c8762288d8d2c8d9d47922cb0c2a"
+  },
+  {
+    "path": "history/states/37.txt",
+    "sha256": "82aa0180905dd7e5aee6ecc99c26a3eb15f1705eacce605160cf99fb154e6e6d"
+  },
+  {
+    "path": "history/states/38.txt",
+    "sha256": "853cc84ecb3f7bcf70d6fb0fdcf966fb40ff5cb10c1bdf3e7508be0dcb0c7320"
+  },
+  {
+    "path": "history/states/39.txt",
+    "sha256": "e2cfad4f28b6a34c024108c65d9611a99c4a3a99bc45f714c02f7fbdda6b6872"
+  },
+  {
+    "path": "history/states/4.txt",
+    "sha256": "b7ce4b6b66011fb3ec93c2e8d0ee835c07e5ff382ab7b19c7e9ff35e94eadbb7"
+  },
+  {
+    "path": "history/states/40.txt",
+    "sha256": "fd22631be1b4df60443a7df00591a8b9b16726b739c663abaab086de1197fb5f"
+  },
+  {
+    "path": "history/states/41.txt",
+    "sha256": "8892076341fc3a2c6b89c16b5b9e604727f606485d343ac93c998d575cf91e09"
+  },
+  {
+    "path": "history/states/42.txt",
+    "sha256": "5f5f5f2af3ad1fa34751db20fcbbf68570bdc9f538484d713e55d009cfda775e"
+  },
+  {
+    "path": "history/states/43.txt",
+    "sha256": "9a287d16ec452a0685d9ac8e6e9e1a4e354641b9d122d68c6dd34880e7b511f0"
+  },
+  {
+    "path": "history/states/44.txt",
+    "sha256": "28448f0a9ae62c84f1bee74e766df0c090c66b73410ab7b060b30a65f437bd8a"
+  },
+  {
+    "path": "history/states/45.txt",
+    "sha256": "7b384b36cf34f33c4926887003a1f0d9369e36e3c625dae9547472c40cbee3be"
+  },
+  {
+    "path": "history/states/46.txt",
+    "sha256": "ce923119f2b18d4b0f62584239bec7d9d3f028914d69f6a28cd5f91291d67f2d"
+  },
+  {
+    "path": "history/states/47.txt",
+    "sha256": "cb4148c8053d842a7d3ecca8958567c6d2a363daa98d2e31d0edfdc36d4e98d6"
+  },
+  {
+    "path": "history/states/5.txt",
+    "sha256": "909b2234836f1e6eee2d6cb5344584fa71fd1f1c529ee30bbd2d1d9c96331e94"
+  },
+  {
+    "path": "history/states/6.txt",
+    "sha256": "8fc8f42dd847382f7e058eaa53492b96b7ee8fe15c12629444232759c133cadb"
+  },
+  {
+    "path": "history/states/7.txt",
+    "sha256": "d91b2ce08da8a8c31800c66e55cfb0e83291331a562483ed5e17231fa7e85ebd"
+  },
+  {
+    "path": "history/states/8.txt",
+    "sha256": "be459ecf89e35fbbc6f326598cb47df631f039360eb3ab04c3221d8cce82c2e5"
+  },
+  {
+    "path": "history/states/9.txt",
+    "sha256": "37492fbc87c85a3d03fb6db89607f037406bc135a50a70614ce8beecf25ddc18"
+  },
+  {
+    "path": "history/units/KHM_1965.txt",
+    "sha256": "175618ee2ddc60b7a31888de7a26e698ef88a850c5f62b10051ab5aa80d47348"
+  },
+  {
+    "path": "history/units/NVN_1965.txt",
+    "sha256": "112cab5633c2ec9660f9c30e8d39168e77222c79d2884ef068dcd3d102af0a5b"
+  },
+  {
+    "path": "history/units/SVN_1965.txt",
+    "sha256": "0bf0aedc1ea8e1b1dd50bda19fb6e210af1d8a930abf6d3079a796ca54a57a16"
+  },
+  {
+    "path": "history/units/XTR_1965.txt",
+    "sha256": "e0e1a2c6133fddb127fa464011b70ead309b9f7ea2f639583000d65e35d88b40"
+  },
+  {
+    "path": "localisation/english/v65_focus_l_english.yml",
+    "sha256": "ed6150b28a5055a92ff59b6a84d2b97f383e14c8ebcd2f1a1241a89e3bfe72b9"
+  },
+  {
+    "path": "localisation/english/v65_l_english.yml",
+    "sha256": "566b53caa4950c5039aca2cd9b4e1f24e0bae48d99616b90b77c0604796601da"
+  },
+  {
+    "path": "localisation/english/v65_park_portrait_l_english.yml",
+    "sha256": "ee80fa733e49ce11872b7628ce0b1e2698fdff2179470bd7f3abb8a80889a37b"
+  },
+  {
+    "path": "localisation/english/v65_regions_l_english.yml",
+    "sha256": "85b040017d44d938811268835e0d44e412fb316e7e30af2b48688bcf24eaf022"
+  },
+  {
+    "path": "localisation/english/zzz_v65_politics_l_english.yml",
+    "sha256": "3eae974453b380782bb181c1b02c4dacb2dffa2d5762b5d01f56af83f89b2f70"
+  },
+  {
+    "path": "localisation/english/zz_theater_l_english.yml",
+    "sha256": "898ddfc45a6dd39604db69b9da9f1ad43a7e7f3781f3dc1268b7d8766b67ab3e"
+  },
+  {
+    "path": "localisation/simp_chinese/v65_focus_l_simp_chinese.yml",
+    "sha256": "686cd93e1d83fe84bc102fc23c25a6f902f75e4e5aafe97913e9b0ed2b8dfc72"
+  },
+  {
+    "path": "localisation/simp_chinese/v65_l_simp_chinese.yml",
+    "sha256": "cf34c80ba2f58682525a80cf1ee904ea0f121fbc309c318749d736e8a56e79e8"
+  },
+  {
+    "path": "localisation/simp_chinese/v65_park_portrait_l_simp_chinese.yml",
+    "sha256": "947a82ea8fb091652d19af99209715fd7c9740d3c7fb28ccbf4ad77474400397"
+  },
+  {
+    "path": "localisation/simp_chinese/v65_regions_l_simp_chinese.yml",
+    "sha256": "081395ac8d937aabd1ee16c5f5bd68e3e5000478ce865b9f2e58fcfe9ad7554d"
+  },
+  {
+    "path": "localisation/simp_chinese/zzz_v65_politics_l_simp_chinese.yml",
+    "sha256": "e0b70c9579f654012373e3927f20688c21ae2a9c5983b8d6b14b642179d276db"
+  },
+  {
+    "path": "localisation/simp_chinese/zz_theater_l_simp_chinese.yml",
+    "sha256": "d62cc3bcc56ef981002213a326c13dda9f08f2ad1418c79a7a3de0a2776f0011"
+  },
+  {
+    "path": "map/strategicregions/1.txt",
+    "sha256": "6fa1aa2dc9634ff1704ebe72779081a69d0e781f3675110171b4dfe5e3c264ba"
+  },
+  {
+    "path": "map/strategicregions/10.txt",
+    "sha256": "42084c77bea776086560582d6cef6d8fb2a58974d69e627aead1f143e24cec04"
+  },
+  {
+    "path": "map/strategicregions/11.txt",
+    "sha256": "8defad5f5e0f3387f0c6ab91cc35f23e691d18bef863045335ef07baad33bb73"
+  },
+  {
+    "path": "map/strategicregions/12.txt",
+    "sha256": "89c4c4ba5f36a27d802ad740d34c0f07b53fb80e5bf659ddb9e3f30614215dea"
+  },
+  {
+    "path": "map/strategicregions/13.txt",
+    "sha256": "c1f1f0ebcf8446235f1dd5d0e4a717f8d1161badac3dc436ab0fab3d4f39fe8f"
+  },
+  {
+    "path": "map/strategicregions/14.txt",
+    "sha256": "69cd75cc33dc96d71283bae2211d5e635ad2008fa7dd4d799ac7dc7b19703615"
+  },
+  {
+    "path": "map/strategicregions/15.txt",
+    "sha256": "ddde25c90492ffe0c4e245c68674e22ccb7b35ae0fdfac2765391979b7b8f1e2"
+  },
+  {
+    "path": "map/strategicregions/16.txt",
+    "sha256": "6656d16b652db019c894129cbb9a62275493b666918951e49c97f7a41c356c41"
+  },
+  {
+    "path": "map/strategicregions/17.txt",
+    "sha256": "f14c55ab5f2d6f5600eed787eb839a83ff4cc3dbd361d4c1a05560ac10541d6f"
+  },
+  {
+    "path": "map/strategicregions/18.txt",
+    "sha256": "b395b03afc4296bcd143cda5aaf7f14294a6f3205946572d9e89f31cff6242ad"
+  },
+  {
+    "path": "map/strategicregions/19.txt",
+    "sha256": "500b58f7813f66c770293236bf1a96e3588e24987d53d11d4ac637c41c8e436e"
+  },
+  {
+    "path": "map/strategicregions/2.txt",
+    "sha256": "39e40636a6e419b1f043d070aacc3ffff9cf94eabb95ea7016946b6c7b0a545c"
+  },
+  {
+    "path": "map/strategicregions/20.txt",
+    "sha256": "2d58b3047dfbdc4c7a68fd83ae4d2ba3a922d87be2853c10bb95d0947e3069fc"
+  },
+  {
+    "path": "map/strategicregions/21.txt",
+    "sha256": "a3dce2402d2a9e0d65780c0a9e09c72b3f03bdd28595142f6e28e89b420de7f6"
+  },
+  {
+    "path": "map/strategicregions/22.txt",
+    "sha256": "5167356d3326aecf2a78a275b64c13a0e88083f4e6cd76039a5e3410f74c702d"
+  },
+  {
+    "path": "map/strategicregions/23.txt",
+    "sha256": "6d0058aaa49d5c201c958a7cde55ffb257bcc3a333cef5c327f48e9d63e96455"
+  },
+  {
+    "path": "map/strategicregions/24.txt",
+    "sha256": "5a11f102d6ca665de7680ebfe6aa4069456fc9f0c060294790bd3d6858e4438f"
+  },
+  {
+    "path": "map/strategicregions/25.txt",
+    "sha256": "754b690381e0ec83e64a383b0c09d2531240a1a87d8d04eedd910f1e306aa50c"
+  },
+  {
+    "path": "map/strategicregions/26.txt",
+    "sha256": "701b9f1a14ca6771c813a84e9beef7bbe460f87dbcfe35248cde386a9821eced"
+  },
+  {
+    "path": "map/strategicregions/27.txt",
+    "sha256": "2ea56a03b4dfbda684791317e5b4ecf53dddaf5bdb1925d375653930e43fb84a"
+  },
+  {
+    "path": "map/strategicregions/28.txt",
+    "sha256": "2e9ecf6fac7b5cf8c53010f69603697eecbb2311fc8fa58a52235c430c69832c"
+  },
+  {
+    "path": "map/strategicregions/29.txt",
+    "sha256": "b7d26b36eac67ad4027bb2fd01802288cd129c9ddfbb9700bc9acd88d6751420"
+  },
+  {
+    "path": "map/strategicregions/3.txt",
+    "sha256": "71c7c91f3e5d00a61512075efab84cea647b106b051317808946ba16d2d200de"
+  },
+  {
+    "path": "map/strategicregions/30.txt",
+    "sha256": "bd47a71370fb893d91a5b0b1708610135dae8f6b7e08f10bee6fb50e933ba1b4"
+  },
+  {
+    "path": "map/strategicregions/31.txt",
+    "sha256": "080c72920c46be8f0909f607e5b43187d2ac9ccd489c02a1fe96ad204ef7d379"
+  },
+  {
+    "path": "map/strategicregions/32.txt",
+    "sha256": "3eeee705418a8b767f3c8f3dfec27016935cda2ae30c845268da1147637455b3"
+  },
+  {
+    "path": "map/strategicregions/33.txt",
+    "sha256": "45020dbf65446c49ad22915fb01fa36b6f5aeb9be3d934c15708ab1e68bd424e"
+  },
+  {
+    "path": "map/strategicregions/34.txt",
+    "sha256": "920ab13209cfdc645fa1792abbb60306522b7d12a682644a3b3944eca5305628"
+  },
+  {
+    "path": "map/strategicregions/35.txt",
+    "sha256": "0f743fa5ff8e087e33c9e443cf21ea2afcd08d93eafbfa35a01744fd3041924a"
+  },
+  {
+    "path": "map/strategicregions/36.txt",
+    "sha256": "144a8fb78aa7b77d2a0cda64197eeb9835024529d877ded479cb0867aebc1724"
+  },
+  {
+    "path": "map/strategicregions/37.txt",
+    "sha256": "7a95144ff79d770aa709ec855fdd87a820995aa627ab795b91014a594ce7f43f"
+  },
+  {
+    "path": "map/strategicregions/38.txt",
+    "sha256": "e627dda82afeab8724284b28cefa0587280166af6cd38422f30ac3951f314d66"
+  },
+  {
+    "path": "map/strategicregions/39.txt",
+    "sha256": "df131e44d7e61658ceda8c85a82aad14d58e3171b2d95d27ed1e7ca8ea606fa6"
+  },
+  {
+    "path": "map/strategicregions/4.txt",
+    "sha256": "503e641190b10b53079f321bc9e1d833d5d92759acd242d7517c8fa7b430448e"
+  },
+  {
+    "path": "map/strategicregions/40.txt",
+    "sha256": "7d6a3721d42fbe0a982646aa94788c985b58da01a5704f4325a2bb6a216ad943"
+  },
+  {
+    "path": "map/strategicregions/41.txt",
+    "sha256": "ed1a3454555eaeb840b7430009f05756172bd6942a5922858d6c55887fbb61d0"
+  },
+  {
+    "path": "map/strategicregions/42.txt",
+    "sha256": "dfac16d5469d8ba03b53a01c99c856fc3e184ea16f3e0ee126905ae817a7c315"
+  },
+  {
+    "path": "map/strategicregions/43.txt",
+    "sha256": "f0b06d5cfc6b2bb93b21468ff076f580cfcf9a4abc745279edab0f71b1b3f514"
+  },
+  {
+    "path": "map/strategicregions/44.txt",
+    "sha256": "101b1cbc361ac963659b6a3f7cc29aebb6d3ef950a1d0db1232f5a4c8cf45811"
+  },
+  {
+    "path": "map/strategicregions/45.txt",
+    "sha256": "4c498fdbc3357cbeed44249b0d7614a05f99365d33a75d286f0701f06dd2fc74"
+  },
+  {
+    "path": "map/strategicregions/46.txt",
+    "sha256": "c7ea47eba9c4422c389fb189df32f69eae3789e4849849e4cbeabe26924c557d"
+  },
+  {
+    "path": "map/strategicregions/47.txt",
+    "sha256": "fe6d83a4e3226d1f7745629ae26827efc0412e4691a2fd56c4ab1c29deb0bbe8"
+  },
+  {
+    "path": "map/strategicregions/48.txt",
+    "sha256": "96facd2133f113cbf755ee399025b8041e798e1772114b0cc1ffec51a5d2a722"
+  },
+  {
+    "path": "map/strategicregions/49.txt",
+    "sha256": "3e7b89873e3d38c426ed83f61c41aeb678dbe3d23972fef36c5620081ff5aa9d"
+  },
+  {
+    "path": "map/strategicregions/5.txt",
+    "sha256": "8b6c65d08173cf20b44558920606030f9baae8f4e6414431669adad304bb0ffa"
+  },
+  {
+    "path": "map/strategicregions/50.txt",
+    "sha256": "a4ba42c494fc703c7edad435b6892358f83165546f5402f515341d8ac45a4dfc"
+  },
+  {
+    "path": "map/strategicregions/6.txt",
+    "sha256": "d7e597db4249db508ed73072d71f61900a4dc28c0b0f9cad3b7b4a25ba81e173"
+  },
+  {
+    "path": "map/strategicregions/7.txt",
+    "sha256": "fe443cd831a80f76393952fd12c46b97a79c70991b22e23a9205f79c7e117017"
+  },
+  {
+    "path": "map/strategicregions/8.txt",
+    "sha256": "9d7a4fa7d2236a4236dbdb4d49d226242500c5cde660e5d50714e1e852f0c37e"
+  },
+  {
+    "path": "map/strategicregions/9.txt",
+    "sha256": "2abb885d2a269c6eecddb9257b882eb0a9c32ddb3cefd96ba9f58576b872d28a"
+  },
+  {
+    "path": "map/terrain/colormap_rgb_cityemissivemask_a.dds",
+    "sha256": "8526479acbb71882250d679abe389a1075b5b714193e414108276945137ee100"
+  },
+  {
+    "path": "map/terrain/colormap_water_0.dds",
+    "sha256": "4e234aef2bb63d509f5d2a5b4f6eb651ce061560a054051b58348eb13e61b735"
+  },
+  {
+    "path": "map/terrain/colormap_water_1.dds",
+    "sha256": "4e234aef2bb63d509f5d2a5b4f6eb651ce061560a054051b58348eb13e61b735"
+  },
+  {
+    "path": "map/terrain/colormap_water_2.dds",
+    "sha256": "4e234aef2bb63d509f5d2a5b4f6eb651ce061560a054051b58348eb13e61b735"
+  }
+]

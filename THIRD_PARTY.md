@@ -1,0 +1,1 @@
+EarthToHoI4 helpers: MIT; see vendor/LICENSE-EarthToHoI4. Geography: Natural Earth (public domain), elevation: Mapzen Terrarium / USGS / NOAA. No game installation files, novel text, CWIC portraits, credentials, saves or machine logs are distributed. Base-game compatibility files are generated from the user-owned installation at install time.
