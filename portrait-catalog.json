@@ -138,5 +138,33 @@
     "target": "gfx/leaders/v65/les_kosem.dds",
     "provider": "Cold War Iron Curtain",
     "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "pol_pot",
+    "source": "KMP/Pol_Pot_70s.dds",
+    "target": "gfx/leaders/v65/pol_pot.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "nguyen_khanh",
+    "source": "VIE/GENERALS/Nguyen_Khanh.dds",
+    "target": "gfx/leaders/v65/nguyen_khanh.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "tran_van_hai",
+    "source": "VIE/GENERALS/Tran_Van_Hai.dds",
+    "target": "gfx/leaders/v65/tran_van_hai.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "nguyen_ngoc_loan",
+    "source": "VIE/GENERALS/Nguyen_Ngoc_Loan.dds",
+    "target": "gfx/leaders/v65/nguyen_ngoc_loan.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
   }
 ]

@@ -5,4 +5,5 @@ bookmarks = { bookmark = { name = V65_BOOKMARK desc = V65_BOOKMARK_DESC date = 1
  PKS = { history = V65_PKS_DESC ideology = neutrality }
  DNM = { history = V65_DNM_DESC ideology = neutrality }
  KHM = { history = V65_KHM_DESC ideology = neutrality }
+ RKH = { history = V65_RKH_DESC ideology = communism }
 } }

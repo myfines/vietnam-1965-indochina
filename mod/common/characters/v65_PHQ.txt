@@ -1,0 +1,1 @@
+characters = { v65_island_council = { name = v65_island_council portraits = { civilian = { large = "gfx/flags/PHQ.tga" small = "gfx/flags/PHQ.tga" } army = { large = "gfx/flags/PHQ.tga" small = "gfx/flags/PHQ.tga" } } country_leader = { ideology = despotism expire = "1990.1.1" }  } }

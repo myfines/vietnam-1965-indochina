@@ -1,7 +1,7 @@
 add_namespace = v65routes
 country_event = { id = v65routes.1 title = v65routes.1.t desc = v65routes.1.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
  immediate = { PKS = { clr_country_flag = v65_union_pending } }
- option = { name = v65routes.1.a ai_chance = { factor = 70 }
+ option = { name = v65routes.1.a ai_chance = { factor = 70 modifier = { factor = 2 check_variable = { v65_park_trust > 64 } } modifier = { factor = 0.5 check_variable = { v65_park_trust < 35 } } }
   trigger = { PKS = { exists = yes NOT = { has_war_with = SVN } } controls_state = 25 }
   v65_finalize_union = yes
  }

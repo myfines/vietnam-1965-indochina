@@ -28,7 +28,7 @@ v65_finalize_union = {
  }
 }
 v65_open_sanctuary = {
- if = { limit = { tag = KHM NOT = { has_war = yes } controls_state = 35 controls_state = 36 }
+ if = { limit = { tag = KHM NOT = { has_war_with = SVN } NOT = { has_war_with = NVN } NOT = { has_war_with = FNL } controls_state = 35 controls_state = 42 }
   set_country_flag = v65_sanctuary_open add_ideas = v65_neutral_sanctuary
  }
 }

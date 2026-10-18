@@ -1,6 +1,6 @@
 on_actions = {
  on_monthly = { effect = { KHM = { v65_sanctuary_pulse = yes } } }
  on_daily = { effect = { KHM = {
-  if = { limit = { has_country_flag = v65_sanctuary_open OR = { has_war = yes NOT = { controls_state = 35 } NOT = { controls_state = 36 } } } v65_close_sanctuary = yes }
+  if = { limit = { has_country_flag = v65_sanctuary_open OR = { has_war_with = SVN has_war_with = NVN has_war_with = FNL NOT = { controls_state = 35 } NOT = { controls_state = 42 } } } v65_close_sanctuary = yes }
  } } }
 }

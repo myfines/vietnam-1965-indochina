@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.6.0",
   "focuses": [
     {
       "tag": "SVN",
@@ -1145,28 +1145,64 @@
   ],
   "factions": {
     "NVN": {
-      "name": "北越",
+      "name": "\u5317\u8d8a",
       "capital": 5
     },
     "SVN": {
-      "name": "越南共和国",
+      "name": "\u8d8a\u5357\u5171\u548c\u56fd",
       "capital": 25
     },
     "KHM": {
-      "name": "柬埔寨王国",
+      "name": "\u67ec\u57d4\u5be8\u738b\u56fd",
       "capital": 32
     },
     "PKS": {
-      "name": "朴世诚远征集团",
+      "name": "\u6734\u4e16\u8bda\u8fdc\u5f81\u96c6\u56e2",
       "capital": 15
     },
     "FNL": {
-      "name": "南方民族解放阵线",
+      "name": "\u5357\u65b9\u6c11\u65cf\u89e3\u653e\u9635\u7ebf",
       "capital": 30
     },
     "DNM": {
-      "name": "岘港军区",
+      "name": "\u5c98\u6e2f\u519b\u533a",
       "capital": 12
+    },
+    "RKH": {
+      "name": "\u7ea2\u8272\u9ad8\u68c9",
+      "capital": 36
     }
+  },
+  "expansion": {
+    "version": "0.6.0",
+    "years": [
+      1965,
+      1968,
+      1971,
+      1974,
+      1977,
+      1979
+    ],
+    "story_events": 75,
+    "original_scene_chains": 23,
+    "long_term_focuses": 165,
+    "total_focuses": 411,
+    "playable_at_start": [
+      "SVN",
+      "NVN",
+      "FNL",
+      "PKS",
+      "DNM",
+      "KHM",
+      "RKH"
+    ],
+    "optional_regions": [
+      "HLC",
+      "MKG",
+      "BHD",
+      "PHQ"
+    ],
+    "intelligence": "narrative decisions; no agency requirement",
+    "adaptation": "Original dialogue and alternate routes informed by private novel notes; no novel text distributed"
   }
 }

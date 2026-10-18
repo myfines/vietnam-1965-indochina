@@ -52,12 +52,12 @@ if routes:
  NVN = { set_variable = { v65_trail_level = 1 } } FNL = { set_variable = { v65_infiltration = 0 } }
  KHM = { v65_open_sanctuary = yes v65_sanctuary_pulse = yes
  '''
- script+=check('has_country_flag = v65_sanctuary_open has_idea = v65_neutral_sanctuary NOT = { has_war = yes } NOT = { is_in_faction_with = NVN }','NEUTRAL_CAMBODIAN_REAR')
+ script+=check('has_country_flag = v65_sanctuary_open has_idea = v65_neutral_sanctuary has_war_with = RKH NOT = { has_war_with = SVN } NOT = { is_in_faction_with = NVN }','NEUTRAL_CAMBODIAN_REAR')
  script+=check('NVN = { check_variable = { v65_trail_level = 2 } } FNL = { check_variable = { v65_infiltration = 1 } }','SANCTUARY_STRENGTHENS_REAR_WAR')
  script+='v65_close_sanctuary = yes v65_sanctuary_pulse = yes '
  script+=check('NOT = { has_country_flag = v65_sanctuary_open } NOT = { has_idea = v65_neutral_sanctuary } NVN = { check_variable = { v65_trail_level = 2 } }','CLOSURE_STOPS_LOGISTICS')
  script+='v65_open_sanctuary = yes } SVN = { v65_apply_border_pressure = yes } KHM = { '
- script+=check('check_variable = { v65_border_tension = 2 } NOT = { has_war = yes }','DIPLOMATIC_PRESSURE_WITHOUT_WAR')+' } '
+ script+=check('check_variable = { v65_border_tension = 2 } NOT = { has_war_with = SVN }','DIPLOMATIC_PRESSURE_WITHOUT_WAR')+' } '
  script+='PKS = { if = { limit = { is_ai = no } log = "V65_PLAYER_TRANSFER_BRANCH" } set_variable = { v65_park_influence = 5 } '
  script+=check('v65_can_offer_union = yes','NEGOTIATED_UNION_AVAILABLE')
  script+='v65_finalize_union = yes } SVN = { '
@@ -76,6 +76,33 @@ if stages:
  script+=check('has_country_flag = v65_highlands_lost has_country_flag = v65_front_defeat has_idea = v65_highland_disruption','HIGHLAND_DEFEAT_OPENS_POLITICAL_CRISIS')
  script+=check('has_country_flag = v65_saigon_lost has_idea = v65_southern_holdouts capital_scope = { state = 28 }','SAIGON_FALL_RELOCATES_TO_MEKONG')
  script+=f' }} }} if = {{ limit = {{ date > 1965.11.03 }} log = "{end}" }} }} }} }}'
+long_run=os.environ.get('V65_LONG_TEST')=='1'
+if long_run:
+ expected=expected[:21]
+ script=script[:script.index('on_daily =')]+'''on_daily = { effect = {
+ if = { limit = { date > 1965.10.30 NOT = { has_global_flag = v65_long_checked } } set_global_flag = v65_long_checked
+ '''
+ script+='RKH = { '+check('exists = yes num_divisions > 5 has_focus_tree = v65_RKH_tree has_character = v65_pol_pot owns_state = 36','KHMER_ROUGE_REAL_STATE')+' } '
+ script+='KHM = { v65_open_sanctuary = yes '+check('has_war_with = RKH NOT = { has_war_with = SVN } v65_sanctuary_operational = yes','DOMESTIC_WAR_WITH_EXTERNAL_SANCTUARY')+' } '
+ script+='SVN = { v65_upgrade_staff = yes v65_upgrade_staff = yes '+check('has_idea = v65_staff_2 NOT = { has_idea = v65_staff_1 }','INSTITUTIONS_REPLACE_PREVIOUS_TIER')
+ script+='set_variable = { v65_public_trust = 70 } set_variable = { v65_war_fatigue = 85 } v65_refresh_society = yes '+check('has_idea = v65_social_mandate has_idea = v65_exhaustion','SOCIETY_AND_FATIGUE_HAVE_REAL_SPIRITS')
+ script+='v65_devolve_regions = yes } } if = { limit = { date > 1965.11.07 NOT = { has_global_flag = v65_regions_handed_over } } set_global_flag = v65_regions_handed_over SVN = { '+check('has_idea = v65_decentralized_command NOT = { owns_state = 16 } NOT = { owns_state = 28 }','DEVOLUTION_TRANSFERS_LAND')+' } '
+ for tag,capital in [('HLC',16),('MKG',28),('BHD',22),('PHQ',31)]:
+  script+=f'{tag} = {{ '+check(f'owns_state = {capital} num_divisions > 1 is_in_faction_with = SVN has_focus_tree = v65_{tag}_tree','REGION_'+tag+'_FUNCTIONAL')+' } '
+ script+='} if = { limit = { date > 1965.11.08 NOT = { has_global_flag = v65_local_checked } } set_global_flag = v65_local_checked '
+ script+='HLC = { set_variable = { v65_local_unrest = 7 } add_political_power = 100 v65_local_security_pulse = yes '+check('check_variable = { v65_local_unrest < 7 }','LOCAL_AI_HANDLES_ITS_SECURITY')+' } '
+ script+='MKG = { v65_regional_outbreak = yes '+check('FNL = { controls_province = 348 }','LOCAL_REBELLION_CREATES_REAR_CONTROL')+' } '
+ script+='} if = { limit = { date > 1965.11.10 NOT = { has_global_flag = v65_reintegration_checked } } set_global_flag = v65_reintegration_checked '
+ if os.environ.get('V65_KEEP_REGIONS')!='1':
+  script+='BHD = { set_variable = { v65_regional_loyalty = 80 } } SVN = { v65_regional_reintegration_BHD = yes '+check('owns_state = 22 has_character = v65_nguyen_ngoc_loan has_country_leader = { character = v65_nguyen_van_thieu } BHD = { exists = no }','LOYAL_REGION_REINTEGRATES_WITH_COMMANDER')+' } '
+ else:script+='SVN = { '+check('BHD = { exists = yes }','REGION_REMAINS_AUTONOMOUS')+' } '
+ from narrative_scenes import SCENES
+ script+='KHM = { '+next(x[6] for x in SCENES if x[0]==606)+' '+check('has_country_leader = { character = v65_lon_nol } has_country_flag = v65_republic_leader','REPUBLIC_ROUTE_CHANGES_ACTUAL_LEADER')+' } '
+ script+='} if = { limit = { date > 1965.11.29 NOT = { has_global_flag = v65_capital_diagnostics } } set_global_flag = v65_capital_diagnostics '
+ for tag in ['SVN','NVN','FNL','PKS','DNM','KHM','RKH','HLC','MKG','BHD','PHQ']:
+  script+=f'{tag} = {{ if = {{ limit = {{ exists = yes }} log = "V65_ALIVE_{tag}" if = {{ limit = {{ capital_scope = {{ is_fully_controlled_by = {tag} }} }} log = "V65_CAPITAL_HELD_{tag}" }} else = {{ log = "V65_CAPITAL_LOST_{tag}" }} if = {{ limit = {{ has_war = yes }} log = "V65_WAR_{tag}" }} }} }} '
+ script+='} if = { limit = { date > 1965.12.27 NOT = { has_global_flag = v65_callback_checked } } set_global_flag = v65_callback_checked '+check('has_global_flag = v65_callback_101','NARRATIVE_CHOICE_REACHES_DELAYED_CALLBACK')
+ script+=f' }} if = {{ limit = {{ date > 1965.12.28 }} log = "{end}" }} }} }} }}'
 probe=O/'common/on_actions/v65_smoke_test.txt';define=O/'common/defines/zzz_smoke_test.lua'
 playset=U/'dlc_load.json';descriptor=U/'mod/v65_public.mod'
 old_load=playset.read_bytes() if playset.exists() else None
@@ -110,7 +137,8 @@ try:
  errors=(U/'logs/error.log').read_text(encoding='utf-8',errors='replace').splitlines()
  mod_errors=[e for e in errors if not any(k in e for k in ['checksum','supported_version','thumbnail'])]
  result={'passed':not mod_errors,'markers':markers,'last_date':'1965.11.04' if routes or stages else '1965.11.29' if balance else '1965.11.06','method':'real engine; hands-off; no UI automation','human_transfer_exercised':'V65_PLAYER_TRANSFER_BRANCH' in s,'checked_at':datetime.datetime.now().isoformat(),'mod_runtime_errors':mod_errors}
- (OUT/('stages-engine-assertions.json' if stages else 'routes-engine-assertions.json' if routes else 'balance-engine-assertions.json' if balance else 'campaign-engine-assertions.json')).write_text(json.dumps(result,indent=2))
+ if long_run:result['last_date']='1965.12.29'
+ (OUT/('autonomy-engine-assertions.json' if long_run and os.environ.get('V65_KEEP_REGIONS')=='1' else 'long-engine-assertions.json' if long_run else 'stages-engine-assertions.json' if stages else 'routes-engine-assertions.json' if routes else 'balance-engine-assertions.json' if balance else 'campaign-engine-assertions.json')).write_text(json.dumps(result,indent=2))
  assert not mod_errors, f'{len(mod_errors)} runtime errors; complete evidence in {OUT}'
  print('PASS:',len(markers),'engine assertions; no mod runtime errors')
 finally:

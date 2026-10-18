@@ -1,0 +1,32 @@
+{
+  "version": "0.6.0",
+  "years": [
+    1965,
+    1968,
+    1971,
+    1974,
+    1977,
+    1979
+  ],
+  "story_events": 75,
+  "original_scene_chains": 23,
+  "long_term_focuses": 165,
+  "total_focuses": 411,
+  "playable_at_start": [
+    "SVN",
+    "NVN",
+    "FNL",
+    "PKS",
+    "DNM",
+    "KHM",
+    "RKH"
+  ],
+  "optional_regions": [
+    "HLC",
+    "MKG",
+    "BHD",
+    "PHQ"
+  ],
+  "intelligence": "narrative decisions; no agency requirement",
+  "adaptation": "Original dialogue and alternate routes informed by private novel notes; no novel text distributed"
+}

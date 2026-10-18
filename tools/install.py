@@ -24,7 +24,7 @@ if not game or not (game/'hoi4.exe').exists():raise SystemExit('Use python tools
 out=R/'runtime/theater-mod';out.mkdir(parents=True,exist_ok=True)
 van=hm.Vanilla(game);report={}
 print('Preparing compatibility files from the local game installation...',flush=True)
-hm.write_neutralised(out,van,report,our_tags=('NVN','SVN','KHM','XTR','PKS','FNL','DNM'))
+hm.write_neutralised(out,van,report,our_tags=('NVN','SVN','KHM','XTR','PKS','FNL','DNM','RKH','HLC','MKG','BHD','PHQ'))
 for name in ['default.map','seasons.txt','cities.txt','colors.txt']:
  p=game/'map'/name
  if p.exists():
@@ -52,10 +52,19 @@ tags=out/'common/country_tags';tags.mkdir(exist_ok=True)
 shutil.copyfile(game/'common/country_tags/zz_dynamic_countries.txt',tags/'zz_dynamic_countries.txt')
 colors=pdx.read(game/'common/countries/colors.txt')
 colors=[(k,o,v) for k,o,v in colors if k in set(van.dynamic_tags)]
-for tag,rgb in [('NVN','190 40 40'),('SVN','224 184 67'),('KHM','60 110 180'),('XTR','65 70 65'),('PKS','70 148 130'),('FNL','166 65 115'),('DNM','220 140 65')]:
+for tag,rgb in [('NVN','190 40 40'),('SVN','224 184 67'),('KHM','60 110 180'),('XTR','65 70 65'),('PKS','70 148 130'),('FNL','166 65 115'),('DNM','220 140 65'),('RKH','127 28 39'),('HLC','92 123 80'),('MKG','94 148 160'),('BHD','172 119 81'),('PHQ','88 104 174')]:
  colors+=pdx.parse(f'{tag} = {{ color = rgb {{ {rgb} }} color_ui = rgb {{ {rgb} }} }}')
 (out/'common/countries/colors.txt').write_text(pdx.dump(colors),encoding='utf-8')
-hm.write_names(out,{tag:{'tag':tag,'vanilla':base,'gfx':('asian_gfx',)} for tag,base in [('NVN','VIN'),('SVN','VIE'),('KHM','CAM'),('XTR','LAO'),('PKS','KOR'),('FNL','VIN'),('DNM','VIE')]},van)
+hm.write_names(out,{tag:{'tag':tag,'vanilla':base,'gfx':('asian_gfx',)} for tag,base in [('NVN','VIN'),('SVN','VIE'),('KHM','CAM'),('XTR','LAO'),('PKS','KOR'),('FNL','VIN'),('DNM','VIE'),('RKH','CAM'),('HLC','VIE'),('MKG','VIE'),('BHD','VIE'),('PHQ','VIE')]},van)
+# Keep a single authoritative name per key/language. Compatibility name
+# generation and old overlays previously competed with campaign names.
+from long_foundation import ALL
+import re
+for path in (out/'localisation').rglob('*.yml'):
+ if path.name.startswith('v65_country_names_'):continue
+ text=path.read_text(encoding='utf-8-sig',errors='replace')
+ text='\n'.join(line for line in text.splitlines() if not re.match(r'\s*(?:'+'|'.join(ALL)+r')(?:_(?:DEF|ADJ|neutrality|communism|democratic|fascism)(?:_(?:DEF|ADJ))?)?:\d',line))
+ path.write_text(text+'\n',encoding='utf-8-sig')
 from hydrate_portraits import hydrate
 hydrate(out)
 errors=hm.check_mod(out)

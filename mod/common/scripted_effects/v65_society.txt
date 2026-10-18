@@ -1,0 +1,93 @@
+v65_upgrade_staff = { add_to_variable = { v65_staff_level = 1 } clamp_variable = { var = v65_staff_level min = 0 max = 5 } remove_ideas = { v65_staff_1 v65_staff_2 v65_staff_3 v65_staff_4 v65_staff_5 }
+ if = { limit = { check_variable = { v65_staff_level = 1 } } add_ideas = v65_staff_1 }
+ if = { limit = { check_variable = { v65_staff_level = 2 } } add_ideas = v65_staff_2 }
+ if = { limit = { check_variable = { v65_staff_level = 3 } } add_ideas = v65_staff_3 }
+ if = { limit = { check_variable = { v65_staff_level = 4 } } add_ideas = v65_staff_4 }
+ if = { limit = { check_variable = { v65_staff_level = 5 } } add_ideas = v65_staff_5 }
+}
+v65_upgrade_training = { add_to_variable = { v65_training_level = 1 } clamp_variable = { var = v65_training_level min = 0 max = 5 } remove_ideas = { v65_training_1 v65_training_2 v65_training_3 v65_training_4 v65_training_5 }
+ if = { limit = { check_variable = { v65_training_level = 1 } } add_ideas = v65_training_1 }
+ if = { limit = { check_variable = { v65_training_level = 2 } } add_ideas = v65_training_2 }
+ if = { limit = { check_variable = { v65_training_level = 3 } } add_ideas = v65_training_3 }
+ if = { limit = { check_variable = { v65_training_level = 4 } } add_ideas = v65_training_4 }
+ if = { limit = { check_variable = { v65_training_level = 5 } } add_ideas = v65_training_5 }
+}
+v65_upgrade_signals = { add_to_variable = { v65_signals_level = 1 } clamp_variable = { var = v65_signals_level min = 0 max = 5 } remove_ideas = { v65_signals_1 v65_signals_2 v65_signals_3 v65_signals_4 v65_signals_5 }
+ if = { limit = { check_variable = { v65_signals_level = 1 } } add_ideas = v65_signals_1 }
+ if = { limit = { check_variable = { v65_signals_level = 2 } } add_ideas = v65_signals_2 }
+ if = { limit = { check_variable = { v65_signals_level = 3 } } add_ideas = v65_signals_3 }
+ if = { limit = { check_variable = { v65_signals_level = 4 } } add_ideas = v65_signals_4 }
+ if = { limit = { check_variable = { v65_signals_level = 5 } } add_ideas = v65_signals_5 }
+}
+v65_upgrade_logistics = { add_to_variable = { v65_logistics_level = 1 } clamp_variable = { var = v65_logistics_level min = 0 max = 5 } remove_ideas = { v65_logistics_1 v65_logistics_2 v65_logistics_3 v65_logistics_4 v65_logistics_5 }
+ if = { limit = { check_variable = { v65_logistics_level = 1 } } add_ideas = v65_logistics_1 }
+ if = { limit = { check_variable = { v65_logistics_level = 2 } } add_ideas = v65_logistics_2 }
+ if = { limit = { check_variable = { v65_logistics_level = 3 } } add_ideas = v65_logistics_3 }
+ if = { limit = { check_variable = { v65_logistics_level = 4 } } add_ideas = v65_logistics_4 }
+ if = { limit = { check_variable = { v65_logistics_level = 5 } } add_ideas = v65_logistics_5 }
+}
+v65_upgrade_contracts = { add_to_variable = { v65_contracts_level = 1 } clamp_variable = { var = v65_contracts_level min = 0 max = 5 } remove_ideas = { v65_contracts_1 v65_contracts_2 v65_contracts_3 v65_contracts_4 v65_contracts_5 }
+ if = { limit = { check_variable = { v65_contracts_level = 1 } } add_ideas = v65_contracts_1 }
+ if = { limit = { check_variable = { v65_contracts_level = 2 } } add_ideas = v65_contracts_2 }
+ if = { limit = { check_variable = { v65_contracts_level = 3 } } add_ideas = v65_contracts_3 }
+ if = { limit = { check_variable = { v65_contracts_level = 4 } } add_ideas = v65_contracts_4 }
+ if = { limit = { check_variable = { v65_contracts_level = 5 } } add_ideas = v65_contracts_5 }
+}
+v65_refresh_society = {
+ clamp_variable = { var = v65_public_trust min = 0 max = 100 }
+ clamp_variable = { var = v65_patronage min = 0 max = 100 }
+ clamp_variable = { var = v65_war_fatigue min = 0 max = 100 }
+ clamp_variable = { var = v65_local_unrest min = 0 max = 10 }
+ clamp_variable = { var = v65_intelligence min = 0 max = 5 }
+ if = { limit = { check_variable = { v65_public_trust > 64 } check_variable = { v65_patronage < 61 } } add_ideas = v65_social_mandate remove_ideas = v65_civilian_resentment }
+ else_if = { limit = { check_variable = { v65_public_trust < 35 } } add_ideas = v65_civilian_resentment remove_ideas = v65_social_mandate }
+ else = { remove_ideas = { v65_social_mandate v65_civilian_resentment } }
+ if = { limit = { check_variable = { v65_war_fatigue > 79 } } add_ideas = v65_exhaustion remove_ideas = v65_weariness }
+ else_if = { limit = { check_variable = { v65_war_fatigue > 54 } } add_ideas = v65_weariness remove_ideas = v65_exhaustion }
+ else = { remove_ideas = { v65_exhaustion v65_weariness } }
+}
+v65_local_security_pulse = {
+ if = { limit = { has_war_with = FNL }
+  add_to_variable = { v65_local_unrest = 1 }
+  if = { limit = { check_variable = { v65_public_trust > 64 } } subtract_from_variable = { v65_local_unrest = 1 } }
+  if = { limit = { check_variable = { v65_public_trust < 35 } } add_to_variable = { v65_local_unrest = 1 } }
+  if = { limit = { has_country_flag = v65_intel_cover } subtract_from_variable = { v65_local_unrest = 1 } }
+  if = { limit = { is_ai = yes has_political_power > 45 check_variable = { v65_local_unrest > 4 } }
+   add_political_power = -35 subtract_from_variable = { v65_local_unrest = 2 } add_to_variable = { v65_public_trust = 2 }
+  }
+  if = { limit = { check_variable = { v65_local_unrest > 7 } } v65_regional_outbreak = yes }
+ }
+ v65_refresh_society = yes
+}
+v65_regional_outbreak = {
+ if = { limit = { tag = HLC controls_province = 266 FNL = { has_war_with = HLC } }
+  FNL = { set_province_controller = 266
+   20 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 266" owner = FNL } }
+  } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
+ }
+ if = { limit = { tag = MKG controls_province = 348 FNL = { has_war_with = MKG } }
+  FNL = { set_province_controller = 348
+   29 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 348" owner = FNL } }
+  } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
+ }
+ if = { limit = { tag = BHD controls_province = 276 FNL = { has_war_with = BHD } }
+  FNL = { set_province_controller = 276
+   21 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 276" owner = FNL } }
+  } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
+ }
+ if = { limit = { tag = PHQ controls_province = 361 FNL = { has_war_with = PHQ } }
+  FNL = { set_province_controller = 361
+   31 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 361" owner = FNL } }
+  } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
+ }
+ if = { limit = { tag = DNM controls_province = 191 FNL = { has_war_with = DNM } }
+  FNL = { set_province_controller = 191
+   12 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 191" owner = FNL } }
+  } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
+ }
+ if = { limit = { tag = PKS controls_province = 217 FNL = { has_war_with = PKS } }
+  FNL = { set_province_controller = 217
+   15 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 217" owner = FNL } }
+  } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
+ }
+}

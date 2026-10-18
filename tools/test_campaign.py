@@ -19,7 +19,7 @@ class CampaignTests(unittest.TestCase):
         people=list((ROOT/'mod/common/characters').glob('v65_*.txt'))
         text='\n'.join(p.read_text() for p in people)
         self.assertNotIn('Portrait_Asia_Generic',text)
-        self.assertEqual(len(re.findall(r'\bname = v65_',text)),21)
+        self.assertEqual(len(re.findall(r'\bname = v65_',text)),26)
         self.assertTrue((ROOT/'mod/gfx/leaders/v65/park_seicheng.dds').exists())
     def test_union_and_neutral_sanctuary(self):
         p=ROOT/'mod/common/scripted_effects/v65_union_sanctuary.txt'
@@ -29,14 +29,15 @@ class CampaignTests(unittest.TestCase):
             self.assertIn(effect+' =',text)
         self.assertIn('is_ai = no',text)
         self.assertIn('v65_park_shadow_ruler',text)
-        self.assertIn('NOT = { has_war = yes }',text)
+        self.assertIn('NOT = { has_war_with = SVN }',text)
+        self.assertIn('controls_state = 42',text)
         decisions=(ROOT/'mod/common/decisions/v65_union_sanctuary.txt').read_text(encoding='utf-8')
         self.assertIn('v65_request_union',decisions)
         self.assertIn('v65_border_dossier',decisions)
 
     def test_focus_layout_and_descriptions(self):
         loc='\n'.join(p.read_text(encoding='utf-8-sig') for p in (ROOT/'mod/localisation/simp_chinese').glob('*.yml'))
-        for tag in ['SVN','NVN','KHM','PKS','FNL','DNM']:
+        for tag in ['SVN','NVN','KHM','PKS','FNL','DNM','RKH','HLC','MKG','BHD','PHQ']:
             tree=one(pdx.read(ROOT/f'mod/common/national_focus/v65_{tag}.txt'),'focus_tree')
             focuses=values(tree,'focus');self.assertGreaterEqual(len(focuses),19,tag)
             positions=[];descriptions=[];ids={one(f,'id') for f in focuses}
@@ -54,7 +55,7 @@ class CampaignTests(unittest.TestCase):
         tags=(ROOT/'mod/common/country_tags/v65.txt').read_text(encoding='utf-8-sig')
         bookmark=(ROOT/'mod/common/bookmarks/v65.txt').read_text(encoding='utf-8-sig')
         states='\n'.join(p.read_text(encoding='utf-8-sig') for p in (ROOT/'mod/history/states').glob('*.txt'))
-        for tag in ['SVN','NVN','KHM','PKS','FNL','DNM']:
+        for tag in ['SVN','NVN','KHM','PKS','FNL','DNM','RKH']:
             self.assertRegex(tags,rf'\b{tag}\s*=');self.assertRegex(bookmark,rf'\b{tag}\s*=')
             self.assertRegex(states,rf'owner\s*=\s*{tag}')
             self.assertTrue((ROOT/f'mod/history/units/{tag}_1965.txt').exists())

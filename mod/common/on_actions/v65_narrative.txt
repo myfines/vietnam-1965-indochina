@@ -1,0 +1,132 @@
+on_actions = { on_daily = { effect = {
+if = { limit = { date > 1965.11.05 NOT = { has_global_flag = v65_scene_101_sent } OR = { PKS = { exists = yes } SVN = { exists = yes } } } set_global_flag = v65_scene_101_sent if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.101 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.101 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.101 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.101 days = 1 } } }
+ }
+if = { limit = { date > 1966.05.01 NOT = { has_global_flag = v65_scene_102_sent } OR = { PKS = { exists = yes } SVN = { exists = yes } } } set_global_flag = v65_scene_102_sent if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.102 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.102 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.102 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.102 days = 1 } } }
+ }
+if = { limit = { date > 1967.03.01 NOT = { has_global_flag = v65_scene_103_sent } OR = { PKS = { exists = yes } SVN = { exists = yes } } } set_global_flag = v65_scene_103_sent if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.103 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.103 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.103 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.103 days = 1 } } }
+ }
+if = { limit = { date > 1968.07.01 NOT = { has_global_flag = v65_scene_201_sent } OR = { PKS = { exists = yes } SVN = { exists = yes } } } set_global_flag = v65_scene_201_sent if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.201 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.201 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.201 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.201 days = 1 } } }
+ }
+if = { limit = { date > 1970.04.01 NOT = { has_global_flag = v65_scene_202_sent } OR = { SVN = { exists = yes } PKS = { exists = yes } } } set_global_flag = v65_scene_202_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.202 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.202 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.202 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.202 days = 1 } } }
+ }
+if = { limit = { date > 1971.06.01 NOT = { has_global_flag = v65_scene_203_sent } OR = { SVN = { exists = yes } PKS = { exists = yes } } } set_global_flag = v65_scene_203_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.203 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.203 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.203 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.203 days = 1 } } }
+ }
+if = { limit = { date > 1972.03.30 NOT = { has_global_flag = v65_scene_301_sent } OR = { SVN = { exists = yes } PKS = { exists = yes } DNM = { exists = yes } } } set_global_flag = v65_scene_301_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.301 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.301 days = 1 } } }
+else_if = { limit = { DNM = { exists = yes is_ai = no } } DNM = { country_event = { id = v65story.301 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.301 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.301 days = 1 } } }
+else_if = { limit = { DNM = { exists = yes } } DNM = { country_event = { id = v65story.301 days = 1 } } }
+ }
+if = { limit = { date > 1972.08.01 NOT = { has_global_flag = v65_scene_302_sent } OR = { SVN = { exists = yes } } } set_global_flag = v65_scene_302_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.302 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.302 days = 1 } } }
+ }
+if = { limit = { date > 1973.02.01 NOT = { has_global_flag = v65_scene_303_sent } OR = { PKS = { exists = yes } SVN = { exists = yes } } } set_global_flag = v65_scene_303_sent if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.303 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.303 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.303 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.303 days = 1 } } }
+ }
+if = { limit = { date > 1974.12.01 NOT = { has_global_flag = v65_scene_401_sent } OR = { SVN = { exists = yes } PKS = { exists = yes } } } set_global_flag = v65_scene_401_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.401 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.401 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.401 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.401 days = 1 } } }
+ }
+if = { limit = { date > 1975.03.15 NOT = { has_global_flag = v65_scene_402_sent } OR = { SVN = { exists = yes } PKS = { exists = yes } } } set_global_flag = v65_scene_402_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.402 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.402 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.402 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.402 days = 1 } } }
+ }
+if = { limit = { date > 1975.08.01 NOT = { has_global_flag = v65_scene_403_sent } OR = { PKS = { exists = yes } SVN = { exists = yes } PHQ = { exists = yes } } } set_global_flag = v65_scene_403_sent if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.403 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.403 days = 1 } } }
+else_if = { limit = { PHQ = { exists = yes is_ai = no } } PHQ = { country_event = { id = v65story.403 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.403 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.403 days = 1 } } }
+else_if = { limit = { PHQ = { exists = yes } } PHQ = { country_event = { id = v65story.403 days = 1 } } }
+ }
+if = { limit = { date > 1976.04.01 NOT = { has_global_flag = v65_scene_501_sent } OR = { SVN = { exists = yes } PKS = { exists = yes } MKG = { exists = yes } HLC = { exists = yes } PHQ = { exists = yes } } } set_global_flag = v65_scene_501_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { MKG = { exists = yes is_ai = no } } MKG = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { HLC = { exists = yes is_ai = no } } HLC = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { PHQ = { exists = yes is_ai = no } } PHQ = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { MKG = { exists = yes } } MKG = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { HLC = { exists = yes } } HLC = { country_event = { id = v65story.501 days = 1 } } }
+else_if = { limit = { PHQ = { exists = yes } } PHQ = { country_event = { id = v65story.501 days = 1 } } }
+ }
+if = { limit = { date > 1977.05.01 NOT = { has_global_flag = v65_scene_502_sent } OR = { KHM = { exists = yes } RKH = { exists = yes } } } set_global_flag = v65_scene_502_sent if = { limit = { KHM = { exists = yes is_ai = no } } KHM = { country_event = { id = v65story.502 days = 1 } } }
+else_if = { limit = { RKH = { exists = yes is_ai = no } } RKH = { country_event = { id = v65story.502 days = 1 } } }
+else_if = { limit = { KHM = { exists = yes } } KHM = { country_event = { id = v65story.502 days = 1 } } }
+else_if = { limit = { RKH = { exists = yes } } RKH = { country_event = { id = v65story.502 days = 1 } } }
+ }
+if = { limit = { date > 1978.07.01 NOT = { has_global_flag = v65_scene_503_sent } OR = { SVN = { exists = yes } PHQ = { exists = yes } MKG = { exists = yes } PKS = { exists = yes } } } set_global_flag = v65_scene_503_sent if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.503 days = 1 } } }
+else_if = { limit = { PHQ = { exists = yes is_ai = no } } PHQ = { country_event = { id = v65story.503 days = 1 } } }
+else_if = { limit = { MKG = { exists = yes is_ai = no } } MKG = { country_event = { id = v65story.503 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.503 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.503 days = 1 } } }
+else_if = { limit = { PHQ = { exists = yes } } PHQ = { country_event = { id = v65story.503 days = 1 } } }
+else_if = { limit = { MKG = { exists = yes } } MKG = { country_event = { id = v65story.503 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.503 days = 1 } } }
+ }
+if = { limit = { date > 1966.09.01 NOT = { has_global_flag = v65_scene_601_sent } OR = { NVN = { exists = yes } FNL = { exists = yes } } } set_global_flag = v65_scene_601_sent if = { limit = { NVN = { exists = yes is_ai = no } } NVN = { country_event = { id = v65story.601 days = 1 } } }
+else_if = { limit = { FNL = { exists = yes is_ai = no } } FNL = { country_event = { id = v65story.601 days = 1 } } }
+else_if = { limit = { NVN = { exists = yes } } NVN = { country_event = { id = v65story.601 days = 1 } } }
+else_if = { limit = { FNL = { exists = yes } } FNL = { country_event = { id = v65story.601 days = 1 } } }
+ }
+if = { limit = { date > 1969.10.01 NOT = { has_global_flag = v65_scene_602_sent } OR = { FNL = { exists = yes } NVN = { exists = yes } } } set_global_flag = v65_scene_602_sent if = { limit = { FNL = { exists = yes is_ai = no } } FNL = { country_event = { id = v65story.602 days = 1 } } }
+else_if = { limit = { NVN = { exists = yes is_ai = no } } NVN = { country_event = { id = v65story.602 days = 1 } } }
+else_if = { limit = { FNL = { exists = yes } } FNL = { country_event = { id = v65story.602 days = 1 } } }
+else_if = { limit = { NVN = { exists = yes } } NVN = { country_event = { id = v65story.602 days = 1 } } }
+ }
+if = { limit = { date > 1973.09.01 NOT = { has_global_flag = v65_scene_603_sent } OR = { NVN = { exists = yes } FNL = { exists = yes } } } set_global_flag = v65_scene_603_sent if = { limit = { NVN = { exists = yes is_ai = no } } NVN = { country_event = { id = v65story.603 days = 1 } } }
+else_if = { limit = { FNL = { exists = yes is_ai = no } } FNL = { country_event = { id = v65story.603 days = 1 } } }
+else_if = { limit = { NVN = { exists = yes } } NVN = { country_event = { id = v65story.603 days = 1 } } }
+else_if = { limit = { FNL = { exists = yes } } FNL = { country_event = { id = v65story.603 days = 1 } } }
+ }
+if = { limit = { date > 1976.11.01 NOT = { has_global_flag = v65_scene_604_sent } OR = { NVN = { exists = yes } FNL = { exists = yes } } } set_global_flag = v65_scene_604_sent if = { limit = { NVN = { exists = yes is_ai = no } } NVN = { country_event = { id = v65story.604 days = 1 } } }
+else_if = { limit = { FNL = { exists = yes is_ai = no } } FNL = { country_event = { id = v65story.604 days = 1 } } }
+else_if = { limit = { NVN = { exists = yes } } NVN = { country_event = { id = v65story.604 days = 1 } } }
+else_if = { limit = { FNL = { exists = yes } } FNL = { country_event = { id = v65story.604 days = 1 } } }
+ }
+if = { limit = { date > 1967.06.01 NOT = { has_global_flag = v65_scene_605_sent } OR = { KHM = { exists = yes } } } set_global_flag = v65_scene_605_sent if = { limit = { KHM = { exists = yes is_ai = no } } KHM = { country_event = { id = v65story.605 days = 1 } } }
+else_if = { limit = { KHM = { exists = yes } } KHM = { country_event = { id = v65story.605 days = 1 } } }
+ }
+if = { limit = { date > 1970.10.01 NOT = { has_global_flag = v65_scene_606_sent } OR = { KHM = { exists = yes } } } set_global_flag = v65_scene_606_sent if = { limit = { KHM = { exists = yes is_ai = no } } KHM = { country_event = { id = v65story.606 days = 1 } } }
+else_if = { limit = { KHM = { exists = yes } } KHM = { country_event = { id = v65story.606 days = 1 } } }
+ }
+if = { limit = { date > 1968.02.01 NOT = { has_global_flag = v65_scene_607_sent } OR = { RKH = { exists = yes } } } set_global_flag = v65_scene_607_sent if = { limit = { RKH = { exists = yes is_ai = no } } RKH = { country_event = { id = v65story.607 days = 1 } } }
+else_if = { limit = { RKH = { exists = yes } } RKH = { country_event = { id = v65story.607 days = 1 } } }
+ }
+if = { limit = { date > 1974.06.01 NOT = { has_global_flag = v65_scene_608_sent } OR = { RKH = { exists = yes } } } set_global_flag = v65_scene_608_sent if = { limit = { RKH = { exists = yes is_ai = no } } RKH = { country_event = { id = v65story.608 days = 1 } } }
+else_if = { limit = { RKH = { exists = yes } } RKH = { country_event = { id = v65story.608 days = 1 } } }
+ }
+SVN = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+NVN = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+FNL = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+PKS = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+DNM = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+KHM = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+RKH = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+HLC = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+MKG = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+BHD = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+PHQ = { if = { limit = { exists = yes is_ai = no date > 1979.10.27 NOT = { has_country_flag = v65_epilogue_seen } } set_country_flag = v65_epilogue_seen country_event = { id = v65story.901 days = 1 } } }
+} } }

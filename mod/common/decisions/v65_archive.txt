@@ -1,0 +1,7 @@
+v65_story_archive = {
+v65_archive_1968 = { icon = generic_political_discourse cost = 0 available = { date > 1968.1.1 } days_re_enable = 7 complete_effect = { country_event = { id = v65story.801 days = 1 } } ai_will_do = { factor = 0 } }
+v65_archive_1971 = { icon = generic_political_discourse cost = 0 available = { date > 1971.1.1 } days_re_enable = 7 complete_effect = { country_event = { id = v65story.802 days = 1 } } ai_will_do = { factor = 0 } }
+v65_archive_1974 = { icon = generic_political_discourse cost = 0 available = { date > 1974.1.1 } days_re_enable = 7 complete_effect = { country_event = { id = v65story.803 days = 1 } } ai_will_do = { factor = 0 } }
+v65_archive_1977 = { icon = generic_political_discourse cost = 0 available = { date > 1977.1.1 } days_re_enable = 7 complete_effect = { country_event = { id = v65story.804 days = 1 } } ai_will_do = { factor = 0 } }
+v65_archive_1979 = { icon = generic_political_discourse cost = 0 available = { date > 1979.1.1 } days_re_enable = 7 complete_effect = { country_event = { id = v65story.805 days = 1 } } ai_will_do = { factor = 0 } }
+}

@@ -13,9 +13,9 @@ put(Path('common/scripted_triggers/v65_union_sanctuary.txt'),'''v65_can_offer_un
  NOT = { AND = { is_ai = no SVN = { is_ai = no } } }
 }
 v65_sanctuary_operational = {
- tag = KHM exists = yes NOT = { has_war = yes }
+ tag = KHM exists = yes NOT = { has_war_with = SVN } NOT = { has_war_with = NVN } NOT = { has_war_with = FNL }
  has_country_flag = v65_sanctuary_open
- controls_state = 35 controls_state = 36
+ controls_state = 35 controls_state = 42
  NVN = { exists = yes has_war_with = SVN }
  FNL = { exists = yes has_war_with = SVN }
 }''')
@@ -61,7 +61,7 @@ v65_finalize_union = {
  }
 }
 v65_open_sanctuary = {
- if = { limit = { tag = KHM NOT = { has_war = yes } controls_state = 35 controls_state = 36 }
+ if = { limit = { tag = KHM NOT = { has_war_with = SVN } NOT = { has_war_with = NVN } NOT = { has_war_with = FNL } controls_state = 35 controls_state = 42 }
   set_country_flag = v65_sanctuary_open add_ideas = v65_neutral_sanctuary
  }
 }
@@ -89,7 +89,7 @@ v65_apply_border_pressure = {
 put(Path('common/on_actions/v65_routes.txt'),'''on_actions = {
  on_monthly = { effect = { KHM = { v65_sanctuary_pulse = yes } } }
  on_daily = { effect = { KHM = {
-  if = { limit = { has_country_flag = v65_sanctuary_open OR = { has_war = yes NOT = { controls_state = 35 } NOT = { controls_state = 36 } } } v65_close_sanctuary = yes }
+  if = { limit = { has_country_flag = v65_sanctuary_open OR = { has_war_with = SVN has_war_with = NVN has_war_with = FNL NOT = { controls_state = 35 } NOT = { controls_state = 42 } } } v65_close_sanctuary = yes }
  } } }
 }''')
 put(Path('common/decisions/categories/v65_routes.txt'),'''v65_union = { icon = GFX_decision_generic_military allowed = { OR = { tag = PKS tag = SVN } } visible = { always = yes } }
@@ -98,14 +98,14 @@ put(Path('common/decisions/v65_union_sanctuary.txt'),'''v65_union = {
  v65_request_union = { icon = generic_political_discourse cost = 100 visible = { tag = PKS } available = { v65_can_offer_union = yes } days_re_enable = 90 complete_effect = { v65_offer_union = yes } ai_will_do = { factor = 0.3 } }
 }
 v65_cambodian_rear = {
- v65_open_border_bases = { icon = generic_prepare_civil_war cost = 50 visible = { tag = KHM NOT = { has_country_flag = v65_sanctuary_open } } available = { NOT = { has_war = yes } controls_state = 35 controls_state = 36 } complete_effect = { v65_open_sanctuary = yes } ai_will_do = { factor = 1 } }
+ v65_open_border_bases = { icon = generic_prepare_civil_war cost = 50 visible = { tag = KHM NOT = { has_country_flag = v65_sanctuary_open } } available = { NOT = { has_war_with = SVN } NOT = { has_war_with = NVN } NOT = { has_war_with = FNL } controls_state = 35 controls_state = 42 } complete_effect = { v65_open_sanctuary = yes } ai_will_do = { factor = 1 } }
  v65_seal_border_bases = { icon = generic_prepare_civil_war cost = 50 visible = { tag = KHM has_country_flag = v65_sanctuary_open } complete_effect = { v65_close_sanctuary = yes } ai_will_do = { factor = 0 } }
  v65_border_dossier = { icon = generic_political_discourse cost = 60 visible = { OR = { tag = SVN tag = PKS tag = DNM } KHM = { has_country_flag = v65_sanctuary_discovered } } available = { KHM = { v65_sanctuary_operational = yes } } days_re_enable = 60 complete_effect = { v65_apply_border_pressure = yes } ai_will_do = { factor = 0.5 } }
 }''')
 put(Path('events/v65_routes.txt'),'''add_namespace = v65routes
 country_event = { id = v65routes.1 title = v65routes.1.t desc = v65routes.1.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
  immediate = { PKS = { clr_country_flag = v65_union_pending } }
- option = { name = v65routes.1.a ai_chance = { factor = 70 }
+ option = { name = v65routes.1.a ai_chance = { factor = 70 modifier = { factor = 2 check_variable = { v65_park_trust > 64 } } modifier = { factor = 0.5 check_variable = { v65_park_trust < 35 } } }
   trigger = { PKS = { exists = yes NOT = { has_war_with = SVN } } controls_state = 25 }
   v65_finalize_union = yes
  }
@@ -136,12 +136,12 @@ country_event = { id = v65routes.6 title = v65routes.6.t desc = v65routes.6.d pi
 L={
  'v65_union':'归仁与西贡：联合政府谈判','v65_cambodian_rear':'柬埔寨：中立幕布后的战争',
  'v65_park_shadow_ruler':'朴世诚：幕后太上皇','v65_park_shadow_ruler_desc':'总统与内阁仍在台前，朴世诚的军官任命、军需合同与顾问网络则控制着关键决定。统一指挥与采购提高组织度、生产效率和政治点收益；派系对幕后权力的不满降低稳定度。此联合政府结局为模组架空路线。',
- 'v65_neutral_sanctuary':'中立旗帜下的秘密后方','v65_neutral_sanctuary_desc':'只要柬埔寨不参战且控制桔井与腊塔纳基里，每月为北方通道与南方动员各补充一级，并提供300支步枪。参战或边境失守立即关闭基地；外交压力可能迫使金边封锁通道。',
+ 'v65_neutral_sanctuary':'中立旗帜下的秘密后方','v65_neutral_sanctuary_desc':'只要柬埔寨没有对越南各方参战且控制桔井与西哈努克港，每月为北方通道与南方动员各补充一级，并提供300支步枪。对越南参战或据点失守立即关闭基地；外交压力可能迫使金边封锁通道。',
  'v65_faction_compromise':'军头的保留条款','v65_faction_compromise_desc':'军区保留了部分任命权，换取对联合政府的支持。未来180天内政治整合放缓。',
  'v65_request_union':'提出联合政府议定书','v65_request_union_desc':'影响力至少5点，归仁与西贡首都均未失守，双方仍属同一联盟且没有交战，才可以谈判。西贡可拒绝并冻结谈判90天。接受后部队、领土和人物归入南越；朴世诚玩家自动接手南越，继续战争。两方均由玩家控制时不开放谈判。',
  'v65_open_border_bases':'默许北方边境基地','v65_seal_border_bases':'关闭秘密转运基地','v65_border_dossier':'向金边提交越境补给证据',
  'v65_border_dossier_desc':'向金边施压，使其在保留基地、承受政治损失与关闭通道之间选择。不会自动向柬埔寨宣战。',
- 'v65_cambodian_rear_desc':'金边维持公开中立。秘密后方运转时，每月增加北方通道、南方组织能力及步枪储备；解放阵线再通过胡志明小道决议在南方腹地建立武装。边境紧张度：[KHM.v65_border_tension|0]/3。',
+ 'v65_cambodian_rear_desc':'金边与红色高棉进行内战，同时对越南维持独立外交。秘密后方运转时，每月增加北方通道、南方组织能力及步枪储备；解放阵线再通过胡志明小道决议在南方腹地建立武装。边境紧张度：[KHM.v65_border_tension|0]/3。',
  'v65routes.1.t':'总统府收到联合政府议定书','v65routes.1.d':'归仁代表提出合并军饷、指挥和行政体系。总统保留职位，朴世诚则掌握军官任命、军需采购与顾问联络。接受可以结束联盟内部的重复机构，也意味着总统府必须容忍一个不在内阁名单上的权力中心。',
  'v65routes.1.a':'签署议定书，统一南方指挥。','v65routes.1.b':'总统府不接受这种监护。',
  'v65routes.2.t':'总统留在台前','v65routes.2.d':'归仁部队与军需机关已归入南越编制，阮文绍继续主持总统府。朴世诚没有接任国家元首，却在新的军政协调会中握有任命与合同的决定权。各军区暂时签字，没人保证他们会永远服从。',

@@ -12,7 +12,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_briefing }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -22,7 +22,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_command }
 
 
-  completion_reward = { army_experience = 20 }
+  completion_reward = { v65_upgrade_training = yes army_experience = 10 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -42,7 +42,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_quynhon }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -52,7 +52,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_tiger }
 
 
-  completion_reward = { add_political_power = 40 add_ideas = v65_intelligence_network }
+  completion_reward = { v65_upgrade_signals = yes add_to_variable = { v65_intelligence = 1 } }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -62,7 +62,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_fieldstaff }
 
 
-  completion_reward = { army_experience = 20 }
+  completion_reward = { v65_upgrade_training = yes army_experience = 10 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -72,7 +72,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_briefing }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -102,7 +102,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_press }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -132,7 +132,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_briefing }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -142,7 +142,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_villages }
 
 
-  completion_reward = { add_political_power = 75 add_stability = -0.02 }
+  completion_reward = { v65_upgrade_contracts = yes add_to_variable = { v65_patronage = 5 } add_political_power = 35 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -152,7 +152,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_fees }
 
 
-  completion_reward = { add_political_power = 40 add_ideas = v65_intelligence_network }
+  completion_reward = { v65_upgrade_signals = yes add_to_variable = { v65_intelligence = 1 } }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -162,7 +162,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_police }
 
 
-  completion_reward = { add_stability = 0.03 FNL = { subtract_from_variable = { v65_infiltration = 1 } clamp_variable = { var = v65_infiltration min = 0 max = 3 } } }
+  completion_reward = { add_to_variable = { v65_public_trust = 5 } subtract_from_variable = { v65_local_unrest = 2 } v65_refresh_society = yes }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -172,7 +172,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_village_bargain }
 
 
-  completion_reward = { add_stability = 0.04 }
+  completion_reward = { add_to_variable = { v65_public_trust = 5 } v65_refresh_society = yes add_political_power = 15 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -192,7 +192,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_briefing }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -232,7 +232,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_company }
 
 
-  completion_reward = { add_political_power = 75 add_stability = -0.02 }
+  completion_reward = { v65_upgrade_contracts = yes add_to_variable = { v65_patronage = 5 } add_political_power = 35 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -242,7 +242,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_contracts }
 
 
-  completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 1200 producer = ROOT } }
+  completion_reward = { v65_upgrade_logistics = yes add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -252,7 +252,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_briefing }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -272,7 +272,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_guards }
 
 
-  completion_reward = { add_political_power = 40 add_ideas = v65_intelligence_network }
+  completion_reward = { v65_upgrade_signals = yes add_to_variable = { v65_intelligence = 1 } }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -312,7 +312,7 @@ focus_tree = {
   prerequisite = { focus = v65_PKS_briefing }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -365,4 +365,19 @@ focus_tree = {
   completion_reward = { v65_offer_union = yes }
   ai_will_do = { factor = 1 }
  }
+focus = { id = v65_PKS_act_1968 icon = GFX_v65_focus_scroll x = 4 y = 16 cost = 10 prerequisite = { focus = v65_PKS_briefing } available = { date > 1968.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.801 days = 1 } } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1968_security icon = GFX_v65_focus_helmet x = 0 y = 18 cost = 28 prerequisite = { focus = v65_PKS_act_1968 }  mutually_exclusive = { focus = v65_PKS_act_1968_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_1 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1968_civilian icon = GFX_v65_focus_landmark x = 8 y = 18 cost = 28 prerequisite = { focus = v65_PKS_act_1968 }  mutually_exclusive = { focus = v65_PKS_act_1968_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_1 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1971 icon = GFX_v65_focus_scroll x = 4 y = 24 cost = 10 prerequisite = { focus = v65_PKS_act_1968_security focus = v65_PKS_act_1968_civilian } available = { date > 1971.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.802 days = 1 } } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1971_security icon = GFX_v65_focus_helmet x = 0 y = 26 cost = 28 prerequisite = { focus = v65_PKS_act_1971 }  mutually_exclusive = { focus = v65_PKS_act_1971_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_2 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1971_civilian icon = GFX_v65_focus_landmark x = 8 y = 26 cost = 28 prerequisite = { focus = v65_PKS_act_1971 }  mutually_exclusive = { focus = v65_PKS_act_1971_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_2 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1974 icon = GFX_v65_focus_scroll x = 4 y = 32 cost = 10 prerequisite = { focus = v65_PKS_act_1971_security focus = v65_PKS_act_1971_civilian } available = { date > 1974.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.803 days = 1 } } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1974_security icon = GFX_v65_focus_helmet x = 0 y = 34 cost = 28 prerequisite = { focus = v65_PKS_act_1974 }  mutually_exclusive = { focus = v65_PKS_act_1974_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_3 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1974_civilian icon = GFX_v65_focus_landmark x = 8 y = 34 cost = 28 prerequisite = { focus = v65_PKS_act_1974 }  mutually_exclusive = { focus = v65_PKS_act_1974_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_3 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1977 icon = GFX_v65_focus_scroll x = 4 y = 40 cost = 10 prerequisite = { focus = v65_PKS_act_1974_security focus = v65_PKS_act_1974_civilian } available = { date > 1977.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.804 days = 1 } } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1977_security icon = GFX_v65_focus_helmet x = 0 y = 42 cost = 28 prerequisite = { focus = v65_PKS_act_1977 }  mutually_exclusive = { focus = v65_PKS_act_1977_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_4 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1977_civilian icon = GFX_v65_focus_landmark x = 8 y = 42 cost = 28 prerequisite = { focus = v65_PKS_act_1977 }  mutually_exclusive = { focus = v65_PKS_act_1977_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_4 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1979 icon = GFX_v65_focus_scroll x = 4 y = 48 cost = 10 prerequisite = { focus = v65_PKS_act_1977_security focus = v65_PKS_act_1977_civilian } available = { date > 1979.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.805 days = 1 } } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1979_security icon = GFX_v65_focus_helmet x = 0 y = 50 cost = 28 prerequisite = { focus = v65_PKS_act_1979 }  mutually_exclusive = { focus = v65_PKS_act_1979_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_5 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+focus = { id = v65_PKS_act_1979_civilian icon = GFX_v65_focus_landmark x = 8 y = 50 cost = 28 prerequisite = { focus = v65_PKS_act_1979 }  mutually_exclusive = { focus = v65_PKS_act_1979_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_5 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
 }

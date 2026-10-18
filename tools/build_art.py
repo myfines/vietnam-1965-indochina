@@ -23,7 +23,7 @@ gfx='spriteTypes = {\n'+'\n'.join(f' spriteType = {{ name = "GFX_v65_focus_{k}" 
 (M/'interface/v65_focus_icons.gfx').write_text(gfx,encoding='utf-8')
 (R/'native-art-catalog.json').write_text(json.dumps(textures,indent=2),encoding='utf-8')
 # Our own faction flags. Four game sizes, no third-party flag artwork.
-for tag,colors in {'PKS':[(39,80,68),(227,208,149)],'DNM':[(166,95,36),(247,223,152)],'FNL':[(159,36,42),(32,98,162)]}.items():
+for tag,colors in {'PKS':[(39,80,68),(227,208,149)],'DNM':[(166,95,36),(247,223,152)],'FNL':[(159,36,42),(32,98,162)],'RKH':[(127,28,39),(220,181,78)],'HLC':[(92,123,80),(220,210,157)],'MKG':[(94,148,160),(240,224,169)],'BHD':[(172,119,81),(243,218,167)],'PHQ':[(88,104,174),(231,221,180)]}.items():
  flag=Image.new('RGB',(82,52),colors[0]);d=ImageDraw.Draw(flag)
  if tag=='FNL':d.rectangle((0,26,82,52),fill=colors[1])
  if tag=='PKS':d.rectangle((7,7,75,45),outline=colors[1],width=2)
@@ -35,4 +35,4 @@ for tag,colors in {'PKS':[(39,80,68),(227,208,149)],'DNM':[(166,95,36),(247,223,
  for folder,size in [('',(82,52)),('medium',(41,26)),('small',(10,7))]:
   dest=M/'gfx/flags'/folder;dest.mkdir(parents=True,exist_ok=True)
   for suffix in ['','_neutrality','_communism','_fascism','_democratic']:flag.resize(size,Image.Resampling.LANCZOS).save(dest/f'{tag}{suffix}.tga')
-print('Focus art:',len(icons),'native painted references; three faction flag sets')
+print('Focus art:',len(icons),'native painted references; eight faction flag sets')

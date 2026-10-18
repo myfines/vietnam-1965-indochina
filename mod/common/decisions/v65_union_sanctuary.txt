@@ -2,7 +2,7 @@ v65_union = {
  v65_request_union = { icon = generic_political_discourse cost = 100 visible = { tag = PKS } available = { v65_can_offer_union = yes } days_re_enable = 90 complete_effect = { v65_offer_union = yes } ai_will_do = { factor = 0.3 } }
 }
 v65_cambodian_rear = {
- v65_open_border_bases = { icon = generic_prepare_civil_war cost = 50 visible = { tag = KHM NOT = { has_country_flag = v65_sanctuary_open } } available = { NOT = { has_war = yes } controls_state = 35 controls_state = 36 } complete_effect = { v65_open_sanctuary = yes } ai_will_do = { factor = 1 } }
+ v65_open_border_bases = { icon = generic_prepare_civil_war cost = 50 visible = { tag = KHM NOT = { has_country_flag = v65_sanctuary_open } } available = { NOT = { has_war_with = SVN } NOT = { has_war_with = NVN } NOT = { has_war_with = FNL } controls_state = 35 controls_state = 42 } complete_effect = { v65_open_sanctuary = yes } ai_will_do = { factor = 1 } }
  v65_seal_border_bases = { icon = generic_prepare_civil_war cost = 50 visible = { tag = KHM has_country_flag = v65_sanctuary_open } complete_effect = { v65_close_sanctuary = yes } ai_will_do = { factor = 0 } }
  v65_border_dossier = { icon = generic_political_discourse cost = 60 visible = { OR = { tag = SVN tag = PKS tag = DNM } KHM = { has_country_flag = v65_sanctuary_discovered } } available = { KHM = { v65_sanctuary_operational = yes } } days_re_enable = 60 complete_effect = { v65_apply_border_pressure = yes } ai_will_do = { factor = 0.5 } }
 }

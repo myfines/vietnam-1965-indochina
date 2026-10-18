@@ -1,0 +1,12 @@
+capital = 28
+oob = "MKG_1965"
+set_research_slots = 3
+set_stability = 0.55
+set_war_support = 0.65
+set_politics = { ruling_party = neutrality elections_allowed = no }
+set_popularities = { neutrality = 100 }
+set_technology = { infantry_weapons = 1 infantry_weapons1 = 1 infantry_weapons2 = 1 tech_support = 1 tech_trucks = 1 }
+add_ideas = { limited_conscription partial_economic_mobilisation export_focus }
+add_political_power = 150
+add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 12000 producer = MKG }
+recruit_character = v65_tran_van_hai

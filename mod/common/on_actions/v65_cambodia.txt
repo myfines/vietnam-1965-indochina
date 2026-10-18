@@ -1,0 +1,4 @@
+on_actions = { on_startup = { effect = {
+ KHM = { if = { limit = { NOT = { has_country_flag = v65_civil_war_started } } set_country_flag = v65_civil_war_started declare_war_on = { target = RKH type = annex_everything } } }
+ RKH = { add_ideas = v65_jungle_revolution set_country_flag = v65_sanctuary_open }
+} } on_monthly = { effect = { RKH = { if = { limit = { controls_state = 36 NVN = { has_war_with = SVN } } NVN = { add_to_variable = { v65_trail_level = 1 } clamp_variable = { var = v65_trail_level min = 0 max = 5 } } } } } } }

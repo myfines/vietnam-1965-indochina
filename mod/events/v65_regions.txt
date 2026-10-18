@@ -1,0 +1,13 @@
+add_namespace = v65regions
+country_event = { id = v65regions.11 hidden = yes is_triggered_only = yes immediate = { v65_devolve_HLC = yes } }
+country_event = { id = v65regions.12 hidden = yes is_triggered_only = yes immediate = { v65_devolve_MKG = yes } }
+country_event = { id = v65regions.13 hidden = yes is_triggered_only = yes immediate = { v65_devolve_BHD = yes } }
+country_event = { id = v65regions.14 hidden = yes is_triggered_only = yes immediate = { v65_devolve_PHQ = yes } }
+country_event = { id = v65regions.20 hidden = yes is_triggered_only = yes immediate = { if = { limit = { tag = HLC controls_province = 228 } 16 = { create_unit = { division = "name = \"Regional Security Regiment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.8 location = 228" owner = HLC count = 2 } } }
+if = { limit = { tag = MKG controls_province = 337 } 28 = { create_unit = { division = "name = \"Regional Security Regiment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.8 location = 337" owner = MKG count = 2 } } }
+if = { limit = { tag = BHD controls_province = 282 } 22 = { create_unit = { division = "name = \"Regional Security Regiment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.8 location = 282" owner = BHD count = 2 } } }
+if = { limit = { tag = PHQ controls_province = 361 } 31 = { create_unit = { division = "name = \"Regional Security Regiment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.8 location = 361" owner = PHQ count = 2 } } }
+} }
+country_event = { id = v65regions.10 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { has_war_with = NVN } NOT = { has_war_with = NVN } } add_to_war = { targeted_alliance = SVN enemy = NVN hostility_reason = asked_to_join } } if = { limit = { SVN = { has_war_with = FNL } NOT = { has_war_with = FNL } } add_to_war = { targeted_alliance = SVN enemy = FNL hostility_reason = asked_to_join } } SVN = { add_to_faction = ROOT } } }
+country_event = { id = v65regions.1 title = v65regions.1.t desc = v65regions.1.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes option = { name = v65regions.1.a v65_devolve_regions = yes } option = { name = v65regions.1.b add_political_power = 75 } }
+country_event = { id = v65regions.2 title = v65regions.2.t desc = v65regions.2.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65regions.2.a add_political_power = 25 } }

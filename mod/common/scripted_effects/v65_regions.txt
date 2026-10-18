@@ -1,0 +1,630 @@
+v65_devolve_regions = {
+	if = {
+		limit = {
+			tag = SVN
+			NOT = {
+				has_country_flag = v65_regionalized
+			}
+		}
+		set_country_flag = v65_regionalized
+		add_ideas = v65_decentralized_command
+		country_event = {
+			id = v65regions.11
+			days = 1
+		}
+		country_event = {
+			id = v65regions.12
+			days = 2
+		}
+		country_event = {
+			id = v65regions.13
+			days = 3
+		}
+		country_event = {
+			id = v65regions.14
+			days = 4
+		}
+	}
+}
+v65_regional_reintegration_HLC = {
+	if = {
+		limit = {
+			tag = SVN
+			HLC = {
+				exists = yes
+				is_ai = yes
+				check_variable = {
+					v65_regional_loyalty > 74
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = v65_duong_van_minh
+				}
+			}
+			set_country_flag = v65_preserve_minh
+		}
+		HLC = {
+			v65_nguyen_khanh = {
+				set_nationality = SVN
+			}
+		}
+		annex_country = {
+			target = HLC
+			transfer_troops = yes
+		}
+		add_ideas = v65_reintegrated_command
+		if = {
+			limit = {
+				has_country_flag = v65_preserve_minh
+			}
+			promote_character = {
+				character = v65_duong_van_minh
+				ideology = despotism
+			}
+			clr_country_flag = v65_preserve_minh
+		}
+		else = {
+			promote_character = {
+				character = v65_nguyen_van_thieu
+				ideology = despotism
+			}
+		}
+	}
+}
+v65_regional_reintegration_MKG = {
+	if = {
+		limit = {
+			tag = SVN
+			MKG = {
+				exists = yes
+				is_ai = yes
+				check_variable = {
+					v65_regional_loyalty > 74
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = v65_duong_van_minh
+				}
+			}
+			set_country_flag = v65_preserve_minh
+		}
+		MKG = {
+			v65_tran_van_hai = {
+				set_nationality = SVN
+			}
+		}
+		annex_country = {
+			target = MKG
+			transfer_troops = yes
+		}
+		add_ideas = v65_reintegrated_command
+		if = {
+			limit = {
+				has_country_flag = v65_preserve_minh
+			}
+			promote_character = {
+				character = v65_duong_van_minh
+				ideology = despotism
+			}
+			clr_country_flag = v65_preserve_minh
+		}
+		else = {
+			promote_character = {
+				character = v65_nguyen_van_thieu
+				ideology = despotism
+			}
+		}
+	}
+}
+v65_regional_reintegration_BHD = {
+	if = {
+		limit = {
+			tag = SVN
+			BHD = {
+				exists = yes
+				is_ai = yes
+				check_variable = {
+					v65_regional_loyalty > 74
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = v65_duong_van_minh
+				}
+			}
+			set_country_flag = v65_preserve_minh
+		}
+		BHD = {
+			v65_nguyen_ngoc_loan = {
+				set_nationality = SVN
+			}
+		}
+		annex_country = {
+			target = BHD
+			transfer_troops = yes
+		}
+		add_ideas = v65_reintegrated_command
+		if = {
+			limit = {
+				has_country_flag = v65_preserve_minh
+			}
+			promote_character = {
+				character = v65_duong_van_minh
+				ideology = despotism
+			}
+			clr_country_flag = v65_preserve_minh
+		}
+		else = {
+			promote_character = {
+				character = v65_nguyen_van_thieu
+				ideology = despotism
+			}
+		}
+	}
+}
+v65_regional_reintegration_PHQ = {
+	if = {
+		limit = {
+			tag = SVN
+			PHQ = {
+				exists = yes
+				is_ai = yes
+				check_variable = {
+					v65_regional_loyalty > 74
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_country_leader = {
+					character = v65_duong_van_minh
+				}
+			}
+			set_country_flag = v65_preserve_minh
+		}
+		PHQ = {
+			v65_island_council = {
+				set_nationality = SVN
+			}
+		}
+		annex_country = {
+			target = PHQ
+			transfer_troops = yes
+		}
+		add_ideas = v65_reintegrated_command
+		if = {
+			limit = {
+				has_country_flag = v65_preserve_minh
+			}
+			promote_character = {
+				character = v65_duong_van_minh
+				ideology = despotism
+			}
+			clr_country_flag = v65_preserve_minh
+		}
+		else = {
+			promote_character = {
+				character = v65_nguyen_van_thieu
+				ideology = despotism
+			}
+		}
+	}
+}
+v65_devolve_HLC = {
+	if = {
+		limit = {
+			owns_state = 16
+			controls_province = 228
+			16 = {
+				is_fully_controlled_by = SVN
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 14
+				14 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			14 = {
+				add_core_of = HLC
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 16
+				16 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			16 = {
+				add_core_of = HLC
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 18
+				18 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			18 = {
+				add_core_of = HLC
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 20
+				20 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			20 = {
+				add_core_of = HLC
+			}
+		}
+		release_puppet = HLC
+		if = {
+			limit = {
+				HLC = {
+					owns_state = 14
+				}
+			}
+			HLC = {
+				set_state_controller = 14
+			}
+		}
+		if = {
+			limit = {
+				HLC = {
+					owns_state = 16
+				}
+			}
+			HLC = {
+				set_state_controller = 16
+			}
+		}
+		if = {
+			limit = {
+				HLC = {
+					owns_state = 18
+				}
+			}
+			HLC = {
+				set_state_controller = 18
+			}
+		}
+		if = {
+			limit = {
+				HLC = {
+					owns_state = 20
+				}
+			}
+			HLC = {
+				set_state_controller = 20
+			}
+		}
+		HLC = {
+			set_capital = {
+				state = 16
+			}
+			add_manpower = 12000
+			load_oob = "HLC_1965"
+			add_ideas = v65_local_command
+			set_variable = {
+				v65_regional_loyalty = 50
+			}
+			set_variable = {
+				v65_local_unrest = 3
+			}
+			set_variable = {
+				v65_public_trust = 50
+			}
+			set_variable = {
+				v65_patronage = 20
+			}
+			set_variable = {
+				v65_intelligence = 1
+			}
+			set_country_flag = v65_story_initialized
+			country_event = {
+				id = v65regions.2
+				days = 3
+			}
+			country_event = {
+				id = v65regions.20
+				days = 3
+			}
+		}
+		HLC = {
+			country_event = {
+				id = v65regions.10
+				days = 2
+			}
+		}
+	}
+}
+v65_devolve_MKG = {
+	if = {
+		limit = {
+			owns_state = 28
+			controls_province = 337
+			28 = {
+				is_fully_controlled_by = SVN
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 27
+				27 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			27 = {
+				add_core_of = MKG
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 28
+				28 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			28 = {
+				add_core_of = MKG
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 29
+				29 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			29 = {
+				add_core_of = MKG
+			}
+		}
+		release_puppet = MKG
+		if = {
+			limit = {
+				MKG = {
+					owns_state = 27
+				}
+			}
+			MKG = {
+				set_state_controller = 27
+			}
+		}
+		if = {
+			limit = {
+				MKG = {
+					owns_state = 28
+				}
+			}
+			MKG = {
+				set_state_controller = 28
+			}
+		}
+		if = {
+			limit = {
+				MKG = {
+					owns_state = 29
+				}
+			}
+			MKG = {
+				set_state_controller = 29
+			}
+		}
+		MKG = {
+			set_capital = {
+				state = 28
+			}
+			add_manpower = 12000
+			load_oob = "MKG_1965"
+			add_ideas = v65_local_command
+			set_variable = {
+				v65_regional_loyalty = 50
+			}
+			set_variable = {
+				v65_local_unrest = 3
+			}
+			set_variable = {
+				v65_public_trust = 50
+			}
+			set_variable = {
+				v65_patronage = 20
+			}
+			set_variable = {
+				v65_intelligence = 1
+			}
+			set_country_flag = v65_story_initialized
+			country_event = {
+				id = v65regions.2
+				days = 3
+			}
+			country_event = {
+				id = v65regions.20
+				days = 3
+			}
+		}
+		MKG = {
+			country_event = {
+				id = v65regions.10
+				days = 2
+			}
+		}
+	}
+}
+v65_devolve_BHD = {
+	if = {
+		limit = {
+			owns_state = 22
+			controls_province = 282
+			22 = {
+				is_fully_controlled_by = SVN
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 21
+				21 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			21 = {
+				add_core_of = BHD
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 22
+				22 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			22 = {
+				add_core_of = BHD
+			}
+		}
+		release_puppet = BHD
+		if = {
+			limit = {
+				BHD = {
+					owns_state = 21
+				}
+			}
+			BHD = {
+				set_state_controller = 21
+			}
+		}
+		if = {
+			limit = {
+				BHD = {
+					owns_state = 22
+				}
+			}
+			BHD = {
+				set_state_controller = 22
+			}
+		}
+		BHD = {
+			set_capital = {
+				state = 22
+			}
+			add_manpower = 12000
+			load_oob = "BHD_1965"
+			add_ideas = v65_local_command
+			set_variable = {
+				v65_regional_loyalty = 50
+			}
+			set_variable = {
+				v65_local_unrest = 3
+			}
+			set_variable = {
+				v65_public_trust = 50
+			}
+			set_variable = {
+				v65_patronage = 20
+			}
+			set_variable = {
+				v65_intelligence = 1
+			}
+			set_country_flag = v65_story_initialized
+			country_event = {
+				id = v65regions.2
+				days = 3
+			}
+			country_event = {
+				id = v65regions.20
+				days = 3
+			}
+		}
+		BHD = {
+			country_event = {
+				id = v65regions.10
+				days = 2
+			}
+		}
+	}
+}
+v65_devolve_PHQ = {
+	if = {
+		limit = {
+			owns_state = 31
+			controls_province = 361
+			31 = {
+				is_fully_controlled_by = SVN
+			}
+		}
+		if = {
+			limit = {
+				owns_state = 31
+				31 = {
+					is_fully_controlled_by = SVN
+				}
+			}
+			31 = {
+				add_core_of = PHQ
+			}
+		}
+		release_puppet = PHQ
+		if = {
+			limit = {
+				PHQ = {
+					owns_state = 31
+				}
+			}
+			PHQ = {
+				set_state_controller = 31
+			}
+		}
+		PHQ = {
+			set_capital = {
+				state = 31
+			}
+			add_manpower = 12000
+			load_oob = "PHQ_1965"
+			add_ideas = v65_local_command
+			set_variable = {
+				v65_regional_loyalty = 50
+			}
+			set_variable = {
+				v65_local_unrest = 3
+			}
+			set_variable = {
+				v65_public_trust = 50
+			}
+			set_variable = {
+				v65_patronage = 20
+			}
+			set_variable = {
+				v65_intelligence = 1
+			}
+			set_country_flag = v65_story_initialized
+			country_event = {
+				id = v65regions.2
+				days = 3
+			}
+			country_event = {
+				id = v65regions.20
+				days = 3
+			}
+		}
+		PHQ = {
+			country_event = {
+				id = v65regions.10
+				days = 2
+			}
+		}
+	}
+}

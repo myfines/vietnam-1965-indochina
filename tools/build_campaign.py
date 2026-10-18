@@ -134,6 +134,8 @@ REWARDS={
 }
 # Use stable, documented country-scope effects for construction; forts are
 # separately placed at the actual DMZ province IDs in state history below.
+from long_foundation import enhance_rewards
+enhance_rewards(REWARDS)
 REWARDS.update({'sanctuary':'v65_open_sanctuary = yes','sanctuary_supply':'v65_sanctuary_pulse = yes','union_offer':'v65_offer_union = yes','union_preparation':'add_to_variable = { v65_park_influence = 1 } add_political_power = 35'})
 REWARDS['fort']='add_ideas = v65_prepared_defence army_experience = 10'
 for tag,branches in DATA.items():
@@ -214,5 +216,5 @@ for lang in ['simp_chinese','english']:
  l['V65_BOOKMARK_DESC']='六个可玩势力。北方阵地对峙，南方游击据点交错；朴世诚与各军区拥有独立的政治路线。前线失利将把战争带入首都。' if lang=='simp_chinese' else 'Six playable factions, a fortified northern front, southern guerrilla enclaves and defeat-driven political crises.'
  put(Path(f'localisation/{lang}/zzzz_v65_campaign_l_{lang}.yml'),'l_'+lang+':\n'+'\n'.join(f' {k}:0 "{v}"' for k,v in l.items()))
 
-(R/'campaign-manifest.json').write_text(json.dumps({'version':'0.4.0','focuses':manifest,'factions':{t:{'name':v[0],'capital':v[2]} for t,v in TAGS.items() if t!='XTR'}},indent=2,ensure_ascii=False),encoding='utf-8')
+(R/'campaign-manifest.json').write_text(json.dumps({'version':'0.6.0','focuses':manifest,'factions':{t:{'name':v[0],'capital':v[2]} for t,v in TAGS.items() if t!='XTR'}},indent=2,ensure_ascii=False),encoding='utf-8')
 print('Authored campaign:',len(manifest)+6,'focuses; six playable factions')

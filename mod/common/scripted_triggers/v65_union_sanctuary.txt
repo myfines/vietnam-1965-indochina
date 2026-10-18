@@ -9,9 +9,9 @@ v65_can_offer_union = {
  NOT = { AND = { is_ai = no SVN = { is_ai = no } } }
 }
 v65_sanctuary_operational = {
- tag = KHM exists = yes NOT = { has_war = yes }
+ tag = KHM exists = yes NOT = { has_war_with = SVN } NOT = { has_war_with = NVN } NOT = { has_war_with = FNL }
  has_country_flag = v65_sanctuary_open
- controls_state = 35 controls_state = 36
+ controls_state = 35 controls_state = 42
  NVN = { exists = yes has_war_with = SVN }
  FNL = { exists = yes has_war_with = SVN }
 }
