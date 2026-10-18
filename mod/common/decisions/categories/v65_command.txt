@@ -1,1 +1,1 @@
-v65_command_politics = { icon = GFX_decision_generic_military allowed = { OR = { tag = SVN tag = PKS tag = HLC tag = MKG tag = BHD tag = PHQ } } visible = { always = yes } }
+v65_command_politics = { icon = GFX_decision_generic_military priority = 1500 visible_when_empty = yes scripted_gui = v65_command_panel allowed = { OR = { tag = SVN tag = PKS tag = DNM tag = HLC tag = MKG tag = BHD tag = PHQ } } visible = { always = yes } }

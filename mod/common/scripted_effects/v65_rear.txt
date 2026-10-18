@@ -1,0 +1,144 @@
+v65_refresh_rear_state = { clamp_variable = { var = v65_rear_level min = 0 max = 3 }
+if = { limit = { has_dynamic_modifier = { modifier = v65_rear_pressure_1 } } remove_dynamic_modifier = { modifier = v65_rear_pressure_1 } }
+if = { limit = { has_dynamic_modifier = { modifier = v65_rear_pressure_2 } } remove_dynamic_modifier = { modifier = v65_rear_pressure_2 } }
+if = { limit = { has_dynamic_modifier = { modifier = v65_rear_pressure_3 } } remove_dynamic_modifier = { modifier = v65_rear_pressure_3 } }
+if = { limit = { check_variable = { v65_rear_level = 1 } } add_dynamic_modifier = { modifier = v65_rear_pressure_1 } }
+if = { limit = { check_variable = { v65_rear_level = 2 } } add_dynamic_modifier = { modifier = v65_rear_pressure_2 } }
+if = { limit = { check_variable = { v65_rear_level = 3 } } add_dynamic_modifier = { modifier = v65_rear_pressure_3 } }
+}
+v65_rear_relief = { every_owned_state = { limit = { check_variable = { v65_rear_level > 0 } } subtract_from_variable = { v65_rear_level = 1 } v65_refresh_rear_state = yes } }
+v65_rear_rise_14 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 14 has_war_with = FNL } PKS = { owns_state = 14 has_war_with = FNL } DNM = { owns_state = 14 has_war_with = FNL } HLC = { owns_state = 14 has_war_with = FNL } MKG = { owns_state = 14 has_war_with = FNL } BHD = { owns_state = 14 has_war_with = FNL } PHQ = { owns_state = 14 has_war_with = FNL } } OR = { SVN = { controls_province = 208 has_war_with = FNL } PKS = { controls_province = 208 has_war_with = FNL } DNM = { controls_province = 208 has_war_with = FNL } HLC = { controls_province = 208 has_war_with = FNL } MKG = { controls_province = 208 has_war_with = FNL } BHD = { controls_province = 208 has_war_with = FNL } PHQ = { controls_province = 208 has_war_with = FNL } } 14 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 208
+  14 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 208" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.114 days = 120 }
+ }
+}
+v65_rear_rise_16 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 16 has_war_with = FNL } PKS = { owns_state = 16 has_war_with = FNL } DNM = { owns_state = 16 has_war_with = FNL } HLC = { owns_state = 16 has_war_with = FNL } MKG = { owns_state = 16 has_war_with = FNL } BHD = { owns_state = 16 has_war_with = FNL } PHQ = { owns_state = 16 has_war_with = FNL } } OR = { SVN = { controls_province = 226 has_war_with = FNL } PKS = { controls_province = 226 has_war_with = FNL } DNM = { controls_province = 226 has_war_with = FNL } HLC = { controls_province = 226 has_war_with = FNL } MKG = { controls_province = 226 has_war_with = FNL } BHD = { controls_province = 226 has_war_with = FNL } PHQ = { controls_province = 226 has_war_with = FNL } } 16 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 226
+  16 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 226" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.116 days = 120 }
+ }
+}
+v65_rear_rise_17 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 17 has_war_with = FNL } PKS = { owns_state = 17 has_war_with = FNL } DNM = { owns_state = 17 has_war_with = FNL } HLC = { owns_state = 17 has_war_with = FNL } MKG = { owns_state = 17 has_war_with = FNL } BHD = { owns_state = 17 has_war_with = FNL } PHQ = { owns_state = 17 has_war_with = FNL } } OR = { SVN = { controls_province = 236 has_war_with = FNL } PKS = { controls_province = 236 has_war_with = FNL } DNM = { controls_province = 236 has_war_with = FNL } HLC = { controls_province = 236 has_war_with = FNL } MKG = { controls_province = 236 has_war_with = FNL } BHD = { controls_province = 236 has_war_with = FNL } PHQ = { controls_province = 236 has_war_with = FNL } } 17 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 236
+  17 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 236" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.117 days = 120 }
+ }
+}
+v65_rear_rise_18 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 18 has_war_with = FNL } PKS = { owns_state = 18 has_war_with = FNL } DNM = { owns_state = 18 has_war_with = FNL } HLC = { owns_state = 18 has_war_with = FNL } MKG = { owns_state = 18 has_war_with = FNL } BHD = { owns_state = 18 has_war_with = FNL } PHQ = { owns_state = 18 has_war_with = FNL } } OR = { SVN = { controls_province = 244 has_war_with = FNL } PKS = { controls_province = 244 has_war_with = FNL } DNM = { controls_province = 244 has_war_with = FNL } HLC = { controls_province = 244 has_war_with = FNL } MKG = { controls_province = 244 has_war_with = FNL } BHD = { controls_province = 244 has_war_with = FNL } PHQ = { controls_province = 244 has_war_with = FNL } } 18 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 244
+  18 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 244" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.118 days = 120 }
+ }
+}
+v65_rear_rise_19 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 19 has_war_with = FNL } PKS = { owns_state = 19 has_war_with = FNL } DNM = { owns_state = 19 has_war_with = FNL } HLC = { owns_state = 19 has_war_with = FNL } MKG = { owns_state = 19 has_war_with = FNL } BHD = { owns_state = 19 has_war_with = FNL } PHQ = { owns_state = 19 has_war_with = FNL } } OR = { SVN = { controls_province = 255 has_war_with = FNL } PKS = { controls_province = 255 has_war_with = FNL } DNM = { controls_province = 255 has_war_with = FNL } HLC = { controls_province = 255 has_war_with = FNL } MKG = { controls_province = 255 has_war_with = FNL } BHD = { controls_province = 255 has_war_with = FNL } PHQ = { controls_province = 255 has_war_with = FNL } } 19 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 255
+  19 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 255" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.119 days = 120 }
+ }
+}
+v65_rear_rise_20 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 20 has_war_with = FNL } PKS = { owns_state = 20 has_war_with = FNL } DNM = { owns_state = 20 has_war_with = FNL } HLC = { owns_state = 20 has_war_with = FNL } MKG = { owns_state = 20 has_war_with = FNL } BHD = { owns_state = 20 has_war_with = FNL } PHQ = { owns_state = 20 has_war_with = FNL } } OR = { SVN = { controls_province = 266 has_war_with = FNL } PKS = { controls_province = 266 has_war_with = FNL } DNM = { controls_province = 266 has_war_with = FNL } HLC = { controls_province = 266 has_war_with = FNL } MKG = { controls_province = 266 has_war_with = FNL } BHD = { controls_province = 266 has_war_with = FNL } PHQ = { controls_province = 266 has_war_with = FNL } } 20 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 266
+  20 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 266" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.120 days = 120 }
+ }
+}
+v65_rear_rise_21 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 21 has_war_with = FNL } PKS = { owns_state = 21 has_war_with = FNL } DNM = { owns_state = 21 has_war_with = FNL } HLC = { owns_state = 21 has_war_with = FNL } MKG = { owns_state = 21 has_war_with = FNL } BHD = { owns_state = 21 has_war_with = FNL } PHQ = { owns_state = 21 has_war_with = FNL } } OR = { SVN = { controls_province = 276 has_war_with = FNL } PKS = { controls_province = 276 has_war_with = FNL } DNM = { controls_province = 276 has_war_with = FNL } HLC = { controls_province = 276 has_war_with = FNL } MKG = { controls_province = 276 has_war_with = FNL } BHD = { controls_province = 276 has_war_with = FNL } PHQ = { controls_province = 276 has_war_with = FNL } } 21 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 276
+  21 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 276" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.121 days = 120 }
+ }
+}
+v65_rear_rise_22 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 22 has_war_with = FNL } PKS = { owns_state = 22 has_war_with = FNL } DNM = { owns_state = 22 has_war_with = FNL } HLC = { owns_state = 22 has_war_with = FNL } MKG = { owns_state = 22 has_war_with = FNL } BHD = { owns_state = 22 has_war_with = FNL } PHQ = { owns_state = 22 has_war_with = FNL } } OR = { SVN = { controls_province = 280 has_war_with = FNL } PKS = { controls_province = 280 has_war_with = FNL } DNM = { controls_province = 280 has_war_with = FNL } HLC = { controls_province = 280 has_war_with = FNL } MKG = { controls_province = 280 has_war_with = FNL } BHD = { controls_province = 280 has_war_with = FNL } PHQ = { controls_province = 280 has_war_with = FNL } } 22 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 280
+  22 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 280" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.122 days = 120 }
+ }
+}
+v65_rear_rise_23 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 23 has_war_with = FNL } PKS = { owns_state = 23 has_war_with = FNL } DNM = { owns_state = 23 has_war_with = FNL } HLC = { owns_state = 23 has_war_with = FNL } MKG = { owns_state = 23 has_war_with = FNL } BHD = { owns_state = 23 has_war_with = FNL } PHQ = { owns_state = 23 has_war_with = FNL } } OR = { SVN = { controls_province = 288 has_war_with = FNL } PKS = { controls_province = 288 has_war_with = FNL } DNM = { controls_province = 288 has_war_with = FNL } HLC = { controls_province = 288 has_war_with = FNL } MKG = { controls_province = 288 has_war_with = FNL } BHD = { controls_province = 288 has_war_with = FNL } PHQ = { controls_province = 288 has_war_with = FNL } } 23 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 288
+  23 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 288" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.123 days = 120 }
+ }
+}
+v65_rear_rise_24 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 24 has_war_with = FNL } PKS = { owns_state = 24 has_war_with = FNL } DNM = { owns_state = 24 has_war_with = FNL } HLC = { owns_state = 24 has_war_with = FNL } MKG = { owns_state = 24 has_war_with = FNL } BHD = { owns_state = 24 has_war_with = FNL } PHQ = { owns_state = 24 has_war_with = FNL } } OR = { SVN = { controls_province = 295 has_war_with = FNL } PKS = { controls_province = 295 has_war_with = FNL } DNM = { controls_province = 295 has_war_with = FNL } HLC = { controls_province = 295 has_war_with = FNL } MKG = { controls_province = 295 has_war_with = FNL } BHD = { controls_province = 295 has_war_with = FNL } PHQ = { controls_province = 295 has_war_with = FNL } } 24 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 295
+  24 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 295" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.124 days = 120 }
+ }
+}
+v65_rear_rise_26 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 26 has_war_with = FNL } PKS = { owns_state = 26 has_war_with = FNL } DNM = { owns_state = 26 has_war_with = FNL } HLC = { owns_state = 26 has_war_with = FNL } MKG = { owns_state = 26 has_war_with = FNL } BHD = { owns_state = 26 has_war_with = FNL } PHQ = { owns_state = 26 has_war_with = FNL } } OR = { SVN = { controls_province = 310 has_war_with = FNL } PKS = { controls_province = 310 has_war_with = FNL } DNM = { controls_province = 310 has_war_with = FNL } HLC = { controls_province = 310 has_war_with = FNL } MKG = { controls_province = 310 has_war_with = FNL } BHD = { controls_province = 310 has_war_with = FNL } PHQ = { controls_province = 310 has_war_with = FNL } } 26 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 310
+  26 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 310" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.126 days = 120 }
+ }
+}
+v65_rear_rise_27 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 27 has_war_with = FNL } PKS = { owns_state = 27 has_war_with = FNL } DNM = { owns_state = 27 has_war_with = FNL } HLC = { owns_state = 27 has_war_with = FNL } MKG = { owns_state = 27 has_war_with = FNL } BHD = { owns_state = 27 has_war_with = FNL } PHQ = { owns_state = 27 has_war_with = FNL } } OR = { SVN = { controls_province = 317 has_war_with = FNL } PKS = { controls_province = 317 has_war_with = FNL } DNM = { controls_province = 317 has_war_with = FNL } HLC = { controls_province = 317 has_war_with = FNL } MKG = { controls_province = 317 has_war_with = FNL } BHD = { controls_province = 317 has_war_with = FNL } PHQ = { controls_province = 317 has_war_with = FNL } } 27 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 317
+  27 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 317" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.127 days = 120 }
+ }
+}
+v65_rear_rise_28 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 28 has_war_with = FNL } PKS = { owns_state = 28 has_war_with = FNL } DNM = { owns_state = 28 has_war_with = FNL } HLC = { owns_state = 28 has_war_with = FNL } MKG = { owns_state = 28 has_war_with = FNL } BHD = { owns_state = 28 has_war_with = FNL } PHQ = { owns_state = 28 has_war_with = FNL } } OR = { SVN = { controls_province = 332 has_war_with = FNL } PKS = { controls_province = 332 has_war_with = FNL } DNM = { controls_province = 332 has_war_with = FNL } HLC = { controls_province = 332 has_war_with = FNL } MKG = { controls_province = 332 has_war_with = FNL } BHD = { controls_province = 332 has_war_with = FNL } PHQ = { controls_province = 332 has_war_with = FNL } } 28 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 332
+  28 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 332" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.128 days = 120 }
+ }
+}
+v65_rear_rise_29 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 29 has_war_with = FNL } PKS = { owns_state = 29 has_war_with = FNL } DNM = { owns_state = 29 has_war_with = FNL } HLC = { owns_state = 29 has_war_with = FNL } MKG = { owns_state = 29 has_war_with = FNL } BHD = { owns_state = 29 has_war_with = FNL } PHQ = { owns_state = 29 has_war_with = FNL } } OR = { SVN = { controls_province = 348 has_war_with = FNL } PKS = { controls_province = 348 has_war_with = FNL } DNM = { controls_province = 348 has_war_with = FNL } HLC = { controls_province = 348 has_war_with = FNL } MKG = { controls_province = 348 has_war_with = FNL } BHD = { controls_province = 348 has_war_with = FNL } PHQ = { controls_province = 348 has_war_with = FNL } } 29 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 348
+  29 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 348" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.129 days = 120 }
+ }
+}
+v65_rear_rise_30 = {
+ if = { limit = { tag = FNL OR = { SVN = { owns_state = 30 has_war_with = FNL } PKS = { owns_state = 30 has_war_with = FNL } DNM = { owns_state = 30 has_war_with = FNL } HLC = { owns_state = 30 has_war_with = FNL } MKG = { owns_state = 30 has_war_with = FNL } BHD = { owns_state = 30 has_war_with = FNL } PHQ = { owns_state = 30 has_war_with = FNL } } OR = { SVN = { controls_province = 353 has_war_with = FNL } PKS = { controls_province = 353 has_war_with = FNL } DNM = { controls_province = 353 has_war_with = FNL } HLC = { controls_province = 353 has_war_with = FNL } MKG = { controls_province = 353 has_war_with = FNL } BHD = { controls_province = 353 has_war_with = FNL } PHQ = { controls_province = 353 has_war_with = FNL } } 30 = { check_variable = { v65_rear_level > 2 } NOT = { has_state_flag = v65_rear_cooldown } } }
+  set_province_controller = 353
+  30 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 start_experience_factor = 0.25 location = 353" owner = FNL count = 1 }
+   set_variable = { v65_rear_level = 1 } set_state_flag = v65_rear_cooldown v65_refresh_rear_state = yes
+  }
+  country_event = { id = v65rear.130 days = 120 }
+ }
+}

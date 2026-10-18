@@ -1,0 +1,1 @@
+v65_contract_operations = { icon = GFX_decision_generic_military allowed = { OR = { tag = PKS AND = { tag = SVN has_country_flag = v65_union_complete } } } visible = { always = yes } }

@@ -1,383 +1,1193 @@
 focus_tree = {
- id = v65_PKS_tree
- country = { factor = 0 modifier = { add = 100 tag = PKS } }
- default = no
- reset_on_civilwar = no
- continuous_focus_position = { x = 0 y = 1500 }
- focus = { id = v65_PKS_briefing icon = GFX_v65_focus_flag x = 20 y = 0 cost = 2 completion_reward = { add_political_power = 50 } }
- focus = {
-  id = v65_PKS_command
-  icon = GFX_v65_focus_helmet
-  x = 0 y = 2 cost = 3
-  prerequisite = { focus = v65_PKS_briefing }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_battalion
-  icon = GFX_v65_focus_doctrine
-  x = 0 y = 4 cost = 3
-  prerequisite = { focus = v65_PKS_command }
-
-
-  completion_reward = { v65_upgrade_training = yes army_experience = 10 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_quynhon
-  icon = GFX_v65_focus_truck
-  x = 0 y = 6 cost = 5
-  prerequisite = { focus = v65_PKS_battalion }
-
-
-  completion_reward = { capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_tiger
-  icon = GFX_v65_focus_armor
-  x = 0 y = 8 cost = 5
-  prerequisite = { focus = v65_PKS_quynhon }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_fieldstaff
-  icon = GFX_v65_focus_radio
-  x = 0 y = 10 cost = 5
-  prerequisite = { focus = v65_PKS_tiger }
-
-
-  completion_reward = { v65_upgrade_signals = yes add_to_variable = { v65_intelligence = 1 } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_elite
-  icon = GFX_v65_focus_armor
-  x = 0 y = 12 cost = 5
-  prerequisite = { focus = v65_PKS_fieldstaff }
-
-
-  completion_reward = { v65_upgrade_training = yes army_experience = 10 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_reputation
-  icon = GFX_v65_focus_radio
-  x = 8 y = 2 cost = 3
-  prerequisite = { focus = v65_PKS_briefing }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_war_reports
-  icon = GFX_v65_focus_radio
-  x = 8 y = 4 cost = 3
-  prerequisite = { focus = v65_PKS_reputation }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 50 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_press
-  icon = GFX_v65_focus_radio
-  x = 8 y = 6 cost = 5
-  prerequisite = { focus = v65_PKS_war_reports }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 50 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_patron
-  icon = GFX_v65_focus_radio
-  x = 8 y = 8 cost = 5
-  prerequisite = { focus = v65_PKS_press }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_palace
-  icon = GFX_v65_focus_pressure
-  x = 8 y = 10 cost = 5
-  prerequisite = { focus = v65_PKS_patron }
-
-
-  completion_reward = { add_ideas = v65_park_patron }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_promotion
-  icon = GFX_v65_focus_radio
-  x = 8 y = 12 cost = 5
-  prerequisite = { focus = v65_PKS_palace }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 50 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_villages
-  icon = GFX_v65_focus_scroll
-  x = 16 y = 2 cost = 3
-  prerequisite = { focus = v65_PKS_briefing }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_fees
-  icon = GFX_v65_focus_scroll
-  x = 16 y = 4 cost = 3
-  prerequisite = { focus = v65_PKS_villages }
-
-
-  completion_reward = { v65_upgrade_contracts = yes add_to_variable = { v65_patronage = 5 } add_political_power = 35 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_police
-  icon = GFX_v65_focus_radio
-  x = 16 y = 6 cost = 5
-  prerequisite = { focus = v65_PKS_fees }
-
-
-  completion_reward = { v65_upgrade_signals = yes add_to_variable = { v65_intelligence = 1 } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_village_bargain
-  icon = GFX_v65_focus_tree
-  x = 16 y = 8 cost = 5
-  prerequisite = { focus = v65_PKS_police }
-
-
-  completion_reward = { add_to_variable = { v65_public_trust = 5 } subtract_from_variable = { v65_local_unrest = 2 } v65_refresh_society = yes }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_inspection
-  icon = GFX_v65_focus_tree
-  x = 16 y = 10 cost = 5
-  prerequisite = { focus = v65_PKS_village_bargain }
-
-
-  completion_reward = { add_to_variable = { v65_public_trust = 5 } v65_refresh_society = yes add_political_power = 15 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_trusted_villages
-  icon = GFX_v65_focus_shield
-  x = 16 y = 12 cost = 5
-  prerequisite = { focus = v65_PKS_inspection }
-
-
-  completion_reward = { add_ideas = v65_prepared_defence }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_business
-  icon = GFX_v65_focus_factory
-  x = 24 y = 2 cost = 3
-  prerequisite = { focus = v65_PKS_briefing }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_trucks
-  icon = GFX_v65_focus_motorized
-  x = 24 y = 4 cost = 3
-  prerequisite = { focus = v65_PKS_business }
-
-
-  completion_reward = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 150 producer = ROOT } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_repair
-  icon = GFX_v65_focus_artillery
-  x = 24 y = 6 cost = 5
-  prerequisite = { focus = v65_PKS_trucks }
-
-
-  completion_reward = { capital_scope = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_company
-  icon = GFX_v65_focus_factory
-  x = 24 y = 8 cost = 5
-  prerequisite = { focus = v65_PKS_repair }
-
-
-  completion_reward = { capital_scope = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_contracts
-  icon = GFX_v65_focus_scroll
-  x = 24 y = 10 cost = 5
-  prerequisite = { focus = v65_PKS_company }
-
-
-  completion_reward = { v65_upgrade_contracts = yes add_to_variable = { v65_patronage = 5 } add_political_power = 35 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_independent
-  icon = GFX_v65_focus_truck
-  x = 24 y = 12 cost = 5
-  prerequisite = { focus = v65_PKS_contracts }
-
-
-  completion_reward = { v65_upgrade_logistics = yes add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_power
-  icon = GFX_v65_focus_landmark
-  x = 32 y = 2 cost = 3
-  prerequisite = { focus = v65_PKS_briefing }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_guards
-  icon = GFX_v65_focus_shield
-  x = 32 y = 4 cost = 3
-  prerequisite = { focus = v65_PKS_power }
-
-
-  completion_reward = { add_ideas = v65_guard_network }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_intelligence
-  icon = GFX_v65_focus_radio
-  x = 32 y = 6 cost = 5
-  prerequisite = { focus = v65_PKS_guards }
-
-
-  completion_reward = { v65_upgrade_signals = yes add_to_variable = { v65_intelligence = 1 } }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_capital_links
-  icon = GFX_v65_focus_radio
-  x = 32 y = 8 cost = 5
-  prerequisite = { focus = v65_PKS_intelligence }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 50 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_remain
-  icon = GFX_v65_focus_tree
-  x = 29 y = 10 cost = 5
-  prerequisite = { focus = v65_PKS_capital_links }
-
-  mutually_exclusive = { focus = v65_PKS_yushin }
-  completion_reward = { add_ideas = v65_regional_network add_stability = 0.05 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_yushin
-  icon = GFX_v65_focus_landmark
-  x = 35 y = 10 cost = 5
-  prerequisite = { focus = v65_PKS_capital_links }
-  available = { SVN = { has_country_flag = v65_front_defeat exists = yes } NOT = { has_war_with = SVN } }
-  mutually_exclusive = { focus = v65_PKS_remain }
-  completion_reward = { v65_park_intervention = yes }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_union
-  icon = GFX_v65_focus_union
-  x = 40 y = 2 cost = 3
-  prerequisite = { focus = v65_PKS_briefing }
-
-
-  completion_reward = { v65_upgrade_staff = yes add_political_power = 25 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_officer_exchange
-  icon = GFX_v65_focus_scroll
-  x = 40 y = 4 cost = 3
-  prerequisite = { focus = v65_PKS_union }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_joint_accounts
-  icon = GFX_v65_focus_scroll
-  x = 40 y = 6 cost = 5
-  prerequisite = { focus = v65_PKS_officer_exchange }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_cabinet_guarantees
-  icon = GFX_v65_focus_scroll
-  x = 40 y = 8 cost = 5
-  prerequisite = { focus = v65_PKS_joint_accounts }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_hidden_council
-  icon = GFX_v65_focus_scroll
-  x = 40 y = 10 cost = 5
-  prerequisite = { focus = v65_PKS_cabinet_guarantees }
-
-
-  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
-  ai_will_do = { factor = 1 }
- }
- focus = {
-  id = v65_PKS_union_offer
-  icon = GFX_v65_focus_union
-  x = 40 y = 12 cost = 5
-  prerequisite = { focus = v65_PKS_hidden_council }
-  available = { v65_can_offer_union = yes }
-
-  completion_reward = { v65_offer_union = yes }
-  ai_will_do = { factor = 1 }
- }
-focus = { id = v65_PKS_act_1968 icon = GFX_v65_focus_scroll x = 4 y = 16 cost = 10 prerequisite = { focus = v65_PKS_briefing } available = { date > 1968.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.801 days = 1 } } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1968_security icon = GFX_v65_focus_helmet x = 0 y = 18 cost = 28 prerequisite = { focus = v65_PKS_act_1968 }  mutually_exclusive = { focus = v65_PKS_act_1968_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_1 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1968_civilian icon = GFX_v65_focus_landmark x = 8 y = 18 cost = 28 prerequisite = { focus = v65_PKS_act_1968 }  mutually_exclusive = { focus = v65_PKS_act_1968_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_1 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1971 icon = GFX_v65_focus_scroll x = 4 y = 24 cost = 10 prerequisite = { focus = v65_PKS_act_1968_security focus = v65_PKS_act_1968_civilian } available = { date > 1971.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.802 days = 1 } } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1971_security icon = GFX_v65_focus_helmet x = 0 y = 26 cost = 28 prerequisite = { focus = v65_PKS_act_1971 }  mutually_exclusive = { focus = v65_PKS_act_1971_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_2 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1971_civilian icon = GFX_v65_focus_landmark x = 8 y = 26 cost = 28 prerequisite = { focus = v65_PKS_act_1971 }  mutually_exclusive = { focus = v65_PKS_act_1971_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_2 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1974 icon = GFX_v65_focus_scroll x = 4 y = 32 cost = 10 prerequisite = { focus = v65_PKS_act_1971_security focus = v65_PKS_act_1971_civilian } available = { date > 1974.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.803 days = 1 } } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1974_security icon = GFX_v65_focus_helmet x = 0 y = 34 cost = 28 prerequisite = { focus = v65_PKS_act_1974 }  mutually_exclusive = { focus = v65_PKS_act_1974_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_3 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1974_civilian icon = GFX_v65_focus_landmark x = 8 y = 34 cost = 28 prerequisite = { focus = v65_PKS_act_1974 }  mutually_exclusive = { focus = v65_PKS_act_1974_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_3 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1977 icon = GFX_v65_focus_scroll x = 4 y = 40 cost = 10 prerequisite = { focus = v65_PKS_act_1974_security focus = v65_PKS_act_1974_civilian } available = { date > 1977.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.804 days = 1 } } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1977_security icon = GFX_v65_focus_helmet x = 0 y = 42 cost = 28 prerequisite = { focus = v65_PKS_act_1977 }  mutually_exclusive = { focus = v65_PKS_act_1977_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_4 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1977_civilian icon = GFX_v65_focus_landmark x = 8 y = 42 cost = 28 prerequisite = { focus = v65_PKS_act_1977 }  mutually_exclusive = { focus = v65_PKS_act_1977_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_4 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1979 icon = GFX_v65_focus_scroll x = 4 y = 48 cost = 10 prerequisite = { focus = v65_PKS_act_1977_security focus = v65_PKS_act_1977_civilian } available = { date > 1979.1.1 }  completion_reward = { add_political_power = 50 country_event = { id = v65story.805 days = 1 } } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1979_security icon = GFX_v65_focus_helmet x = 0 y = 50 cost = 28 prerequisite = { focus = v65_PKS_act_1979 }  mutually_exclusive = { focus = v65_PKS_act_1979_civilian } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_security_5 v65_upgrade_staff = yes v65_upgrade_training = yes subtract_from_variable = { v65_public_trust = 4 } add_to_variable = { v65_patronage = 5 } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
-focus = { id = v65_PKS_act_1979_civilian icon = GFX_v65_focus_landmark x = 8 y = 50 cost = 28 prerequisite = { focus = v65_PKS_act_1979 }  mutually_exclusive = { focus = v65_PKS_act_1979_security } completion_reward = { remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 } add_ideas = v65_policy_civilian_5 v65_upgrade_logistics = yes v65_upgrade_signals = yes add_to_variable = { v65_public_trust = 8 } subtract_from_variable = { v65_patronage = 4 } subtract_from_variable = { v65_war_fatigue = 4 } random_owned_controlled_state = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } v65_refresh_society = yes } ai_will_do = { factor = 1 } }
+	id = v65_PKS_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = PKS
+		}
+	}
+	default = no
+	reset_on_civilwar = no
+	continuous_focus_position = {
+		x = 0
+		y = 1500
+	}
+	focus = {
+		id = v65_PKS_briefing
+		icon = GFX_v65_focus_flag
+		x = 20
+		y = 0
+		cost = 2
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = v65_PKS_command
+		icon = GFX_v65_detail_command
+		x = 0
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_battalion
+		icon = GFX_v65_focus_doctrine
+		x = 0
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_command
+		}
+		completion_reward = {
+			v65_upgrade_training = yes
+			army_experience = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_quynhon
+		icon = GFX_v65_detail_reserve
+		x = 0
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_battalion
+		}
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_tiger
+		icon = GFX_v65_focus_armor
+		x = 0
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_quynhon
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_fieldstaff
+		icon = GFX_v65_focus_radio
+		x = 0
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_tiger
+		}
+		completion_reward = {
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_intelligence = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_elite
+		icon = GFX_v65_detail_motorized
+		x = 0
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_fieldstaff
+		}
+		completion_reward = {
+			v65_upgrade_training = yes
+			army_experience = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_reputation
+		icon = GFX_v65_detail_ledger
+		x = 8
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_war_reports
+		icon = GFX_v65_detail_ledger
+		x = 8
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_reputation
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_press
+		icon = GFX_v65_focus_radio
+		x = 8
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_war_reports
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_patron
+		icon = GFX_v65_focus_radio
+		x = 8
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_press
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_palace
+		icon = GFX_v65_focus_pressure
+		x = 8
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_patron
+		}
+		completion_reward = {
+			add_ideas = v65_park_patron
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_promotion
+		icon = GFX_v65_detail_command
+		x = 8
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_palace
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_villages
+		icon = GFX_v65_focus_scroll
+		x = 16
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_fees
+		icon = GFX_v65_focus_scroll
+		x = 16
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_villages
+		}
+		completion_reward = {
+			v65_upgrade_contracts = yes
+			add_to_variable = {
+				v65_patronage = 5
+			}
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_police
+		icon = GFX_v65_detail_orders
+		x = 16
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_fees
+		}
+		completion_reward = {
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_intelligence = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_village_bargain
+		icon = GFX_v65_focus_tree
+		x = 16
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_police
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_public_trust = 5
+			}
+			subtract_from_variable = {
+				v65_local_unrest = 2
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_inspection
+		icon = GFX_v65_focus_tree
+		x = 16
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_village_bargain
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_public_trust = 5
+			}
+			v65_refresh_society = yes
+			add_political_power = 15
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_trusted_villages
+		icon = GFX_v65_detail_village
+		x = 16
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_inspection
+		}
+		completion_reward = {
+			add_ideas = v65_prepared_defence
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_business
+		icon = GFX_v65_detail_contracts
+		x = 24
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_trucks
+		icon = GFX_v65_detail_supply
+		x = 24
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_business
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 150
+				producer = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_repair
+		icon = GFX_v65_focus_artillery
+		x = 24
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_trucks
+		}
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_company
+		icon = GFX_v65_detail_factory
+		x = 24
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_repair
+		}
+		completion_reward = {
+			capital_scope = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_contracts
+		icon = GFX_v65_focus_scroll
+		x = 24
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_company
+		}
+		completion_reward = {
+			v65_upgrade_contracts = yes
+			add_to_variable = {
+				v65_patronage = 5
+			}
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_independent
+		icon = GFX_v65_detail_supply
+		x = 24
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_contracts
+		}
+		completion_reward = {
+			v65_upgrade_logistics = yes
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 600
+				producer = ROOT
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_power
+		icon = GFX_v65_focus_landmark
+		x = 32
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_guards
+		icon = GFX_v65_detail_orders
+		x = 32
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_power
+		}
+		completion_reward = {
+			add_ideas = v65_guard_network
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_intelligence
+		icon = GFX_v65_focus_radio
+		x = 32
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_guards
+		}
+		completion_reward = {
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_intelligence = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_capital_links
+		icon = GFX_v65_focus_radio
+		x = 32
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_intelligence
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 50
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_remain
+		icon = GFX_v65_focus_tree
+		x = 29
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_capital_links
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_yushin
+		}
+		completion_reward = {
+			add_ideas = v65_regional_network
+			add_stability = 0.05
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_yushin
+		icon = GFX_v65_focus_landmark
+		x = 35
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_capital_links
+		}
+		available = {
+			SVN = {
+				has_country_flag = v65_front_defeat
+				exists = yes
+			}
+			NOT = {
+				has_war_with = SVN
+			}
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_remain
+		}
+		completion_reward = {
+			v65_park_intervention = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_union
+		icon = GFX_v65_focus_union
+		x = 40
+		y = 2
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_officer_exchange
+		icon = GFX_v65_detail_orders
+		x = 40
+		y = 4
+		cost = 3
+		prerequisite = {
+			focus = v65_PKS_union
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_joint_accounts
+		icon = GFX_v65_focus_scroll
+		x = 40
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_officer_exchange
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_cabinet_guarantees
+		icon = GFX_v65_focus_scroll
+		x = 40
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_joint_accounts
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_hidden_council
+		icon = GFX_v65_focus_scroll
+		x = 40
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_cabinet_guarantees
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_park_influence = 1
+			}
+			add_political_power = 35
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_union_offer
+		icon = GFX_v65_focus_union
+		x = 40
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_hidden_council
+		}
+		available = {
+			v65_can_offer_union = yes
+		}
+		completion_reward = {
+			v65_offer_union = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1968
+		icon = GFX_v65_focus_scroll
+		x = 4
+		y = 16
+		cost = 10
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		available = {
+			date > 1968.1.1
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = v65story.801
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1968_security
+		icon = GFX_v65_focus_helmet
+		x = 0
+		y = 18
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1968
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1968_civilian
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_security_1
+			v65_upgrade_staff = yes
+			v65_upgrade_training = yes
+			subtract_from_variable = {
+				v65_public_trust = 4
+			}
+			add_to_variable = {
+				v65_patronage = 5
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 600
+				producer = ROOT
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1968_civilian
+		icon = GFX_v65_focus_landmark
+		x = 8
+		y = 18
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1968
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1968_security
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_civilian_1
+			v65_upgrade_logistics = yes
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_public_trust = 8
+			}
+			subtract_from_variable = {
+				v65_patronage = 4
+			}
+			subtract_from_variable = {
+				v65_war_fatigue = 4
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1971
+		icon = GFX_v65_focus_scroll
+		x = 4
+		y = 24
+		cost = 10
+		prerequisite = {
+			focus = v65_PKS_act_1968_security
+			focus = v65_PKS_act_1968_civilian
+		}
+		available = {
+			date > 1971.1.1
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = v65story.802
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1971_security
+		icon = GFX_v65_focus_helmet
+		x = 0
+		y = 26
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1971
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1971_civilian
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_security_2
+			v65_upgrade_staff = yes
+			v65_upgrade_training = yes
+			subtract_from_variable = {
+				v65_public_trust = 4
+			}
+			add_to_variable = {
+				v65_patronage = 5
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 600
+				producer = ROOT
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1971_civilian
+		icon = GFX_v65_focus_landmark
+		x = 8
+		y = 26
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1971
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1971_security
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_civilian_2
+			v65_upgrade_logistics = yes
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_public_trust = 8
+			}
+			subtract_from_variable = {
+				v65_patronage = 4
+			}
+			subtract_from_variable = {
+				v65_war_fatigue = 4
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1974
+		icon = GFX_v65_focus_scroll
+		x = 4
+		y = 32
+		cost = 10
+		prerequisite = {
+			focus = v65_PKS_act_1971_security
+			focus = v65_PKS_act_1971_civilian
+		}
+		available = {
+			date > 1974.1.1
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = v65story.803
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1974_security
+		icon = GFX_v65_focus_helmet
+		x = 0
+		y = 34
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1974
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1974_civilian
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_security_3
+			v65_upgrade_staff = yes
+			v65_upgrade_training = yes
+			subtract_from_variable = {
+				v65_public_trust = 4
+			}
+			add_to_variable = {
+				v65_patronage = 5
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 600
+				producer = ROOT
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1974_civilian
+		icon = GFX_v65_focus_landmark
+		x = 8
+		y = 34
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1974
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1974_security
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_civilian_3
+			v65_upgrade_logistics = yes
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_public_trust = 8
+			}
+			subtract_from_variable = {
+				v65_patronage = 4
+			}
+			subtract_from_variable = {
+				v65_war_fatigue = 4
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1977
+		icon = GFX_v65_detail_civilian
+		x = 4
+		y = 40
+		cost = 10
+		prerequisite = {
+			focus = v65_PKS_act_1974_security
+			focus = v65_PKS_act_1974_civilian
+		}
+		available = {
+			date > 1977.1.1
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = v65story.804
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1977_security
+		icon = GFX_v65_focus_helmet
+		x = 0
+		y = 42
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1977
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1977_civilian
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_security_4
+			v65_upgrade_staff = yes
+			v65_upgrade_training = yes
+			subtract_from_variable = {
+				v65_public_trust = 4
+			}
+			add_to_variable = {
+				v65_patronage = 5
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 600
+				producer = ROOT
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1977_civilian
+		icon = GFX_v65_focus_landmark
+		x = 8
+		y = 42
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1977
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1977_security
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_civilian_4
+			v65_upgrade_logistics = yes
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_public_trust = 8
+			}
+			subtract_from_variable = {
+				v65_patronage = 4
+			}
+			subtract_from_variable = {
+				v65_war_fatigue = 4
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1979
+		icon = GFX_v65_focus_scroll
+		x = 4
+		y = 48
+		cost = 10
+		prerequisite = {
+			focus = v65_PKS_act_1977_security
+			focus = v65_PKS_act_1977_civilian
+		}
+		available = {
+			date > 1979.1.1
+		}
+		completion_reward = {
+			add_political_power = 50
+			country_event = {
+				id = v65story.805
+				days = 1
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1979_security
+		icon = GFX_v65_focus_helmet
+		x = 0
+		y = 50
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1979
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1979_civilian
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_security_5
+			v65_upgrade_staff = yes
+			v65_upgrade_training = yes
+			subtract_from_variable = {
+				v65_public_trust = 4
+			}
+			add_to_variable = {
+				v65_patronage = 5
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 600
+				producer = ROOT
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_act_1979_civilian
+		icon = GFX_v65_focus_landmark
+		x = 8
+		y = 50
+		cost = 28
+		prerequisite = {
+			focus = v65_PKS_act_1979
+		}
+		mutually_exclusive = {
+			focus = v65_PKS_act_1979_security
+		}
+		completion_reward = {
+			remove_ideas = { v65_policy_security_1 v65_policy_security_2 v65_policy_security_3 v65_policy_security_4 v65_policy_security_5 v65_policy_civilian_1 v65_policy_civilian_2 v65_policy_civilian_3 v65_policy_civilian_4 v65_policy_civilian_5 }
+			add_ideas = v65_policy_civilian_5
+			v65_upgrade_logistics = yes
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_public_trust = 8
+			}
+			subtract_from_variable = {
+				v65_patronage = 4
+			}
+			subtract_from_variable = {
+				v65_war_fatigue = 4
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
 }

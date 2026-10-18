@@ -1,0 +1,350 @@
+{
+  "width": 480,
+  "height": 548,
+  "widgets": [
+    {
+      "name": "title",
+      "kind": "text",
+      "key": "v65_panel_title",
+      "x": 16,
+      "y": 12,
+      "width": 440,
+      "height": 28,
+      "font": "hoi_24header"
+    },
+    {
+      "name": "caption",
+      "kind": "text",
+      "key": "v65_panel_caption",
+      "x": 17,
+      "y": 56,
+      "width": 440,
+      "height": 22,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "prestige_value",
+      "kind": "text",
+      "key": "v65_panel_prestige",
+      "x": 17,
+      "y": 81,
+      "width": 440,
+      "height": 24,
+      "font": "hoi_18mbs"
+    },
+    {
+      "name": "label_DNM",
+      "kind": "text",
+      "key": "v65_panel_DNM",
+      "x": 21,
+      "y": 149,
+      "width": 205,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "person_DNM",
+      "kind": "text",
+      "key": "v65_person_DNM",
+      "x": 83,
+      "y": 175,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "metrics_DNM",
+      "kind": "text",
+      "key": "v65_metrics_DNM",
+      "x": 83,
+      "y": 199,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "status_DNM",
+      "kind": "text",
+      "key": "v65_status_DNM",
+      "x": 83,
+      "y": 224,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "portrait_DNM",
+      "kind": "portrait",
+      "texture": "gfx/leaders/v65/ngo_quang_truong.dds",
+      "x": 22,
+      "y": 177,
+      "width": 50,
+      "height": 67
+    },
+    {
+      "name": "label_PKS",
+      "kind": "text",
+      "key": "v65_panel_PKS",
+      "x": 255,
+      "y": 149,
+      "width": 205,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "person_PKS",
+      "kind": "text",
+      "key": "v65_person_PKS",
+      "x": 317,
+      "y": 175,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "metrics_PKS",
+      "kind": "text",
+      "key": "v65_metrics_PKS",
+      "x": 317,
+      "y": 199,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "status_PKS",
+      "kind": "text",
+      "key": "v65_status_PKS",
+      "x": 317,
+      "y": 224,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "portrait_PKS",
+      "kind": "portrait",
+      "texture": "gfx/leaders/v65/park_seicheng.dds",
+      "x": 256,
+      "y": 177,
+      "width": 50,
+      "height": 67
+    },
+    {
+      "name": "label_HLC",
+      "kind": "text",
+      "key": "v65_panel_HLC",
+      "x": 21,
+      "y": 261,
+      "width": 205,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "person_HLC",
+      "kind": "text",
+      "key": "v65_person_HLC",
+      "x": 83,
+      "y": 287,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "metrics_HLC",
+      "kind": "text",
+      "key": "v65_metrics_HLC",
+      "x": 83,
+      "y": 311,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "status_HLC",
+      "kind": "text",
+      "key": "v65_status_HLC",
+      "x": 83,
+      "y": 336,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "portrait_HLC",
+      "kind": "portrait",
+      "texture": "gfx/leaders/v65/nguyen_khanh.dds",
+      "x": 22,
+      "y": 289,
+      "width": 50,
+      "height": 67
+    },
+    {
+      "name": "label_BHD",
+      "kind": "text",
+      "key": "v65_panel_BHD",
+      "x": 255,
+      "y": 261,
+      "width": 205,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "person_BHD",
+      "kind": "text",
+      "key": "v65_person_BHD",
+      "x": 317,
+      "y": 287,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "metrics_BHD",
+      "kind": "text",
+      "key": "v65_metrics_BHD",
+      "x": 317,
+      "y": 311,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "status_BHD",
+      "kind": "text",
+      "key": "v65_status_BHD",
+      "x": 317,
+      "y": 336,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "portrait_BHD",
+      "kind": "portrait",
+      "texture": "gfx/leaders/v65/nguyen_ngoc_loan.dds",
+      "x": 256,
+      "y": 289,
+      "width": 50,
+      "height": 67
+    },
+    {
+      "name": "label_MKG",
+      "kind": "text",
+      "key": "v65_panel_MKG",
+      "x": 21,
+      "y": 373,
+      "width": 205,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "person_MKG",
+      "kind": "text",
+      "key": "v65_person_MKG",
+      "x": 83,
+      "y": 399,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "metrics_MKG",
+      "kind": "text",
+      "key": "v65_metrics_MKG",
+      "x": 83,
+      "y": 423,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "status_MKG",
+      "kind": "text",
+      "key": "v65_status_MKG",
+      "x": 83,
+      "y": 448,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "portrait_MKG",
+      "kind": "portrait",
+      "texture": "gfx/leaders/v65/tran_van_hai.dds",
+      "x": 22,
+      "y": 401,
+      "width": 50,
+      "height": 67
+    },
+    {
+      "name": "label_PHQ",
+      "kind": "text",
+      "key": "v65_panel_PHQ",
+      "x": 255,
+      "y": 373,
+      "width": 205,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "person_PHQ",
+      "kind": "text",
+      "key": "v65_person_PHQ",
+      "x": 317,
+      "y": 399,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "metrics_PHQ",
+      "kind": "text",
+      "key": "v65_metrics_PHQ",
+      "x": 317,
+      "y": 423,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "status_PHQ",
+      "kind": "text",
+      "key": "v65_status_PHQ",
+      "x": 317,
+      "y": 448,
+      "width": 146,
+      "height": 20,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "portrait_PHQ",
+      "kind": "portrait",
+      "texture": "gfx/flags/PHQ.tga",
+      "x": 256,
+      "y": 419,
+      "width": 50,
+      "height": 32
+    },
+    {
+      "name": "footer",
+      "kind": "text",
+      "key": "v65_panel_footer",
+      "x": 16,
+      "y": 503,
+      "width": 448,
+      "height": 18,
+      "font": "hoi_16mbs"
+    },
+    {
+      "name": "hint",
+      "kind": "text",
+      "key": "v65_panel_hint",
+      "x": 16,
+      "y": 525,
+      "width": 448,
+      "height": 18,
+      "font": "hoi_16mbs"
+    }
+  ]
+}

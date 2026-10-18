@@ -24,7 +24,7 @@ class CampaignTests(unittest.TestCase):
     def test_union_and_neutral_sanctuary(self):
         p=ROOT/'mod/common/scripted_effects/v65_union_sanctuary.txt'
         self.assertTrue(p.exists(),'Missing negotiated union and Cambodian rear-base mechanics')
-        text=p.read_text(encoding='utf-8')
+        text=' '.join(p.read_text(encoding='utf-8').split())
         for effect in ['v65_finalize_union','v65_open_sanctuary','v65_close_sanctuary','v65_sanctuary_pulse']:
             self.assertIn(effect+' =',text)
         self.assertIn('is_ai = no',text)

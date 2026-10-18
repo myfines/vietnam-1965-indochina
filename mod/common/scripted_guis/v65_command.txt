@@ -1,0 +1,1 @@
+scripted_gui = { v65_command_panel = { context_type = decision_category window_name = "v65_command_window" ai_enabled = { always = no } properties = { prestige_bar = { frame = v65_prestige_frame } } } }

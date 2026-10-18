@@ -1,0 +1,1 @@
+v65_rear_networks = { icon = GFX_decision_generic_military allowed = { OR = { tag = SVN tag = PKS tag = DNM tag = HLC tag = MKG tag = BHD tag = PHQ tag = FNL } } visible = { always = yes } }

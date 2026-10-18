@@ -1,0 +1,7 @@
+ideas = { country = { v65_personal_staff = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.10 political_power_gain = 0.05 } }
+v65_command_council = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.03 stability_factor = 0.04 } }
+v65_regular_payroll = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = 0.04 political_power_gain = -0.10 } }
+v65_daihai_contracts = { picture = generic_army_chief allowed = { always = no } modifier = { production_factory_efficiency_gain_factor = 0.08 stability_factor = -0.03 } }
+v65_overseas_channel = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = 0.03 supply_consumption_factor = -0.05 } }
+v65_island_logistics = { picture = generic_army_chief allowed = { always = no } modifier = { supply_consumption_factor = -0.05 production_factory_efficiency_gain_factor = 0.05 } }
+v65_settled_regency = { picture = generic_army_chief allowed = { always = no } modifier = { political_power_gain = 0.15 planning_speed = 0.05 } } } }

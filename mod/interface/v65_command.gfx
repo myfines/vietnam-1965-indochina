@@ -1,0 +1,10 @@
+spriteTypes = {
+ spriteType = { name = "GFX_v65_dossier" texturefile = "gfx/interface/v65_command/dossier.dds" }
+ spriteType = { name = "GFX_v65_prestige" texturefile = "gfx/interface/v65_command/prestige.dds" noOfFrames = 101 }
+spriteType = { name = "GFX_v65_card_DNM" texturefile = "gfx/leaders/v65/ngo_quang_truong.dds" }
+spriteType = { name = "GFX_v65_card_PKS" texturefile = "gfx/leaders/v65/park_seicheng.dds" }
+spriteType = { name = "GFX_v65_card_HLC" texturefile = "gfx/leaders/v65/nguyen_khanh.dds" }
+spriteType = { name = "GFX_v65_card_BHD" texturefile = "gfx/leaders/v65/nguyen_ngoc_loan.dds" }
+spriteType = { name = "GFX_v65_card_MKG" texturefile = "gfx/leaders/v65/tran_van_hai.dds" }
+spriteType = { name = "GFX_v65_card_PHQ" texturefile = "gfx/flags/PHQ.tga" }
+}

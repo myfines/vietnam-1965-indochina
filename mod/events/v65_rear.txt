@@ -1,0 +1,16 @@
+add_namespace = v65rear
+country_event = { id = v65rear.114 hidden = yes is_triggered_only = yes immediate = { 14 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.116 hidden = yes is_triggered_only = yes immediate = { 16 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.117 hidden = yes is_triggered_only = yes immediate = { 17 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.118 hidden = yes is_triggered_only = yes immediate = { 18 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.119 hidden = yes is_triggered_only = yes immediate = { 19 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.120 hidden = yes is_triggered_only = yes immediate = { 20 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.121 hidden = yes is_triggered_only = yes immediate = { 21 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.122 hidden = yes is_triggered_only = yes immediate = { 22 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.123 hidden = yes is_triggered_only = yes immediate = { 23 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.124 hidden = yes is_triggered_only = yes immediate = { 24 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.126 hidden = yes is_triggered_only = yes immediate = { 26 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.127 hidden = yes is_triggered_only = yes immediate = { 27 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.128 hidden = yes is_triggered_only = yes immediate = { 28 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.129 hidden = yes is_triggered_only = yes immediate = { 29 = { clr_state_flag = v65_rear_cooldown } } }
+country_event = { id = v65rear.130 hidden = yes is_triggered_only = yes immediate = { 30 = { clr_state_flag = v65_rear_cooldown } } }

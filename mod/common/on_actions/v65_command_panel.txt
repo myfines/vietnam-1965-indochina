@@ -1,0 +1,4 @@
+on_actions = { on_daily = { effect = {
+ SVN = { set_variable = { v65_prestige_frame = v65_central_prestige } add_to_variable = { v65_prestige_frame = 1 } round_variable = v65_prestige_frame clamp_variable = { var = v65_prestige_frame min = 1 max = 101 } }
+ every_country = { limit = { OR = { tag = SVN tag = PKS tag = DNM tag = HLC tag = MKG tag = BHD tag = PHQ } } set_variable = { v65_prestige_frame = SVN.v65_prestige_frame } }
+} } on_startup = { effect = { DNM = { if = { limit = { NOT = { has_country_flag = v65_panel_initialized } } set_country_flag = v65_panel_initialized set_variable = { v65_regional_loyalty = 65 } } } } } }

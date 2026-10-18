@@ -1,0 +1,1 @@
+on_actions = { on_daily = { effect = { SVN = { v65_begin_park_government = yes } } } }

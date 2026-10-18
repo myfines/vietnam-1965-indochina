@@ -1,0 +1,986 @@
+focus_tree = {
+	id = v65_park_government
+	default = no
+	reset_on_civilwar = no
+	country = {
+		factor = 0
+	}
+	continuous_focus_position = {
+		x = 20
+		y = 1800
+	}
+	focus = {
+		id = v65_pgov_root
+		icon = GFX_v65_detail_command
+		x = 20
+		y = 0
+		cost = 3
+		completion_reward = {
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = v65_pgov_command_roster
+		icon = GFX_v65_detail_staff
+		x = 0
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_root
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_political_power = 25
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_command_personal
+		icon = GFX_v65_detail_command
+		x = -2
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_command_roster
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_command_council
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = v65_personal_staff
+			add_to_variable = {
+				v65_central_prestige = 8
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_command_council
+		icon = GFX_v65_detail_treaty
+		x = 2
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_command_roster
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_command_personal
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = v65_command_council
+			v65_loyalty_grant = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_command_inspect
+		icon = GFX_v65_detail_inspect
+		x = -2
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_command_personal
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_signals = yes
+			add_to_variable = {
+				v65_central_prestige = 6
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_command_compact
+		icon = GFX_v65_detail_autonomy
+		x = 2
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_command_council
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_loyalty_grant = yes
+			add_to_variable = {
+				v65_public_trust = 4
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_command_reserve
+		icon = GFX_v65_detail_reserve
+		x = 0
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_command_inspect
+			focus = v65_pgov_command_compact
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_training = yes
+			add_manpower = 4000
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_command_orders
+		icon = GFX_v65_detail_orders
+		x = 0
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_command_reserve
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_staff = yes
+			add_to_variable = {
+				v65_central_prestige = 10
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_finance_accounts
+		icon = GFX_v65_detail_ledger
+		x = 10
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_root
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_to_variable = {
+				v65_contract_credit = 2
+			}
+			v65_upgrade_logistics = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_finance_budget
+		icon = GFX_v65_detail_payroll
+		x = 8
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_finance_accounts
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_finance_contracts
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = v65_regular_payroll
+			v65_loyalty_grant = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_finance_contracts
+		icon = GFX_v65_detail_contracts
+		x = 12
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_finance_accounts
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_finance_budget
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = v65_daihai_contracts
+			add_to_variable = {
+				v65_contract_credit = 3
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_finance_reconcile
+		icon = GFX_v65_detail_recruit
+		x = 8
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_finance_budget
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_to_variable = {
+				v65_public_trust = 6
+			}
+			add_to_variable = {
+				v65_central_prestige = 6
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_finance_report
+		icon = GFX_v65_detail_supply
+		x = 12
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_finance_contracts
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_contracts = yes
+			add_to_variable = {
+				v65_contract_credit = 3
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_finance_repair
+		icon = GFX_v65_detail_repair
+		x = 10
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_finance_reconcile
+			focus = v65_pgov_finance_report
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_logistics = yes
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 120
+				producer = ROOT
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_finance_settle
+		icon = GFX_v65_detail_funds
+		x = 10
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_finance_repair
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_loyalty_grant = yes
+			add_to_variable = {
+				v65_central_prestige = 8
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_korea_liaison
+		icon = GFX_v65_detail_radio
+		x = 20
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_root
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_to_variable = {
+				v65_contract_credit = 2
+			}
+			add_to_variable = {
+				v65_personal_network = 1
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_korea_cadre
+		icon = GFX_v65_detail_korea
+		x = 18
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_korea_liaison
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_korea_training
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_free_korean_detachment = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_korea_training
+		icon = GFX_v65_detail_academy
+		x = 22
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_korea_liaison
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_korea_cadre
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_training = yes
+			add_to_variable = {
+				v65_personal_network = 2
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_korea_airlift
+		icon = GFX_v65_detail_airlift
+		x = 18
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_korea_cadre
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_logistics = yes
+			add_to_variable = {
+				v65_contract_credit = 2
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_korea_advisers
+		icon = GFX_v65_detail_adviser
+		x = 22
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_korea_training
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_staff = yes
+			v65_loyalty_grant = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_korea_rotation
+		icon = GFX_v65_detail_rotation
+		x = 20
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_korea_airlift
+			focus = v65_pgov_korea_advisers
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			subtract_from_variable = {
+				v65_war_fatigue = 8
+			}
+			v65_upgrade_training = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_korea_channel
+		icon = GFX_v65_detail_reinforce
+		x = 20
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_korea_rotation
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = v65_overseas_channel
+			add_to_variable = {
+				v65_contract_credit = 3
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_rear_map
+		icon = GFX_v65_detail_map
+		x = 30
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_root
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_to_variable = {
+				v65_intelligence = 1
+			}
+			v65_upgrade_signals = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_rear_proxy
+		icon = GFX_v65_detail_proxy
+		x = 28
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_rear_map
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_rear_village
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_free_proxy = yes
+			add_to_variable = {
+				v65_patronage = 3
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_rear_village
+		icon = GFX_v65_detail_village
+		x = 32
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_rear_map
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_rear_proxy
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_to_variable = {
+				v65_public_trust = 7
+			}
+			v65_rear_relief = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_rear_garrison
+		icon = GFX_v65_detail_garrison
+		x = 28
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_rear_proxy
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_upgrade_training = yes
+			add_manpower = 5000
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_rear_routes
+		icon = GFX_v65_detail_roads
+		x = 32
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_rear_village
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_rear_relief = yes
+			v65_upgrade_logistics = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_rear_intel
+		icon = GFX_v65_detail_intelligence
+		x = 30
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_rear_garrison
+			focus = v65_pgov_rear_routes
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_to_variable = {
+				v65_intelligence = 2
+			}
+			v65_upgrade_signals = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_rear_rear_order
+		icon = GFX_v65_detail_security
+		x = 30
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_rear_intel
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_loyalty_grant = yes
+			v65_rear_relief = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_settlement_warehouses
+		icon = GFX_v65_detail_warehouse
+		x = 40
+		y = 3
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_root
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_2
+				amount = 1000
+				producer = ROOT
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_settlement_island
+		icon = GFX_v65_detail_port
+		x = 38
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_settlement_warehouses
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_settlement_mainland
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = v65_island_logistics
+			v65_upgrade_logistics = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_settlement_mainland
+		icon = GFX_v65_detail_mainland
+		x = 42
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_settlement_warehouses
+		}
+		mutually_exclusive = {
+			focus = v65_pgov_settlement_island
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_loyalty_grant = yes
+			add_to_variable = {
+				v65_central_prestige = 8
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_settlement_evacuation
+		icon = GFX_v65_detail_evacuation
+		x = 38
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_settlement_island
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			subtract_from_variable = {
+				v65_war_fatigue = 6
+			}
+			add_to_variable = {
+				v65_contract_credit = 2
+			}
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_settlement_districts
+		icon = GFX_v65_detail_allocation
+		x = 42
+		y = 9
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_settlement_mainland
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			v65_loyalty_grant = yes
+			v65_upgrade_contracts = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_settlement_mandate
+		icon = GFX_v65_detail_mandate
+		x = 40
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_settlement_evacuation
+			focus = v65_pgov_settlement_districts
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_to_variable = {
+				v65_central_prestige = 10
+			}
+			v65_upgrade_staff = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	focus = {
+		id = v65_pgov_settlement_regency
+		icon = GFX_v65_detail_regency
+		x = 40
+		y = 15
+		cost = 5
+		prerequisite = {
+			focus = v65_pgov_settlement_mandate
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ARMY }
+		completion_reward = {
+			add_ideas = v65_settled_regency
+			v65_loyalty_grant = yes
+			clamp_variable = {
+				var = v65_contract_credit
+				min = 0
+				max = 10
+			}
+			v65_refresh_command = yes
+			v65_refresh_society = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

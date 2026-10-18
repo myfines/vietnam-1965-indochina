@@ -1,0 +1,39 @@
+guiTypes = { containerWindowType = { name = "v65_command_window" size = { width = 480 height = 548 }
+ iconType = { name = "dossier" spriteType = "GFX_v65_dossier" position = { x = 0 y = 0 } alwaystransparent = yes }
+instantTextBoxType = { name = "title" position = { x = 16 y = 12 } font = "hoi_24header" text = "v65_panel_title" maxWidth = 440 maxHeight = 28 fixedsize = yes }
+instantTextBoxType = { name = "caption" position = { x = 17 y = 56 } font = "hoi_16mbs" text = "v65_panel_caption" maxWidth = 440 maxHeight = 22 fixedsize = yes }
+instantTextBoxType = { name = "prestige_value" position = { x = 17 y = 81 } font = "hoi_18mbs" text = "v65_panel_prestige" maxWidth = 440 maxHeight = 24 fixedsize = yes }
+iconType = { name = "prestige_bar" scale = 4 spriteType = "GFX_v65_prestige" position = { x = 18 y = 115 } alwaystransparent = yes }
+instantTextBoxType = { name = "label_DNM" position = { x = 21 y = 149 } font = "hoi_16mbs" text = "v65_panel_DNM" maxWidth = 205 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "person_DNM" position = { x = 83 y = 175 } font = "hoi_16mbs" text = "v65_person_DNM" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "metrics_DNM" position = { x = 83 y = 199 } font = "hoi_16mbs" text = "v65_metrics_DNM" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "status_DNM" position = { x = 83 y = 224 } font = "hoi_16mbs" text = "v65_status_DNM" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+iconType = { name = "portrait_DNM" spriteType = "GFX_v65_card_DNM" position = { x = 22.00 y = 177.35 } scale = 0.3205 alwaystransparent = yes }
+instantTextBoxType = { name = "label_PKS" position = { x = 255 y = 149 } font = "hoi_16mbs" text = "v65_panel_PKS" maxWidth = 205 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "person_PKS" position = { x = 317 y = 175 } font = "hoi_16mbs" text = "v65_person_PKS" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "metrics_PKS" position = { x = 317 y = 199 } font = "hoi_16mbs" text = "v65_metrics_PKS" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "status_PKS" position = { x = 317 y = 224 } font = "hoi_16mbs" text = "v65_status_PKS" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+iconType = { name = "portrait_PKS" spriteType = "GFX_v65_card_PKS" position = { x = 256.00 y = 177.35 } scale = 0.3205 alwaystransparent = yes }
+instantTextBoxType = { name = "label_HLC" position = { x = 21 y = 261 } font = "hoi_16mbs" text = "v65_panel_HLC" maxWidth = 205 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "person_HLC" position = { x = 83 y = 287 } font = "hoi_16mbs" text = "v65_person_HLC" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "metrics_HLC" position = { x = 83 y = 311 } font = "hoi_16mbs" text = "v65_metrics_HLC" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "status_HLC" position = { x = 83 y = 336 } font = "hoi_16mbs" text = "v65_status_HLC" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+iconType = { name = "portrait_HLC" spriteType = "GFX_v65_card_HLC" position = { x = 22.00 y = 289.35 } scale = 0.3205 alwaystransparent = yes }
+instantTextBoxType = { name = "label_BHD" position = { x = 255 y = 261 } font = "hoi_16mbs" text = "v65_panel_BHD" maxWidth = 205 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "person_BHD" position = { x = 317 y = 287 } font = "hoi_16mbs" text = "v65_person_BHD" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "metrics_BHD" position = { x = 317 y = 311 } font = "hoi_16mbs" text = "v65_metrics_BHD" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "status_BHD" position = { x = 317 y = 336 } font = "hoi_16mbs" text = "v65_status_BHD" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+iconType = { name = "portrait_BHD" spriteType = "GFX_v65_card_BHD" position = { x = 256.00 y = 289.35 } scale = 0.3205 alwaystransparent = yes }
+instantTextBoxType = { name = "label_MKG" position = { x = 21 y = 373 } font = "hoi_16mbs" text = "v65_panel_MKG" maxWidth = 205 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "person_MKG" position = { x = 83 y = 399 } font = "hoi_16mbs" text = "v65_person_MKG" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "metrics_MKG" position = { x = 83 y = 423 } font = "hoi_16mbs" text = "v65_metrics_MKG" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "status_MKG" position = { x = 83 y = 448 } font = "hoi_16mbs" text = "v65_status_MKG" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+iconType = { name = "portrait_MKG" spriteType = "GFX_v65_card_MKG" position = { x = 22.00 y = 401.35 } scale = 0.3205 alwaystransparent = yes }
+instantTextBoxType = { name = "label_PHQ" position = { x = 255 y = 373 } font = "hoi_16mbs" text = "v65_panel_PHQ" maxWidth = 205 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "person_PHQ" position = { x = 317 y = 399 } font = "hoi_16mbs" text = "v65_person_PHQ" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "metrics_PHQ" position = { x = 317 y = 423 } font = "hoi_16mbs" text = "v65_metrics_PHQ" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+instantTextBoxType = { name = "status_PHQ" position = { x = 317 y = 448 } font = "hoi_16mbs" text = "v65_status_PHQ" maxWidth = 146 maxHeight = 20 fixedsize = yes }
+iconType = { name = "portrait_PHQ" spriteType = "GFX_v65_card_PHQ" position = { x = 256.00 y = 419.15 } scale = 0.6098 alwaystransparent = yes }
+instantTextBoxType = { name = "footer" position = { x = 16 y = 503 } font = "hoi_16mbs" text = "v65_panel_footer" maxWidth = 448 maxHeight = 18 fixedsize = yes }
+instantTextBoxType = { name = "hint" position = { x = 16 y = 525 } font = "hoi_16mbs" text = "v65_panel_hint" maxWidth = 448 maxHeight = 18 fixedsize = yes }
+} }

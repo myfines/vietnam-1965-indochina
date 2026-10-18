@@ -1,0 +1,38 @@
+defined_text = { name = v65_park_metrics text = { trigger = { SVN = { has_country_flag = v65_union_complete } } localization_key = v65_park_metrics_after } text = { localization_key = v65_park_metrics_before } }
+defined_text = { name = v65_status_text_DNM
+text = { trigger = { DNM = { exists = no } } localization_key = v65_panel_inactive }
+text = { trigger = { DNM = { has_country_flag = v65_rebel_command } } localization_key = v65_panel_rebel }
+text = { trigger = { DNM = { has_country_flag = v65_command_refused } } localization_key = v65_panel_refused }
+text = { trigger = { DNM = { v65_under_central_command = yes } } localization_key = v65_panel_ordered }
+text = { localization_key = v65_panel_independent } }
+defined_text = { name = v65_status_text_PKS
+text = { trigger = { SVN = { has_country_flag = v65_union_complete } } localization_key = v65_panel_union }
+text = { trigger = { PKS = { exists = no } } localization_key = v65_panel_inactive }
+text = { trigger = { PKS = { has_country_flag = v65_rebel_command } } localization_key = v65_panel_rebel }
+text = { trigger = { PKS = { has_country_flag = v65_command_refused } } localization_key = v65_panel_refused }
+text = { trigger = { PKS = { v65_under_central_command = yes } } localization_key = v65_panel_ordered }
+text = { localization_key = v65_panel_independent } }
+defined_text = { name = v65_status_text_HLC
+text = { trigger = { HLC = { exists = no } } localization_key = v65_panel_inactive }
+text = { trigger = { HLC = { has_country_flag = v65_rebel_command } } localization_key = v65_panel_rebel }
+text = { trigger = { HLC = { has_country_flag = v65_command_refused } } localization_key = v65_panel_refused }
+text = { trigger = { HLC = { v65_under_central_command = yes } } localization_key = v65_panel_ordered }
+text = { localization_key = v65_panel_independent } }
+defined_text = { name = v65_status_text_BHD
+text = { trigger = { BHD = { exists = no } } localization_key = v65_panel_inactive }
+text = { trigger = { BHD = { has_country_flag = v65_rebel_command } } localization_key = v65_panel_rebel }
+text = { trigger = { BHD = { has_country_flag = v65_command_refused } } localization_key = v65_panel_refused }
+text = { trigger = { BHD = { v65_under_central_command = yes } } localization_key = v65_panel_ordered }
+text = { localization_key = v65_panel_independent } }
+defined_text = { name = v65_status_text_MKG
+text = { trigger = { MKG = { exists = no } } localization_key = v65_panel_inactive }
+text = { trigger = { MKG = { has_country_flag = v65_rebel_command } } localization_key = v65_panel_rebel }
+text = { trigger = { MKG = { has_country_flag = v65_command_refused } } localization_key = v65_panel_refused }
+text = { trigger = { MKG = { v65_under_central_command = yes } } localization_key = v65_panel_ordered }
+text = { localization_key = v65_panel_independent } }
+defined_text = { name = v65_status_text_PHQ
+text = { trigger = { PHQ = { exists = no } } localization_key = v65_panel_inactive }
+text = { trigger = { PHQ = { has_country_flag = v65_rebel_command } } localization_key = v65_panel_rebel }
+text = { trigger = { PHQ = { has_country_flag = v65_command_refused } } localization_key = v65_panel_refused }
+text = { trigger = { PHQ = { v65_under_central_command = yes } } localization_key = v65_panel_ordered }
+text = { localization_key = v65_panel_independent } }

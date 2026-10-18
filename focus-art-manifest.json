@@ -1,0 +1,2449 @@
+{
+  "bindings": [
+    {
+      "name": "GFX_v65_detail_command",
+      "texture": "gfx/interface/goals/focus_generic_military_dictatorship.dds"
+    },
+    {
+      "name": "GFX_v65_detail_staff",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds"
+    },
+    {
+      "name": "GFX_v65_detail_inspect",
+      "texture": "gfx/interface/goals/focus_generic_secret_service_agency.dds"
+    },
+    {
+      "name": "GFX_v65_detail_reserve",
+      "texture": "gfx/interface/goals/focus_generic_home_defense.dds"
+    },
+    {
+      "name": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds"
+    },
+    {
+      "name": "GFX_v65_detail_treaty",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds"
+    },
+    {
+      "name": "GFX_v65_detail_autonomy",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds"
+    },
+    {
+      "name": "GFX_v65_detail_ledger",
+      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds"
+    },
+    {
+      "name": "GFX_v65_detail_payroll",
+      "texture": "gfx/interface/goals/focus_generic_manpower.dds"
+    },
+    {
+      "name": "GFX_v65_detail_contracts",
+      "texture": "gfx/interface/goals/focus_generic_arms_trade.dds"
+    },
+    {
+      "name": "GFX_v65_detail_recruit",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds"
+    },
+    {
+      "name": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds"
+    },
+    {
+      "name": "GFX_v65_detail_repair",
+      "texture": "gfx/interface/goals/goal_continuous_repairments.dds"
+    },
+    {
+      "name": "GFX_v65_detail_funds",
+      "texture": "gfx/interface/goals/focus_generic_industry_investment.dds"
+    },
+    {
+      "name": "GFX_v65_detail_korea",
+      "texture": "gfx/interface/goals/focus_generic_diverse_army.dds"
+    },
+    {
+      "name": "GFX_v65_detail_academy",
+      "texture": "gfx/interface/goals/focus_generic_advanced_military_studies.dds"
+    },
+    {
+      "name": "GFX_v65_detail_airlift",
+      "texture": "gfx/interface/goals/focus_generic_long_range_aircraft.dds"
+    },
+    {
+      "name": "GFX_v65_detail_adviser",
+      "texture": "gfx/interface/goals/focus_generic_military_mission.dds"
+    },
+    {
+      "name": "GFX_v65_detail_rotation",
+      "texture": "gfx/interface/goals/focus_generic_jungle_training.dds"
+    },
+    {
+      "name": "GFX_v65_detail_reinforce",
+      "texture": "gfx/interface/goals/focus_generic_reinforcing_the_supply_network.dds"
+    },
+    {
+      "name": "GFX_v65_detail_map",
+      "texture": "gfx/interface/goals/focus_generic_hill_training.dds"
+    },
+    {
+      "name": "GFX_v65_detail_proxy",
+      "texture": "gfx/interface/goals/focus_generic_commonwealth_build_infantry.dds"
+    },
+    {
+      "name": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds"
+    },
+    {
+      "name": "GFX_v65_detail_garrison",
+      "texture": "gfx/interface/goals/focus_generic_defensive_reorganization.dds"
+    },
+    {
+      "name": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds"
+    },
+    {
+      "name": "GFX_v65_detail_intelligence",
+      "texture": "gfx/interface/goals/focus_generic_secret_agent_operative.dds"
+    },
+    {
+      "name": "GFX_v65_detail_security",
+      "texture": "gfx/interface/goals/focus_generic_national_security.dds"
+    },
+    {
+      "name": "GFX_v65_detail_warehouse",
+      "texture": "gfx/interface/goals/focus_generic_money_for_equipment.dds"
+    },
+    {
+      "name": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds"
+    },
+    {
+      "name": "GFX_v65_detail_mainland",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds"
+    },
+    {
+      "name": "GFX_v65_detail_evacuation",
+      "texture": "gfx/interface/goals/focus_generic_air_bases.dds"
+    },
+    {
+      "name": "GFX_v65_detail_allocation",
+      "texture": "gfx/interface/goals/focus_generic_industry_2.dds"
+    },
+    {
+      "name": "GFX_v65_detail_mandate",
+      "texture": "gfx/interface/goals/focus_generic_support_the_left_right.dds"
+    },
+    {
+      "name": "GFX_v65_detail_regency",
+      "texture": "gfx/interface/goals/focus_generic_conspiracy.dds"
+    },
+    {
+      "name": "GFX_v65_detail_factory",
+      "texture": "gfx/interface/goals/focus_generic_industry_3.dds"
+    },
+    {
+      "name": "GFX_v65_detail_industry",
+      "texture": "gfx/interface/goals/focus_generic_modernize_industry.dds"
+    },
+    {
+      "name": "GFX_v65_detail_armor",
+      "texture": "gfx/interface/goals/focus_generic_army_tanks2.dds"
+    },
+    {
+      "name": "GFX_v65_detail_motorized",
+      "texture": "gfx/interface/goals/goal_generic_army_motorized.dds"
+    },
+    {
+      "name": "GFX_v65_detail_doctrine",
+      "texture": "gfx/interface/goals/focus_generic_army_doctrines_2.dds"
+    },
+    {
+      "name": "GFX_v65_detail_aircraft",
+      "texture": "gfx/interface/goals/focus_generic_aircraft_production.dds"
+    },
+    {
+      "name": "GFX_v65_detail_airdefence",
+      "texture": "gfx/interface/goals/focus_generic_air_defense.dds"
+    },
+    {
+      "name": "GFX_v65_detail_cas",
+      "texture": "gfx/interface/goals/focus_generic_cas_aircraft.dds"
+    },
+    {
+      "name": "GFX_v65_detail_navy",
+      "texture": "gfx/interface/goals/focus_generic_large_navy.dds"
+    },
+    {
+      "name": "GFX_v65_detail_navalinvasion",
+      "texture": "gfx/interface/goals/focus_generic_naval_invasion.dds"
+    },
+    {
+      "name": "GFX_v65_detail_coast",
+      "texture": "gfx/interface/goals/focus_generic_naval_discipline.dds"
+    },
+    {
+      "name": "GFX_v65_detail_airtraining",
+      "texture": "gfx/interface/goals/focus_generic_pilot_training.dds"
+    },
+    {
+      "name": "GFX_v65_detail_mountain",
+      "texture": "gfx/interface/goals/focus_generic_mountain_training.dds"
+    },
+    {
+      "name": "GFX_v65_detail_fort",
+      "texture": "gfx/interface/goals/focus_generic_mountain_fortification.dds"
+    },
+    {
+      "name": "GFX_v65_detail_revolution",
+      "texture": "gfx/interface/goals/focus_generic_communist_industry.dds"
+    },
+    {
+      "name": "GFX_v65_detail_trade",
+      "texture": "gfx/interface/goals/focus_generic_trade_interdiction.dds"
+    },
+    {
+      "name": "GFX_v65_detail_resources",
+      "texture": "gfx/interface/goals/focus_generic_mining_industry.dds"
+    },
+    {
+      "name": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds"
+    }
+  ],
+  "assignments": {
+    "v65_BHD_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "东南军区的第一本账"
+    },
+    "v65_BHD_local_0_0": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "首都外的通信网"
+    },
+    "v65_BHD_local_0_1": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "工坊与补给站"
+    },
+    "v65_BHD_local_0_2": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "保护交通节点"
+    },
+    "v65_BHD_local_0_3": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "恢复地方采购"
+    },
+    "v65_BHD_local_1_0": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "核查警察名册"
+    },
+    "v65_BHD_local_1_1": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "清查关卡收入"
+    },
+    "v65_BHD_local_1_2": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "县城之外的巡逻"
+    },
+    "v65_BHD_local_1_3": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "保留可靠的基层"
+    },
+    "v65_BHD_local_2_0": {
+      "icon": "GFX_v65_detail_contracts",
+      "texture": "gfx/interface/goals/focus_generic_arms_trade.dds",
+      "title": "中央与驻军的合同"
+    },
+    "v65_BHD_local_2_1": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "分担首都防卫"
+    },
+    "v65_BHD_local_2_2": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "统一军需结算"
+    },
+    "v65_BHD_local_2_3": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "东南战区的政治价格"
+    },
+    "v65_BHD_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_BHD_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_BHD_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_BHD_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_BHD_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_BHD_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_BHD_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_BHD_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_BHD_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_BHD_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_BHD_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_BHD_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_BHD_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_BHD_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_BHD_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_DNM_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "岘港军区的抉择"
+    },
+    "v65_DNM_command": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "岘港军区的账本"
+    },
+    "v65_DNM_officers": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "重新确认军官效忠"
+    },
+    "v65_DNM_reserve": {
+      "icon": "GFX_v65_detail_reserve",
+      "texture": "gfx/interface/goals/focus_generic_home_defense.dds",
+      "title": "军区直属预备队"
+    },
+    "v65_DNM_hue": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "与顺化驻军建立协同"
+    },
+    "v65_DNM_reports": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "军区战情汇报"
+    },
+    "v65_DNM_agreement": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "重订中央军费协议"
+    },
+    "v65_DNM_defence": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "中部沿海防线"
+    },
+    "v65_DNM_fort": {
+      "icon": "GFX_v65_detail_fort",
+      "texture": "gfx/interface/goals/focus_generic_mountain_fortification.dds",
+      "title": "岘港环形工事"
+    },
+    "v65_DNM_patrol": {
+      "icon": "GFX_v65_focus_doctrine",
+      "texture": "gfx/interface/goals/goal_generic_army_doctrines.dds",
+      "title": "山口巡逻部队"
+    },
+    "v65_DNM_supply": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "军区弹药储备"
+    },
+    "v65_DNM_road": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "沿海交通修复"
+    },
+    "v65_DNM_elastic": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "保留机动纵深"
+    },
+    "v65_DNM_port": {
+      "icon": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "港口城市的战争"
+    },
+    "v65_DNM_dock": {
+      "icon": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "岘港码头调度"
+    },
+    "v65_DNM_repair": {
+      "icon": "GFX_v65_focus_artillery",
+      "texture": "gfx/interface/goals/goal_generic_army_artillery.dds",
+      "title": "港区修械厂"
+    },
+    "v65_DNM_industry": {
+      "icon": "GFX_v65_detail_industry",
+      "texture": "gfx/interface/goals/focus_generic_modernize_industry.dds",
+      "title": "维持城市生产"
+    },
+    "v65_DNM_police": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "城市警务协调"
+    },
+    "v65_DNM_civic": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "城市重建基金"
+    },
+    "v65_DNM_politics": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "西贡来电"
+    },
+    "v65_DNM_neutral": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "军区不卷入私人争斗"
+    },
+    "v65_DNM_liaison": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "首都联络代表"
+    },
+    "v65_DNM_loyal": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "公开确认共同战线"
+    },
+    "v65_DNM_autonomy": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "军区行政自主"
+    },
+    "v65_DNM_refuge": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "接收溃散部队"
+    },
+    "v65_DNM_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_DNM_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_DNM_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_DNM_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_DNM_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_DNM_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_DNM_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_DNM_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_DNM_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_DNM_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_DNM_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_DNM_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_DNM_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_DNM_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_DNM_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_FNL_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "南方的星火"
+    },
+    "v65_FNL_command": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "南方的地下战争"
+    },
+    "v65_FNL_cells": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "重建乡村支部"
+    },
+    "v65_FNL_cadres": {
+      "icon": "GFX_v65_detail_academy",
+      "texture": "gfx/interface/goals/focus_generic_advanced_military_studies.dds",
+      "title": "地方干部训练班"
+    },
+    "v65_FNL_villages": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "村庄的隐蔽粮仓"
+    },
+    "v65_FNL_political": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "统一战线代表会议"
+    },
+    "v65_FNL_network": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "地下行政联络网"
+    },
+    "v65_FNL_guerrilla": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "公路之外的机动"
+    },
+    "v65_FNL_caches": {
+      "icon": "GFX_v65_focus_artillery",
+      "texture": "gfx/interface/goals/goal_generic_army_artillery.dds",
+      "title": "隐藏武器窖"
+    },
+    "v65_FNL_night": {
+      "icon": "GFX_v65_focus_doctrine",
+      "texture": "gfx/interface/goals/goal_generic_army_doctrines.dds",
+      "title": "夜间集结"
+    },
+    "v65_FNL_ambush": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "伏击运输车队"
+    },
+    "v65_FNL_disperse": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "打散再集结"
+    },
+    "v65_FNL_rear": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "在南方腹地建立新据点"
+    },
+    "v65_FNL_trail": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "接上胡志明小道"
+    },
+    "v65_FNL_runners": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "接头员的路线图"
+    },
+    "v65_FNL_border": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "边境秘密转运点"
+    },
+    "v65_FNL_medics": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "丛林救护站"
+    },
+    "v65_FNL_liaison": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "与北方协调增援"
+    },
+    "v65_FNL_depots": {
+      "icon": "GFX_v65_detail_warehouse",
+      "texture": "gfx/interface/goals/focus_generic_money_for_equipment.dds",
+      "title": "南方仓库网络"
+    },
+    "v65_FNL_future": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "为南方争取政治地位"
+    },
+    "v65_FNL_assembly": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "地方代表会议"
+    },
+    "v65_FNL_land": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "乡村土地争议委员会"
+    },
+    "v65_FNL_recruit": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "扩大地方武装"
+    },
+    "v65_FNL_negotiation": {
+      "icon": "GFX_v65_detail_treaty",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保留谈判渠道"
+    },
+    "v65_FNL_administration": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "南方联合行政"
+    },
+    "v65_FNL_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_FNL_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_FNL_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_FNL_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_FNL_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_FNL_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_FNL_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_FNL_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_FNL_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_FNL_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_FNL_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_FNL_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_FNL_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_FNL_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_FNL_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_HLC_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "西原军区的第一本账"
+    },
+    "v65_HLC_local_0_0": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "山地道路"
+    },
+    "v65_HLC_local_0_1": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "熟悉村庄的向导"
+    },
+    "v65_HLC_local_0_2": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "分散转运仓"
+    },
+    "v65_HLC_local_0_3": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "雨季运输预案"
+    },
+    "v65_HLC_local_1_0": {
+      "icon": "GFX_v65_detail_mountain",
+      "texture": "gfx/interface/goals/focus_generic_mountain_training.dds",
+      "title": "整顿高地驻军"
+    },
+    "v65_HLC_local_1_1": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "尊重地方语言与习惯"
+    },
+    "v65_HLC_local_1_2": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "核查警务报告"
+    },
+    "v65_HLC_local_1_3": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "军政联络处"
+    },
+    "v65_HLC_local_2_0": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存部队的条件"
+    },
+    "v65_HLC_local_2_1": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "核对中央军援"
+    },
+    "v65_HLC_local_2_2": {
+      "icon": "GFX_v65_detail_intelligence",
+      "texture": "gfx/interface/goals/focus_generic_secret_agent_operative.dds",
+      "title": "与邻区共享情报"
+    },
+    "v65_HLC_local_2_3": {
+      "icon": "GFX_v65_detail_treaty",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "重新谈判战区责任"
+    },
+    "v65_HLC_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_HLC_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_HLC_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_HLC_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_HLC_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_HLC_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_HLC_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_HLC_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_HLC_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_HLC_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_HLC_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_HLC_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_HLC_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_HLC_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_HLC_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_KHM_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "战火边缘的王国"
+    },
+    "v65_KHM_command": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "金边的两本账"
+    },
+    "v65_KHM_border": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "边境哨所的沉默"
+    },
+    "v65_KHM_patrol": {
+      "icon": "GFX_v65_focus_doctrine",
+      "texture": "gfx/interface/goals/goal_generic_army_doctrines.dds",
+      "title": "巡逻线外的营地"
+    },
+    "v65_KHM_reports": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "密报只送王宫"
+    },
+    "v65_KHM_neutrality": {
+      "icon": "GFX_v65_focus_sanctuary",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "中立声明与秘密默契"
+    },
+    "v65_KHM_mediation": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "用通道换取安全保证"
+    },
+    "v65_KHM_economy": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "西哈努克港的夜间货单"
+    },
+    "v65_KHM_roads": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "通往桔井的道路"
+    },
+    "v65_KHM_industry": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "粮袋上的商号"
+    },
+    "v65_KHM_repair": {
+      "icon": "GFX_v65_focus_artillery",
+      "texture": "gfx/interface/goals/goal_generic_army_artillery.dds",
+      "title": "边境修械工场"
+    },
+    "v65_KHM_port": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "西哈努克港的夜间卸货"
+    },
+    "v65_KHM_reserve": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "分散在村庄的储备"
+    },
+    "v65_KHM_security": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "防止战争越过边界"
+    },
+    "v65_KHM_staff": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "整编军队参谋机构"
+    },
+    "v65_KHM_training": {
+      "icon": "GFX_v65_detail_academy",
+      "texture": "gfx/interface/goals/focus_generic_advanced_military_studies.dds",
+      "title": "训练边境预备队"
+    },
+    "v65_KHM_fort": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "保护关键渡口"
+    },
+    "v65_KHM_police": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "行政与警务联合报告"
+    },
+    "v65_KHM_control": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "确立军队调动程序"
+    },
+    "v65_KHM_society": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "让金边之外的地方运转"
+    },
+    "v65_KHM_rice": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "恢复农产品流通"
+    },
+    "v65_KHM_schools": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "培训基层行政人员"
+    },
+    "v65_KHM_health": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "省级救护体系"
+    },
+    "v65_KHM_budget": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "公开地方建设预算"
+    },
+    "v65_KHM_settlement": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "中立国家的长期安排"
+    },
+    "v65_KHM_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_KHM_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_KHM_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_KHM_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_KHM_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_KHM_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_KHM_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_KHM_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_KHM_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_KHM_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_KHM_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_KHM_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_KHM_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_KHM_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_KHM_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_MKG_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "湄公河军区的第一本账"
+    },
+    "v65_MKG_local_0_0": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "河道巡逻队"
+    },
+    "v65_MKG_local_0_1": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "稻米市场的秩序"
+    },
+    "v65_MKG_local_0_2": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "分散船运仓"
+    },
+    "v65_MKG_local_0_3": {
+      "icon": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "恢复渡口与码头"
+    },
+    "v65_MKG_local_1_0": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "三角洲的地方军"
+    },
+    "v65_MKG_local_1_1": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "征粮与保护的边界"
+    },
+    "v65_MKG_local_1_2": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "夜间道路联络"
+    },
+    "v65_MKG_local_1_3": {
+      "icon": "GFX_v65_detail_academy",
+      "texture": "gfx/interface/goals/focus_generic_advanced_military_studies.dds",
+      "title": "训练本地预备队"
+    },
+    "v65_MKG_local_2_0": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "给西贡的真实报告"
+    },
+    "v65_MKG_local_2_1": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军费换来的承诺"
+    },
+    "v65_MKG_local_2_2": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保留地方行政"
+    },
+    "v65_MKG_local_2_3": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "三角洲共同防务"
+    },
+    "v65_MKG_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_MKG_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_MKG_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_MKG_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_MKG_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_MKG_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_MKG_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_MKG_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_MKG_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_MKG_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_MKG_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_MKG_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_MKG_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_MKG_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_MKG_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_NVN_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "持久战争的两条战线"
+    },
+    "v65_NVN_command": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "河内的持久战争"
+    },
+    "v65_NVN_staff": {
+      "icon": "GFX_v65_detail_command",
+      "texture": "gfx/interface/goals/focus_generic_military_dictatorship.dds",
+      "title": "统一前线指挥"
+    },
+    "v65_NVN_reserve": {
+      "icon": "GFX_v65_detail_reserve",
+      "texture": "gfx/interface/goals/focus_generic_home_defense.dds",
+      "title": "北方战略预备队"
+    },
+    "v65_NVN_supply": {
+      "icon": "GFX_v65_detail_warehouse",
+      "texture": "gfx/interface/goals/focus_generic_money_for_equipment.dds",
+      "title": "洞海的隐蔽仓库"
+    },
+    "v65_NVN_fort": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "十七度线阵地群"
+    },
+    "v65_NVN_hold": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "避免消耗性的北线冒进"
+    },
+    "v65_NVN_trail": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "穿越森林的道路"
+    },
+    "v65_NVN_trail_depots": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "分散式转运仓"
+    },
+    "v65_NVN_guides": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "山地向导网络"
+    },
+    "v65_NVN_repair": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "雨季道路养护"
+    },
+    "v65_NVN_signals": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "跨区通信联络"
+    },
+    "v65_NVN_rear_offensive": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "将增援送往南方"
+    },
+    "v65_NVN_south": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "与南方解放阵线协同"
+    },
+    "v65_NVN_liaison": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "派遣南方联络员"
+    },
+    "v65_NVN_cadres": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "补充基层骨干"
+    },
+    "v65_NVN_arms": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "缴获武器再分配"
+    },
+    "v65_NVN_coordination": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "南北联合行动窗口"
+    },
+    "v65_NVN_political_front": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "保留统一战线的空间"
+    },
+    "v65_NVN_economy": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "支撑长期动员"
+    },
+    "v65_NVN_workshops": {
+      "icon": "GFX_v65_focus_artillery",
+      "texture": "gfx/interface/goals/goal_generic_army_artillery.dds",
+      "title": "地方修械作坊"
+    },
+    "v65_NVN_rails": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "修复运输节点"
+    },
+    "v65_NVN_industry": {
+      "icon": "GFX_v65_detail_industry",
+      "texture": "gfx/interface/goals/focus_generic_modernize_industry.dds",
+      "title": "扩大后方生产"
+    },
+    "v65_NVN_civil": {
+      "icon": "GFX_v65_detail_industry",
+      "texture": "gfx/interface/goals/focus_generic_modernize_industry.dds",
+      "title": "保障生产人员生活"
+    },
+    "v65_NVN_reserves": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "为下一轮战争储备"
+    },
+    "v65_NVN_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_NVN_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_NVN_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_NVN_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_NVN_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_NVN_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_NVN_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_NVN_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_NVN_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_NVN_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_NVN_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_NVN_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_NVN_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_NVN_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_NVN_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_pgov_root": {
+      "icon": "GFX_v65_detail_command",
+      "texture": "gfx/interface/goals/focus_generic_military_dictatorship.dds",
+      "title": "接过西贡的电话"
+    },
+    "v65_pgov_command_roster": {
+      "icon": "GFX_v65_detail_staff",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "核对司令与实际驻军"
+    },
+    "v65_pgov_command_personal": {
+      "icon": "GFX_v65_detail_command",
+      "texture": "gfx/interface/goals/focus_generic_military_dictatorship.dds",
+      "title": "由朴系参谋接管调令"
+    },
+    "v65_pgov_command_council": {
+      "icon": "GFX_v65_detail_treaty",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "召开军区协调会"
+    },
+    "v65_pgov_command_inspect": {
+      "icon": "GFX_v65_detail_inspect",
+      "texture": "gfx/interface/goals/focus_generic_secret_service_agency.dds",
+      "title": "派出直属督察组"
+    },
+    "v65_pgov_command_compact": {
+      "icon": "GFX_v65_detail_autonomy",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "承认军区内部任命"
+    },
+    "v65_pgov_command_reserve": {
+      "icon": "GFX_v65_detail_reserve",
+      "texture": "gfx/interface/goals/focus_generic_home_defense.dds",
+      "title": "确定中央预备队"
+    },
+    "v65_pgov_command_orders": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "恢复跨区作战命令"
+    },
+    "v65_pgov_finance_accounts": {
+      "icon": "GFX_v65_detail_ledger",
+      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds",
+      "title": "接收旧政府的军需账"
+    },
+    "v65_pgov_finance_budget": {
+      "icon": "GFX_v65_detail_payroll",
+      "texture": "gfx/interface/goals/focus_generic_manpower.dds",
+      "title": "固定各区军饷份额"
+    },
+    "v65_pgov_finance_contracts": {
+      "icon": "GFX_v65_detail_contracts",
+      "texture": "gfx/interface/goals/focus_generic_arms_trade.dds",
+      "title": "让日海承包运输"
+    },
+    "v65_pgov_finance_reconcile": {
+      "icon": "GFX_v65_detail_recruit",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "以实编人数发饷"
+    },
+    "v65_pgov_finance_report": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "扩大特需申报渠道"
+    },
+    "v65_pgov_finance_repair": {
+      "icon": "GFX_v65_detail_repair",
+      "texture": "gfx/interface/goals/goal_continuous_repairments.dds",
+      "title": "设立维修与零件库"
+    },
+    "v65_pgov_finance_settle": {
+      "icon": "GFX_v65_detail_funds",
+      "texture": "gfx/interface/goals/focus_generic_industry_investment.dds",
+      "title": "结清一次跨区欠饷"
+    },
+    "v65_pgov_korea_liaison": {
+      "icon": "GFX_v65_detail_radio",
+      "texture": "",
+      "title": "保留驻越联络组"
+    },
+    "v65_pgov_korea_cadre": {
+      "icon": "GFX_v65_detail_korea",
+      "texture": "gfx/interface/goals/focus_generic_diverse_army.dds",
+      "title": "申请韩军骨干留驻"
+    },
+    "v65_pgov_korea_training": {
+      "icon": "GFX_v65_detail_academy",
+      "texture": "gfx/interface/goals/focus_generic_advanced_military_studies.dds",
+      "title": "扩大越南军官培训"
+    },
+    "v65_pgov_korea_airlift": {
+      "icon": "GFX_v65_detail_airlift",
+      "texture": "gfx/interface/goals/focus_generic_long_range_aircraft.dds",
+      "title": "为分遣队保留空运额度"
+    },
+    "v65_pgov_korea_advisers": {
+      "icon": "GFX_v65_detail_adviser",
+      "texture": "gfx/interface/goals/focus_generic_military_mission.dds",
+      "title": "派顾问进入军区司令部"
+    },
+    "v65_pgov_korea_rotation": {
+      "icon": "GFX_v65_detail_rotation",
+      "texture": "gfx/interface/goals/focus_generic_jungle_training.dds",
+      "title": "安排驻军轮换"
+    },
+    "v65_pgov_korea_channel": {
+      "icon": "GFX_v65_detail_reinforce",
+      "texture": "gfx/interface/goals/focus_generic_reinforcing_the_supply_network.dds",
+      "title": "建立固定增援渠道"
+    },
+    "v65_pgov_rear_map": {
+      "icon": "GFX_v65_detail_map",
+      "texture": "gfx/interface/goals/focus_generic_hill_training.dds",
+      "title": "重新登记后方联络线"
+    },
+    "v65_pgov_rear_proxy": {
+      "icon": "GFX_v65_detail_proxy",
+      "texture": "gfx/interface/goals/focus_generic_commonwealth_build_infantry.dds",
+      "title": "征发地方代理部队"
+    },
+    "v65_pgov_rear_village": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "与地方头面人物签约"
+    },
+    "v65_pgov_rear_garrison": {
+      "icon": "GFX_v65_detail_garrison",
+      "texture": "gfx/interface/goals/focus_generic_defensive_reorganization.dds",
+      "title": "把代理团纳入驻军表"
+    },
+    "v65_pgov_rear_routes": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "优先打通运输道路"
+    },
+    "v65_pgov_rear_intel": {
+      "icon": "GFX_v65_detail_intelligence",
+      "texture": "gfx/interface/goals/focus_generic_secret_agent_operative.dds",
+      "title": "让军区自行核对情报"
+    },
+    "v65_pgov_rear_rear_order": {
+      "icon": "GFX_v65_detail_security",
+      "texture": "gfx/interface/goals/focus_generic_national_security.dds",
+      "title": "恢复后方驻军协定"
+    },
+    "v65_pgov_settlement_warehouses": {
+      "icon": "GFX_v65_detail_warehouse",
+      "texture": "gfx/interface/goals/focus_generic_money_for_equipment.dds",
+      "title": "清点移交仓库"
+    },
+    "v65_pgov_settlement_island": {
+      "icon": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "保留离岛后勤"
+    },
+    "v65_pgov_settlement_mainland": {
+      "icon": "GFX_v65_detail_mainland",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "优先维持大陆战区"
+    },
+    "v65_pgov_settlement_evacuation": {
+      "icon": "GFX_v65_detail_evacuation",
+      "texture": "gfx/interface/goals/focus_generic_air_bases.dds",
+      "title": "拟定基地与人员转运表"
+    },
+    "v65_pgov_settlement_districts": {
+      "icon": "GFX_v65_detail_allocation",
+      "texture": "gfx/interface/goals/focus_generic_industry_2.dds",
+      "title": "重签各区补给份额"
+    },
+    "v65_pgov_settlement_mandate": {
+      "icon": "GFX_v65_detail_mandate",
+      "texture": "gfx/interface/goals/focus_generic_support_the_left_right.dds",
+      "title": "确认中央最后保留的权限"
+    },
+    "v65_pgov_settlement_regency": {
+      "icon": "GFX_v65_detail_regency",
+      "texture": "gfx/interface/goals/focus_generic_conspiracy.dds",
+      "title": "让所有人继续拿得到军饷"
+    },
+    "v65_PHQ_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "富国岛特别区的第一本账"
+    },
+    "v65_PHQ_local_0_0": {
+      "icon": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "扩建岛上港口"
+    },
+    "v65_PHQ_local_0_1": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "难民登记与安置"
+    },
+    "v65_PHQ_local_0_2": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "军属学校与救护"
+    },
+    "v65_PHQ_local_0_3": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "维持海上补给"
+    },
+    "v65_PHQ_local_1_0": {
+      "icon": "GFX_v65_detail_academy",
+      "texture": "gfx/interface/goals/focus_generic_advanced_military_studies.dds",
+      "title": "岛防与训练营"
+    },
+    "v65_PHQ_local_1_1": {
+      "icon": "GFX_v65_detail_rotation",
+      "texture": "gfx/interface/goals/focus_generic_jungle_training.dds",
+      "title": "精锐的轮换制度"
+    },
+    "v65_PHQ_local_1_2": {
+      "icon": "GFX_v65_detail_intelligence",
+      "texture": "gfx/interface/goals/focus_generic_secret_agent_operative.dds",
+      "title": "核查大陆情报"
+    },
+    "v65_PHQ_local_1_3": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "本岛预备力量"
+    },
+    "v65_PHQ_local_2_0": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "后方也有自己的利益"
+    },
+    "v65_PHQ_local_2_1": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "援助大陆的限度"
+    },
+    "v65_PHQ_local_2_2": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存地方行政"
+    },
+    "v65_PHQ_local_2_3": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一份能够兑现的离岛保证"
+    },
+    "v65_PHQ_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_PHQ_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_PHQ_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_PHQ_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_PHQ_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_PHQ_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_PHQ_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_PHQ_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_PHQ_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_PHQ_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_PHQ_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_PHQ_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_PHQ_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_PHQ_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_PHQ_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_PKS_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "朴世诚：从归仁开始"
+    },
+    "v65_PKS_command": {
+      "icon": "GFX_v65_detail_command",
+      "texture": "gfx/interface/goals/focus_generic_military_dictatorship.dds",
+      "title": "归仁的年轻指挥官"
+    },
+    "v65_PKS_battalion": {
+      "icon": "GFX_v65_focus_doctrine",
+      "texture": "gfx/interface/goals/goal_generic_army_doctrines.dds",
+      "title": "整顿第一三三大队"
+    },
+    "v65_PKS_quynhon": {
+      "icon": "GFX_v65_detail_reserve",
+      "texture": "gfx/interface/goals/focus_generic_home_defense.dds",
+      "title": "归仁预备队营地"
+    },
+    "v65_PKS_tiger": {
+      "icon": "GFX_v65_focus_armor",
+      "texture": "gfx/interface/goals/goal_generic_army_tanks.dds",
+      "title": "猛虎师协同演练"
+    },
+    "v65_PKS_fieldstaff": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "建立直属参谋班子"
+    },
+    "v65_PKS_elite": {
+      "icon": "GFX_v65_detail_motorized",
+      "texture": "gfx/interface/goals/goal_generic_army_motorized.dds",
+      "title": "机械化突击骨干"
+    },
+    "v65_PKS_reputation": {
+      "icon": "GFX_v65_detail_ledger",
+      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds",
+      "title": "战报与晋升"
+    },
+    "v65_PKS_war_reports": {
+      "icon": "GFX_v65_detail_ledger",
+      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds",
+      "title": "第一份归仁战报"
+    },
+    "v65_PKS_press": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "记者抵达营地"
+    },
+    "v65_PKS_patron": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "争取蔡命新支持"
+    },
+    "v65_PKS_palace": {
+      "icon": "GFX_v65_focus_pressure",
+      "texture": "gfx/interface/goals/goal_generic_forceful_treaty.dds",
+      "title": "通往青瓦台的信件"
+    },
+    "v65_PKS_promotion": {
+      "icon": "GFX_v65_detail_command",
+      "texture": "gfx/interface/goals/focus_generic_military_dictatorship.dds",
+      "title": "以战功换指挥权"
+    },
+    "v65_PKS_villages": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "良民证的代价"
+    },
+    "v65_PKS_fees": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "清点办证收入"
+    },
+    "v65_PKS_police": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "地方警察联络网"
+    },
+    "v65_PKS_village_bargain": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "以保护换取合作"
+    },
+    "v65_PKS_inspection": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "清查办证灰色收入"
+    },
+    "v65_PKS_trusted_villages": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "可信的后方村庄"
+    },
+    "v65_PKS_business": {
+      "icon": "GFX_v65_detail_contracts",
+      "texture": "gfx/interface/goals/focus_generic_arms_trade.dds",
+      "title": "日海的军需合同"
+    },
+    "v65_PKS_trucks": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "承包运输车队"
+    },
+    "v65_PKS_repair": {
+      "icon": "GFX_v65_focus_artillery",
+      "texture": "gfx/interface/goals/goal_generic_army_artillery.dds",
+      "title": "营地修械工场"
+    },
+    "v65_PKS_company": {
+      "icon": "GFX_v65_detail_factory",
+      "texture": "gfx/interface/goals/focus_generic_industry_3.dds",
+      "title": "日海集团的第一间工厂"
+    },
+    "v65_PKS_contracts": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "扩大军需采购权"
+    },
+    "v65_PKS_independent": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "维持独立补给"
+    },
+    "v65_PKS_power": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "把声望变成权力"
+    },
+    "v65_PKS_guards": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "直属警卫与通信网"
+    },
+    "v65_PKS_intelligence": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "特战司的雏形"
+    },
+    "v65_PKS_capital_links": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "在西贡寻找盟友"
+    },
+    "v65_PKS_remain": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "在越南扎根"
+    },
+    "v65_PKS_yushin": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "以秩序之名进军西贡"
+    },
+    "v65_PKS_union": {
+      "icon": "GFX_v65_focus_union",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "让总统留在台前"
+    },
+    "v65_PKS_officer_exchange": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "交换军区联络官"
+    },
+    "v65_PKS_joint_accounts": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "共同军需结算处"
+    },
+    "v65_PKS_cabinet_guarantees": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "给文官一份保证"
+    },
+    "v65_PKS_hidden_council": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "幕后的军政协调会"
+    },
+    "v65_PKS_union_offer": {
+      "icon": "GFX_v65_focus_union",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "西贡联合政府议定书"
+    },
+    "v65_PKS_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_PKS_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_PKS_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_PKS_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_PKS_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_PKS_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_PKS_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_PKS_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_PKS_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_PKS_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_PKS_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_PKS_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_PKS_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_PKS_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_PKS_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_RKH_briefing": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "丛林中的另一种国家"
+    },
+    "v65_RKH_base_0_0": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "根据地的道路"
+    },
+    "v65_RKH_base_0_1": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "村庄运输队"
+    },
+    "v65_RKH_base_0_2": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "分散粮食仓"
+    },
+    "v65_RKH_base_0_3": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "修理缴获武器"
+    },
+    "v65_RKH_base_0_4": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "雨季前的储备"
+    },
+    "v65_RKH_base_0_5": {
+      "icon": "GFX_v65_focus_truck",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "根据地后勤契约"
+    },
+    "v65_RKH_base_1_0": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "组织与军队"
+    },
+    "v65_RKH_base_1_1": {
+      "icon": "GFX_v65_detail_academy",
+      "texture": "gfx/interface/goals/focus_generic_advanced_military_studies.dds",
+      "title": "连队骨干训练"
+    },
+    "v65_RKH_base_1_2": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "核查征集名册"
+    },
+    "v65_RKH_base_1_3": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "地方干部联络"
+    },
+    "v65_RKH_base_1_4": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "精锐与补充队"
+    },
+    "v65_RKH_base_1_5": {
+      "icon": "GFX_v65_detail_rotation",
+      "texture": "gfx/interface/goals/focus_generic_jungle_training.dds",
+      "title": "保持指挥与轮换"
+    },
+    "v65_RKH_base_2_0": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "边境与外部援助"
+    },
+    "v65_RKH_base_2_1": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "建立北方联络"
+    },
+    "v65_RKH_base_2_2": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "中转仓的条件"
+    },
+    "v65_RKH_base_2_3": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "核对越境货单"
+    },
+    "v65_RKH_base_2_4": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "减少单一依赖"
+    },
+    "v65_RKH_base_2_5": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "自己掌握通道"
+    },
+    "v65_RKH_base_3_0": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "村庄与革命"
+    },
+    "v65_RKH_base_3_1": {
+      "icon": "GFX_v65_detail_industry",
+      "texture": "gfx/interface/goals/focus_generic_modernize_industry.dds",
+      "title": "恢复基层生产"
+    },
+    "v65_RKH_base_3_2": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "处理地方申诉"
+    },
+    "v65_RKH_base_3_3": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "保留可用行政"
+    },
+    "v65_RKH_base_3_4": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "学校与救护站"
+    },
+    "v65_RKH_base_3_5": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "兑现粮食承诺"
+    },
+    "v65_RKH_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_RKH_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_RKH_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_RKH_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_RKH_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_RKH_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_RKH_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_RKH_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_RKH_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_RKH_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_RKH_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_RKH_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_RKH_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_RKH_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_RKH_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    },
+    "v65_SVN_briefing": {
+      "icon": "GFX_v65_focus_flag",
+      "texture": "gfx/interface/goals/goal_generic_propaganda.dds",
+      "title": "两场战争，一个西贡"
+    },
+    "v65_SVN_command": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "西贡的战争"
+    },
+    "v65_SVN_roster": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "清点军区名册"
+    },
+    "v65_SVN_reports": {
+      "icon": "GFX_v65_detail_ledger",
+      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds",
+      "title": "让真实战报抵达西贡"
+    },
+    "v65_SVN_liaison": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "驻军联络官"
+    },
+    "v65_SVN_reserve": {
+      "icon": "GFX_v65_detail_reserve",
+      "texture": "gfx/interface/goals/focus_generic_home_defense.dds",
+      "title": "中央机动预备队"
+    },
+    "v65_SVN_unity": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "重新签署军区协议"
+    },
+    "v65_SVN_front": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "守住十七度线"
+    },
+    "v65_SVN_dmz": {
+      "icon": "GFX_v65_detail_fort",
+      "texture": "gfx/interface/goals/focus_generic_mountain_fortification.dds",
+      "title": "广治防御工事"
+    },
+    "v65_SVN_hue": {
+      "icon": "GFX_v65_detail_supply",
+      "texture": "gfx/interface/goals/focus_generic_supply_line.dds",
+      "title": "顺化补给仓"
+    },
+    "v65_SVN_rotation": {
+      "icon": "GFX_v65_detail_rotation",
+      "texture": "gfx/interface/goals/focus_generic_jungle_training.dds",
+      "title": "轮换疲惫的营"
+    },
+    "v65_SVN_corridor": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "一号公路护送队"
+    },
+    "v65_SVN_hold_line": {
+      "icon": "GFX_v65_focus_shield",
+      "texture": "gfx/interface/goals/goal_generic_fortify_city.dds",
+      "title": "有限战争指令"
+    },
+    "v65_SVN_villages": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "乡村不是空白地带"
+    },
+    "v65_SVN_register": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "重新核查乡村户籍"
+    },
+    "v65_SVN_patrols": {
+      "icon": "GFX_v65_focus_doctrine",
+      "texture": "gfx/interface/goals/goal_generic_army_doctrines.dds",
+      "title": "分区巡逻制度"
+    },
+    "v65_SVN_amnesty": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "有条件的归顺"
+    },
+    "v65_SVN_countertrail": {
+      "icon": "GFX_v65_detail_orders",
+      "texture": "gfx/interface/goals/focus_generic_radio_communication.dds",
+      "title": "切断秘密联络站"
+    },
+    "v65_SVN_rural_pact": {
+      "icon": "GFX_v65_detail_village",
+      "texture": "gfx/interface/goals/focus_generic_farmland.dds",
+      "title": "乡村重建契约"
+    },
+    "v65_SVN_economy": {
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "援助如何变成战力"
+    },
+    "v65_SVN_roads": {
+      "icon": "GFX_v65_detail_roads",
+      "texture": "gfx/interface/goals/goal_generic_construct_infrastructure.dds",
+      "title": "修复交通干线"
+    },
+    "v65_SVN_workshops": {
+      "icon": "GFX_v65_focus_artillery",
+      "texture": "gfx/interface/goals/goal_generic_army_artillery.dds",
+      "title": "扩充军械工坊"
+    },
+    "v65_SVN_supplies": {
+      "icon": "GFX_v65_detail_ledger",
+      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds",
+      "title": "统一军需账目"
+    },
+    "v65_SVN_industry": {
+      "icon": "GFX_v65_detail_industry",
+      "texture": "gfx/interface/goals/focus_generic_modernize_industry.dds",
+      "title": "战时民用生产"
+    },
+    "v65_SVN_port": {
+      "icon": "GFX_v65_focus_motorized",
+      "texture": "gfx/interface/goals/goal_generic_army_motorized.dds",
+      "title": "西贡港周转计划"
+    },
+    "v65_SVN_politics": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "军政权力的裂缝"
+    },
+    "v65_SVN_civil": {
+      "icon": "GFX_v65_focus_tree",
+      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
+      "title": "给地方行政留出空间"
+    },
+    "v65_SVN_crisis": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "败报后的追责会议"
+    },
+    "v65_SVN_radio": {
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "控制西贡广播台"
+    },
+    "v65_SVN_bargain": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "首都驻军的承诺"
+    },
+    "v65_SVN_martial_focus": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "全国戒严令"
+    },
+    "v65_SVN_civilian": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "由文官监督军方"
+    },
+    "v65_SVN_act_1968": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "军援离开之后"
+    },
+    "v65_SVN_act_1968_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1968：把战区放在首位"
+    },
+    "v65_SVN_act_1968_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1968：与地方重新立约"
+    },
+    "v65_SVN_act_1971": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "一张地图，几套命令"
+    },
+    "v65_SVN_act_1971_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1971：把战区放在首位"
+    },
+    "v65_SVN_act_1971_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1971：与地方重新立约"
+    },
+    "v65_SVN_act_1974": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "保存什么，放弃什么"
+    },
+    "v65_SVN_act_1974_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1974：把战区放在首位"
+    },
+    "v65_SVN_act_1974_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1974：与地方重新立约"
+    },
+    "v65_SVN_act_1977": {
+      "icon": "GFX_v65_detail_civilian",
+      "texture": "gfx/interface/goals/focus_generic_refit_civilian_ships.dds",
+      "title": "战争进入地方社会"
+    },
+    "v65_SVN_act_1977_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1977：把战区放在首位"
+    },
+    "v65_SVN_act_1977_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1977：与地方重新立约"
+    },
+    "v65_SVN_act_1979": {
+      "icon": "GFX_v65_focus_scroll",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "十四年以后"
+    },
+    "v65_SVN_act_1979_security": {
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "1979：把战区放在首位"
+    },
+    "v65_SVN_act_1979_civilian": {
+      "icon": "GFX_v65_focus_landmark",
+      "texture": "gfx/interface/goals/focus_generic_treaty.dds",
+      "title": "1979：与地方重新立约"
+    }
+  }
+}
