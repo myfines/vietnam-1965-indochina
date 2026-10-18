@@ -7,3 +7,4 @@ import build_war_stages
 import build_long_world
 import build_long_systems
 import build_long_narrative
+import build_command_politics

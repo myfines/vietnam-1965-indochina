@@ -1,0 +1,5 @@
+ideas = { country = {
+ v65_central_respected = { picture = generic_political_reform allowed = { always = no } modifier = { political_power_gain = 0.10 planning_speed = 0.05 } }
+ v65_central_discredited = { picture = generic_political_reform allowed = { always = no } modifier = { political_power_gain = -0.15 planning_speed = -0.10 } }
+ v65_park_inside = { picture = v65_park_shadow_ruler allowed = { always = no } modifier = { planning_speed = 0.05 } }
+} }

@@ -1,0 +1,1 @@
+v65_command_politics = { icon = GFX_decision_generic_military allowed = { OR = { tag = SVN tag = PKS tag = HLC tag = MKG tag = BHD tag = PHQ } } visible = { always = yes } }

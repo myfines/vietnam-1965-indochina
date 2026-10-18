@@ -1,0 +1,20 @@
+on_actions = { on_startup = { effect = {
+ SVN = { if = { limit = { NOT = { has_country_flag = v65_command_initialized } } set_country_flag = v65_command_initialized set_variable = { v65_central_prestige = 55 } v65_refresh_command = yes } }
+} } on_monthly = { effect = { SVN = { if = { limit = { exists = yes } v65_command_month = yes } }
+HLC = { if = { limit = { exists = yes v65_under_central_command = yes }
+ if = { limit = { SVN = { check_variable = { v65_central_prestige < 40 } } } subtract_from_variable = { v65_regional_loyalty = 5 } }
+ else_if = { limit = { SVN = { check_variable = { v65_central_prestige > 64 } } } add_to_variable = { v65_regional_loyalty = 2 } }
+ clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } v65_dissent_HLC = yes } }
+MKG = { if = { limit = { exists = yes v65_under_central_command = yes }
+ if = { limit = { SVN = { check_variable = { v65_central_prestige < 40 } } } subtract_from_variable = { v65_regional_loyalty = 5 } }
+ else_if = { limit = { SVN = { check_variable = { v65_central_prestige > 64 } } } add_to_variable = { v65_regional_loyalty = 2 } }
+ clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } v65_dissent_MKG = yes } }
+BHD = { if = { limit = { exists = yes v65_under_central_command = yes }
+ if = { limit = { SVN = { check_variable = { v65_central_prestige < 40 } } } subtract_from_variable = { v65_regional_loyalty = 5 } }
+ else_if = { limit = { SVN = { check_variable = { v65_central_prestige > 64 } } } add_to_variable = { v65_regional_loyalty = 2 } }
+ clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } v65_dissent_BHD = yes } }
+PHQ = { if = { limit = { exists = yes v65_under_central_command = yes }
+ if = { limit = { SVN = { check_variable = { v65_central_prestige < 40 } } } subtract_from_variable = { v65_regional_loyalty = 5 } }
+ else_if = { limit = { SVN = { check_variable = { v65_central_prestige > 64 } } } add_to_variable = { v65_regional_loyalty = 2 } }
+ clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } v65_dissent_PHQ = yes } }
+} } }

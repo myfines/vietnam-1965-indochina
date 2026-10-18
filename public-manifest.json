@@ -32,6 +32,10 @@
     "sha256": "2d886279250abacab157834152008ac03be90876c00030d54f284e4cf8beae5d"
   },
   {
+    "path": "events/v65_command.txt",
+    "sha256": "eed0b9a42a2550720f707ec19b0e7017cd7b3a785041d05356a538bd286fc803"
+  },
+  {
     "path": "events/v65_governance.txt",
     "sha256": "96ab05b77f8d56acd57ec65138461d23224e61dfab6ad24e0019f1ee113e825a"
   },
@@ -328,6 +332,10 @@
     "sha256": "2e01541504551208cd8497150ad8a4ab9e2e1e033cbef45bd9be91fb4836ebd5"
   },
   {
+    "path": "common/decisions/v65_command.txt",
+    "sha256": "a9c6de855ae6f79f594204a24b8ff5256f5b6c51493ff58df100c392ba009b73"
+  },
+  {
     "path": "common/decisions/v65_governance.txt",
     "sha256": "78a48012e44958c41e6e6cc832f968d0b308f0271c834efd2bc73c554c79646e"
   },
@@ -366,6 +374,10 @@
   {
     "path": "common/ideas/v65_campaign.txt",
     "sha256": "6aaa5a487ea14ed14de5a380b096b133ef327cefe4f262e63941af400b66304e"
+  },
+  {
+    "path": "common/ideas/v65_command.txt",
+    "sha256": "7dfe4ed59fe2d02acfeda79089e1897c2dda811e529ada409ba0e2eff3d678af"
   },
   {
     "path": "common/ideas/v65_long_campaign.txt",
@@ -444,6 +456,10 @@
     "sha256": "9e60a4163927759d64a871b6e47a5f0577a05f7fc703fd83a41bdcb7800d18fe"
   },
   {
+    "path": "common/on_actions/v65_command.txt",
+    "sha256": "69c740f39b68bcd75ee4a093ba41cd9a1540bde9d2d02012961ec634d296e971"
+  },
+  {
     "path": "common/on_actions/v65_narrative.txt",
     "sha256": "b4c801cd236b1527ff44d48014d1cbd494a7d60d51f719c2f3d6280c6e4858a4"
   },
@@ -472,12 +488,16 @@
     "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
   },
   {
+    "path": "common/scripted_effects/v65_command.txt",
+    "sha256": "e257d07b60a7fb41e920120b72e60076d94a09b11bf94ed2f6277cf0aea2cfd8"
+  },
+  {
     "path": "common/scripted_effects/v65_politics.txt",
     "sha256": "2c2bc2023269bfdf499de979db0b891d1361652e5a9a5387e17d075dfb9a0f64"
   },
   {
     "path": "common/scripted_effects/v65_regions.txt",
-    "sha256": "3cc5daca8c57142c56465968203fd60cc30b70dfcba662408e4f53aa22a097f0"
+    "sha256": "b4716f8ab4d104c0b6ef0de15da62f8b106e5b4ab8a7295a90045dc75e1a97d0"
   },
   {
     "path": "common/scripted_effects/v65_society.txt",
@@ -498,6 +518,10 @@
   {
     "path": "common/scripted_triggers/v65_campaign.txt",
     "sha256": "da5b26b7f74323900792692a8171f552dd92c9094311c3b87f6ceac33eece266"
+  },
+  {
+    "path": "common/scripted_triggers/v65_command.txt",
+    "sha256": "ad0a520e79d238ac5379fdc6f58d6f04429d7a7e52f680aa99bbe78d6324c6e4"
   },
   {
     "path": "common/scripted_triggers/v65_union_sanctuary.txt",
@@ -554,6 +578,10 @@
   {
     "path": "common/decisions/categories/v65_archive.txt",
     "sha256": "09e4e522fddfa62f389e7d0c9dc2b2214017cc5605080be8d9f402a8b03a67f5"
+  },
+  {
+    "path": "common/decisions/categories/v65_command.txt",
+    "sha256": "a55035fdc2a2b2f5353e363d5a2f192e0b80c7456469c0ee34c11ee98a62c90d"
   },
   {
     "path": "common/decisions/categories/v65_governance.txt",
@@ -1656,12 +1684,16 @@
     "sha256": "85b040017d44d938811268835e0d44e412fb316e7e30af2b48688bcf24eaf022"
   },
   {
+    "path": "localisation/english/zzzzzzz_v65_command_l_english.yml",
+    "sha256": "cbaabce33e928eab2907dddac44a5909cd61bf8f99668252c3d810eea84461c6"
+  },
+  {
     "path": "localisation/english/zzzzzz_v65_narrative_l_english.yml",
-    "sha256": "57473ce4b7eaa3769f0b338fc832a89c3f330714e00faafac3dff47175b29867"
+    "sha256": "b719da9f1684660451f75596b8545e809ff1d8f435ea60428b35d0204bda320a"
   },
   {
     "path": "localisation/english/zzzzzz_v65_regions_l_english.yml",
-    "sha256": "c21ea52e30036df10cff19a3aee7d0658d636759e7096ffcb96e0c6388c1f1e3"
+    "sha256": "f2f62ca5218bae750e86a8807a6fdeb44531c848336ec607fdcc4f08cae38303"
   },
   {
     "path": "localisation/english/zzzzzz_v65_routes_l_english.yml",
@@ -1728,12 +1760,16 @@
     "sha256": "081395ac8d937aabd1ee16c5f5bd68e3e5000478ce865b9f2e58fcfe9ad7554d"
   },
   {
+    "path": "localisation/simp_chinese/zzzzzzz_v65_command_l_simp_chinese.yml",
+    "sha256": "e4761df1712d4079b92ce167253e39d7791e0ba007717a6423487e7de01ddf96"
+  },
+  {
     "path": "localisation/simp_chinese/zzzzzz_v65_narrative_l_simp_chinese.yml",
-    "sha256": "9e656d365b3da9efd9efa0fd1475a7570eebc3a575311c143f8ff24be3895404"
+    "sha256": "df8f3749b9168c1babf10219e6f41be70e12116a9fddc2589a19ace47270c23b"
   },
   {
     "path": "localisation/simp_chinese/zzzzzz_v65_regions_l_simp_chinese.yml",
-    "sha256": "5512058ad0770302a7752c30c6f8bbc4eaa1351b87ed634476561e640a0884bf"
+    "sha256": "ebf66e7dc9a69a628f55ef2565a79244fa7cc347e214216755ccb2ecd5811176"
   },
   {
     "path": "localisation/simp_chinese/zzzzzz_v65_routes_l_simp_chinese.yml",

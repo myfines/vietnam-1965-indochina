@@ -1,0 +1,4 @@
+v65_under_central_command = {
+ OR = { is_subject_of = SVN has_country_flag = v65_central_command_contract }
+ NOT = { has_country_flag = v65_rebel_command }
+}

@@ -271,7 +271,10 @@ v65_devolve_HLC = {
 				add_core_of = HLC
 			}
 		}
-		release_puppet = HLC
+		release = HLC
+		HLC = {
+			set_country_flag = v65_central_command_contract
+		}
 		if = {
 			limit = {
 				HLC = {
@@ -394,7 +397,10 @@ v65_devolve_MKG = {
 				add_core_of = MKG
 			}
 		}
-		release_puppet = MKG
+		release = MKG
+		MKG = {
+			set_country_flag = v65_central_command_contract
+		}
 		if = {
 			limit = {
 				MKG = {
@@ -496,7 +502,10 @@ v65_devolve_BHD = {
 				add_core_of = BHD
 			}
 		}
-		release_puppet = BHD
+		release = BHD
+		BHD = {
+			set_country_flag = v65_central_command_contract
+		}
 		if = {
 			limit = {
 				BHD = {
@@ -577,7 +586,10 @@ v65_devolve_PHQ = {
 				add_core_of = PHQ
 			}
 		}
-		release_puppet = PHQ
+		release = PHQ
+		PHQ = {
+			set_country_flag = v65_central_command_contract
+		}
 		if = {
 			limit = {
 				PHQ = {

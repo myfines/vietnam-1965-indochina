@@ -1,0 +1,63 @@
+v65_refresh_command = {
+ clamp_variable = { var = v65_central_prestige min = 0 max = 100 }
+ remove_ideas = { v65_central_respected v65_central_discredited }
+ if = { limit = { check_variable = { v65_central_prestige > 64 } } add_ideas = v65_central_respected }
+ else_if = { limit = { check_variable = { v65_central_prestige < 30 } } add_ideas = v65_central_discredited }
+}
+v65_park_build_retinue = {
+ if = { limit = { tag = PKS check_variable = { v65_personal_network > 1 } capital_scope = { is_fully_controlled_by = PKS } }
+  capital_scope = { create_unit = { division = "name = \"Park Guard Regiment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.8 start_experience_factor = 0.3" owner = PKS } }
+ }
+}
+v65_command_month = {
+ if = { limit = { tag = SVN }
+  if = { limit = { has_country_flag = v65_front_defeat } subtract_from_variable = { v65_central_prestige = 3 } }
+  else_if = { limit = { controls_state = 25 } add_to_variable = { v65_central_prestige = 1 } }
+  if = { limit = { NOT = { controls_state = 25 } } subtract_from_variable = { v65_central_prestige = 5 } }
+  v65_refresh_command = yes
+ }
+}
+v65_dissent_HLC = {
+ if = { limit = { tag = HLC v65_under_central_command = yes SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } } set_country_flag = v65_command_refused }
+}
+v65_rebel_HLC = {
+ if = { limit = { tag = HLC v65_under_central_command = yes has_country_flag = v65_command_refused NOT = { has_war_with = SVN } SVN = { exists = yes } }
+  if = { limit = { is_subject_of = SVN } SVN = { set_autonomy = { target = HLC autonomy_state = autonomy_free } } }
+  SVN = { subtract_from_variable = { v65_central_prestige = 10 } v65_refresh_command = yes }
+  clr_country_flag = v65_central_command_contract
+  set_country_flag = v65_rebel_command country_event = { id = v65command.10 days = 3 }
+ }
+}
+v65_dissent_MKG = {
+ if = { limit = { tag = MKG v65_under_central_command = yes SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } } set_country_flag = v65_command_refused }
+}
+v65_rebel_MKG = {
+ if = { limit = { tag = MKG v65_under_central_command = yes has_country_flag = v65_command_refused NOT = { has_war_with = SVN } SVN = { exists = yes } }
+  if = { limit = { is_subject_of = SVN } SVN = { set_autonomy = { target = MKG autonomy_state = autonomy_free } } }
+  SVN = { subtract_from_variable = { v65_central_prestige = 10 } v65_refresh_command = yes }
+  clr_country_flag = v65_central_command_contract
+  set_country_flag = v65_rebel_command country_event = { id = v65command.10 days = 3 }
+ }
+}
+v65_dissent_BHD = {
+ if = { limit = { tag = BHD v65_under_central_command = yes SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } } set_country_flag = v65_command_refused }
+}
+v65_rebel_BHD = {
+ if = { limit = { tag = BHD v65_under_central_command = yes has_country_flag = v65_command_refused NOT = { has_war_with = SVN } SVN = { exists = yes } }
+  if = { limit = { is_subject_of = SVN } SVN = { set_autonomy = { target = BHD autonomy_state = autonomy_free } } }
+  SVN = { subtract_from_variable = { v65_central_prestige = 10 } v65_refresh_command = yes }
+  clr_country_flag = v65_central_command_contract
+  set_country_flag = v65_rebel_command country_event = { id = v65command.10 days = 3 }
+ }
+}
+v65_dissent_PHQ = {
+ if = { limit = { tag = PHQ v65_under_central_command = yes SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } } set_country_flag = v65_command_refused }
+}
+v65_rebel_PHQ = {
+ if = { limit = { tag = PHQ v65_under_central_command = yes has_country_flag = v65_command_refused NOT = { has_war_with = SVN } SVN = { exists = yes } }
+  if = { limit = { is_subject_of = SVN } SVN = { set_autonomy = { target = PHQ autonomy_state = autonomy_free } } }
+  SVN = { subtract_from_variable = { v65_central_prestige = 10 } v65_refresh_command = yes }
+  clr_country_flag = v65_central_command_contract
+  set_country_flag = v65_rebel_command country_event = { id = v65command.10 days = 3 }
+ }
+}

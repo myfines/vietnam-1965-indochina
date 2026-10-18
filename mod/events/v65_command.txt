@@ -1,0 +1,30 @@
+add_namespace = v65command
+country_event = { id = v65command.10 hidden = yes is_triggered_only = yes immediate = {
+ if = { limit = { has_country_flag = v65_rebel_command }
+  if = { limit = { has_war_with = NVN } white_peace = NVN }
+  if = { limit = { has_war_with = FNL } white_peace = FNL }
+  country_event = { id = v65command.11 days = 3 }
+ }
+} }
+country_event = { id = v65command.11 hidden = yes is_triggered_only = yes immediate = {
+ if = { limit = { has_country_flag = v65_rebel_command }
+  SVN = { if = { limit = { is_in_faction_with = ROOT } remove_from_faction = ROOT } }
+  country_event = { id = v65command.12 days = 3 }
+ }
+} }
+country_event = { id = v65command.12 hidden = yes is_triggered_only = yes immediate = {
+ if = { limit = { has_country_flag = v65_rebel_command exists = yes NOT = { is_subject_of = SVN } NOT = { is_in_faction_with = SVN } NOT = { has_war_with = SVN } SVN = { exists = yes } } declare_war_on = { target = SVN type = annex_everything } }
+} }
+country_event = { id = v65command.1 is_triggered_only = yes title = v65command.1.t desc = v65command.1.d picture = GFX_report_event_generic_read_write
+ option = { name = v65command.1.a ai_chance = { factor = 60 } add_political_power = -75 subtract_from_variable = { v65_central_prestige = 5 } FROM = { add_to_variable = { v65_regional_loyalty = 25 } clr_country_flag = v65_command_refused } v65_refresh_command = yes }
+ option = { name = v65command.1.b ai_chance = { factor = 40 } FROM = { country_event = { id = v65command.2 days = 3 } } }
+}
+country_event = { id = v65command.2 is_triggered_only = yes title = v65command.2.t desc = v65command.2.d picture = GFX_report_event_generic_read_write
+ option = { name = v65command.2.a ai_chance = { factor = 50 } v65_rebel_HLC = yes v65_rebel_MKG = yes v65_rebel_BHD = yes v65_rebel_PHQ = yes }
+ option = { name = v65command.2.b ai_chance = { factor = 50 } clr_country_flag = v65_command_refused add_to_variable = { v65_regional_loyalty = 15 } SVN = { add_to_variable = { v65_central_prestige = 5 } v65_refresh_command = yes } }
+}
+country_event = { id = v65command.3 is_triggered_only = yes title = v65command.3.t desc = v65command.3.d picture = GFX_report_event_generic_read_write
+ immediate = { PKS = { clr_country_flag = v65_union_pending } }
+ option = { name = v65command.3.a ai_chance = { factor = 55 } v65_finalize_union = yes if = { limit = { has_country_flag = v65_union_complete } add_ideas = v65_park_inside set_variable = { v65_central_prestige = 45 } v65_refresh_command = yes } }
+ option = { name = v65command.3.b ai_chance = { factor = 45 } PKS = { clr_country_flag = v65_union_pending set_country_flag = v65_union_refused country_event = { id = v65routes.3 days = 90 } } }
+}

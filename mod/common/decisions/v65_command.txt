@@ -1,0 +1,385 @@
+v65_command_politics = {
+ v65_fund_command = { icon = generic_political_discourse cost = 75 visible = { tag = SVN } days_re_enable = 90
+ complete_effect = { add_to_variable = { v65_central_prestige = 8 }
+if = { limit = { HLC = { exists = yes v65_under_central_command = yes } } HLC = { add_to_variable = { v65_regional_loyalty = 8 } clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } } }
+if = { limit = { MKG = { exists = yes v65_under_central_command = yes } } MKG = { add_to_variable = { v65_regional_loyalty = 8 } clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } } }
+if = { limit = { BHD = { exists = yes v65_under_central_command = yes } } BHD = { add_to_variable = { v65_regional_loyalty = 8 } clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } } }
+if = { limit = { PHQ = { exists = yes v65_under_central_command = yes } } PHQ = { add_to_variable = { v65_regional_loyalty = 8 } clamp_variable = { var = v65_regional_loyalty min = 0 max = 100 } } }
+v65_refresh_command = yes } ai_will_do = { factor = 1 } }
+v65_commission_HLC = { icon = generic_political_discourse cost = 50 visible = { tag = SVN HLC = { exists = no } }
+ available = { owns_state = 16 16 = { is_fully_controlled_by = SVN } }
+ complete_effect = { v65_devolve_HLC = yes add_ideas = v65_decentralized_command subtract_from_variable = { v65_central_prestige = 2 } v65_refresh_command = yes } ai_will_do = { factor = 0 } }
+v65_select_district_HLC = { icon = generic_political_discourse cost = 0
+ visible = { tag = SVN HLC = { exists = yes v65_under_central_command = yes } NOT = { has_country_flag = v65_selected_HLC } }
+ complete_effect = { clr_country_flag = v65_selected_HLC clr_country_flag = v65_selected_MKG clr_country_flag = v65_selected_BHD clr_country_flag = v65_selected_PHQ set_country_flag = v65_selected_HLC } ai_will_do = { factor = 0 } }
+v65_assign_HLC_11 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 11 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 11 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 11 = { add_core_of = HLC } HLC = { transfer_state = 11 set_state_controller = 11 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_12 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 12 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 12 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 12 = { add_core_of = HLC } HLC = { transfer_state = 12 set_state_controller = 12 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_13 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 13 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 13 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 13 = { add_core_of = HLC } HLC = { transfer_state = 13 set_state_controller = 13 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_14 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 14 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 14 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 14 = { add_core_of = HLC } HLC = { transfer_state = 14 set_state_controller = 14 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_15 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 15 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 15 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 15 = { add_core_of = HLC } HLC = { transfer_state = 15 set_state_controller = 15 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_17 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 17 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 17 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 17 = { add_core_of = HLC } HLC = { transfer_state = 17 set_state_controller = 17 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_18 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 18 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 18 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 18 = { add_core_of = HLC } HLC = { transfer_state = 18 set_state_controller = 18 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_19 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 19 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 19 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 19 = { add_core_of = HLC } HLC = { transfer_state = 19 set_state_controller = 19 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_20 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 20 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 20 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 20 = { add_core_of = HLC } HLC = { transfer_state = 20 set_state_controller = 20 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_21 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 21 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 21 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 21 = { add_core_of = HLC } HLC = { transfer_state = 21 set_state_controller = 21 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_22 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 22 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 22 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 22 = { add_core_of = HLC } HLC = { transfer_state = 22 set_state_controller = 22 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_23 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 23 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 23 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 23 = { add_core_of = HLC } HLC = { transfer_state = 23 set_state_controller = 23 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_24 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 24 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 24 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 24 = { add_core_of = HLC } HLC = { transfer_state = 24 set_state_controller = 24 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_26 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 26 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 26 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 26 = { add_core_of = HLC } HLC = { transfer_state = 26 set_state_controller = 26 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_27 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 27 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 27 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 27 = { add_core_of = HLC } HLC = { transfer_state = 27 set_state_controller = 27 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_28 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 28 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 28 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 28 = { add_core_of = HLC } HLC = { transfer_state = 28 set_state_controller = 28 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_29 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 29 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 29 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 29 = { add_core_of = HLC } HLC = { transfer_state = 29 set_state_controller = 29 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_30 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 30 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 30 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 30 = { add_core_of = HLC } HLC = { transfer_state = 30 set_state_controller = 30 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_HLC_31 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_HLC owns_state = 31 HLC = { exists = yes v65_under_central_command = yes } }
+ available = { 31 = { is_fully_controlled_by = SVN } NOT = { has_war_with = HLC } }
+ complete_effect = { 31 = { add_core_of = HLC } HLC = { transfer_state = 31 set_state_controller = 31 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_refuse_HLC = { icon = generic_prepare_civil_war cost = 25 visible = { tag = HLC v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } NOT = { has_country_flag = v65_command_refused } }
+ days_re_enable = 120 complete_effect = { v65_dissent_HLC = yes } ai_will_do = { factor = 1 } }
+v65_petition_HLC = { icon = generic_prepare_civil_war cost = 50 visible = { tag = HLC v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { SVN = { country_event = { id = v65command.1 days = 1 } } } ai_will_do = { factor = 1 } }
+v65_rebel_HLC = { icon = generic_prepare_civil_war cost = 100 visible = { tag = HLC v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { v65_rebel_HLC = yes } ai_will_do = { factor = 0.2 } }
+v65_commission_MKG = { icon = generic_political_discourse cost = 50 visible = { tag = SVN MKG = { exists = no } }
+ available = { owns_state = 28 28 = { is_fully_controlled_by = SVN } }
+ complete_effect = { v65_devolve_MKG = yes add_ideas = v65_decentralized_command subtract_from_variable = { v65_central_prestige = 2 } v65_refresh_command = yes } ai_will_do = { factor = 0 } }
+v65_select_district_MKG = { icon = generic_political_discourse cost = 0
+ visible = { tag = SVN MKG = { exists = yes v65_under_central_command = yes } NOT = { has_country_flag = v65_selected_MKG } }
+ complete_effect = { clr_country_flag = v65_selected_HLC clr_country_flag = v65_selected_MKG clr_country_flag = v65_selected_BHD clr_country_flag = v65_selected_PHQ set_country_flag = v65_selected_MKG } ai_will_do = { factor = 0 } }
+v65_assign_MKG_11 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 11 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 11 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 11 = { add_core_of = MKG } MKG = { transfer_state = 11 set_state_controller = 11 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_12 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 12 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 12 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 12 = { add_core_of = MKG } MKG = { transfer_state = 12 set_state_controller = 12 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_13 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 13 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 13 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 13 = { add_core_of = MKG } MKG = { transfer_state = 13 set_state_controller = 13 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_14 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 14 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 14 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 14 = { add_core_of = MKG } MKG = { transfer_state = 14 set_state_controller = 14 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_15 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 15 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 15 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 15 = { add_core_of = MKG } MKG = { transfer_state = 15 set_state_controller = 15 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_16 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 16 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 16 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 16 = { add_core_of = MKG } MKG = { transfer_state = 16 set_state_controller = 16 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_17 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 17 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 17 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 17 = { add_core_of = MKG } MKG = { transfer_state = 17 set_state_controller = 17 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_18 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 18 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 18 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 18 = { add_core_of = MKG } MKG = { transfer_state = 18 set_state_controller = 18 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_19 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 19 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 19 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 19 = { add_core_of = MKG } MKG = { transfer_state = 19 set_state_controller = 19 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_20 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 20 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 20 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 20 = { add_core_of = MKG } MKG = { transfer_state = 20 set_state_controller = 20 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_21 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 21 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 21 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 21 = { add_core_of = MKG } MKG = { transfer_state = 21 set_state_controller = 21 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_22 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 22 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 22 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 22 = { add_core_of = MKG } MKG = { transfer_state = 22 set_state_controller = 22 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_23 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 23 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 23 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 23 = { add_core_of = MKG } MKG = { transfer_state = 23 set_state_controller = 23 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_24 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 24 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 24 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 24 = { add_core_of = MKG } MKG = { transfer_state = 24 set_state_controller = 24 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_26 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 26 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 26 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 26 = { add_core_of = MKG } MKG = { transfer_state = 26 set_state_controller = 26 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_27 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 27 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 27 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 27 = { add_core_of = MKG } MKG = { transfer_state = 27 set_state_controller = 27 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_29 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 29 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 29 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 29 = { add_core_of = MKG } MKG = { transfer_state = 29 set_state_controller = 29 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_30 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 30 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 30 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 30 = { add_core_of = MKG } MKG = { transfer_state = 30 set_state_controller = 30 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_MKG_31 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_MKG owns_state = 31 MKG = { exists = yes v65_under_central_command = yes } }
+ available = { 31 = { is_fully_controlled_by = SVN } NOT = { has_war_with = MKG } }
+ complete_effect = { 31 = { add_core_of = MKG } MKG = { transfer_state = 31 set_state_controller = 31 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_refuse_MKG = { icon = generic_prepare_civil_war cost = 25 visible = { tag = MKG v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } NOT = { has_country_flag = v65_command_refused } }
+ days_re_enable = 120 complete_effect = { v65_dissent_MKG = yes } ai_will_do = { factor = 1 } }
+v65_petition_MKG = { icon = generic_prepare_civil_war cost = 50 visible = { tag = MKG v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { SVN = { country_event = { id = v65command.1 days = 1 } } } ai_will_do = { factor = 1 } }
+v65_rebel_MKG = { icon = generic_prepare_civil_war cost = 100 visible = { tag = MKG v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { v65_rebel_MKG = yes } ai_will_do = { factor = 0.2 } }
+v65_commission_BHD = { icon = generic_political_discourse cost = 50 visible = { tag = SVN BHD = { exists = no } }
+ available = { owns_state = 22 22 = { is_fully_controlled_by = SVN } }
+ complete_effect = { v65_devolve_BHD = yes add_ideas = v65_decentralized_command subtract_from_variable = { v65_central_prestige = 2 } v65_refresh_command = yes } ai_will_do = { factor = 0 } }
+v65_select_district_BHD = { icon = generic_political_discourse cost = 0
+ visible = { tag = SVN BHD = { exists = yes v65_under_central_command = yes } NOT = { has_country_flag = v65_selected_BHD } }
+ complete_effect = { clr_country_flag = v65_selected_HLC clr_country_flag = v65_selected_MKG clr_country_flag = v65_selected_BHD clr_country_flag = v65_selected_PHQ set_country_flag = v65_selected_BHD } ai_will_do = { factor = 0 } }
+v65_assign_BHD_11 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 11 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 11 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 11 = { add_core_of = BHD } BHD = { transfer_state = 11 set_state_controller = 11 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_12 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 12 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 12 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 12 = { add_core_of = BHD } BHD = { transfer_state = 12 set_state_controller = 12 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_13 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 13 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 13 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 13 = { add_core_of = BHD } BHD = { transfer_state = 13 set_state_controller = 13 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_14 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 14 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 14 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 14 = { add_core_of = BHD } BHD = { transfer_state = 14 set_state_controller = 14 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_15 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 15 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 15 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 15 = { add_core_of = BHD } BHD = { transfer_state = 15 set_state_controller = 15 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_16 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 16 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 16 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 16 = { add_core_of = BHD } BHD = { transfer_state = 16 set_state_controller = 16 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_17 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 17 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 17 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 17 = { add_core_of = BHD } BHD = { transfer_state = 17 set_state_controller = 17 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_18 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 18 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 18 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 18 = { add_core_of = BHD } BHD = { transfer_state = 18 set_state_controller = 18 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_19 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 19 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 19 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 19 = { add_core_of = BHD } BHD = { transfer_state = 19 set_state_controller = 19 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_20 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 20 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 20 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 20 = { add_core_of = BHD } BHD = { transfer_state = 20 set_state_controller = 20 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_21 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 21 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 21 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 21 = { add_core_of = BHD } BHD = { transfer_state = 21 set_state_controller = 21 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_23 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 23 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 23 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 23 = { add_core_of = BHD } BHD = { transfer_state = 23 set_state_controller = 23 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_24 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 24 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 24 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 24 = { add_core_of = BHD } BHD = { transfer_state = 24 set_state_controller = 24 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_26 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 26 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 26 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 26 = { add_core_of = BHD } BHD = { transfer_state = 26 set_state_controller = 26 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_27 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 27 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 27 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 27 = { add_core_of = BHD } BHD = { transfer_state = 27 set_state_controller = 27 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_28 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 28 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 28 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 28 = { add_core_of = BHD } BHD = { transfer_state = 28 set_state_controller = 28 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_29 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 29 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 29 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 29 = { add_core_of = BHD } BHD = { transfer_state = 29 set_state_controller = 29 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_30 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 30 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 30 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 30 = { add_core_of = BHD } BHD = { transfer_state = 30 set_state_controller = 30 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_BHD_31 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_BHD owns_state = 31 BHD = { exists = yes v65_under_central_command = yes } }
+ available = { 31 = { is_fully_controlled_by = SVN } NOT = { has_war_with = BHD } }
+ complete_effect = { 31 = { add_core_of = BHD } BHD = { transfer_state = 31 set_state_controller = 31 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_refuse_BHD = { icon = generic_prepare_civil_war cost = 25 visible = { tag = BHD v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } NOT = { has_country_flag = v65_command_refused } }
+ days_re_enable = 120 complete_effect = { v65_dissent_BHD = yes } ai_will_do = { factor = 1 } }
+v65_petition_BHD = { icon = generic_prepare_civil_war cost = 50 visible = { tag = BHD v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { SVN = { country_event = { id = v65command.1 days = 1 } } } ai_will_do = { factor = 1 } }
+v65_rebel_BHD = { icon = generic_prepare_civil_war cost = 100 visible = { tag = BHD v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { v65_rebel_BHD = yes } ai_will_do = { factor = 0.2 } }
+v65_commission_PHQ = { icon = generic_political_discourse cost = 50 visible = { tag = SVN PHQ = { exists = no } }
+ available = { owns_state = 31 31 = { is_fully_controlled_by = SVN } }
+ complete_effect = { v65_devolve_PHQ = yes add_ideas = v65_decentralized_command subtract_from_variable = { v65_central_prestige = 2 } v65_refresh_command = yes } ai_will_do = { factor = 0 } }
+v65_select_district_PHQ = { icon = generic_political_discourse cost = 0
+ visible = { tag = SVN PHQ = { exists = yes v65_under_central_command = yes } NOT = { has_country_flag = v65_selected_PHQ } }
+ complete_effect = { clr_country_flag = v65_selected_HLC clr_country_flag = v65_selected_MKG clr_country_flag = v65_selected_BHD clr_country_flag = v65_selected_PHQ set_country_flag = v65_selected_PHQ } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_11 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 11 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 11 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 11 = { add_core_of = PHQ } PHQ = { transfer_state = 11 set_state_controller = 11 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_12 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 12 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 12 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 12 = { add_core_of = PHQ } PHQ = { transfer_state = 12 set_state_controller = 12 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_13 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 13 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 13 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 13 = { add_core_of = PHQ } PHQ = { transfer_state = 13 set_state_controller = 13 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_14 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 14 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 14 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 14 = { add_core_of = PHQ } PHQ = { transfer_state = 14 set_state_controller = 14 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_15 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 15 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 15 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 15 = { add_core_of = PHQ } PHQ = { transfer_state = 15 set_state_controller = 15 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_16 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 16 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 16 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 16 = { add_core_of = PHQ } PHQ = { transfer_state = 16 set_state_controller = 16 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_17 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 17 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 17 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 17 = { add_core_of = PHQ } PHQ = { transfer_state = 17 set_state_controller = 17 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_18 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 18 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 18 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 18 = { add_core_of = PHQ } PHQ = { transfer_state = 18 set_state_controller = 18 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_19 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 19 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 19 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 19 = { add_core_of = PHQ } PHQ = { transfer_state = 19 set_state_controller = 19 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_20 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 20 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 20 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 20 = { add_core_of = PHQ } PHQ = { transfer_state = 20 set_state_controller = 20 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_21 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 21 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 21 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 21 = { add_core_of = PHQ } PHQ = { transfer_state = 21 set_state_controller = 21 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_22 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 22 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 22 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 22 = { add_core_of = PHQ } PHQ = { transfer_state = 22 set_state_controller = 22 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_23 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 23 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 23 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 23 = { add_core_of = PHQ } PHQ = { transfer_state = 23 set_state_controller = 23 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_24 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 24 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 24 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 24 = { add_core_of = PHQ } PHQ = { transfer_state = 24 set_state_controller = 24 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_26 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 26 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 26 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 26 = { add_core_of = PHQ } PHQ = { transfer_state = 26 set_state_controller = 26 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_27 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 27 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 27 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 27 = { add_core_of = PHQ } PHQ = { transfer_state = 27 set_state_controller = 27 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_28 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 28 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 28 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 28 = { add_core_of = PHQ } PHQ = { transfer_state = 28 set_state_controller = 28 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_29 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 29 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 29 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 29 = { add_core_of = PHQ } PHQ = { transfer_state = 29 set_state_controller = 29 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_assign_PHQ_30 = { icon = generic_political_discourse cost = 25
+ visible = { tag = SVN has_country_flag = v65_selected_PHQ owns_state = 30 PHQ = { exists = yes v65_under_central_command = yes } }
+ available = { 30 = { is_fully_controlled_by = SVN } NOT = { has_war_with = PHQ } }
+ complete_effect = { 30 = { add_core_of = PHQ } PHQ = { transfer_state = 30 set_state_controller = 30 add_to_variable = { v65_regional_loyalty = 3 } } } ai_will_do = { factor = 0 } }
+v65_refuse_PHQ = { icon = generic_prepare_civil_war cost = 25 visible = { tag = PHQ v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } NOT = { has_country_flag = v65_command_refused } }
+ days_re_enable = 120 complete_effect = { v65_dissent_PHQ = yes } ai_will_do = { factor = 1 } }
+v65_petition_PHQ = { icon = generic_prepare_civil_war cost = 50 visible = { tag = PHQ v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { SVN = { country_event = { id = v65command.1 days = 1 } } } ai_will_do = { factor = 1 } }
+v65_rebel_PHQ = { icon = generic_prepare_civil_war cost = 100 visible = { tag = PHQ v65_under_central_command = yes }
+ available = { SVN = { exists = yes check_variable = { v65_central_prestige < 30 } } check_variable = { v65_regional_loyalty < 25 } has_country_flag = v65_command_refused }
+ days_re_enable = 120 complete_effect = { v65_rebel_PHQ = yes } ai_will_do = { factor = 0.2 } }
+v65_park_recruit_clients = { icon = generic_political_discourse cost = 50 visible = { tag = PKS }
+ available = { check_variable = { v65_personal_network < 10 } } days_re_enable = 60
+ complete_effect = { add_to_variable = { v65_personal_network = 1 } add_to_variable = { v65_park_influence = 1 } } ai_will_do = { factor = 1 } }
+ v65_park_build_retinue = { icon = generic_prepare_civil_war cost = 75 visible = { tag = PKS }
+ available = { check_variable = { v65_personal_network > 1 } capital_scope = { is_fully_controlled_by = PKS } } days_re_enable = 90
+ complete_effect = { v65_park_build_retinue = yes } ai_will_do = { factor = 0.5 } }
+ v65_park_request_command = { icon = generic_political_discourse cost = 75 visible = { tag = PKS }
+ available = { check_variable = { v65_personal_network > 2 } is_in_faction_with = SVN NOT = { has_war_with = SVN } SVN = { exists = yes } } days_re_enable = 120
+ complete_effect = { add_to_variable = { v65_park_influence = 2 } SVN = { subtract_from_variable = { v65_central_prestige = 5 } v65_refresh_command = yes } } ai_will_do = { factor = 0.5 } }
+ v65_park_takeover = { icon = generic_prepare_civil_war cost = 100 visible = { tag = PKS }
+ available = { check_variable = { v65_personal_network > 5 } SVN = { check_variable = { v65_central_prestige < 40 } } v65_can_offer_union = yes }
+ days_re_enable = 180 complete_effect = { set_country_flag = v65_union_pending SVN = { country_event = { id = v65command.3 days = 1 } } } ai_will_do = { factor = 1 } }
+}
