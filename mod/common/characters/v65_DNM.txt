@@ -1,0 +1,13 @@
+characters = {
+v65_ngo_quang_truong = {
+ name = v65_ngo_quang_truong
+ portraits = { civilian = { large = "gfx/leaders/v65/ngo_quang_truong.dds" small = "gfx/leaders/v65/ngo_quang_truong.dds" } army = { large = "gfx/leaders/v65/ngo_quang_truong.dds" small = "gfx/leaders/v65/ngo_quang_truong.dds" } }
+ country_leader = { ideology = despotism expire = "1990.1.1" }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+v65_do_cao_tri = {
+ name = v65_do_cao_tri
+ portraits = { civilian = { large = "gfx/leaders/v65/do_cao_tri.dds" small = "gfx/leaders/v65/do_cao_tri.dds" } army = { large = "gfx/leaders/v65/do_cao_tri.dds" small = "gfx/leaders/v65/do_cao_tri.dds" } }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+}

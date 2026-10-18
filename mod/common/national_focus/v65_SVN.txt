@@ -1,19 +1,309 @@
-focus_tree = { id = v65_SVN_tree country = { factor = 0 modifier = { add = 100 tag = SVN } } default = no focus = { id = v65_SVN_command icon = GFX_goal_generic_army_doctrines x = 4 y = 0 cost = 5  completion_reward = { add_political_power = 120 } }
-focus = { id = v65_SVN_roads icon = GFX_goal_generic_construct_infrastructure x = 6 y = 1 cost = 5 prerequisite = { focus = v65_SVN_command } completion_reward = { capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } } }
-focus = { id = v65_SVN_workshops icon = GFX_goal_generic_construct_mil_factory x = 3 y = 1 cost = 5 prerequisite = { focus = v65_SVN_command } completion_reward = { capital_scope = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } } }
-focus = { id = v65_SVN_training icon = GFX_goal_generic_small_arms x = 6 y = 2 cost = 5 prerequisite = { focus = v65_SVN_roads } completion_reward = { army_experience = 25 } }
-focus = { id = v65_SVN_supplies icon = GFX_goal_generic_production x = 3 y = 2 cost = 5 prerequisite = { focus = v65_SVN_roads } completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 4000 producer = SVN } } }
-focus = { id = v65_SVN_civil icon = GFX_goal_generic_improve_relations x = 6 y = 3 cost = 5 prerequisite = { focus = v65_SVN_workshops } completion_reward = { add_stability = 0.1 } }
-focus = { id = v65_SVN_industry icon = GFX_goal_generic_construct_civ_factory x = 3 y = 3 cost = 5 prerequisite = { focus = v65_SVN_workshops } completion_reward = { capital_scope = { add_building_construction = { type = industrial_complex level = 2 instant_build = yes } } } } focus = { id = v65_SVN_park_mission icon = GFX_goal_generic_political_pressure x = 1 y = 4 cost = 5 prerequisite = { focus = v65_SVN_command }  completion_reward = { country_event = { id = v65politics.2 days = 1 } add_ideas = v65_park_patron } }
-focus = { id = v65_SVN_quynhon icon = GFX_goal_generic_political_pressure x = 1 y = 5 cost = 5 prerequisite = { focus = v65_SVN_park_mission }  completion_reward = { army_experience = 20 add_to_variable = { v65_park_influence = 1 } } }
-focus = { id = v65_SVN_war_reports icon = GFX_goal_generic_political_pressure x = 1 y = 6 cost = 5 prerequisite = { focus = v65_SVN_quynhon }  completion_reward = { add_political_power = 80 add_to_variable = { v65_park_influence = 1 } } }
-focus = { id = v65_SVN_business icon = GFX_goal_generic_political_pressure x = 1 y = 7 cost = 5 prerequisite = { focus = v65_SVN_war_reports }  completion_reward = { add_stability = -0.03 capital_scope = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } } }
-focus = { id = v65_SVN_guards icon = GFX_goal_generic_political_pressure x = 1 y = 8 cost = 5 prerequisite = { focus = v65_SVN_business }  completion_reward = { add_ideas = v65_guard_network } }
-focus = { id = v65_SVN_yushin icon = GFX_goal_generic_political_pressure x = 1 y = 9 cost = 5 prerequisite = { focus = v65_SVN_guards }  completion_reward = { country_event = { id = v65politics.7 days = 1 } } }
-focus = { id = v65_SVN_crisis icon = GFX_goal_generic_political_pressure x = 5 y = 4 cost = 5 prerequisite = { focus = v65_SVN_civil }  completion_reward = { country_event = { id = v65politics.1 days = 1 } } }
-focus = { id = v65_SVN_radio icon = GFX_goal_generic_political_pressure x = 4 y = 5 cost = 5 prerequisite = { focus = v65_SVN_crisis }  completion_reward = { 24 = { add_to_variable = { v65_loyalty = 15 } } } }
-focus = { id = v65_SVN_bargain icon = GFX_goal_generic_political_pressure x = 7 y = 5 cost = 5 prerequisite = { focus = v65_SVN_crisis }  completion_reward = { 23 = { add_to_variable = { v65_loyalty = 15 } } 27 = { add_to_variable = { v65_loyalty = 15 } } } }
-focus = { id = v65_SVN_martial_focus icon = GFX_goal_generic_political_pressure x = 4 y = 6 cost = 5 prerequisite = { focus = v65_SVN_radio } mutually_exclusive = { focus = v65_SVN_civilian } completion_reward = { v65_enact_martial_law = yes } }
-focus = { id = v65_SVN_civilian icon = GFX_goal_generic_political_pressure x = 7 y = 6 cost = 5 prerequisite = { focus = v65_SVN_bargain } mutually_exclusive = { focus = v65_SVN_martial_focus } completion_reward = { add_ideas = v65_civil_admin 26 = { add_to_variable = { v65_loyalty = 15 } } } }
-focus = { id = v65_SVN_countertrail icon = GFX_goal_generic_political_pressure x = 10 y = 4 cost = 5 prerequisite = { focus = v65_SVN_supplies }  completion_reward = { NVN = { subtract_from_variable = { v65_trail_level = 1 } clamp_variable = { var = v65_trail_level min = 0 max = 5 } } } }
+focus_tree = {
+ id = v65_SVN_tree
+ country = { factor = 0 modifier = { add = 100 tag = SVN } }
+ default = no
+ reset_on_civilwar = no
+ continuous_focus_position = { x = 0 y = 1500 }
+ focus = { id = v65_SVN_briefing icon = GFX_v65_focus_flag x = 16 y = 0 cost = 2 completion_reward = { add_political_power = 50 } }
+ focus = {
+  id = v65_SVN_command
+  icon = GFX_v65_focus_radio
+  x = 0 y = 2 cost = 3
+  prerequisite = { focus = v65_SVN_briefing }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_roster
+  icon = GFX_v65_focus_radio
+  x = 0 y = 4 cost = 3
+  prerequisite = { focus = v65_SVN_command }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_reports
+  icon = GFX_v65_focus_radio
+  x = 0 y = 6 cost = 5
+  prerequisite = { focus = v65_SVN_roster }
+
+
+  completion_reward = { add_political_power = 40 add_ideas = v65_intelligence_network }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_liaison
+  icon = GFX_v65_focus_radio
+  x = 0 y = 8 cost = 5
+  prerequisite = { focus = v65_SVN_reports }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_reserve
+  icon = GFX_v65_focus_helmet
+  x = 0 y = 10 cost = 5
+  prerequisite = { focus = v65_SVN_liaison }
+
+
+  completion_reward = { army_experience = 20 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_unity
+  icon = GFX_v65_focus_tree
+  x = 0 y = 12 cost = 5
+  prerequisite = { focus = v65_SVN_reserve }
+
+
+  completion_reward = { add_stability = 0.04 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_front
+  icon = GFX_v65_focus_shield
+  x = 8 y = 2 cost = 3
+  prerequisite = { focus = v65_SVN_briefing }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_dmz
+  icon = GFX_v65_focus_shield
+  x = 8 y = 4 cost = 3
+  prerequisite = { focus = v65_SVN_front }
+
+
+  completion_reward = { add_ideas = v65_prepared_defence army_experience = 10 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_hue
+  icon = GFX_v65_focus_truck
+  x = 8 y = 6 cost = 5
+  prerequisite = { focus = v65_SVN_dmz }
+
+
+  completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 1200 producer = ROOT } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_rotation
+  icon = GFX_v65_focus_helmet
+  x = 8 y = 8 cost = 5
+  prerequisite = { focus = v65_SVN_hue }
+
+
+  completion_reward = { army_experience = 20 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_corridor
+  icon = GFX_v65_focus_truck
+  x = 8 y = 10 cost = 5
+  prerequisite = { focus = v65_SVN_rotation }
+
+
+  completion_reward = { capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_hold_line
+  icon = GFX_v65_focus_shield
+  x = 8 y = 12 cost = 5
+  prerequisite = { focus = v65_SVN_corridor }
+
+
+  completion_reward = { add_ideas = v65_prepared_defence }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_villages
+  icon = GFX_v65_focus_tree
+  x = 16 y = 2 cost = 3
+  prerequisite = { focus = v65_SVN_briefing }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_register
+  icon = GFX_v65_focus_radio
+  x = 16 y = 4 cost = 3
+  prerequisite = { focus = v65_SVN_villages }
+
+
+  completion_reward = { add_political_power = 40 add_ideas = v65_intelligence_network }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_patrols
+  icon = GFX_v65_focus_helmet
+  x = 16 y = 6 cost = 5
+  prerequisite = { focus = v65_SVN_register }
+
+
+  completion_reward = { army_experience = 20 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_amnesty
+  icon = GFX_v65_focus_tree
+  x = 16 y = 8 cost = 5
+  prerequisite = { focus = v65_SVN_patrols }
+
+
+  completion_reward = { add_stability = 0.04 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_countertrail
+  icon = GFX_v65_focus_radio
+  x = 16 y = 10 cost = 5
+  prerequisite = { focus = v65_SVN_amnesty }
+
+
+  completion_reward = { NVN = { subtract_from_variable = { v65_trail_level = 1 } clamp_variable = { var = v65_trail_level min = 0 max = 5 } } FNL = { subtract_from_variable = { v65_infiltration = 1 } clamp_variable = { var = v65_infiltration min = 0 max = 3 } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_rural_pact
+  icon = GFX_v65_focus_tree
+  x = 16 y = 12 cost = 5
+  prerequisite = { focus = v65_SVN_countertrail }
+
+
+  completion_reward = { add_stability = 0.03 FNL = { subtract_from_variable = { v65_infiltration = 1 } clamp_variable = { var = v65_infiltration min = 0 max = 3 } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_economy
+  icon = GFX_v65_focus_factory
+  x = 24 y = 2 cost = 3
+  prerequisite = { focus = v65_SVN_briefing }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_roads
+  icon = GFX_v65_focus_truck
+  x = 24 y = 4 cost = 3
+  prerequisite = { focus = v65_SVN_economy }
+
+
+  completion_reward = { capital_scope = { add_building_construction = { type = infrastructure level = 1 instant_build = yes } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_workshops
+  icon = GFX_v65_focus_factory
+  x = 24 y = 6 cost = 5
+  prerequisite = { focus = v65_SVN_roads }
+
+
+  completion_reward = { capital_scope = { add_building_construction = { type = arms_factory level = 1 instant_build = yes } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_supplies
+  icon = GFX_v65_focus_truck
+  x = 24 y = 8 cost = 5
+  prerequisite = { focus = v65_SVN_workshops }
+
+
+  completion_reward = { add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 1200 producer = ROOT } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_industry
+  icon = GFX_v65_focus_factory
+  x = 24 y = 10 cost = 5
+  prerequisite = { focus = v65_SVN_supplies }
+
+
+  completion_reward = { capital_scope = { add_building_construction = { type = industrial_complex level = 1 instant_build = yes } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_port
+  icon = GFX_v65_focus_truck
+  x = 24 y = 12 cost = 5
+  prerequisite = { focus = v65_SVN_industry }
+
+
+  completion_reward = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 150 producer = ROOT } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_politics
+  icon = GFX_v65_focus_landmark
+  x = 32 y = 2 cost = 3
+  prerequisite = { focus = v65_SVN_briefing }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_civil
+  icon = GFX_v65_focus_tree
+  x = 32 y = 4 cost = 3
+  prerequisite = { focus = v65_SVN_politics }
+
+
+  completion_reward = { add_stability = 0.04 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_crisis
+  icon = GFX_v65_focus_landmark
+  x = 32 y = 6 cost = 5
+  prerequisite = { focus = v65_SVN_civil }
+  available = { custom_trigger_tooltip = { tooltip = v65_requires_front_defeat has_country_flag = v65_front_defeat } }
+
+  completion_reward = { add_political_power = 50 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_radio
+  icon = GFX_v65_focus_radio
+  x = 32 y = 8 cost = 5
+  prerequisite = { focus = v65_SVN_crisis }
+
+
+  completion_reward = { 24 = { add_to_variable = { v65_loyalty = 15 } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_bargain
+  icon = GFX_v65_focus_scroll
+  x = 32 y = 10 cost = 5
+  prerequisite = { focus = v65_SVN_radio }
+
+
+  completion_reward = { 23 = { add_to_variable = { v65_loyalty = 15 } } 27 = { add_to_variable = { v65_loyalty = 15 } } }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_SVN_martial_focus
+  icon = GFX_v65_focus_landmark
+  x = 29 y = 12 cost = 5
+  prerequisite = { focus = v65_SVN_bargain }
+
+  mutually_exclusive = { focus = v65_SVN_civilian }
+  completion_reward = { v65_enact_martial_law = yes }
+  ai_will_do = { factor = 1 }
+ }
+ focus = { id = v65_SVN_civilian icon = GFX_v65_focus_scroll x = 35 y = 12 cost = 5 prerequisite = { focus = v65_SVN_bargain } mutually_exclusive = { focus = v65_SVN_martial_focus } completion_reward = { v65_lift_martial_law = yes add_ideas = v65_civil_admin 26 = { add_to_variable = { v65_loyalty = 15 } } } }
 }

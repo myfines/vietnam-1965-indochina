@@ -1,0 +1,11 @@
+spriteTypes = {
+ spriteType = { name = "GFX_v65_focus_flag" texturefile = "gfx/interface/goals/v65_flag.dds" }
+ spriteType = { name = "GFX_v65_focus_radio" texturefile = "gfx/interface/goals/v65_radio.dds" }
+ spriteType = { name = "GFX_v65_focus_shield" texturefile = "gfx/interface/goals/v65_shield.dds" }
+ spriteType = { name = "GFX_v65_focus_tree" texturefile = "gfx/interface/goals/v65_tree.dds" }
+ spriteType = { name = "GFX_v65_focus_factory" texturefile = "gfx/interface/goals/v65_factory.dds" }
+ spriteType = { name = "GFX_v65_focus_landmark" texturefile = "gfx/interface/goals/v65_landmark.dds" }
+ spriteType = { name = "GFX_v65_focus_helmet" texturefile = "gfx/interface/goals/v65_helmet.dds" }
+ spriteType = { name = "GFX_v65_focus_scroll" texturefile = "gfx/interface/goals/v65_scroll.dds" }
+ spriteType = { name = "GFX_v65_focus_truck" texturefile = "gfx/interface/goals/v65_truck.dds" }
+}

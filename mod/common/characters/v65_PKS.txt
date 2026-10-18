@@ -1,0 +1,23 @@
+characters = {
+v65_park_seicheng = {
+ name = v65_park_seicheng
+ portraits = { civilian = { large = "gfx/leaders/v65/park_seicheng.dds" small = "gfx/leaders/v65/park_seicheng.dds" } army = { large = "gfx/leaders/v65/park_seicheng.dds" small = "gfx/leaders/v65/park_seicheng.dds" } }
+ country_leader = { ideology = despotism expire = "1990.1.1" }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+v65_kim_jong_pil = {
+ name = v65_kim_jong_pil
+ portraits = { civilian = { large = "gfx/leaders/v65/kim_jong_pil.dds" small = "gfx/leaders/v65/kim_jong_pil.dds" } army = { large = "gfx/leaders/v65/kim_jong_pil.dds" small = "gfx/leaders/v65/kim_jong_pil.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_kim_jong_pil_advisor cost = 100 traits = { silent_workhorse } }
+}
+v65_kim_jae_gyu = {
+ name = v65_kim_jae_gyu
+ portraits = { civilian = { large = "gfx/leaders/v65/kim_jae_gyu.dds" small = "gfx/leaders/v65/kim_jae_gyu.dds" } army = { large = "gfx/leaders/v65/kim_jae_gyu.dds" small = "gfx/leaders/v65/kim_jae_gyu.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_kim_jae_gyu_advisor cost = 100 traits = { backroom_backstabber } }
+}
+v65_park_chung_hee = {
+ name = v65_park_chung_hee
+ portraits = { civilian = { large = "gfx/leaders/v65/park_chung_hee.dds" small = "gfx/leaders/v65/park_chung_hee.dds" } army = { large = "gfx/leaders/v65/park_chung_hee.dds" small = "gfx/leaders/v65/park_chung_hee.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_park_chung_hee_advisor cost = 100 traits = { silent_workhorse } }
+}
+}

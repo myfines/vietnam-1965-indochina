@@ -1,0 +1,14 @@
+capital = 30
+oob = "FNL_1965"
+set_research_slots = 3
+set_stability = 0.55
+set_war_support = 0.65
+set_politics = { ruling_party = communism elections_allowed = no }
+set_popularities = { communism = 100 }
+set_technology = { infantry_weapons = 1 infantry_weapons1 = 1 infantry_weapons2 = 1 tech_support = 1 tech_trucks = 1 }
+add_ideas = { limited_conscription partial_economic_mobilisation export_focus }
+add_political_power = 150
+add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 8000 producer = FNL }
+add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = FNL }
+recruit_character = v65_nguyen_huu_tho
+recruit_character = v65_nguyen_van_linh

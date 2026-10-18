@@ -1,0 +1,27 @@
+characters = {
+v65_nguyen_van_thieu = {
+ name = v65_nguyen_van_thieu
+ portraits = { civilian = { large = "gfx/leaders/v65/nguyen_van_thieu.dds" small = "gfx/leaders/v65/nguyen_van_thieu.dds" } army = { large = "gfx/leaders/v65/nguyen_van_thieu.dds" small = "gfx/leaders/v65/nguyen_van_thieu.dds" } }
+ country_leader = { ideology = despotism expire = "1990.1.1" }
+}
+v65_duong_van_minh = {
+ name = v65_duong_van_minh
+ portraits = { civilian = { large = "gfx/leaders/v65/duong_van_minh.dds" small = "gfx/leaders/v65/duong_van_minh.dds" } army = { large = "gfx/leaders/v65/duong_van_minh.dds" small = "gfx/leaders/v65/duong_van_minh.dds" } }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+v65_tran_thien_khiem = {
+ name = v65_tran_thien_khiem
+ portraits = { civilian = { large = "gfx/leaders/v65/tran_thien_khiem.dds" small = "gfx/leaders/v65/tran_thien_khiem.dds" } army = { large = "gfx/leaders/v65/tran_thien_khiem.dds" small = "gfx/leaders/v65/tran_thien_khiem.dds" } }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+v65_tran_van_huong = {
+ name = v65_tran_van_huong
+ portraits = { civilian = { large = "gfx/leaders/v65/tran_van_huong.dds" small = "gfx/leaders/v65/tran_van_huong.dds" } army = { large = "gfx/leaders/v65/tran_van_huong.dds" small = "gfx/leaders/v65/tran_van_huong.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_tran_van_huong_advisor cost = 100 traits = { silent_workhorse } }
+}
+v65_nguyen_ngoc_tho = {
+ name = v65_nguyen_ngoc_tho
+ portraits = { civilian = { large = "gfx/leaders/v65/nguyen_ngoc_tho.dds" small = "gfx/leaders/v65/nguyen_ngoc_tho.dds" } army = { large = "gfx/leaders/v65/nguyen_ngoc_tho.dds" small = "gfx/leaders/v65/nguyen_ngoc_tho.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_nguyen_ngoc_tho_advisor cost = 100 traits = { silent_workhorse } }
+}
+}

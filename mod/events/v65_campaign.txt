@@ -1,0 +1,11 @@
+add_namespace = v65campaign
+country_event = { id = v65campaign.1 title = v65campaign.1.t desc = v65campaign.1.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65campaign.1.a add_to_variable = { v65_park_influence = 1 } }
+}
+country_event = { id = v65campaign.2 title = v65campaign.2.t desc = v65campaign.2.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65campaign.2.a add_stability = 0.03 }
+ option = { name = v65campaign.2.b add_political_power = 50 add_stability = -0.03 }
+}
+country_event = { id = v65campaign.3 title = v65campaign.3.t desc = v65campaign.3.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65campaign.3.a add_political_power = 50 }
+}

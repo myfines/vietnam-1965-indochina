@@ -1,12 +1,8 @@
-bookmarks = {
- bookmark = {
-  name = V65_BOOKMARK
-  desc = V65_BOOKMARK_DESC
-  date = 1965.10.28.12
-  picture = GFX_select_date_1936
-  default_country = SVN
-  default = yes
-  SVN = { history = V65_SVN_DESC ideology = neutrality }
-  NVN = { history = V65_NVN_DESC ideology = communism }
- }
-}
+bookmarks = { bookmark = { name = V65_BOOKMARK desc = V65_BOOKMARK_DESC date = 1965.10.28.12 picture = GFX_select_date_1936 default_country = SVN default = yes
+ SVN = { history = V65_SVN_DESC ideology = neutrality }
+ NVN = { history = V65_NVN_DESC ideology = communism }
+ FNL = { history = V65_FNL_DESC ideology = communism }
+ PKS = { history = V65_PKS_DESC ideology = neutrality }
+ DNM = { history = V65_DNM_DESC ideology = neutrality }
+ KHM = { history = V65_KHM_DESC ideology = neutrality }
+} }

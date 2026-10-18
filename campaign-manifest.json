@@ -1,0 +1,1130 @@
+{
+  "version": "0.4.0",
+  "focuses": [
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_command",
+      "x": 0,
+      "y": 2,
+      "icon": "radio"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_roster",
+      "x": 0,
+      "y": 4,
+      "icon": "radio"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_reports",
+      "x": 0,
+      "y": 6,
+      "icon": "radio"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_liaison",
+      "x": 0,
+      "y": 8,
+      "icon": "radio"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_reserve",
+      "x": 0,
+      "y": 10,
+      "icon": "helmet"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_unity",
+      "x": 0,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_front",
+      "x": 8,
+      "y": 2,
+      "icon": "shield"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_dmz",
+      "x": 8,
+      "y": 4,
+      "icon": "shield"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_hue",
+      "x": 8,
+      "y": 6,
+      "icon": "truck"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_rotation",
+      "x": 8,
+      "y": 8,
+      "icon": "helmet"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_corridor",
+      "x": 8,
+      "y": 10,
+      "icon": "truck"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_hold_line",
+      "x": 8,
+      "y": 12,
+      "icon": "shield"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_villages",
+      "x": 16,
+      "y": 2,
+      "icon": "tree"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_register",
+      "x": 16,
+      "y": 4,
+      "icon": "radio"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_patrols",
+      "x": 16,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_amnesty",
+      "x": 16,
+      "y": 8,
+      "icon": "tree"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_countertrail",
+      "x": 16,
+      "y": 10,
+      "icon": "radio"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_rural_pact",
+      "x": 16,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_economy",
+      "x": 24,
+      "y": 2,
+      "icon": "factory"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_roads",
+      "x": 24,
+      "y": 4,
+      "icon": "truck"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_workshops",
+      "x": 24,
+      "y": 6,
+      "icon": "factory"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_supplies",
+      "x": 24,
+      "y": 8,
+      "icon": "truck"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_industry",
+      "x": 24,
+      "y": 10,
+      "icon": "factory"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_port",
+      "x": 24,
+      "y": 12,
+      "icon": "truck"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_politics",
+      "x": 32,
+      "y": 2,
+      "icon": "landmark"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_civil",
+      "x": 32,
+      "y": 4,
+      "icon": "tree"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_crisis",
+      "x": 32,
+      "y": 6,
+      "icon": "landmark"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_radio",
+      "x": 32,
+      "y": 8,
+      "icon": "radio"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_bargain",
+      "x": 32,
+      "y": 10,
+      "icon": "scroll"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_martial_focus",
+      "x": 29,
+      "y": 12,
+      "icon": "landmark"
+    },
+    {
+      "tag": "SVN",
+      "id": "v65_SVN_civilian",
+      "x": 35,
+      "y": 12,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_command",
+      "x": 0,
+      "y": 2,
+      "icon": "helmet"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_battalion",
+      "x": 0,
+      "y": 4,
+      "icon": "helmet"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_quynhon",
+      "x": 0,
+      "y": 6,
+      "icon": "truck"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_tiger",
+      "x": 0,
+      "y": 8,
+      "icon": "helmet"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_fieldstaff",
+      "x": 0,
+      "y": 10,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_elite",
+      "x": 0,
+      "y": 12,
+      "icon": "helmet"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_reputation",
+      "x": 8,
+      "y": 2,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_war_reports",
+      "x": 8,
+      "y": 4,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_press",
+      "x": 8,
+      "y": 6,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_patron",
+      "x": 8,
+      "y": 8,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_palace",
+      "x": 8,
+      "y": 10,
+      "icon": "landmark"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_promotion",
+      "x": 8,
+      "y": 12,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_villages",
+      "x": 16,
+      "y": 2,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_fees",
+      "x": 16,
+      "y": 4,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_police",
+      "x": 16,
+      "y": 6,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_village_bargain",
+      "x": 16,
+      "y": 8,
+      "icon": "tree"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_inspection",
+      "x": 16,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_trusted_villages",
+      "x": 16,
+      "y": 12,
+      "icon": "shield"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_business",
+      "x": 24,
+      "y": 2,
+      "icon": "factory"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_trucks",
+      "x": 24,
+      "y": 4,
+      "icon": "truck"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_repair",
+      "x": 24,
+      "y": 6,
+      "icon": "factory"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_company",
+      "x": 24,
+      "y": 8,
+      "icon": "factory"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_contracts",
+      "x": 24,
+      "y": 10,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_independent",
+      "x": 24,
+      "y": 12,
+      "icon": "truck"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_power",
+      "x": 32,
+      "y": 2,
+      "icon": "landmark"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_guards",
+      "x": 32,
+      "y": 4,
+      "icon": "shield"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_intelligence",
+      "x": 32,
+      "y": 6,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_capital_links",
+      "x": 32,
+      "y": 8,
+      "icon": "radio"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_remain",
+      "x": 29,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_yushin",
+      "x": 35,
+      "y": 10,
+      "icon": "landmark"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_command",
+      "x": 0,
+      "y": 2,
+      "icon": "landmark"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_staff",
+      "x": 0,
+      "y": 4,
+      "icon": "landmark"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_reserve",
+      "x": 0,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_supply",
+      "x": 0,
+      "y": 8,
+      "icon": "truck"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_fort",
+      "x": 0,
+      "y": 10,
+      "icon": "shield"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_hold",
+      "x": 0,
+      "y": 12,
+      "icon": "shield"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_trail",
+      "x": 8,
+      "y": 2,
+      "icon": "truck"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_trail_depots",
+      "x": 8,
+      "y": 4,
+      "icon": "truck"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_guides",
+      "x": 8,
+      "y": 6,
+      "icon": "truck"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_repair",
+      "x": 8,
+      "y": 8,
+      "icon": "truck"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_signals",
+      "x": 8,
+      "y": 10,
+      "icon": "radio"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_rear_offensive",
+      "x": 8,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_south",
+      "x": 16,
+      "y": 2,
+      "icon": "tree"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_liaison",
+      "x": 16,
+      "y": 4,
+      "icon": "tree"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_cadres",
+      "x": 16,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_arms",
+      "x": 16,
+      "y": 8,
+      "icon": "factory"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_coordination",
+      "x": 16,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_political_front",
+      "x": 16,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_economy",
+      "x": 24,
+      "y": 2,
+      "icon": "factory"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_workshops",
+      "x": 24,
+      "y": 4,
+      "icon": "factory"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_rails",
+      "x": 24,
+      "y": 6,
+      "icon": "truck"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_industry",
+      "x": 24,
+      "y": 8,
+      "icon": "factory"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_civil",
+      "x": 24,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "NVN",
+      "id": "v65_NVN_reserves",
+      "x": 24,
+      "y": 12,
+      "icon": "truck"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_command",
+      "x": 0,
+      "y": 2,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_cells",
+      "x": 0,
+      "y": 4,
+      "icon": "radio"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_cadres",
+      "x": 0,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_villages",
+      "x": 0,
+      "y": 8,
+      "icon": "truck"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_political",
+      "x": 0,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_network",
+      "x": 0,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_guerrilla",
+      "x": 8,
+      "y": 2,
+      "icon": "helmet"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_caches",
+      "x": 8,
+      "y": 4,
+      "icon": "factory"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_night",
+      "x": 8,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_ambush",
+      "x": 8,
+      "y": 8,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_disperse",
+      "x": 8,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_rear",
+      "x": 8,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_trail",
+      "x": 16,
+      "y": 2,
+      "icon": "truck"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_runners",
+      "x": 16,
+      "y": 4,
+      "icon": "truck"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_border",
+      "x": 16,
+      "y": 6,
+      "icon": "truck"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_medics",
+      "x": 16,
+      "y": 8,
+      "icon": "shield"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_liaison",
+      "x": 16,
+      "y": 10,
+      "icon": "truck"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_depots",
+      "x": 16,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_future",
+      "x": 24,
+      "y": 2,
+      "icon": "landmark"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_assembly",
+      "x": 24,
+      "y": 4,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_land",
+      "x": 24,
+      "y": 6,
+      "icon": "tree"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_recruit",
+      "x": 24,
+      "y": 8,
+      "icon": "helmet"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_negotiation",
+      "x": 24,
+      "y": 10,
+      "icon": "landmark"
+    },
+    {
+      "tag": "FNL",
+      "id": "v65_FNL_administration",
+      "x": 24,
+      "y": 12,
+      "icon": "factory"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_command",
+      "x": 0,
+      "y": 2,
+      "icon": "helmet"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_officers",
+      "x": 0,
+      "y": 4,
+      "icon": "helmet"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_reserve",
+      "x": 0,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_hue",
+      "x": 0,
+      "y": 8,
+      "icon": "shield"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_reports",
+      "x": 0,
+      "y": 10,
+      "icon": "radio"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_agreement",
+      "x": 0,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_defence",
+      "x": 8,
+      "y": 2,
+      "icon": "shield"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_fort",
+      "x": 8,
+      "y": 4,
+      "icon": "shield"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_patrol",
+      "x": 8,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_supply",
+      "x": 8,
+      "y": 8,
+      "icon": "truck"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_road",
+      "x": 8,
+      "y": 10,
+      "icon": "truck"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_elastic",
+      "x": 8,
+      "y": 12,
+      "icon": "shield"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_port",
+      "x": 16,
+      "y": 2,
+      "icon": "factory"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_dock",
+      "x": 16,
+      "y": 4,
+      "icon": "truck"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_repair",
+      "x": 16,
+      "y": 6,
+      "icon": "factory"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_industry",
+      "x": 16,
+      "y": 8,
+      "icon": "factory"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_police",
+      "x": 16,
+      "y": 10,
+      "icon": "radio"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_civic",
+      "x": 16,
+      "y": 12,
+      "icon": "tree"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_politics",
+      "x": 24,
+      "y": 2,
+      "icon": "radio"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_neutral",
+      "x": 24,
+      "y": 4,
+      "icon": "tree"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_liaison",
+      "x": 24,
+      "y": 6,
+      "icon": "radio"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_loyal",
+      "x": 24,
+      "y": 8,
+      "icon": "shield"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_autonomy",
+      "x": 24,
+      "y": 10,
+      "icon": "factory"
+    },
+    {
+      "tag": "DNM",
+      "id": "v65_DNM_refuge",
+      "x": 24,
+      "y": 12,
+      "icon": "helmet"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_command",
+      "x": 0,
+      "y": 2,
+      "icon": "landmark"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_border",
+      "x": 0,
+      "y": 4,
+      "icon": "landmark"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_patrol",
+      "x": 0,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_reports",
+      "x": 0,
+      "y": 8,
+      "icon": "radio"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_neutrality",
+      "x": 0,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_mediation",
+      "x": 0,
+      "y": 12,
+      "icon": "landmark"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_economy",
+      "x": 8,
+      "y": 2,
+      "icon": "factory"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_roads",
+      "x": 8,
+      "y": 4,
+      "icon": "truck"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_industry",
+      "x": 8,
+      "y": 6,
+      "icon": "factory"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_repair",
+      "x": 8,
+      "y": 8,
+      "icon": "factory"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_port",
+      "x": 8,
+      "y": 10,
+      "icon": "truck"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_reserve",
+      "x": 8,
+      "y": 12,
+      "icon": "truck"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_security",
+      "x": 16,
+      "y": 2,
+      "icon": "shield"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_staff",
+      "x": 16,
+      "y": 4,
+      "icon": "shield"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_training",
+      "x": 16,
+      "y": 6,
+      "icon": "helmet"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_fort",
+      "x": 16,
+      "y": 8,
+      "icon": "shield"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_police",
+      "x": 16,
+      "y": 10,
+      "icon": "radio"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_control",
+      "x": 16,
+      "y": 12,
+      "icon": "shield"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_society",
+      "x": 24,
+      "y": 2,
+      "icon": "tree"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_rice",
+      "x": 24,
+      "y": 4,
+      "icon": "tree"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_schools",
+      "x": 24,
+      "y": 6,
+      "icon": "tree"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_health",
+      "x": 24,
+      "y": 8,
+      "icon": "shield"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_budget",
+      "x": 24,
+      "y": 10,
+      "icon": "tree"
+    },
+    {
+      "tag": "KHM",
+      "id": "v65_KHM_settlement",
+      "x": 24,
+      "y": 12,
+      "icon": "factory"
+    }
+  ],
+  "factions": {
+    "NVN": {
+      "name": "北越",
+      "capital": 5
+    },
+    "SVN": {
+      "name": "越南共和国",
+      "capital": 25
+    },
+    "KHM": {
+      "name": "柬埔寨王国",
+      "capital": 32
+    },
+    "PKS": {
+      "name": "朴世诚远征集团",
+      "capital": 15
+    },
+    "FNL": {
+      "name": "南方民族解放阵线",
+      "capital": 30
+    },
+    "DNM": {
+      "name": "岘港军区",
+      "capital": 12
+    }
+  }
+}

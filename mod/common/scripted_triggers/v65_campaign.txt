@@ -1,0 +1,7 @@
+v65_front_has_collapsed = {
+ OR = {
+  10 = { is_controlled_by = NVN }
+  11 = { is_controlled_by = NVN }
+  AND = { 19 = { is_controlled_by = FNL } 20 = { is_controlled_by = FNL } }
+ }
+}

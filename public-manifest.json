@@ -1,19 +1,47 @@
 [
   {
     "path": "descriptor.mod",
-    "sha256": "d5562e59a4a100579fb2ab027d1f865a8532a057652797927d937d21a9a2daaf"
+    "sha256": "62e42b24a5c27ac7dfca6e5f12b9ea42a93ce73d7694b610b84fc36c02d83339"
+  },
+  {
+    "path": "events/AAT_Generic_Events.txt",
+    "sha256": "2601045ef990d31e364aee5e9444d625036af2fba723ea3fa7e1c93256168c57"
+  },
+  {
+    "path": "events/ElectionEvents.txt",
+    "sha256": "2601045ef990d31e364aee5e9444d625036af2fba723ea3fa7e1c93256168c57"
+  },
+  {
+    "path": "events/Generic.txt",
+    "sha256": "2601045ef990d31e364aee5e9444d625036af2fba723ea3fa7e1c93256168c57"
+  },
+  {
+    "path": "events/PoliticalEvents.txt",
+    "sha256": "2601045ef990d31e364aee5e9444d625036af2fba723ea3fa7e1c93256168c57"
+  },
+  {
+    "path": "events/TOA_Generic_Events.txt",
+    "sha256": "2601045ef990d31e364aee5e9444d625036af2fba723ea3fa7e1c93256168c57"
   },
   {
     "path": "events/v65.txt",
     "sha256": "3a970a74e4ec06acee178930d5986268b6fbb1c42f7d0085b56f3a9468a88e1c"
   },
   {
+    "path": "events/v65_campaign.txt",
+    "sha256": "2d886279250abacab157834152008ac03be90876c00030d54f284e4cf8beae5d"
+  },
+  {
     "path": "events/v65_politics.txt",
     "sha256": "9b52b695a40c28b6d34b54176f6a4a99c3207e5c1be7b17cf95eb7f2fe549ac9"
   },
   {
+    "path": "interface/v65_focus_icons.gfx",
+    "sha256": "f317a95764075c7de0407b277bda24d366be33f0c1fc76f324357fb9967fbf2a"
+  },
+  {
     "path": "interface/v65_portraits.gfx",
-    "sha256": "c8cfe1ad7690ced4fac58c11440e345d9cafddf1fd933af1dc3531891d61a808"
+    "sha256": "9167842edf7bb8451fa4d018e3a481560eecc25dda213e2a2bd846e8b5837571"
   },
   {
     "path": "map/adjacencies.csv",
@@ -157,7 +185,39 @@
   },
   {
     "path": "common/bookmarks/v65.txt",
-    "sha256": "f48ef5a210784a67d8a5d016c9592e09f73c899740426c8143c77c2fd99a43c1"
+    "sha256": "be5785e2c1d1d5dea2aba2e9e19082a383d553c8883a320156857b8ba8217ad2"
+  },
+  {
+    "path": "common/characters/v65_DNM.txt",
+    "sha256": "698aaa3dd2663b0ce3019135579995a32feaf60fb94a95b1ab45000228ea97b1"
+  },
+  {
+    "path": "common/characters/v65_FNL.txt",
+    "sha256": "ed47d41cd23ea7a298cad390dba2c02e02d75ebcaaf1df7ad56c984b36990b21"
+  },
+  {
+    "path": "common/characters/v65_KHM.txt",
+    "sha256": "a639c073afeba9ab3f3f976e83fd6153788bdb63e1ff124adb4d79bcf0103ba2"
+  },
+  {
+    "path": "common/characters/v65_NVN.txt",
+    "sha256": "34b7cb4a35cf1a889364ea02abcd20b916a455a97f6cf538a5bc218e2b5682f6"
+  },
+  {
+    "path": "common/characters/v65_PKS.txt",
+    "sha256": "d442cad577643a59abf28988385a5a4ad4ffc32ffc8dc12d7b058be949b9b7a5"
+  },
+  {
+    "path": "common/characters/v65_SVN.txt",
+    "sha256": "f923db76c316c88add43fb580d061bddb3cb48804c0ff7b2957bcc2e9beba1e5"
+  },
+  {
+    "path": "common/countries/DNM.txt",
+    "sha256": "202c7378e1be8bdc56c4a0955947157ac7aa6ca1d0c965ac911a22abf1227c45"
+  },
+  {
+    "path": "common/countries/FNL.txt",
+    "sha256": "de4df0c9f6661d28ee077086f0d6cbac1b593110a9fcd993a81958f1626aed83"
   },
   {
     "path": "common/countries/KHM.txt",
@@ -166,6 +226,10 @@
   {
     "path": "common/countries/NVN.txt",
     "sha256": "1a75634d4766d578a9ba72727ee7b541f85cce4bbd2898e45497a08bf9840ae7"
+  },
+  {
+    "path": "common/countries/PKS.txt",
+    "sha256": "bc8ae24d2e56ff0fe5092373c0f96b801c0ab5c71f2feb87aeeff8578c644a09"
   },
   {
     "path": "common/countries/SVN.txt",
@@ -185,7 +249,11 @@
   },
   {
     "path": "common/country_tags/v65.txt",
-    "sha256": "7280587fc96d3b19a6176e40112adee478557a9c84d75423af915d06ff68eb6a"
+    "sha256": "0164d4f052f2aa734daec60e1b9e363bdd9f7a6e7bf2785239c98ee90249019b"
+  },
+  {
+    "path": "common/decisions/political_decisions.txt",
+    "sha256": "2601045ef990d31e364aee5e9444d625036af2fba723ea3fa7e1c93256168c57"
   },
   {
     "path": "common/decisions/v65.txt",
@@ -193,11 +261,15 @@
   },
   {
     "path": "common/decisions/v65_politics.txt",
-    "sha256": "47ee81fb7c17ffc2e6c6a874c3611555e8cb296c7dcea80a0efdaff85ea6a148"
+    "sha256": "8d94195e84cce0d3df7a050f28a3cfaffdef5efbb41abc7989f5df829e04a558"
   },
   {
     "path": "common/decisions/v65_trail.txt",
-    "sha256": "34bad73c5919af649cdabe6676c2361936d9496497398a63b7c529d8f8e9a9dc"
+    "sha256": "7dd6e292c04fe52ad516fdae1a66eb0d4b634b78345273641144a42b168216cb"
+  },
+  {
+    "path": "common/decisions/_generic_decisions.txt",
+    "sha256": "2601045ef990d31e364aee5e9444d625036af2fba723ea3fa7e1c93256168c57"
   },
   {
     "path": "common/defines/v65.lua",
@@ -212,6 +284,10 @@
     "sha256": "5552259be58b826dc96ffe81956f4e742c7174f3f348a92667d4aa2eec3e30e7"
   },
   {
+    "path": "common/ideas/v65_campaign.txt",
+    "sha256": "6aaa5a487ea14ed14de5a380b096b133ef327cefe4f262e63941af400b66304e"
+  },
+  {
     "path": "common/ideas/v65_park.txt",
     "sha256": "48a5577345c5bf950e70b96506b0371fb3c302bb9f89dc30640eb30e1f2f6701"
   },
@@ -220,16 +296,28 @@
     "sha256": "98503f52ba83f6e7fb79d44342a49bffb973741e5e37d5f92b159f01709870b7"
   },
   {
+    "path": "common/national_focus/v65_DNM.txt",
+    "sha256": "888c979a67c2d65e8f4e082db440bb5a2baf653da2f11b44a74f45b74ccf4493"
+  },
+  {
+    "path": "common/national_focus/v65_FNL.txt",
+    "sha256": "d2b9676288414479e94f848fa09603ac9f6b2997f31393f13069aefbe3726db9"
+  },
+  {
     "path": "common/national_focus/v65_KHM.txt",
-    "sha256": "b81f28cda0122fc86268670f1392f0f37b6cf6f6e5b25713f00fa5e856029560"
+    "sha256": "5978384d5a3ddb20474a594264816925378ab307d2fb881771cd786a5bef5103"
   },
   {
     "path": "common/national_focus/v65_NVN.txt",
-    "sha256": "2e65f11d33e2efaf29af29c6c630d0d4c4b40f098abb5041323912e2e3d9ae2e"
+    "sha256": "2330decd76927681f0d4b1b038062246e6483d0d2fd71f0fc62450fe58bcf0d5"
+  },
+  {
+    "path": "common/national_focus/v65_PKS.txt",
+    "sha256": "c8393b8f4aa62937751c275cbdc98ffdbc44475ee0c87893b4dd33b9a1c42cf5"
   },
   {
     "path": "common/national_focus/v65_SVN.txt",
-    "sha256": "175eed305739e9dc6f7efa66bea1cecac1b03f9dd324dca27a65c913f84da501"
+    "sha256": "0d7fbcfedeee8b9bed7dfbc44e62f2a1f7f0725fd8b6e34313acd215e92915a9"
   },
   {
     "path": "common/on_actions/00_on_actions.txt",
@@ -237,11 +325,11 @@
   },
   {
     "path": "common/on_actions/v65.txt",
-    "sha256": "0a5bbff977ef8d7dc708f4d3097f89a5d91d081babaa80b6b71457122e515fc4"
+    "sha256": "bf061942ccc78d8a57135349418288f15dc65e2dc2f950c10e53b858a00d0996"
   },
   {
     "path": "common/on_actions/v65_politics.txt",
-    "sha256": "ce2d6bf7e9052826f5f0cc3cc7d6b585c35cdba8bbbd22f00c248c0d5f7bb9b7"
+    "sha256": "e5df42b46e5d98dfb5e87fe721afb82400ed484a938e5c81668f864fa7281230"
   },
   {
     "path": "common/operations/LaR_historical_operations.txt",
@@ -253,11 +341,15 @@
   },
   {
     "path": "common/scripted_effects/v65_politics.txt",
-    "sha256": "25dd19314b0d9dc44e8c2036d2cb6d11eae3ec11ff427078cae002388a1ef09d"
+    "sha256": "530db7506e420d27d182033bd34dcc04158eaa0047a6be8c55fb48af31aede71"
   },
   {
     "path": "common/scripted_triggers/unit_medals_scripted_triggers.txt",
     "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "common/scripted_triggers/v65_campaign.txt",
+    "sha256": "da5b26b7f74323900792692a8171f552dd92c9094311c3b87f6ceac33eece266"
   },
   {
     "path": "common/script_constants/country_groups.txt",
@@ -305,7 +397,7 @@
   },
   {
     "path": "common/decisions/categories/v65_politics.txt",
-    "sha256": "d2e8bf282bc7b4ea29cdf329d39553cd2597f96c6e3c35daed95c1f7f3b320da"
+    "sha256": "28e4d777a0f502e7a727fc55571e0dfad6113fc0f2d98bc8b20427eb18260fd7"
   },
   {
     "path": "common/factions/templates/government_of_national_defense.txt",
@@ -342,6 +434,46 @@
   {
     "path": "common/units/names_divisions/SPQR_names_divisions.txt",
     "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+  },
+  {
+    "path": "gfx/flags/DNM.tga",
+    "sha256": "3e38e8e63a82e04186bcff628449d1741cf3295fa0561453c34a96e2ebf1251b"
+  },
+  {
+    "path": "gfx/flags/DNM_communism.tga",
+    "sha256": "3e38e8e63a82e04186bcff628449d1741cf3295fa0561453c34a96e2ebf1251b"
+  },
+  {
+    "path": "gfx/flags/DNM_democratic.tga",
+    "sha256": "3e38e8e63a82e04186bcff628449d1741cf3295fa0561453c34a96e2ebf1251b"
+  },
+  {
+    "path": "gfx/flags/DNM_fascism.tga",
+    "sha256": "3e38e8e63a82e04186bcff628449d1741cf3295fa0561453c34a96e2ebf1251b"
+  },
+  {
+    "path": "gfx/flags/DNM_neutrality.tga",
+    "sha256": "3e38e8e63a82e04186bcff628449d1741cf3295fa0561453c34a96e2ebf1251b"
+  },
+  {
+    "path": "gfx/flags/FNL.tga",
+    "sha256": "727b058f73183db19e63ca8ab4379528f811f189fb5f39c959ab249dc807afa2"
+  },
+  {
+    "path": "gfx/flags/FNL_communism.tga",
+    "sha256": "727b058f73183db19e63ca8ab4379528f811f189fb5f39c959ab249dc807afa2"
+  },
+  {
+    "path": "gfx/flags/FNL_democratic.tga",
+    "sha256": "727b058f73183db19e63ca8ab4379528f811f189fb5f39c959ab249dc807afa2"
+  },
+  {
+    "path": "gfx/flags/FNL_fascism.tga",
+    "sha256": "727b058f73183db19e63ca8ab4379528f811f189fb5f39c959ab249dc807afa2"
+  },
+  {
+    "path": "gfx/flags/FNL_neutrality.tga",
+    "sha256": "727b058f73183db19e63ca8ab4379528f811f189fb5f39c959ab249dc807afa2"
   },
   {
     "path": "gfx/flags/KHM.tga",
@@ -384,6 +516,26 @@
     "sha256": "6a137fd2741aa042060d88355cb1c4480698e3bf7771f384996e22cb90b2d110"
   },
   {
+    "path": "gfx/flags/PKS.tga",
+    "sha256": "c86f90dac6e2efb0db852f769a9166d44a08ec249c1aa7839d92fb46d3830f97"
+  },
+  {
+    "path": "gfx/flags/PKS_communism.tga",
+    "sha256": "c86f90dac6e2efb0db852f769a9166d44a08ec249c1aa7839d92fb46d3830f97"
+  },
+  {
+    "path": "gfx/flags/PKS_democratic.tga",
+    "sha256": "c86f90dac6e2efb0db852f769a9166d44a08ec249c1aa7839d92fb46d3830f97"
+  },
+  {
+    "path": "gfx/flags/PKS_fascism.tga",
+    "sha256": "c86f90dac6e2efb0db852f769a9166d44a08ec249c1aa7839d92fb46d3830f97"
+  },
+  {
+    "path": "gfx/flags/PKS_neutrality.tga",
+    "sha256": "c86f90dac6e2efb0db852f769a9166d44a08ec249c1aa7839d92fb46d3830f97"
+  },
+  {
     "path": "gfx/flags/SVN.tga",
     "sha256": "2fb4ae7c85989d8ab76c91caab1612cd705422c0a7212eeca28ecb45f2c1bb1d"
   },
@@ -422,6 +574,46 @@
   {
     "path": "gfx/flags/XTR_neutrality.tga",
     "sha256": "93b3ad31d52c18a0d9ae7e85a5e75e4e90d5a756abe0b0a21dbd38ee7ba83b3d"
+  },
+  {
+    "path": "gfx/flags/medium/DNM.tga",
+    "sha256": "596c3af2a7e51077eafa1a513eb46f4471d60263258800f3008bb76cc59f4bab"
+  },
+  {
+    "path": "gfx/flags/medium/DNM_communism.tga",
+    "sha256": "596c3af2a7e51077eafa1a513eb46f4471d60263258800f3008bb76cc59f4bab"
+  },
+  {
+    "path": "gfx/flags/medium/DNM_democratic.tga",
+    "sha256": "596c3af2a7e51077eafa1a513eb46f4471d60263258800f3008bb76cc59f4bab"
+  },
+  {
+    "path": "gfx/flags/medium/DNM_fascism.tga",
+    "sha256": "596c3af2a7e51077eafa1a513eb46f4471d60263258800f3008bb76cc59f4bab"
+  },
+  {
+    "path": "gfx/flags/medium/DNM_neutrality.tga",
+    "sha256": "596c3af2a7e51077eafa1a513eb46f4471d60263258800f3008bb76cc59f4bab"
+  },
+  {
+    "path": "gfx/flags/medium/FNL.tga",
+    "sha256": "07b4a431d0b4712c15fb1b875eab1e2f6b9a792dfa39f470b172f7f4e8931b5e"
+  },
+  {
+    "path": "gfx/flags/medium/FNL_communism.tga",
+    "sha256": "07b4a431d0b4712c15fb1b875eab1e2f6b9a792dfa39f470b172f7f4e8931b5e"
+  },
+  {
+    "path": "gfx/flags/medium/FNL_democratic.tga",
+    "sha256": "07b4a431d0b4712c15fb1b875eab1e2f6b9a792dfa39f470b172f7f4e8931b5e"
+  },
+  {
+    "path": "gfx/flags/medium/FNL_fascism.tga",
+    "sha256": "07b4a431d0b4712c15fb1b875eab1e2f6b9a792dfa39f470b172f7f4e8931b5e"
+  },
+  {
+    "path": "gfx/flags/medium/FNL_neutrality.tga",
+    "sha256": "07b4a431d0b4712c15fb1b875eab1e2f6b9a792dfa39f470b172f7f4e8931b5e"
   },
   {
     "path": "gfx/flags/medium/KHM.tga",
@@ -464,6 +656,26 @@
     "sha256": "2a0d8c3c0e3265204cd4ba7b18cacf8481cbd026a5cd09a17cf0e9018d39ee40"
   },
   {
+    "path": "gfx/flags/medium/PKS.tga",
+    "sha256": "2ff2656794623404717b990a9532b8d30778031d698ab56776e4622c659fd9dc"
+  },
+  {
+    "path": "gfx/flags/medium/PKS_communism.tga",
+    "sha256": "2ff2656794623404717b990a9532b8d30778031d698ab56776e4622c659fd9dc"
+  },
+  {
+    "path": "gfx/flags/medium/PKS_democratic.tga",
+    "sha256": "2ff2656794623404717b990a9532b8d30778031d698ab56776e4622c659fd9dc"
+  },
+  {
+    "path": "gfx/flags/medium/PKS_fascism.tga",
+    "sha256": "2ff2656794623404717b990a9532b8d30778031d698ab56776e4622c659fd9dc"
+  },
+  {
+    "path": "gfx/flags/medium/PKS_neutrality.tga",
+    "sha256": "2ff2656794623404717b990a9532b8d30778031d698ab56776e4622c659fd9dc"
+  },
+  {
     "path": "gfx/flags/medium/SVN.tga",
     "sha256": "e19946f2bf19113a4e7386df0bc3e010994d6fd69d79e092bcc4b561aa3129cb"
   },
@@ -502,6 +714,46 @@
   {
     "path": "gfx/flags/medium/XTR_neutrality.tga",
     "sha256": "caee2018a7fed55835b27c333a8a7a8811fd47b53a6d6f17639d74f114c2d50e"
+  },
+  {
+    "path": "gfx/flags/small/DNM.tga",
+    "sha256": "ece1931aed07199d12345cdfd10b05a32c6b3b0f9b13cc32c258ff6359db08c2"
+  },
+  {
+    "path": "gfx/flags/small/DNM_communism.tga",
+    "sha256": "ece1931aed07199d12345cdfd10b05a32c6b3b0f9b13cc32c258ff6359db08c2"
+  },
+  {
+    "path": "gfx/flags/small/DNM_democratic.tga",
+    "sha256": "ece1931aed07199d12345cdfd10b05a32c6b3b0f9b13cc32c258ff6359db08c2"
+  },
+  {
+    "path": "gfx/flags/small/DNM_fascism.tga",
+    "sha256": "ece1931aed07199d12345cdfd10b05a32c6b3b0f9b13cc32c258ff6359db08c2"
+  },
+  {
+    "path": "gfx/flags/small/DNM_neutrality.tga",
+    "sha256": "ece1931aed07199d12345cdfd10b05a32c6b3b0f9b13cc32c258ff6359db08c2"
+  },
+  {
+    "path": "gfx/flags/small/FNL.tga",
+    "sha256": "a3bfb745bf01f4796083ba117148d9a90cf6921c9449bc8dc4bbf9cf5e0f57a0"
+  },
+  {
+    "path": "gfx/flags/small/FNL_communism.tga",
+    "sha256": "a3bfb745bf01f4796083ba117148d9a90cf6921c9449bc8dc4bbf9cf5e0f57a0"
+  },
+  {
+    "path": "gfx/flags/small/FNL_democratic.tga",
+    "sha256": "a3bfb745bf01f4796083ba117148d9a90cf6921c9449bc8dc4bbf9cf5e0f57a0"
+  },
+  {
+    "path": "gfx/flags/small/FNL_fascism.tga",
+    "sha256": "a3bfb745bf01f4796083ba117148d9a90cf6921c9449bc8dc4bbf9cf5e0f57a0"
+  },
+  {
+    "path": "gfx/flags/small/FNL_neutrality.tga",
+    "sha256": "a3bfb745bf01f4796083ba117148d9a90cf6921c9449bc8dc4bbf9cf5e0f57a0"
   },
   {
     "path": "gfx/flags/small/KHM.tga",
@@ -544,6 +796,26 @@
     "sha256": "eb586a196469e9b9c69e2db961dce1095ba355dd20f258bc1d8f407a22286001"
   },
   {
+    "path": "gfx/flags/small/PKS.tga",
+    "sha256": "5ef3adcd50267be034d2f32599e4383e9e8e79cd0294a981b01968067c5188aa"
+  },
+  {
+    "path": "gfx/flags/small/PKS_communism.tga",
+    "sha256": "5ef3adcd50267be034d2f32599e4383e9e8e79cd0294a981b01968067c5188aa"
+  },
+  {
+    "path": "gfx/flags/small/PKS_democratic.tga",
+    "sha256": "5ef3adcd50267be034d2f32599e4383e9e8e79cd0294a981b01968067c5188aa"
+  },
+  {
+    "path": "gfx/flags/small/PKS_fascism.tga",
+    "sha256": "5ef3adcd50267be034d2f32599e4383e9e8e79cd0294a981b01968067c5188aa"
+  },
+  {
+    "path": "gfx/flags/small/PKS_neutrality.tga",
+    "sha256": "5ef3adcd50267be034d2f32599e4383e9e8e79cd0294a981b01968067c5188aa"
+  },
+  {
     "path": "gfx/flags/small/SVN.tga",
     "sha256": "ebe84d226af8cc629b1263ef40886d04f14ba20ead353fcdf259e76c9c32548f"
   },
@@ -584,6 +856,42 @@
     "sha256": "abce2a66a4596b1763a81623c34a5f88c44482cc04c31b7674335b67be21cb5f"
   },
   {
+    "path": "gfx/interface/goals/v65_factory.dds",
+    "sha256": "fcd96fc83b79e56cbb9ba50df475ecc406e486663e867ff75fc4fe91ecf9d90c"
+  },
+  {
+    "path": "gfx/interface/goals/v65_flag.dds",
+    "sha256": "794001719ab987d70fd9109a259d0a97f3ef195bac294e99ba109fc9a56e71c8"
+  },
+  {
+    "path": "gfx/interface/goals/v65_helmet.dds",
+    "sha256": "c8d36c3bb3759f662537beabd7001dc5dfc338b0c3f8c5441531fd8248a5732c"
+  },
+  {
+    "path": "gfx/interface/goals/v65_landmark.dds",
+    "sha256": "c7539556d37f6fd03203881be924f5697ca3b702f2d52f55188a86075ddf73bc"
+  },
+  {
+    "path": "gfx/interface/goals/v65_radio.dds",
+    "sha256": "66a1823c5dcfb20ebe492565d159ee9d190907fc074db16caa5af18afdb2ae68"
+  },
+  {
+    "path": "gfx/interface/goals/v65_scroll.dds",
+    "sha256": "e15dcac17c0864f395d509505f4a374a72f0c10663e80092e5facc953c756e26"
+  },
+  {
+    "path": "gfx/interface/goals/v65_shield.dds",
+    "sha256": "9abd245dc62a02d24b8760dc6487ddd28a049ce23085af6df93a9792c31f26d4"
+  },
+  {
+    "path": "gfx/interface/goals/v65_tree.dds",
+    "sha256": "26a9f1693269e00930cef4a2b88d86ce2e198492c1ca7db7710e6725ba17157c"
+  },
+  {
+    "path": "gfx/interface/goals/v65_truck.dds",
+    "sha256": "626c9046c4d331338ec1d0e531c8238cacd302ff300f73000e90fc7ff68f0e21"
+  },
+  {
     "path": "gfx/interface/equipmentdesigner/graphic_db/04_plane_icons.txt",
     "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
   },
@@ -600,16 +908,36 @@
     "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
   },
   {
+    "path": "gfx/leaders/v65/park_seicheng.dds",
+    "sha256": "6c382570933f343f3acb51e141e22badec7ecbd9e67cdf5587f528f85005af73"
+  },
+  {
+    "path": "gfx/leaders/v65/park_seicheng.png",
+    "sha256": "dca8fe14b336cf48142ecd41652ed6c9b1193f15ac8996816ddf8779e40aa9d8"
+  },
+  {
+    "path": "history/countries/DNM - Theater.txt",
+    "sha256": "41ccb7587295cca966116dd7a3c2483e82db443e2c11210a7501eef17d12a63b"
+  },
+  {
+    "path": "history/countries/FNL - Theater.txt",
+    "sha256": "bebb37651d1cd58c84fdf975a83f36181e5fba59420357d4aa38695600eb1c10"
+  },
+  {
     "path": "history/countries/KHM - Theater.txt",
-    "sha256": "a04a2d1c4c3b7593614e32f8a55bbfe1ebfc67c81a842443f9cf36c5f73b3d56"
+    "sha256": "41f1a5a49a4ba23b4196798c52b9ca1166f53a6fab8c3244e43ccc8a43b424e4"
   },
   {
     "path": "history/countries/NVN - Theater.txt",
-    "sha256": "9b76cb82dbe2dada3eadeb00f4df38a400ef51bfad9e0a5bccebc014febd2d8a"
+    "sha256": "bce9d5153dddee9bff3ff33e27a51fc81d96a50a0fe68398fd18bf52b9b91b25"
+  },
+  {
+    "path": "history/countries/PKS - Theater.txt",
+    "sha256": "df0de3163778d617b126e26783f975f0724e7a35904a4bb8aad881a3ecb7a776"
   },
   {
     "path": "history/countries/SVN - Theater.txt",
-    "sha256": "9bcb0f5ab39b73c2e6e95a9deba6259e1ad85cde3f390a1708c420dfd3d6b1d3"
+    "sha256": "90b8029fd247ad0029579900b747b0bf1bb468ddecbdd54c8ae4004bd68477ad"
   },
   {
     "path": "history/countries/XTR - Theater.txt",
@@ -621,7 +949,7 @@
   },
   {
     "path": "history/states/10.txt",
-    "sha256": "d68872b0b7a29513a5f99bab2365bb3b4893c55c8d36c1f6cc7786a2bd14f2ce"
+    "sha256": "3cd04d1f9a5cfcdf0ea7fd80a196798ed79edc3dc3cd3db986cdb6569c3aaecf"
   },
   {
     "path": "history/states/11.txt",
@@ -629,7 +957,7 @@
   },
   {
     "path": "history/states/12.txt",
-    "sha256": "33b93d901d33501de8a1ecb6edaaf5a59cd99b187077479188d9aec2af0508fb"
+    "sha256": "facf9efca114114d4fbf2c77c070405bf3cc54ea82639cd0d4f76e02f0877249"
   },
   {
     "path": "history/states/13.txt",
@@ -641,7 +969,7 @@
   },
   {
     "path": "history/states/15.txt",
-    "sha256": "291cd9419a9e4c3df45730208ea226254e72290ddac35fa02ecf7f629e69e25e"
+    "sha256": "bb5c7655821eef29d44cecc02f9c3f259ea67e91a8fd30e1920af8f2d67c560e"
   },
   {
     "path": "history/states/16.txt",
@@ -709,7 +1037,7 @@
   },
   {
     "path": "history/states/30.txt",
-    "sha256": "93e79debb4d5dbc298e5201b0ad90ad18b810b7143a33113527547c66ed40a61"
+    "sha256": "a87aa99280f6ef9cc4473cc031db8fd7938381238bea0fe8b1e837a8bd4f7867"
   },
   {
     "path": "history/states/31.txt",
@@ -801,7 +1129,15 @@
   },
   {
     "path": "history/states/9.txt",
-    "sha256": "37492fbc87c85a3d03fb6db89607f037406bc135a50a70614ce8beecf25ddc18"
+    "sha256": "1f8844f2ffd798c4c957eb03bd9d957ceb3b162f48021538b389f54f750a434c"
+  },
+  {
+    "path": "history/units/DNM_1965.txt",
+    "sha256": "47d112abd88890d06c0011b99bbf5add71b4a75fffa44ce5b80159e5f373f88c"
+  },
+  {
+    "path": "history/units/FNL_1965.txt",
+    "sha256": "297e84e20da905dbaff278f4b5a3629ee6970653825b8167588418f25e9bd30a"
   },
   {
     "path": "history/units/KHM_1965.txt",
@@ -812,16 +1148,24 @@
     "sha256": "112cab5633c2ec9660f9c30e8d39168e77222c79d2884ef068dcd3d102af0a5b"
   },
   {
+    "path": "history/units/PKS_1965.txt",
+    "sha256": "895aed09ae135674902117990d4d847d7a5920fecff689ba5b12aae1d7f5ea42"
+  },
+  {
     "path": "history/units/SVN_1965.txt",
-    "sha256": "0bf0aedc1ea8e1b1dd50bda19fb6e210af1d8a930abf6d3079a796ca54a57a16"
+    "sha256": "f1bb12083e5deb95ff6056108ebef621dcd65e225a4954819f13158675073f61"
   },
   {
     "path": "history/units/XTR_1965.txt",
     "sha256": "e0e1a2c6133fddb127fa464011b70ead309b9f7ea2f639583000d65e35d88b40"
   },
   {
+    "path": "localisation/english/v65_characters_l_english.yml",
+    "sha256": "abfb9d3b51ba7e8792f29fece06a4c15161ea089a6662348f2932e5e6baafb91"
+  },
+  {
     "path": "localisation/english/v65_focus_l_english.yml",
-    "sha256": "ed6150b28a5055a92ff59b6a84d2b97f383e14c8ebcd2f1a1241a89e3bfe72b9"
+    "sha256": "1d50cd06708b4dbbe40e9a94e173729f387f3d474b08e933cd7b08e8329bcf10"
   },
   {
     "path": "localisation/english/v65_l_english.yml",
@@ -836,16 +1180,28 @@
     "sha256": "85b040017d44d938811268835e0d44e412fb316e7e30af2b48688bcf24eaf022"
   },
   {
+    "path": "localisation/english/zzzzz_v65_mechanics_l_english.yml",
+    "sha256": "9a8e27164be70d6b73bdd2d4781fb016fc950fa8c946e71160c24c8bb13b9915"
+  },
+  {
+    "path": "localisation/english/zzzz_v65_campaign_l_english.yml",
+    "sha256": "5eba6989dd41cce08342733d9e6dff171e6a6fb36f6ca1c916ae502adb95edd7"
+  },
+  {
     "path": "localisation/english/zzz_v65_politics_l_english.yml",
-    "sha256": "3eae974453b380782bb181c1b02c4dacb2dffa2d5762b5d01f56af83f89b2f70"
+    "sha256": "df856bf1e2d31836549c7f9d2836f9a52e4a4be31e82a5391e6123057d66f883"
   },
   {
     "path": "localisation/english/zz_theater_l_english.yml",
     "sha256": "898ddfc45a6dd39604db69b9da9f1ad43a7e7f3781f3dc1268b7d8766b67ab3e"
   },
   {
+    "path": "localisation/simp_chinese/v65_characters_l_simp_chinese.yml",
+    "sha256": "80a5d6469c7f5794fb1b9a1db823f70d0f1cbb40d63e5136a921429eb6515b32"
+  },
+  {
     "path": "localisation/simp_chinese/v65_focus_l_simp_chinese.yml",
-    "sha256": "686cd93e1d83fe84bc102fc23c25a6f902f75e4e5aafe97913e9b0ed2b8dfc72"
+    "sha256": "188d1dbbec16446fb8356f4b99bcf7b3c1ee28c837c9d1808e41e106e2930554"
   },
   {
     "path": "localisation/simp_chinese/v65_l_simp_chinese.yml",
@@ -860,8 +1216,16 @@
     "sha256": "081395ac8d937aabd1ee16c5f5bd68e3e5000478ce865b9f2e58fcfe9ad7554d"
   },
   {
+    "path": "localisation/simp_chinese/zzzzz_v65_mechanics_l_simp_chinese.yml",
+    "sha256": "937fd23b16c99ca14a4049a309143e5b612c35bf7dee160fe096c18cb7121681"
+  },
+  {
+    "path": "localisation/simp_chinese/zzzz_v65_campaign_l_simp_chinese.yml",
+    "sha256": "9cd62dea2d017a831f3d651d10279e0641f6b54076123dce11da4c44a6a91ff1"
+  },
+  {
     "path": "localisation/simp_chinese/zzz_v65_politics_l_simp_chinese.yml",
-    "sha256": "e0b70c9579f654012373e3927f20688c21ae2a9c5983b8d6b14b642179d276db"
+    "sha256": "8d691700a92cbf74f617888bc5235105883420b62da17a1a42a92506f2d7c7bb"
   },
   {
     "path": "localisation/simp_chinese/zz_theater_l_simp_chinese.yml",

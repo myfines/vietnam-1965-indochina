@@ -1,6 +1,16 @@
 on_actions = {
- on_startup = { effect = { SVN = { v65_politics_init = yes } } }
- on_weekly = { effect = { SVN = { if = { limit = { has_country_flag = v65_crisis_active NOT = { has_country_flag = v65_coup_resolved } }
-23 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } } 24 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } } 26 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } } 27 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } } } } } }
- on_monthly = { effect = { NVN = { if = { limit = { has_war_with = SVN check_variable = { v65_trail_level > 0 } } random = { chance = 60 add_to_variable = { v65_infiltration = 1 } clamp_variable = { var = v65_infiltration min = 0 max = 2 } } } } } }
+ on_startup = { effect = { SVN = { v65_politics_init = yes } FNL = { if = { limit = { NOT = { has_country_flag = v65_organization_ready } } set_country_flag = v65_organization_ready set_variable = { v65_infiltration = 1 } } } PKS = { if = { limit = { NOT = { has_country_flag = v65_organization_ready } } set_country_flag = v65_organization_ready set_variable = { v65_park_influence = 0 } } } } }
+ on_daily = { effect = { SVN = { v65_check_front_defeat = yes } } }
+ on_weekly = { effect = {
+  SVN = { if = { limit = { has_country_flag = v65_crisis_active NOT = { has_country_flag = v65_coup_resolved } }
+23 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } }
+24 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } }
+26 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } }
+27 = { if = { limit = { is_owned_by = SVN } if = { limit = { SVN = { has_idea = v65_martial_law } } subtract_from_variable = { v65_loyalty = 2 } } else = { subtract_from_variable = { v65_loyalty = 5 } } clamp_variable = { var = v65_loyalty min = 0 max = 100 } } } } }
+  FNL = { if = { limit = { is_ai = yes check_variable = { v65_infiltration > 0 } NVN = { check_variable = { v65_trail_level > 0 } } NOT = { has_country_flag = v65_raid_cooldown } } v65_launch_infiltration = yes } }
+ } }
+ on_monthly = { effect = {
+  NVN = { if = { limit = { has_war_with = SVN } add_to_variable = { v65_trail_level = 1 } clamp_variable = { var = v65_trail_level min = 0 max = 5 } } }
+  FNL = { if = { limit = { has_war_with = SVN NVN = { check_variable = { v65_trail_level > 0 } } } add_to_variable = { v65_infiltration = 1 } clamp_variable = { var = v65_infiltration min = 0 max = 3 } } }
+ } }
 }

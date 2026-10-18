@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ho_chi_minh",
+    "source": "VIN/Ho_Chi_Minh_60s.dds",
+    "target": "gfx/leaders/v65/ho_chi_minh.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "vo_nguyen_giap",
+    "source": "VIN/Vo_Nguyen_Giap.dds",
+    "target": "gfx/leaders/v65/vo_nguyen_giap.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "le_duan",
+    "source": "VIN/Le_Duan.dds",
+    "target": "gfx/leaders/v65/le_duan.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "truong_chinh",
+    "source": "VIN/Truong_Chinh.dds",
+    "target": "gfx/leaders/v65/truong_chinh.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "nguyen_van_thieu",
+    "source": "VIE/Nguyen_Van_Thieu_1960.dds",
+    "target": "gfx/leaders/v65/nguyen_van_thieu.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "duong_van_minh",
+    "source": "VIE/GENERALS/Duong_Van_Minh.dds",
+    "target": "gfx/leaders/v65/duong_van_minh.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "tran_thien_khiem",
+    "source": "VIE/GENERALS/Tran_thien_Khiem.dds",
+    "target": "gfx/leaders/v65/tran_thien_khiem.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "tran_van_huong",
+    "source": "VIE/Tran_Van_Huong.dds",
+    "target": "gfx/leaders/v65/tran_van_huong.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "nguyen_ngoc_tho",
+    "source": "VIE/Nguyen_Ngoc_Tho_60s.dds",
+    "target": "gfx/leaders/v65/nguyen_ngoc_tho.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "kim_jong_pil",
+    "source": "KOR/Kim_Jong-pil.dds",
+    "target": "gfx/leaders/v65/kim_jong_pil.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "kim_jae_gyu",
+    "source": "KOR/Kim_Jae-gyu.dds",
+    "target": "gfx/leaders/v65/kim_jae_gyu.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "park_chung_hee",
+    "source": "KOR/Park_Chung-hee_63.dds",
+    "target": "gfx/leaders/v65/park_chung_hee.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "nguyen_huu_tho",
+    "source": "VIN/Nguyen_Huu_Tho.dds",
+    "target": "gfx/leaders/v65/nguyen_huu_tho.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "nguyen_van_linh",
+    "source": "VIN/Nguyen_Van_Linh.dds",
+    "target": "gfx/leaders/v65/nguyen_van_linh.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "ngo_quang_truong",
+    "source": "VIE/GENERALS/Ngo_Quang_Truong.dds",
+    "target": "gfx/leaders/v65/ngo_quang_truong.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "do_cao_tri",
+    "source": "VIE/GENERALS/Do_Cao_Tri.dds",
+    "target": "gfx/leaders/v65/do_cao_tri.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "norodom_sihanouk",
+    "source": "CAM/Norodom_Sihanouk_60s.dds",
+    "target": "gfx/leaders/v65/norodom_sihanouk.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "lon_nol",
+    "source": "CAM/Lon_Nol_70s.dds",
+    "target": "gfx/leaders/v65/lon_nol.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "sisowath_monireth",
+    "source": "CAM/FARK/Sisowath_Monireth.dds",
+    "target": "gfx/leaders/v65/sisowath_monireth.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  },
+  {
+    "id": "les_kosem",
+    "source": "CAM/FARK/Les_Kosem.dds",
+    "target": "gfx/leaders/v65/les_kosem.dds",
+    "provider": "Cold War Iron Curtain",
+    "distribution": "downloaded into runtime only; not bundled in public repository"
+  }
+]

@@ -1,0 +1,22 @@
+characters = {
+v65_ho_chi_minh = {
+ name = v65_ho_chi_minh
+ portraits = { civilian = { large = "gfx/leaders/v65/ho_chi_minh.dds" small = "gfx/leaders/v65/ho_chi_minh.dds" } army = { large = "gfx/leaders/v65/ho_chi_minh.dds" small = "gfx/leaders/v65/ho_chi_minh.dds" } }
+ country_leader = { ideology = marxism expire = "1990.1.1" }
+}
+v65_vo_nguyen_giap = {
+ name = v65_vo_nguyen_giap
+ portraits = { civilian = { large = "gfx/leaders/v65/vo_nguyen_giap.dds" small = "gfx/leaders/v65/vo_nguyen_giap.dds" } army = { large = "gfx/leaders/v65/vo_nguyen_giap.dds" small = "gfx/leaders/v65/vo_nguyen_giap.dds" } }
+ field_marshal = { skill = 5 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+v65_le_duan = {
+ name = v65_le_duan
+ portraits = { civilian = { large = "gfx/leaders/v65/le_duan.dds" small = "gfx/leaders/v65/le_duan.dds" } army = { large = "gfx/leaders/v65/le_duan.dds" small = "gfx/leaders/v65/le_duan.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_le_duan_advisor cost = 100 traits = { silent_workhorse } }
+}
+v65_truong_chinh = {
+ name = v65_truong_chinh
+ portraits = { civilian = { large = "gfx/leaders/v65/truong_chinh.dds" small = "gfx/leaders/v65/truong_chinh.dds" } army = { large = "gfx/leaders/v65/truong_chinh.dds" small = "gfx/leaders/v65/truong_chinh.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_truong_chinh_advisor cost = 100 traits = { silent_workhorse } }
+}
+}

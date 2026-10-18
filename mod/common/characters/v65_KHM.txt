@@ -1,0 +1,22 @@
+characters = {
+v65_norodom_sihanouk = {
+ name = v65_norodom_sihanouk
+ portraits = { civilian = { large = "gfx/leaders/v65/norodom_sihanouk.dds" small = "gfx/leaders/v65/norodom_sihanouk.dds" } army = { large = "gfx/leaders/v65/norodom_sihanouk.dds" small = "gfx/leaders/v65/norodom_sihanouk.dds" } }
+ country_leader = { ideology = despotism expire = "1990.1.1" }
+}
+v65_lon_nol = {
+ name = v65_lon_nol
+ portraits = { civilian = { large = "gfx/leaders/v65/lon_nol.dds" small = "gfx/leaders/v65/lon_nol.dds" } army = { large = "gfx/leaders/v65/lon_nol.dds" small = "gfx/leaders/v65/lon_nol.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_lon_nol_advisor cost = 100 traits = { silent_workhorse } }
+}
+v65_sisowath_monireth = {
+ name = v65_sisowath_monireth
+ portraits = { civilian = { large = "gfx/leaders/v65/sisowath_monireth.dds" small = "gfx/leaders/v65/sisowath_monireth.dds" } army = { large = "gfx/leaders/v65/sisowath_monireth.dds" small = "gfx/leaders/v65/sisowath_monireth.dds" } }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+v65_les_kosem = {
+ name = v65_les_kosem
+ portraits = { civilian = { large = "gfx/leaders/v65/les_kosem.dds" small = "gfx/leaders/v65/les_kosem.dds" } army = { large = "gfx/leaders/v65/les_kosem.dds" small = "gfx/leaders/v65/les_kosem.dds" } }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+}

@@ -1,1 +1,1 @@
-spriteTypes = { spriteType = { name = "GFX_idea_v65_park_patron" texturefile = "gfx/leaders/Asia/Portrait_Asia_Generic_3.dds" } }
+spriteTypes = { spriteType = { name = "GFX_idea_v65_park_patron" texturefile = "gfx/leaders/v65/park_chung_hee.dds" } }

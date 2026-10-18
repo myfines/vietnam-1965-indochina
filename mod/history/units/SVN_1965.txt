@@ -1,19 +1,19 @@
 division_template = { name = "Theater Infantry" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
-units = { division = { name = "SVN Infantry 1" location = 183 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 2" location = 187 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 3" location = 193 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 4" location = 203 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 5" location = 215 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 6" location = 222 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 7" location = 228 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 8" location = 242 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 9" location = 251 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 10" location = 261 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 11" location = 269 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 12" location = 277 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 13" location = 282 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 14" location = 291 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 15" location = 302 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 16" location = 305 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 17" location = 309 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
-division = { name = "SVN Infantry 18" location = 319 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 } }
+units = {
+ division = { name = "ARVN Regiment 1" location = 183 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 2" location = 184 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 3" location = 187 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 4" location = 203 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 5" location = 215 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+
+ division = { name = "ARVN Regiment 7" location = 228 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 8" location = 242 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 9" location = 261 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 10" location = 269 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 11" location = 277 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 12" location = 282 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 13" location = 302 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 14" location = 305 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 15" location = 311 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 16" location = 331 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+}

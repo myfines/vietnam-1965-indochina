@@ -1,0 +1,8 @@
+ideas = { country = {
+ v65_prepared_defence = { picture = generic_army_chief allowed = { always = no } modifier = { army_defence_factor = 0.10 max_dig_in = 3 } }
+ v65_intelligence_network = { picture = generic_political_reform allowed = { always = no } modifier = { political_power_gain = 0.1 } }
+ v65_guerrilla_network = { picture = generic_army_chief allowed = { always = no } modifier = { supply_consumption_factor = -0.12 army_speed_factor = 0.05 } }
+ v65_regional_network = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.05 production_factory_efficiency_gain_factor = 0.05 } }
+ v65_dmz_standoff = { picture = generic_army_chief allowed = { always = no } modifier = { army_attack_factor = -0.15 army_defence_factor = 0.15 } }
+ v65_defeat_shock = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = -0.10 political_power_gain = -0.15 } }
+} }

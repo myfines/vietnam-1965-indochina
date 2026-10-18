@@ -1,11 +1,28 @@
 on_actions = {
- on_startup = {
-  effect = {
-   if = {
-    limit = { date > 1965.10.27 SVN = { exists = yes NOT = { has_country_flag = v65_intro_seen } } NVN = { exists = yes } }
-    SVN = { set_country_flag = v65_intro_seen country_event = { id = v65.1 days = 1 } }
-    NVN = { declare_war_on = { target = SVN type = annex_everything } }
+ on_startup = { effect = {
+  if = { limit = { SVN = { exists = yes NOT = { has_country_flag = v65_intro_seen } } }
+   SVN = {
+    set_country_flag = v65_intro_seen
+    create_faction = V65_SOUTHERN_COALITION add_to_faction = PKS add_to_faction = DNM
+    add_ideas = { v65_dmz_standoff v65_prepared_defence }
+    country_event = { id = v65.1 days = 1 }
    }
+   NVN = { create_faction = V65_LIBERATION_FRONT add_to_faction = FNL add_ideas = { v65_dmz_standoff v65_prepared_defence }
+    declare_war_on = { target = SVN type = annex_everything }
+    declare_war_on = { target = PKS type = annex_everything }
+    declare_war_on = { target = DNM type = annex_everything }
+   }
+   FNL = {
+    declare_war_on = { target = SVN type = annex_everything }
+    declare_war_on = { target = PKS type = annex_everything }
+    declare_war_on = { target = DNM type = annex_everything }
+    add_ideas = v65_guerrilla_network
+    set_province_controller = 243 set_province_controller = 287 set_province_controller = 316
+    18 = { create_unit = { division = "name = \"Highlands Cell\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 location = 243" owner = FNL } }
+    23 = { create_unit = { division = "name = \"Tay Ninh Cell\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 location = 287" owner = FNL } }
+    27 = { create_unit = { division = "name = \"Mekong Cell\" division_template = \"Theater Infantry\" start_equipment_factor = 0.65 location = 316" owner = FNL } }
+   }
+   PKS = { add_ideas = v65_park_patron }
   }
- }
+ } }
 }

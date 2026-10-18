@@ -1,32 +1,77 @@
 v65_politics_init = { if = { limit = { NOT = { has_country_flag = v65_politics_ready } } set_country_flag = v65_politics_ready set_variable = { v65_park_influence = 0 } 23 = { set_variable = { v65_loyalty = 35 } } 24 = { set_variable = { v65_loyalty = 35 } } 26 = { set_variable = { v65_loyalty = 35 } } 27 = { set_variable = { v65_loyalty = 35 } }  10 = { set_state_flag = v65_dmz } NVN = { set_variable = { v65_trail_level = 1 } set_variable = { v65_infiltration = 0 } } } }
 v65_enact_martial_law = { add_ideas = v65_martial_law every_owned_state = { limit = { NOT = { has_state_flag = v65_dmz } } set_state_flag = v65_under_martial_law } add_stability = -0.05 }
 v65_lift_martial_law = { remove_ideas = v65_martial_law every_state = { clr_state_flag = v65_under_martial_law } }
-v65_resolve_coup = { set_country_flag = v65_coup_resolved set_variable = { v65_coup_support = 0 }
+v65_resolve_coup = { if = { limit = { has_country_flag = v65_front_defeat } set_country_flag = v65_coup_resolved set_variable = { v65_coup_support = 0 }
 if = { limit = { 23 = { is_owned_by = SVN check_variable = { v65_loyalty > 59 } } } add_to_variable = { v65_coup_support = 1 } } if = { limit = { 24 = { is_owned_by = SVN check_variable = { v65_loyalty > 59 } } } add_to_variable = { v65_coup_support = 1 } } if = { limit = { 26 = { is_owned_by = SVN check_variable = { v65_loyalty > 59 } } } add_to_variable = { v65_coup_support = 1 } } if = { limit = { 27 = { is_owned_by = SVN check_variable = { v65_loyalty > 59 } } } add_to_variable = { v65_coup_support = 1 } }
  if = { limit = { check_variable = { v65_coup_support > 2 } controls_state = 25 }
-  set_country_flag = v65_coup_victory add_stability = 0.1 add_political_power = 100 add_ideas = v65_guard_network country_event = { id = v65politics.3 days = 1 }
+  set_country_flag = v65_coup_victory remove_ideas = v65_defeat_shock v65_duong_van_minh = { add_country_leader_role = { promote_leader = yes country_leader = { ideology = despotism expire = "1990.1.1" } } } add_stability = 0.1 add_political_power = 100 add_ideas = v65_guard_network country_event = { id = v65politics.3 days = 1 }
  } else_if = { limit = { check_variable = { v65_coup_support > 0 } owns_state = 25 }
   set_country_flag = v65_civil_war_started
   start_civil_war = { ideology = fascism size = 0.35 capital = 25 states = { 25 26 } set_country_flag = v65_coup_rebels set_cosmetic_tag = V65_JUNTA }
   country_event = { id = v65politics.4 days = 1 }
  } else = { add_stability = -0.15 add_political_power = -75 country_event = { id = v65politics.5 days = 1 } }
  }
-v65_launch_infiltration = { random_list = { 1 = { modifier = { factor = 0 NOT = { 18 = { is_owned_by = SVN is_controlled_by = SVN } } } v65_raid_18 = yes } 1 = { modifier = { factor = 0 NOT = { 20 = { is_owned_by = SVN is_controlled_by = SVN } } } v65_raid_20 = yes } 1 = { modifier = { factor = 0 NOT = { 23 = { is_owned_by = SVN is_controlled_by = SVN } } } v65_raid_23 = yes }  } }
-v65_raid_18 = { if = { limit = { has_war_with = SVN 18 = { is_owned_by = SVN is_controlled_by = SVN } }
- set_province_controller = 251
- 18 = { create_unit = { division = "name = \"Trail Infiltration Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.6" owner = NVN count = 1 } }
- add_to_variable = { v65_infiltration = -1 } add_to_variable = { v65_trail_level = -1 } set_country_flag = v65_raid_cooldown country_event = { id = v65politics.8 days = 45 }
- SVN = { country_event = { id = v65politics.6 days = 1 } } set_country_flag = v65_raid_fired
- } }
-v65_raid_20 = { if = { limit = { has_war_with = SVN 20 = { is_owned_by = SVN is_controlled_by = SVN } }
+
+}
+v65_check_front_defeat = {
+ if = { limit = { has_war_with = NVN v65_front_has_collapsed = yes NOT = { has_country_flag = v65_front_defeat } }
+  set_country_flag = v65_front_defeat set_country_flag = v65_crisis_active add_ideas = v65_defeat_shock
+  country_event = { id = v65politics.1 days = 1 }
+  PKS = { country_event = { id = v65campaign.1 days = 2 } }
+  DNM = { country_event = { id = v65campaign.2 days = 2 } }
+ }
+}
+v65_park_intervention = {
+ if = { limit = { tag = PKS SVN = { has_country_flag = v65_front_defeat exists = yes } }
+  leave_faction = yes set_country_flag = v65_park_march
+  add_ideas = v65_guard_network
+  declare_war_on = { target = SVN type = annex_everything }
+  SVN = { country_event = { id = v65campaign.3 days = 1 } }
+ }
+}
+v65_launch_infiltration = { FNL = {
+ if = { limit = { has_war_with = SVN check_variable = { v65_infiltration > 0 } NVN = { check_variable = { v65_trail_level > 0 } } NOT = { has_country_flag = v65_raid_cooldown } }
+  random_list = {
+   1 = { modifier = { factor = 0 NOT = { SVN = { controls_province = 244 } } } v65_raid_18 = yes }
+   1 = { modifier = { factor = 0 NOT = { SVN = { controls_province = 269 } } } v65_raid_20 = yes }
+   1 = { modifier = { factor = 0 NOT = { SVN = { controls_province = 288 } } } v65_raid_23 = yes }
+   1 = { modifier = { factor = 0 NOT = { SVN = { controls_province = 300 } } } v65_raid_24 = yes }
+   1 = { modifier = { factor = 0 NOT = { SVN = { controls_province = 324 } } } v65_raid_27 = yes }
+  }
+ }
+} }
+v65_raid_18 = { if = { limit = { tag = FNL has_war_with = SVN SVN = { controls_province = 244 } }
+ set_province_controller = 244
+ 18 = { create_unit = { division = "name = \"Liberation Mobile Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.65 location = 244" owner = FNL count = 1 } }
+ subtract_from_variable = { v65_infiltration = 1 } NVN = { subtract_from_variable = { v65_trail_level = 1 } }
+ set_country_flag = v65_raid_cooldown set_country_flag = v65_raid_fired
+ country_event = { id = v65politics.8 days = 35 } SVN = { country_event = { id = v65politics.6 days = 1 } }
+} }
+v65_raid_20 = { if = { limit = { tag = FNL has_war_with = SVN SVN = { controls_province = 269 } }
  set_province_controller = 269
- 20 = { create_unit = { division = "name = \"Trail Infiltration Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.6" owner = NVN count = 1 } }
- add_to_variable = { v65_infiltration = -1 } add_to_variable = { v65_trail_level = -1 } set_country_flag = v65_raid_cooldown country_event = { id = v65politics.8 days = 45 }
- SVN = { country_event = { id = v65politics.6 days = 1 } } set_country_flag = v65_raid_fired
- } }
-v65_raid_23 = { if = { limit = { has_war_with = SVN 23 = { is_owned_by = SVN is_controlled_by = SVN } }
- set_province_controller = 291
- 23 = { create_unit = { division = "name = \"Trail Infiltration Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.6" owner = NVN count = 1 } }
- add_to_variable = { v65_infiltration = -1 } add_to_variable = { v65_trail_level = -1 } set_country_flag = v65_raid_cooldown country_event = { id = v65politics.8 days = 45 }
- SVN = { country_event = { id = v65politics.6 days = 1 } } set_country_flag = v65_raid_fired
- } }
+ 20 = { create_unit = { division = "name = \"Liberation Mobile Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.65 location = 269" owner = FNL count = 1 } }
+ subtract_from_variable = { v65_infiltration = 1 } NVN = { subtract_from_variable = { v65_trail_level = 1 } }
+ set_country_flag = v65_raid_cooldown set_country_flag = v65_raid_fired
+ country_event = { id = v65politics.8 days = 35 } SVN = { country_event = { id = v65politics.6 days = 1 } }
+} }
+v65_raid_23 = { if = { limit = { tag = FNL has_war_with = SVN SVN = { controls_province = 288 } }
+ set_province_controller = 288
+ 23 = { create_unit = { division = "name = \"Liberation Mobile Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.65 location = 288" owner = FNL count = 1 } }
+ subtract_from_variable = { v65_infiltration = 1 } NVN = { subtract_from_variable = { v65_trail_level = 1 } }
+ set_country_flag = v65_raid_cooldown set_country_flag = v65_raid_fired
+ country_event = { id = v65politics.8 days = 35 } SVN = { country_event = { id = v65politics.6 days = 1 } }
+} }
+v65_raid_24 = { if = { limit = { tag = FNL has_war_with = SVN SVN = { controls_province = 300 } }
+ set_province_controller = 300
+ 24 = { create_unit = { division = "name = \"Liberation Mobile Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.65 location = 300" owner = FNL count = 1 } }
+ subtract_from_variable = { v65_infiltration = 1 } NVN = { subtract_from_variable = { v65_trail_level = 1 } }
+ set_country_flag = v65_raid_cooldown set_country_flag = v65_raid_fired
+ country_event = { id = v65politics.8 days = 35 } SVN = { country_event = { id = v65politics.6 days = 1 } }
+} }
+v65_raid_27 = { if = { limit = { tag = FNL has_war_with = SVN SVN = { controls_province = 324 } }
+ set_province_controller = 324
+ 27 = { create_unit = { division = "name = \"Liberation Mobile Group\" division_template = \"Theater Infantry\" start_experience_factor = 0.35 start_equipment_factor = 0.65 location = 324" owner = FNL count = 1 } }
+ subtract_from_variable = { v65_infiltration = 1 } NVN = { subtract_from_variable = { v65_trail_level = 1 } }
+ set_country_flag = v65_raid_cooldown set_country_flag = v65_raid_fired
+ country_event = { id = v65politics.8 days = 35 } SVN = { country_event = { id = v65politics.6 days = 1 } }
+} }

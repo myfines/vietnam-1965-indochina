@@ -1,0 +1,12 @@
+characters = {
+v65_nguyen_huu_tho = {
+ name = v65_nguyen_huu_tho
+ portraits = { civilian = { large = "gfx/leaders/v65/nguyen_huu_tho.dds" small = "gfx/leaders/v65/nguyen_huu_tho.dds" } army = { large = "gfx/leaders/v65/nguyen_huu_tho.dds" small = "gfx/leaders/v65/nguyen_huu_tho.dds" } }
+ country_leader = { ideology = marxism expire = "1990.1.1" }
+}
+v65_nguyen_van_linh = {
+ name = v65_nguyen_van_linh
+ portraits = { civilian = { large = "gfx/leaders/v65/nguyen_van_linh.dds" small = "gfx/leaders/v65/nguyen_van_linh.dds" } army = { large = "gfx/leaders/v65/nguyen_van_linh.dds" small = "gfx/leaders/v65/nguyen_van_linh.dds" } }
+ advisor = { slot = political_advisor idea_token = v65_nguyen_van_linh_advisor cost = 100 traits = { silent_workhorse } }
+}
+}
