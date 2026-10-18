@@ -1,0 +1,2 @@
+add_namespace = v65allies
+country_event = { id = v65allies.1 is_triggered_only = yes title = v65allies.1.t desc = v65allies.1.d picture = GFX_report_event_generic_read_write option = { name = v65allies.1.a } }

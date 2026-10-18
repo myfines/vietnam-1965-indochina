@@ -13,3 +13,9 @@ def hydrate(game,out):
         icon.alpha_composite(picture,((64-picture.width)//2,(64-picture.height)//2))
         ImageDraw.Draw(icon).rectangle((0,0,63,63),outline=(146,128,82,255))
         icon.save(dest/(role+'.dds'))
+    # The theater's Park/ROK expedition uses the Taeguk flag from the local installation.
+    with Image.open(game/'gfx/flags/KOR_democratic.tga') as source:
+        flag=source.convert('RGB')
+        for folder,size in [('',(82,52)),('medium',(41,26)),('small',(10,7))]:
+            for suffix in ['','_neutrality','_communism','_democratic','_fascism']:
+                flag.resize(size,Image.Resampling.LANCZOS).save(out/'gfx/flags'/folder/('PKS'+suffix+'.tga'))

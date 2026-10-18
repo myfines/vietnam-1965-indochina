@@ -1,5 +1,5 @@
 {
-  "version": "0.7.0",
+  "version": "0.7.1",
   "focuses": [
     {
       "tag": "SVN",
@@ -1174,7 +1174,7 @@
     }
   },
   "expansion": {
-    "version": "0.7.0",
+    "version": "0.7.1",
     "years": [
       1965,
       1968,

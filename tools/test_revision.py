@@ -20,9 +20,16 @@ class RevisionTests(unittest.TestCase):
 
     def test_us_guard_and_island_evacuation_exist(self):
         s=(M/'common/scripted_effects/v65_intervention.txt').read_text(encoding='utf-8')
-        self.assertIn('transfer_state = 10',s)
+        self.assertNotIn('set_demilitarized_zone = yes',s)
         self.assertIn('v65_evacuate_island',s)
         self.assertIn('v65_withdraw_intervention',s)
+
+    def test_withdrawal_scales_support_and_allied_missions_exist(self):
+        s=(M/'common/scripted_effects/v65_intervention.txt').read_text(encoding='utf-8')
+        self.assertIn('v65_refresh_us_support',s)
+        s=(M/'common/scripted_effects/v65_allied_missions.txt').read_text(encoding='utf-8')
+        self.assertIn('ROC Vietnam Detachment',s)
+        self.assertIn('ROK Taeguk Expeditionary Group',s)
 
     def test_every_authored_spirit_has_resolvable_custom_art(self):
         manifest=json.loads((R/'spirit-art-manifest.json').read_text(encoding='utf-8'))

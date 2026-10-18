@@ -1,7 +1,7 @@
 [
   {
     "path": "descriptor.mod",
-    "sha256": "e348f0e5a29f1bf7ef85b8d6949130e3507acf9cd9cb26f23234c6586734bee9"
+    "sha256": "6c37bf7050e065aa3bb61ce244acb928c207b60e4141de589312d52372660ccb"
   },
   {
     "path": "events/AAT_Generic_Events.txt",
@@ -26,6 +26,10 @@
   {
     "path": "events/v65.txt",
     "sha256": "3a970a74e4ec06acee178930d5986268b6fbb1c42f7d0085b56f3a9468a88e1c"
+  },
+  {
+    "path": "events/v65_allied_missions.txt",
+    "sha256": "3aa83234e75a4ae5f84d9046993dd08b62abb04cc425b5e7520f383d88d29453"
   },
   {
     "path": "events/v65_campaign.txt",
@@ -101,7 +105,7 @@
   },
   {
     "path": "interface/v65_spirit_art.gfx",
-    "sha256": "60cd582dc816ed41e847fae2cf51b5ddc0d784a2cbdad88517c32442bb8d3056"
+    "sha256": "fca28a79460e7fe007c2b635233fc36e31d028b1e8f608f26562592817b64858"
   },
   {
     "path": "map/adjacencies.csv",
@@ -360,6 +364,10 @@
     "sha256": "93423d5469b5811c32d0566d66f2d27e372a41adc29e1a2210f6952fdc5cdfa2"
   },
   {
+    "path": "common/decisions/v65_allied_missions.txt",
+    "sha256": "02a57e77e78ec28783c1e08792d061421bb07da752d7eeb5857011c443da7084"
+  },
+  {
     "path": "common/decisions/v65_archive.txt",
     "sha256": "2e01541504551208cd8497150ad8a4ab9e2e1e033cbef45bd9be91fb4836ebd5"
   },
@@ -428,6 +436,10 @@
     "sha256": "42bea96fcc3285c3eec7e8c6e51e6559f72d8eb4689487d19b5a787c4be55b44"
   },
   {
+    "path": "common/ideas/v65_allied_missions.txt",
+    "sha256": "82da361f25a6cb13ea4f0eb3e1c764b0172f2912e89023269251afb45a5d3baa"
+  },
+  {
     "path": "common/ideas/v65_campaign.txt",
     "sha256": "1d59958ddb6279e6a36c87fa42fee4178ec105e72427c77304715eaa78212b1a"
   },
@@ -437,7 +449,7 @@
   },
   {
     "path": "common/ideas/v65_intervention.txt",
-    "sha256": "1b59112155db51e4a382b966982a10a3c9ccb447aa27f45f18947083424a4d37"
+    "sha256": "b9b696469b2a8b993a7e4de532a0912d9f0c54d6b59af0b198f3aa966c70ba2b"
   },
   {
     "path": "common/ideas/v65_long_campaign.txt",
@@ -524,6 +536,10 @@
     "sha256": "77ebea129f1e741b637cf13393ee3f7fe7821329f33ba886421d0914fa3f4b5e"
   },
   {
+    "path": "common/on_actions/v65_allied_missions.txt",
+    "sha256": "37fcf70723760cbe41b95e0c3445919a8c7aa1a7baa8756e632b0745531c2137"
+  },
+  {
     "path": "common/on_actions/v65_cambodia.txt",
     "sha256": "9e60a4163927759d64a871b6e47a5f0577a05f7fc703fd83a41bdcb7800d18fe"
   },
@@ -537,7 +553,7 @@
   },
   {
     "path": "common/on_actions/v65_intervention.txt",
-    "sha256": "a40a674d9737388bdc1f94aa5910b65a04f14b2b767234ae054e4f02ddfb2935"
+    "sha256": "d0d2acd31ba208392614fcb8476c3b23742cfb847fb797e5e249f356ea96ccf1"
   },
   {
     "path": "common/on_actions/v65_island.txt",
@@ -584,12 +600,16 @@
     "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
   },
   {
+    "path": "common/scripted_effects/v65_allied_missions.txt",
+    "sha256": "47f28e437ebba9f7b80c77c4c0ad4ec129a8ce7cf87bebb48f8db307177892f3"
+  },
+  {
     "path": "common/scripted_effects/v65_command.txt",
     "sha256": "e257d07b60a7fb41e920120b72e60076d94a09b11bf94ed2f6277cf0aea2cfd8"
   },
   {
     "path": "common/scripted_effects/v65_intervention.txt",
-    "sha256": "f11cb4a8179d7a59f81016d25ad14471196a65bb48aca01158e2a4cd4ea844cd"
+    "sha256": "7a4e5b45280b0dee03e82ea7ae5a273d12a1d20598bae1aad02317becb4f064f"
   },
   {
     "path": "common/scripted_effects/v65_park_government.txt",
@@ -617,7 +637,7 @@
   },
   {
     "path": "common/scripted_effects/v65_union_sanctuary.txt",
-    "sha256": "2d5d801456091122eb004c04fc4bad1e4b62ab7e1192856ba821c81a58b06bcf"
+    "sha256": "ed30ba91df033b1b2efb101b0b061c6637ffdd152df55ddc19b838c3e9660d9e"
   },
   {
     "path": "common/scripted_effects/v65_war_stages.txt",
@@ -698,6 +718,10 @@
   {
     "path": "common/decisions/categories/v65.txt",
     "sha256": "ad93ae0efdd2286c227a8c9253ea21e1173efccf4f9826e363e4b3b1e29d27f5"
+  },
+  {
+    "path": "common/decisions/categories/v65_allied_missions.txt",
+    "sha256": "6fa5118752b2a7374af0918e54831af18ef63d1b32e49786d4f3431caf43c222"
   },
   {
     "path": "common/decisions/categories/v65_archive.txt",
@@ -1581,7 +1605,7 @@
   },
   {
     "path": "history/states/10.txt",
-    "sha256": "dd099fdc01005de5ade74e5bf7360982396974fe5f7eadcc4b8d58309be74818"
+    "sha256": "3cd04d1f9a5cfcdf0ea7fd80a196798ed79edc3dc3cd3db986cdb6569c3aaecf"
   },
   {
     "path": "history/states/11.txt",
@@ -1805,7 +1829,7 @@
   },
   {
     "path": "history/units/SVN_1965.txt",
-    "sha256": "166f387e408f3c2d52f29500c2efdb8627eb6d4feaf827b1ef5c48bf2b698471"
+    "sha256": "bf114f5450045acfba74a89a39c3aa8ad488ab0145ae058b3d9ab5ce1afef307"
   },
   {
     "path": "history/units/XTR_1965.txt",
@@ -1832,8 +1856,12 @@
     "sha256": "85b040017d44d938811268835e0d44e412fb316e7e30af2b48688bcf24eaf022"
   },
   {
+    "path": "localisation/english/zzzzzzzzzzz_v65_allies_l_english.yml",
+    "sha256": "0e7f17bb33c1c37fdfcf7594514b793738f19f27c6703559e3cccf0b77517cb1"
+  },
+  {
     "path": "localisation/english/zzzzzzzzzz_v65_intervention_l_english.yml",
-    "sha256": "af66665c03f8561044a8a326b22eeafeed1ccb0af6dd64eabb2d821b4fa42db1"
+    "sha256": "8960350b0a84db628133095046a337ee6fe69608122fcd0ede12afd7e985c750"
   },
   {
     "path": "localisation/english/zzzzzzzzzz_v65_revision_l_english.yml",
@@ -1928,8 +1956,12 @@
     "sha256": "081395ac8d937aabd1ee16c5f5bd68e3e5000478ce865b9f2e58fcfe9ad7554d"
   },
   {
+    "path": "localisation/simp_chinese/zzzzzzzzzzz_v65_allies_l_simp_chinese.yml",
+    "sha256": "ececa34fe571b7ce08a28611cb44539d9e0d8079851eb1cd82bb907d448ac882"
+  },
+  {
     "path": "localisation/simp_chinese/zzzzzzzzzz_v65_intervention_l_simp_chinese.yml",
-    "sha256": "45c492fd91a83c5eff404a1041dbc86e88f7fb676418488233ed7dbf48ebbfa4"
+    "sha256": "13b61326b0c07ca0ce4e03166a5bc8d80c3ee174b02a7a2d18e4277ef4ae0204"
   },
   {
     "path": "localisation/simp_chinese/zzzzzzzzzz_v65_revision_l_simp_chinese.yml",

@@ -16,3 +16,7 @@ The command dossier background and prestige bar are original geometric artwork g
 ## 0.7 additions
 
 All 80 authored national spirits have explicit icon bindings. `spirit-art-manifest.json` maps them to 13 native-art subjects. The installer resizes locally owned goal artwork into 64×64 spirit icons inside the ignored runtime directory; neither source pixels nor derived icons are bundled publicly. Focus art now uses 47 distinct native textures across 454 nodes after the Park-line rewrite. New dialogue and fictional war-credit choices are original adaptations, not quoted novel text.
+
+## 0.7.1 additions
+
+There are now 85 authored spirits and 15 locally hydrated icon subjects. ROK and ROC mission icons use the locally installed `gfx/flags/KOR_democratic.tga` and `gfx/flags/CHI_neutrality.tga`. The installer also uses the local ROK flag for Park's expeditionary faction at all flag sizes. These native flags and derived icons are not redistributed in this repository. Korean/Taiwanese military participation is an alternate-history mod configuration, not a claim that these fictional formations existed historically.

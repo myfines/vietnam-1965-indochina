@@ -2,6 +2,8 @@
   "sources": {
     "supply": "gfx/interface/goals/focus_generic_supply_line.dds",
     "treaty": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+    "rokflag": "gfx/flags/KOR_democratic.tga",
+    "rocflag": "gfx/flags/CHI_neutrality.tga",
     "reinforce": "gfx/interface/goals/focus_generic_reinforcing_the_supply_network.dds",
     "intelligence": "gfx/interface/goals/focus_generic_secret_agent_operative.dds",
     "security": "gfx/interface/goals/focus_generic_national_security.dds",
@@ -17,6 +19,8 @@
   "assignments": {
     "v65_external_supply": "supply",
     "v65_local_partnership": "treaty",
+    "v65_rok_liaison": "rokflag",
+    "v65_roc_mission": "rocflag",
     "v65_prepared_defence": "reinforce",
     "v65_intelligence_network": "intelligence",
     "v65_guerrilla_network": "security",
@@ -27,6 +31,9 @@
     "v65_central_discredited": "staff",
     "v65_park_inside": "treaty",
     "v65_us_firepower": "airlift",
+    "v65_us_firepower_75": "airlift",
+    "v65_us_firepower_50": "airlift",
+    "v65_us_firepower_25": "airlift",
     "v65_staff_1": "staff",
     "v65_staff_2": "staff",
     "v65_staff_3": "staff",

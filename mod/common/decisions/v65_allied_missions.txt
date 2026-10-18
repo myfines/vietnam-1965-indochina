@@ -1,0 +1,1 @@
+v65_allied_missions = { v65_request_roc = { icon = generic_prepare_civil_war cost = 80 days_re_enable = 180 visible = { tag = SVN } available = { has_idea = v65_roc_mission check_variable = { v65_roc_calls < 3 } capital_scope = { is_fully_controlled_by = ROOT } } complete_effect = { v65_send_roc_detachment = yes } ai_will_do = { factor = 0.5 } } }

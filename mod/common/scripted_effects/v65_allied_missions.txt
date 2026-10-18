@@ -1,0 +1,7 @@
+v65_begin_allied_missions = {
+ if = { limit = { NOT = { has_global_flag = v65_allies_initialized } } set_global_flag = v65_allies_initialized
+  PKS = { add_ideas = v65_rok_liaison capital_scope = { create_unit = { division = "name = \"ROK Taeguk Expeditionary Group\" division_template = \"Theater Infantry\" start_equipment_factor = 1 start_experience_factor = 0.6" owner = PREV } } }
+  SVN = { add_ideas = v65_roc_mission 25 = { create_unit = { division = "name = \"ROC Vietnam Detachment\" division_template = \"ROC Vietnam Detachment\" start_equipment_factor = 1 start_experience_factor = 0.5" owner = SVN count = 2 } } country_event = { id = v65allies.1 days = 7 } }
+ }
+}
+v65_send_roc_detachment = { if = { limit = { has_idea = v65_roc_mission capital_scope = { is_fully_controlled_by = PREV } } capital_scope = { create_unit = { division = "name = \"ROC Vietnam Detachment\" division_template = \"ROC Vietnam Detachment\" start_equipment_factor = 0.9 start_experience_factor = 0.4" owner = PREV } } add_to_variable = { v65_roc_calls = 1 } } }

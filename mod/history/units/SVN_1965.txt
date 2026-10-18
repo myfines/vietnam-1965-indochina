@@ -1,8 +1,9 @@
+division_template = { name = "ROC Vietnam Detachment" is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
 division_template = { name = "US Intervention Group" is_locked = yes regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
 division_template = { name = "Theater Infantry" regiments = { infantry = { x = 0 y = 0 } infantry = { x = 0 y = 1 } infantry = { x = 0 y = 2 } infantry = { x = 1 y = 0 } infantry = { x = 1 y = 1 } infantry = { x = 1 y = 2 } } }
 units = {
-
-
+ division = { name = "ARVN Regiment 1" location = 183 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
+ division = { name = "ARVN Regiment 2" location = 184 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
  division = { name = "ARVN Regiment 3" location = 187 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
  division = { name = "ARVN Regiment 4" location = 203 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }
  division = { name = "ARVN Regiment 5" location = 215 division_template = "Theater Infantry" start_experience_factor = 0.3 start_equipment_factor = 1 }

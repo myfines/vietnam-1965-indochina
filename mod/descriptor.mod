@@ -1,5 +1,5 @@
 name="Vietnam 1965 - Indochina Theater"
-version="0.7.0"
+version="0.7.1"
 supported_version="1.19.*"
 replace_path="common/national_focus"
 replace_path="events"

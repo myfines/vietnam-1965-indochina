@@ -1,0 +1,23 @@
+ideas = {
+	country = {
+		v65_rok_liaison = {
+			picture = v65_spirit_rokflag
+			allowed = {
+				always = no
+			}
+			modifier = {
+				command_power_gain_mult = 0.1
+			}
+		}
+		v65_roc_mission = {
+			picture = v65_spirit_rocflag
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = 0.1
+				training_time_factor = -0.05
+			}
+		}
+	}
+}

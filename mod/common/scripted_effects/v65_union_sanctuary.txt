@@ -174,7 +174,7 @@ v65_finalize_union = {
 					days = 90
 				}
 			}
-			annex_country = {
+			if = { limit = { PKS = { has_idea = v65_rok_liaison } } add_ideas = v65_rok_liaison } annex_country = {
 				target = PKS
 				transfer_troops = yes
 			}

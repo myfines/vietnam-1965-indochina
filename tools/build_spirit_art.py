@@ -6,6 +6,7 @@ sys.path.insert(0,str(R/'vendor'));import pdx
 
 catalog=json.loads((R/'focus-art-manifest.json').read_text(encoding='utf-8'))
 sources={x['name'].removeprefix('GFX_v65_detail_'):x['texture'] for x in catalog['bindings']}
+sources.update(rokflag='gfx/flags/KOR_democratic.tga',rocflag='gfx/flags/CHI_neutrality.tga')
 rules=[('airlift',['us_firepower']),('revolution',['jungle','revolution']),('contract',['contract','daihai']),('staff',['staff','command','central','council']),('training',['training','rotation']),('intelligence',['intelligence','signals','spy']),('supply',['supply','logistics','exhaustion','weariness']),('security',['security','coercion','guerrilla','pressure']),('port',['island','sanctuary']),('mandate',['mandate','regency','democratic','ruler']),('funds',['payroll','patron','fund','clique']),('reinforce',['prepared','defence'])]
 assignments={};used={}
 for path in sorted((M/'common/ideas').glob('v65*.txt')):
@@ -15,6 +16,8 @@ for path in sorted((M/'common/ideas').glob('v65*.txt')):
             if kind!='country':continue
             for key,_,body in ideas:
                 role=next((r for r,terms in rules if any(term in key for term in terms)),'treaty')
+                if key=='v65_rok_liaison':role='rokflag'
+                if key=='v65_roc_mission':role='rocflag'
                 # All roles must refer to a real catalog entry; no generic missing picture fallback.
                 if role=='contract':role='contracts'
                 if role=='training':role='academy'
@@ -30,13 +33,13 @@ put(Path('interface/v65_spirit_art.gfx'),'spriteTypes = { '+' '.join(f'spriteTyp
 count=len(catalog['assignments'])
 for filename in ['narrative-manifest.json','campaign-manifest.json']:
     path=R/filename;d=json.loads(path.read_text())
-    d['version']='0.7.0'
+    d['version']='0.7.1'
     # The campaign manifest uses a nested narrative section in some source revisions.
     def update(obj):
         if isinstance(obj,dict):
             for k,v in obj.items():
                 if k=='total_focuses':obj[k]=count
-                elif k=='version':obj[k]='0.7.0'
+                elif k=='version':obj[k]='0.7.1'
                 elif isinstance(v,(dict,list)):update(v)
         elif isinstance(obj,list):
             for v in obj:update(v)

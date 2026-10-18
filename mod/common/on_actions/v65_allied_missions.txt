@@ -1,0 +1,1 @@
+on_actions = { on_startup = { effect = { SVN = { v65_begin_allied_missions = yes } } } }

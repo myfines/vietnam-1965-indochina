@@ -6,10 +6,46 @@ ideas = {
 				always = no
 			}
 			modifier = {
-				army_defence_factor = 1
-				army_org_factor = 0.5
-				supply_consumption_factor = -0.3
+				army_defence_factor = 3
+				army_org_factor = 0.6
+				supply_consumption_factor = -0.4
 				army_attack_factor = 0.35
+			}
+		}
+		v65_us_firepower_75 = {
+			picture = v65_spirit_airlift
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 2.25
+				army_org_factor = 0.45
+				supply_consumption_factor = -0.3
+				army_attack_factor = 0.25
+			}
+		}
+		v65_us_firepower_50 = {
+			picture = v65_spirit_airlift
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 1.5
+				army_org_factor = 0.3
+				supply_consumption_factor = -0.2
+				army_attack_factor = 0.15
+			}
+		}
+		v65_us_firepower_25 = {
+			picture = v65_spirit_airlift
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.75
+				army_org_factor = 0.15
+				supply_consumption_factor = -0.1
+				army_attack_factor = 0.05
 			}
 		}
 	}
