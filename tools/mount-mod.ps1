@@ -11,8 +11,8 @@ if (!$ModPath) {
 }
 $ModPath=[IO.Path]::GetFullPath($ModPath)
 $modDir=Join-Path $UserDir 'mod'
-$entry='mod/vietnam_1965_theater.mod'
-$descriptor=Join-Path $modDir 'vietnam_1965_theater.mod'
+$entry='mod/v65_public.mod'
+$descriptor=Join-Path $modDir 'v65_public.mod'
 $loadFile=Join-Path $UserDir 'dlc_load.json'
 $backup=Join-Path $root 'runtime\dlc_load.before-enable.json'
 function Read-Load {
@@ -27,7 +27,7 @@ function Disable-Local {
  $load=Read-Load; $enabled=@($load.enabled_mods)
  if ($enabled.Count -eq 1 -and $enabled[0] -eq $entry -and (Test-Path -LiteralPath $backup)) {
   $saved=[IO.File]::ReadAllText($backup) | ConvertFrom-Json
-  $load.enabled_mods=@($saved.enabled_mods)
+  $load.enabled_mods=@($saved.enabled_mods | Where-Object { $_ -notin @('mod/vietnam_1965_local.mod','mod/vietnam_1965_theater.mod') })
  } else { $load.enabled_mods=@($enabled | Where-Object { $_ -ne $entry }) }
  Write-Load $load
 }
@@ -49,11 +49,19 @@ if ($Mode -in @('Mount','Enable')) {
  if (!(Test-Path -LiteralPath $source)) { throw "Missing descriptor: $source" }
  [IO.Directory]::CreateDirectory($modDir) | Out-Null
  $text=[IO.File]::ReadAllText($source)
+ $text=$text.Replace('Vietnam 1965 - Indochina Theater','Vietnam 1965 Public')
  $text=[regex]::Replace($text,'(?m)^\s*path\s*=.*\r?\n?','')
  $text += [Environment]::NewLine + 'path="' + $ModPath.Replace('\','/') + '"' + [Environment]::NewLine
  [IO.File]::WriteAllText($descriptor,$text,[Text.UTF8Encoding]::new($false))
- $legacy=Join-Path $modDir 'vietnam_1965_local.mod'
- if (Test-Path -LiteralPath $legacy) { [IO.File]::WriteAllText($legacy,$text,[Text.UTF8Encoding]::new($false)) }
+ # Duplicate registrations of the same mod can leave the game loading vanilla.
+ $retired=Join-Path $root 'runtime\registration-backup'
+ foreach ($name in @('vietnam_1965_local.mod','vietnam_1965_theater.mod')) {
+  $legacy=Join-Path $modDir $name
+  if (Test-Path -LiteralPath $legacy) {
+   [IO.Directory]::CreateDirectory($retired) | Out-Null
+   Move-Item -LiteralPath $legacy -Destination (Join-Path $retired $name) -Force
+  }
+ }
 }
 if ($Mode -eq 'Enable') {
  $load=Read-Load
@@ -66,7 +74,7 @@ if ($Mode -eq 'Enable') {
 }
 if ($Mode -in @('Disable','Unmount')) { Disable-Local }
 if ($Mode -eq 'Unmount') {
- foreach ($name in @('vietnam_1965_theater.mod','vietnam_1965_local.mod')) {
+ foreach ($name in @('v65_public.mod')) {
   $p=Join-Path $modDir $name
   if (Test-Path -LiteralPath $p) { Remove-Item -LiteralPath $p }
  }

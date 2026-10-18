@@ -24,7 +24,7 @@ nonce=str(time.time_ns());begin='V65_SMOKE_BEGIN_'+nonce;end='V65_SMOKE_END_'+no
 script=script.replace('V65_SMOKE_BEGIN',begin).replace('V65_SMOKE_END',end)
 probe.write_text(script);define.write_text('NDefines.NGame.HANDS_OFF_START_TAG = "SVN"\n')
 proc=None
-playset=U/'dlc_load.json';descriptor=U/'mod/vietnam_1965_theater.mod'
+playset=U/'dlc_load.json';descriptor=U/'mod/v65_public.mod'
 old_load=playset.read_bytes() if playset.exists() else None
 old_descriptor=descriptor.read_bytes() if descriptor.exists() else None
 try:
@@ -32,7 +32,7 @@ try:
  descriptor.write_text((O/'descriptor.mod').read_text()+'\npath="'+O.as_posix()+'"\n',encoding='utf-8')
  for tag in ['NVN','SVN','KHM','XTR']:
   hist=(O/f'history/countries/{tag} - Theater.txt').read_text();pic=re.search(r'picture = "([^"]+)"',hist)[1];assert (O/pic).exists() or (G/pic).exists(),pic
- playset=U/'dlc_load.json';d=json.loads(playset.read_text());d['enabled_mods']=['mod/vietnam_1965_theater.mod'];playset.write_text(json.dumps(d))
+ playset=U/'dlc_load.json';d=json.loads(playset.read_text());d['enabled_mods']=['mod/v65_public.mod'];playset.write_text(json.dumps(d))
  proc=subprocess.Popen([str(G/'hoi4.exe'),'-hands_off','-start_tag=SVN'],cwd=G)
  print(f'Engine test started, pid {proc.pid}',flush=True);deadline=time.monotonic()+150;saw_start=False
  while time.monotonic()<deadline:
