@@ -54,7 +54,7 @@ if ($Mode -in @('Mount','Enable')) {
  $text += [Environment]::NewLine + 'path="' + $ModPath.Replace('\','/') + '"' + [Environment]::NewLine
  [IO.File]::WriteAllText($descriptor,$text,[Text.UTF8Encoding]::new($false))
  # Duplicate registrations of the same mod can leave the game loading vanilla.
- $retired=Join-Path $root 'runtime\registration-backup'
+ $retired=Join-Path $UserDir 'v65-registration-backup'
  foreach ($name in @('vietnam_1965_local.mod','vietnam_1965_theater.mod')) {
   $legacy=Join-Path $modDir $name
   if (Test-Path -LiteralPath $legacy) {
