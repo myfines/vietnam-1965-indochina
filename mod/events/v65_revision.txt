@@ -1,0 +1,4 @@
+add_namespace = v65rev
+country_event = { id = v65rev.9 hidden = yes is_triggered_only = yes immediate = { clr_country_flag = v65_move_cooldown } }
+country_event = { id = v65rev.1 title = v65rev.1.t desc = v65rev.1.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65rev.1.a add_political_power = 50 PKS = { add_to_variable = { v65_paper_victories = 1 } } } }
+country_event = { id = v65rev.2 title = v65rev.2.t desc = v65rev.2.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65rev.2.a add_to_variable = { v65_paper_victories = 2 } add_to_variable = { v65_clique_staff = 5 } v65_report_success = yes } option = { name = v65rev.2.b add_to_variable = { v65_clique_proxy = 10 } add_to_variable = { v65_personal_network = 1 } } }

@@ -1,0 +1,1 @@
+v65_island_redoubt = { icon = 1 enable = { always = yes } local_supplies = 2 }

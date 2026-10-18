@@ -1,6 +1,99 @@
 v65_contract_operations = {
- v65_open_credit = { icon = generic_political_discourse cost = 60 days_re_enable = 90 available = { check_variable = { v65_contract_credit < 9 } } complete_effect = { add_to_variable = { v65_contract_credit = 2 } v65_credit = yes } ai_will_do = { factor = 0.5 } }
- v65_claim_supplies = { icon = generic_political_discourse cost = 35 days_re_enable = 60 available = { NOT = { has_country_flag = v65_audit_frozen } } complete_effect = { v65_claim_supplies = yes } ai_will_do = { factor = 0.5 } }
- v65_call_koreans = { icon = generic_prepare_civil_war cost = 100 days_re_enable = 180 available = { check_variable = { v65_contract_credit > 1 } check_variable = { v65_korean_calls < 3 } capital_scope = { is_fully_controlled_by = ROOT } } complete_effect = { subtract_from_variable = { v65_contract_credit = 2 } add_to_variable = { v65_korean_calls = 1 } v65_free_korean_detachment = yes } ai_will_do = { factor = 0.5 } }
- v65_raise_proxy = { icon = generic_prepare_civil_war cost = 60 days_re_enable = 90 available = { check_variable = { v65_contract_credit > 0 } capital_scope = { is_fully_controlled_by = ROOT } } complete_effect = { subtract_from_variable = { v65_contract_credit = 1 } v65_free_proxy = yes } ai_will_do = { factor = 0.5 } }
+	v65_open_credit = {
+		icon = generic_political_discourse
+		cost = 60
+		days_re_enable = 90
+		available = {
+			check_variable = {
+				v65_contract_credit < 9
+			}
+			NOT = {
+				has_idea = v65_clique_contract_block
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				v65_contract_credit = 2
+			}
+			v65_credit = yes
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	v65_claim_supplies = {
+		icon = generic_political_discourse
+		cost = 35
+		days_re_enable = 60
+		available = {
+			NOT = {
+				has_country_flag = v65_audit_frozen
+			}
+			NOT = {
+				has_idea = v65_clique_contract_block
+			}
+		}
+		complete_effect = {
+			v65_claim_supplies = yes
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	v65_call_koreans = {
+		icon = generic_prepare_civil_war
+		cost = 100
+		days_re_enable = 180
+		available = {
+			check_variable = {
+				v65_contract_credit > 1
+			}
+			check_variable = {
+				v65_korean_calls < 3
+			}
+			capital_scope = {
+				is_fully_controlled_by = ROOT
+			}
+			NOT = {
+				has_idea = v65_clique_staff_block
+			}
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				v65_contract_credit = 2
+			}
+			add_to_variable = {
+				v65_korean_calls = 1
+			}
+			v65_free_korean_detachment = yes
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	v65_raise_proxy = {
+		icon = generic_prepare_civil_war
+		cost = 60
+		days_re_enable = 90
+		available = {
+			check_variable = {
+				v65_contract_credit > 0
+			}
+			capital_scope = {
+				is_fully_controlled_by = ROOT
+			}
+			NOT = {
+				has_idea = v65_clique_proxy_block
+			}
+		}
+		complete_effect = {
+			subtract_from_variable = {
+				v65_contract_credit = 1
+			}
+			v65_free_proxy = yes
+		}
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
 }

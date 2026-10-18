@@ -1,0 +1,4 @@
+v65_us_mission = {
+ v65_delay_us_withdrawal = { icon = generic_political_discourse cost = 120 days_re_enable = 180 available = { date > 1967.12.31 date < 1973.1.1 } complete_effect = { subtract_from_variable = { v65_us_withdraw_pressure = 15 } clamp_variable = { var = v65_us_withdraw_pressure min = 0 max = 100 } } ai_will_do = { factor = 1 } }
+ v65_accept_us_withdrawal = { icon = generic_political_discourse cost = 0 available = { date > 1967.12.31 } complete_effect = { v65_withdraw_intervention = yes } ai_will_do = { factor = 0 } }
+}

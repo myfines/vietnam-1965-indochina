@@ -10,5 +10,8 @@ import build_long_narrative
 import build_command_politics
 import build_rear_network
 import build_park_government
+import build_revision
+import build_intervention
 import build_focus_detail
 import build_command_interface
+import build_spirit_art

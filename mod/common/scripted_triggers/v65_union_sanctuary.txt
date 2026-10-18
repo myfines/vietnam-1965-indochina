@@ -1,5 +1,5 @@
 v65_can_offer_union = {
- tag = PKS exists = yes controls_state = 15
+ tag = PKS exists = yes capital_scope = { is_fully_controlled_by = PREV }
  check_variable = { v65_park_influence > 4 }
  NOT = { has_country_flag = v65_union_pending }
  NOT = { has_country_flag = v65_union_refused }

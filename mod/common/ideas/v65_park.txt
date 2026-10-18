@@ -1,1 +1,14 @@
-ideas = { country = { v65_park_patron = { picture = v65_park_patron allowed = { always = no } modifier = { political_power_gain = 0.10 training_time_army_factor = -0.03 } } } }
+ideas = {
+	country = {
+		v65_park_patron = {
+			picture = v65_spirit_funds
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.10
+				training_time_army_factor = -0.03
+			}
+		}
+	}
+}

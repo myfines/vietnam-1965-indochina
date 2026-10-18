@@ -105,12 +105,22 @@ if long_run:
  script+=f' }} if = {{ limit = {{ date > 1965.12.28 }} log = "{end}" }} }} }} }}'
 command_test=os.environ.get('V65_COMMAND_TEST')=='1'
 presentation_test=os.environ.get('V65_PRESENTATION_TEST')=='1'
+revision_test=os.environ.get('V65_REVISION_TEST')=='1'
+stability_test=os.environ.get('V65_STABILITY_TEST')=='1'
 if command_test:
  from command_probe import build
  expected=[]
  script=build(check,begin,end)
 if presentation_test:
  from presentation_probe import build
+ expected=[]
+ script=build(check,begin,end)
+if revision_test:
+ from revision_probe import build
+ expected=[]
+ script=build(check,begin,end)
+if stability_test:
+ from stability_probe import build
  expected=[]
  script=build(check,begin,end)
 probe=O/'common/on_actions/v65_smoke_test.txt';define=O/'common/defines/zzz_smoke_test.lua'
@@ -149,7 +159,9 @@ try:
  result={'passed':not mod_errors,'markers':markers,'last_date':'1965.11.04' if routes or stages else '1965.11.29' if balance else '1965.11.06','method':'real engine; hands-off; no UI automation','human_transfer_exercised':'V65_PLAYER_TRANSFER_BRANCH' in s,'checked_at':datetime.datetime.now().isoformat(),'mod_runtime_errors':mod_errors}
  if long_run:result['last_date']='1965.12.29'
  if command_test:result['last_date']='1965.11.18'
- (OUT/('presentation-engine-assertions.json' if presentation_test else 'command-engine-assertions.json' if command_test else 'autonomy-engine-assertions.json' if long_run and os.environ.get('V65_KEEP_REGIONS')=='1' else 'long-engine-assertions.json' if long_run else 'stages-engine-assertions.json' if stages else 'routes-engine-assertions.json' if routes else 'balance-engine-assertions.json' if balance else 'campaign-engine-assertions.json')).write_text(json.dumps(result,indent=2))
+ if revision_test:result['last_date']='1965.11.14'
+ if stability_test:result['last_date']='1966.1.29'
+ (OUT/('stability-engine-assertions.json' if stability_test else 'revision-engine-assertions.json' if revision_test else 'presentation-engine-assertions.json' if presentation_test else 'command-engine-assertions.json' if command_test else 'autonomy-engine-assertions.json' if long_run and os.environ.get('V65_KEEP_REGIONS')=='1' else 'long-engine-assertions.json' if long_run else 'stages-engine-assertions.json' if stages else 'routes-engine-assertions.json' if routes else 'balance-engine-assertions.json' if balance else 'campaign-engine-assertions.json')).write_text(json.dumps(result,indent=2))
  assert not mod_errors, f'{len(mod_errors)} runtime errors; complete evidence in {OUT}'
  print('PASS:',len(markers),'engine assertions; no mod runtime errors')
 finally:

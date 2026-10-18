@@ -1756,9 +1756,9 @@
       "title": "朴世诚：从归仁开始"
     },
     "v65_PKS_command": {
-      "icon": "GFX_v65_detail_command",
-      "texture": "gfx/interface/goals/focus_generic_military_dictatorship.dds",
-      "title": "归仁的年轻指挥官"
+      "icon": "GFX_v65_focus_helmet",
+      "texture": "gfx/interface/goals/focus_generic_military_academy.dds",
+      "title": "参谋本部的自己人"
     },
     "v65_PKS_battalion": {
       "icon": "GFX_v65_focus_doctrine",
@@ -1766,9 +1766,9 @@
       "title": "整顿第一三三大队"
     },
     "v65_PKS_quynhon": {
-      "icon": "GFX_v65_detail_reserve",
-      "texture": "gfx/interface/goals/focus_generic_home_defense.dds",
-      "title": "归仁预备队营地"
+      "icon": "GFX_v65_detail_contracts",
+      "texture": "gfx/interface/goals/focus_generic_arms_trade.dds",
+      "title": "驻地跟着合同走"
     },
     "v65_PKS_tiger": {
       "icon": "GFX_v65_focus_armor",
@@ -1786,14 +1786,14 @@
       "title": "机械化突击骨干"
     },
     "v65_PKS_reputation": {
-      "icon": "GFX_v65_detail_ledger",
-      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds",
-      "title": "战报与晋升"
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "胜利先走公文"
     },
     "v65_PKS_war_reports": {
-      "icon": "GFX_v65_detail_ledger",
-      "texture": "gfx/interface/goals/focus_generic_currency_reforms.dds",
-      "title": "第一份归仁战报"
+      "icon": "GFX_v65_focus_radio",
+      "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
+      "title": "缴获照片再用一次"
     },
     "v65_PKS_press": {
       "icon": "GFX_v65_focus_radio",
@@ -1803,12 +1803,12 @@
     "v65_PKS_patron": {
       "icon": "GFX_v65_focus_radio",
       "texture": "gfx/interface/goals/goal_generic_intelligence_exchange.dds",
-      "title": "争取蔡命新支持"
+      "title": "给参谋本部留名额"
     },
     "v65_PKS_palace": {
       "icon": "GFX_v65_focus_pressure",
       "texture": "gfx/interface/goals/goal_generic_forceful_treaty.dds",
-      "title": "通往青瓦台的信件"
+      "title": "按继承人的规格送材料"
     },
     "v65_PKS_promotion": {
       "icon": "GFX_v65_detail_command",
@@ -1818,7 +1818,7 @@
     "v65_PKS_villages": {
       "icon": "GFX_v65_focus_scroll",
       "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
-      "title": "良民证的代价"
+      "title": "南方伪军的账也归本部"
     },
     "v65_PKS_fees": {
       "icon": "GFX_v65_focus_scroll",
@@ -1838,7 +1838,7 @@
     "v65_PKS_inspection": {
       "icon": "GFX_v65_focus_tree",
       "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
-      "title": "清查办证灰色收入"
+      "title": "让核查的人也有收益"
     },
     "v65_PKS_trusted_villages": {
       "icon": "GFX_v65_detail_village",
@@ -1848,7 +1848,7 @@
     "v65_PKS_business": {
       "icon": "GFX_v65_detail_contracts",
       "texture": "gfx/interface/goals/focus_generic_arms_trade.dds",
-      "title": "日海的军需合同"
+      "title": "日海财团的驻越账本"
     },
     "v65_PKS_trucks": {
       "icon": "GFX_v65_detail_supply",
@@ -1861,9 +1861,9 @@
       "title": "营地修械工场"
     },
     "v65_PKS_company": {
-      "icon": "GFX_v65_detail_factory",
-      "texture": "gfx/interface/goals/focus_generic_industry_3.dds",
-      "title": "日海集团的第一间工厂"
+      "icon": "GFX_v65_focus_factory",
+      "texture": "gfx/interface/goals/goal_generic_construction2.dds",
+      "title": "国内分红，前线报功"
     },
     "v65_PKS_contracts": {
       "icon": "GFX_v65_focus_scroll",
@@ -1878,7 +1878,7 @@
     "v65_PKS_power": {
       "icon": "GFX_v65_focus_landmark",
       "texture": "gfx/interface/goals/focus_generic_treaty.dds",
-      "title": "把声望变成权力"
+      "title": "把友军变成本部的关系户"
     },
     "v65_PKS_guards": {
       "icon": "GFX_v65_detail_orders",
@@ -1896,9 +1896,9 @@
       "title": "在西贡寻找盟友"
     },
     "v65_PKS_remain": {
-      "icon": "GFX_v65_focus_tree",
-      "texture": "gfx/interface/goals/goal_generic_allies_build_infantry.dds",
-      "title": "在越南扎根"
+      "icon": "GFX_v65_detail_contracts",
+      "texture": "gfx/interface/goals/focus_generic_arms_trade.dds",
+      "title": "留下的是人脉和合同"
     },
     "v65_PKS_yushin": {
       "icon": "GFX_v65_focus_landmark",
@@ -2009,6 +2009,41 @@
       "icon": "GFX_v65_focus_landmark",
       "texture": "gfx/interface/goals/focus_generic_treaty.dds",
       "title": "1979：与地方重新立约"
+    },
+    "v65_PKS_island_plan": {
+      "icon": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "富国岛计划"
+    },
+    "v65_PKS_island_lease": {
+      "icon": "GFX_v65_detail_treaty",
+      "texture": "gfx/interface/goals/focus_generic_diplomatic_treaty.dds",
+      "title": "租下岛上驻地"
+    },
+    "v65_PKS_island_warehouse": {
+      "icon": "GFX_v65_detail_repair",
+      "texture": "gfx/interface/goals/goal_continuous_repairments.dds",
+      "title": "把余粮与零件运上岛"
+    },
+    "v65_PKS_island_contracts": {
+      "icon": "GFX_v65_detail_port",
+      "texture": "gfx/interface/goals/focus_generic_coastal_fort.dds",
+      "title": "给日海留港口份额"
+    },
+    "v65_PKS_island_cadres": {
+      "icon": "GFX_v65_detail_proxy",
+      "texture": "gfx/interface/goals/focus_generic_commonwealth_build_infantry.dds",
+      "title": "代理团轮驻离岛"
+    },
+    "v65_PKS_island_staff": {
+      "icon": "GFX_v65_detail_radio",
+      "texture": "",
+      "title": "离岛也能签发军令"
+    },
+    "v65_PKS_island_base": {
+      "icon": "GFX_v65_detail_security",
+      "texture": "gfx/interface/goals/focus_generic_national_security.dds",
+      "title": "给任何结局留一个基地"
     },
     "v65_RKH_briefing": {
       "icon": "GFX_v65_focus_tree",

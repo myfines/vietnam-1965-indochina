@@ -1,5 +1,5 @@
 {
-  "version": "0.6.0",
+  "version": "0.7.0",
   "focuses": [
     {
       "tag": "SVN",
@@ -1174,7 +1174,7 @@
     }
   },
   "expansion": {
-    "version": "0.6.0",
+    "version": "0.7.0",
     "years": [
       1965,
       1968,
@@ -1186,7 +1186,7 @@
     "story_events": 75,
     "original_scene_chains": 23,
     "long_term_focuses": 165,
-    "total_focuses": 447,
+    "total_focuses": 454,
     "playable_at_start": [
       "SVN",
       "NVN",

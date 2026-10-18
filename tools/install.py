@@ -67,6 +67,8 @@ for path in (out/'localisation').rglob('*.yml'):
  path.write_text(text+'\n',encoding='utf-8-sig')
 from hydrate_portraits import hydrate
 hydrate(out)
+from hydrate_spirit_art import hydrate as hydrate_spirits
+hydrate_spirits(game,out)
 errors=hm.check_mod(out)
 if errors:raise SystemExit('Installation validation errors: '+str(errors))
 (R/'runtime/install-report.json').write_text(json.dumps({'game':str(game),'runtime':str(out),'validation_errors':errors},indent=2))

@@ -5,7 +5,7 @@ on_actions = {
     set_country_flag = v65_intro_seen
     create_faction = V65_SOUTHERN_COALITION add_to_faction = PKS add_to_faction = DNM
     add_ideas = { v65_dmz_standoff v65_prepared_defence }
-    country_event = { id = v65.1 days = 1 }
+    country_event = { id = v65rev.1 days = 1 }
    }
    NVN = { create_faction = V65_LIBERATION_FRONT add_to_faction = FNL add_ideas = { v65_dmz_standoff v65_prepared_defence }
     declare_war_on = { target = SVN type = annex_everything }

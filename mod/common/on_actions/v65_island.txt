@@ -1,0 +1,1 @@
+on_actions = { on_startup = { effect = { 31 = { add_dynamic_modifier = { modifier = v65_island_redoubt } } } } }

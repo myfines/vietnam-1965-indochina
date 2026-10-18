@@ -25,7 +25,7 @@ focus_tree = {
 	}
 	focus = {
 		id = v65_PKS_command
-		icon = GFX_v65_detail_command
+		icon = GFX_v65_focus_helmet
 		x = 0
 		y = 2
 		cost = 3
@@ -35,6 +35,11 @@ focus_tree = {
 		completion_reward = {
 			v65_upgrade_staff = yes
 			add_political_power = 25
+			add_to_variable = {
+				v65_clique_staff = 10
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -59,7 +64,7 @@ focus_tree = {
 	}
 	focus = {
 		id = v65_PKS_quynhon
-		icon = GFX_v65_detail_reserve
+		icon = GFX_v65_detail_contracts
 		x = 0
 		y = 6
 		cost = 5
@@ -74,6 +79,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_to_variable = {
+				v65_personal_network = 1
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -134,7 +144,7 @@ focus_tree = {
 	}
 	focus = {
 		id = v65_PKS_reputation
-		icon = GFX_v65_detail_ledger
+		icon = GFX_v65_focus_radio
 		x = 8
 		y = 2
 		cost = 3
@@ -144,6 +154,11 @@ focus_tree = {
 		completion_reward = {
 			v65_upgrade_staff = yes
 			add_political_power = 25
+			add_to_variable = {
+				v65_paper_victories = 1
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -151,7 +166,7 @@ focus_tree = {
 	}
 	focus = {
 		id = v65_PKS_war_reports
-		icon = GFX_v65_detail_ledger
+		icon = GFX_v65_focus_radio
 		x = 8
 		y = 4
 		cost = 3
@@ -163,6 +178,11 @@ focus_tree = {
 				v65_park_influence = 1
 			}
 			add_political_power = 50
+			add_to_variable = {
+				v65_paper_victories = 2
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -199,6 +219,11 @@ focus_tree = {
 		completion_reward = {
 			v65_upgrade_staff = yes
 			add_political_power = 25
+			add_to_variable = {
+				v65_clique_staff = 10
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -215,6 +240,11 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = v65_park_patron
+			add_to_variable = {
+				v65_paper_victories = 2
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -251,6 +281,11 @@ focus_tree = {
 		completion_reward = {
 			v65_upgrade_staff = yes
 			add_political_power = 25
+			add_to_variable = {
+				v65_clique_proxy = 10
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -332,6 +367,11 @@ focus_tree = {
 			}
 			v65_refresh_society = yes
 			add_political_power = 15
+			add_to_variable = {
+				v65_clique_daihai = 5
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -365,6 +405,11 @@ focus_tree = {
 		completion_reward = {
 			v65_upgrade_staff = yes
 			add_political_power = 25
+			add_to_variable = {
+				v65_clique_daihai = 10
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -414,7 +459,7 @@ focus_tree = {
 	}
 	focus = {
 		id = v65_PKS_company
-		icon = GFX_v65_detail_factory
+		icon = GFX_v65_focus_factory
 		x = 24
 		y = 8
 		cost = 5
@@ -429,6 +474,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_to_variable = {
+				v65_contract_credit = 2
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -487,6 +537,11 @@ focus_tree = {
 		completion_reward = {
 			v65_upgrade_staff = yes
 			add_political_power = 25
+			add_to_variable = {
+				v65_clique_proxy = 10
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -548,7 +603,7 @@ focus_tree = {
 	}
 	focus = {
 		id = v65_PKS_remain
-		icon = GFX_v65_focus_tree
+		icon = GFX_v65_detail_contracts
 		x = 29
 		y = 10
 		cost = 5
@@ -561,6 +616,11 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = v65_regional_network
 			add_stability = 0.05
+			add_to_variable = {
+				v65_personal_network = 1
+			}
+			v65_refresh_factions = yes
+			v65_credit = yes
 		}
 		ai_will_do = {
 			factor = 1
@@ -1188,6 +1248,104 @@ focus_tree = {
 		}
 		ai_will_do = {
 			factor = 1
+		}
+	}
+	focus = {
+		id = v65_PKS_island_plan
+		icon = GFX_v65_detail_port
+		x = 48
+		y = 2
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_briefing
+		}
+		completion_reward = {
+			set_country_flag = v65_island_plan_ready
+		}
+	}
+	focus = {
+		id = v65_PKS_island_lease
+		icon = GFX_v65_detail_treaty
+		x = 48
+		y = 4
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_island_plan
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_personal_network = 1
+			}
+		}
+	}
+	focus = {
+		id = v65_PKS_island_warehouse
+		icon = GFX_v65_detail_repair
+		x = 48
+		y = 6
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_island_lease
+		}
+		completion_reward = {
+			v65_upgrade_logistics = yes
+		}
+	}
+	focus = {
+		id = v65_PKS_island_contracts
+		icon = GFX_v65_detail_port
+		x = 48
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_island_warehouse
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_clique_daihai = 10
+			}
+		}
+	}
+	focus = {
+		id = v65_PKS_island_cadres
+		icon = GFX_v65_detail_proxy
+		x = 48
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_island_contracts
+		}
+		completion_reward = {
+			v65_free_proxy = yes
+		}
+	}
+	focus = {
+		id = v65_PKS_island_staff
+		icon = GFX_v65_detail_radio
+		x = 48
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_island_cadres
+		}
+		completion_reward = {
+			v65_upgrade_signals = yes
+		}
+	}
+	focus = {
+		id = v65_PKS_island_base
+		icon = GFX_v65_detail_security
+		x = 48
+		y = 14
+		cost = 5
+		prerequisite = {
+			focus = v65_PKS_island_staff
+		}
+		completion_reward = {
+			add_to_variable = {
+				v65_contract_credit = 3
+			}
+			v65_credit = yes
 		}
 	}
 }

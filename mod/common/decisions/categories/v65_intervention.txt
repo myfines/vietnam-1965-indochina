@@ -1,0 +1,1 @@
+v65_us_mission = { icon = GFX_decision_generic_military allowed = { tag = SVN } visible = { has_global_flag = v65_us_active } }

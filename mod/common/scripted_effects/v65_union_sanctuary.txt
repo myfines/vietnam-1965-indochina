@@ -98,6 +98,82 @@ v65_finalize_union = {
 			}
 		}
 		SVN = {
+			set_variable = {
+				v65_paper_victories = PKS.v65_paper_victories
+			}
+			set_variable = {
+				v65_real_victories = PKS.v65_real_victories
+			}
+			set_variable = {
+				v65_clique_daihai = PKS.v65_clique_daihai
+			}
+			set_variable = {
+				v65_clique_staff = PKS.v65_clique_staff
+			}
+			set_variable = {
+				v65_clique_proxy = PKS.v65_clique_proxy
+			}
+			set_variable = {
+				v65_clique_request = PKS.v65_clique_request
+			}
+			set_variable = {
+				v65_request_age = PKS.v65_request_age
+			}
+			set_variable = {
+				v65_clique_quarter = PKS.v65_clique_quarter
+			}
+			if = {
+				limit = {
+					PKS = {
+						has_idea = v65_democratic_general
+					}
+				}
+				add_ideas = v65_democratic_general
+			}
+			if = {
+				limit = {
+					PKS = {
+						has_idea = v65_clique_contract_block
+					}
+				}
+				add_ideas = v65_clique_contract_block
+			}
+			if = {
+				limit = {
+					PKS = {
+						has_idea = v65_clique_staff_block
+					}
+				}
+				add_ideas = v65_clique_staff_block
+			}
+			if = {
+				limit = {
+					PKS = {
+						has_idea = v65_clique_proxy_block
+					}
+				}
+				add_ideas = v65_clique_proxy_block
+			}
+			if = {
+				limit = {
+					PKS = {
+						has_country_flag = v65_island_plan_ready
+					}
+				}
+				set_country_flag = v65_island_plan_ready
+			}
+			if = {
+				limit = {
+					PKS = {
+						has_country_flag = v65_move_cooldown
+					}
+				}
+				set_country_flag = v65_move_cooldown
+				country_event = {
+					id = v65rev.9
+					days = 90
+				}
+			}
 			annex_country = {
 				target = PKS
 				transfer_troops = yes

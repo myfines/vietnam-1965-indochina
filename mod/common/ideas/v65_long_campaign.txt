@@ -1,48 +1,480 @@
-ideas = { country = {
-v65_staff_1 = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.04 political_power_gain = 0.03 } }
-v65_staff_2 = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.08 political_power_gain = 0.06 } }
-v65_staff_3 = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.12 political_power_gain = 0.09 } }
-v65_staff_4 = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.16 political_power_gain = 0.12 } }
-v65_staff_5 = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.20 political_power_gain = 0.15 } }
-v65_training_1 = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = 0.012 experience_gain_army_unit_factor = 0.04 } }
-v65_training_2 = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = 0.024 experience_gain_army_unit_factor = 0.08 } }
-v65_training_3 = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = 0.036 experience_gain_army_unit_factor = 0.12 } }
-v65_training_4 = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = 0.048 experience_gain_army_unit_factor = 0.16 } }
-v65_training_5 = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = 0.060 experience_gain_army_unit_factor = 0.20 } }
-v65_signals_1 = { picture = generic_army_chief allowed = { always = no } modifier = { recon_factor = 0.05 encryption_factor = 0.02 } }
-v65_signals_2 = { picture = generic_army_chief allowed = { always = no } modifier = { recon_factor = 0.10 encryption_factor = 0.04 } }
-v65_signals_3 = { picture = generic_army_chief allowed = { always = no } modifier = { recon_factor = 0.15 encryption_factor = 0.06 } }
-v65_signals_4 = { picture = generic_army_chief allowed = { always = no } modifier = { recon_factor = 0.20 encryption_factor = 0.08 } }
-v65_signals_5 = { picture = generic_army_chief allowed = { always = no } modifier = { recon_factor = 0.25 encryption_factor = 0.10 } }
-v65_logistics_1 = { picture = generic_army_chief allowed = { always = no } modifier = { supply_consumption_factor = -0.02 production_factory_efficiency_gain_factor = 0.01 } }
-v65_logistics_2 = { picture = generic_army_chief allowed = { always = no } modifier = { supply_consumption_factor = -0.04 production_factory_efficiency_gain_factor = 0.02 } }
-v65_logistics_3 = { picture = generic_army_chief allowed = { always = no } modifier = { supply_consumption_factor = -0.06 production_factory_efficiency_gain_factor = 0.03 } }
-v65_logistics_4 = { picture = generic_army_chief allowed = { always = no } modifier = { supply_consumption_factor = -0.08 production_factory_efficiency_gain_factor = 0.04 } }
-v65_logistics_5 = { picture = generic_army_chief allowed = { always = no } modifier = { supply_consumption_factor = -0.10 production_factory_efficiency_gain_factor = 0.05 } }
-v65_contracts_1 = { picture = generic_army_chief allowed = { always = no } modifier = { production_factory_efficiency_gain_factor = 0.025 stability_factor = -0.01 } }
-v65_contracts_2 = { picture = generic_army_chief allowed = { always = no } modifier = { production_factory_efficiency_gain_factor = 0.050 stability_factor = -0.02 } }
-v65_contracts_3 = { picture = generic_army_chief allowed = { always = no } modifier = { production_factory_efficiency_gain_factor = 0.075 stability_factor = -0.03 } }
-v65_contracts_4 = { picture = generic_army_chief allowed = { always = no } modifier = { production_factory_efficiency_gain_factor = 0.100 stability_factor = -0.04 } }
-v65_contracts_5 = { picture = generic_army_chief allowed = { always = no } modifier = { production_factory_efficiency_gain_factor = 0.125 stability_factor = -0.05 } }
-v65_decentralized_command = { picture = generic_army_chief allowed = { always = no } modifier = { political_power_gain = -0.15 planning_speed = -0.10 } }
-v65_local_command = { picture = generic_army_chief allowed = { always = no } modifier = { army_defence_factor = 0.08 supply_consumption_factor = -0.05 } }
-v65_reintegrated_command = { picture = generic_army_chief allowed = { always = no } modifier = { planning_speed = 0.08 political_power_gain = 0.10 } }
-v65_jungle_revolution = { picture = generic_army_chief allowed = { always = no } modifier = { army_defence_factor = 0.15 supply_consumption_factor = -0.15 } }
-v65_social_mandate = { picture = generic_army_chief allowed = { always = no } modifier = { stability_factor = 0.08 political_power_gain = 0.15 } }
-v65_civilian_resentment = { picture = generic_army_chief allowed = { always = no } modifier = { stability_factor = -0.08 army_org_factor = -0.03 } }
-v65_weariness = { picture = generic_army_chief allowed = { always = no } modifier = { army_attack_factor = -0.05 political_power_gain = -0.10 } }
-v65_exhaustion = { picture = generic_army_chief allowed = { always = no } modifier = { army_attack_factor = -0.12 stability_factor = -0.06 political_power_gain = -0.20 } }
-v65_rotation = { picture = generic_army_chief allowed = { always = no } modifier = { army_attack_factor = -0.04 army_org_factor = 0.03 } }
-v65_policy_security_1 = { picture = generic_political_reform allowed = { always = no } modifier = { army_defence_factor = 0.015 army_org_factor = 0.01 stability_factor = -0.015 } }
-v65_policy_civilian_1 = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.02 political_power_gain = 0.04 production_factory_efficiency_gain_factor = 0.02 army_attack_factor = -0.01 } }
-v65_policy_security_2 = { picture = generic_political_reform allowed = { always = no } modifier = { army_defence_factor = 0.030 army_org_factor = 0.02 stability_factor = -0.030 } }
-v65_policy_civilian_2 = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.04 political_power_gain = 0.08 production_factory_efficiency_gain_factor = 0.04 army_attack_factor = -0.02 } }
-v65_policy_security_3 = { picture = generic_political_reform allowed = { always = no } modifier = { army_defence_factor = 0.045 army_org_factor = 0.03 stability_factor = -0.045 } }
-v65_policy_civilian_3 = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.06 political_power_gain = 0.12 production_factory_efficiency_gain_factor = 0.06 army_attack_factor = -0.03 } }
-v65_policy_security_4 = { picture = generic_political_reform allowed = { always = no } modifier = { army_defence_factor = 0.060 army_org_factor = 0.04 stability_factor = -0.060 } }
-v65_policy_civilian_4 = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.08 political_power_gain = 0.16 production_factory_efficiency_gain_factor = 0.08 army_attack_factor = -0.04 } }
-v65_policy_security_5 = { picture = generic_political_reform allowed = { always = no } modifier = { army_defence_factor = 0.075 army_org_factor = 0.05 stability_factor = -0.075 } }
-v65_policy_civilian_5 = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.10 political_power_gain = 0.20 production_factory_efficiency_gain_factor = 0.10 army_attack_factor = -0.05 } }
-v65_memory_of_war = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.04 political_power_gain = 0.08 } }
-v65_fragile_peace = { picture = generic_political_reform allowed = { always = no } modifier = { stability_factor = 0.10 army_attack_factor = -0.05 } }
-} }
+ideas = {
+	country = {
+		v65_staff_1 = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = 0.04
+				political_power_gain = 0.03
+			}
+		}
+		v65_staff_2 = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = 0.08
+				political_power_gain = 0.06
+			}
+		}
+		v65_staff_3 = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = 0.12
+				political_power_gain = 0.09
+			}
+		}
+		v65_staff_4 = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = 0.16
+				political_power_gain = 0.12
+			}
+		}
+		v65_staff_5 = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = 0.20
+				political_power_gain = 0.15
+			}
+		}
+		v65_training_1 = {
+			picture = v65_spirit_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.012
+				experience_gain_army_unit_factor = 0.04
+			}
+		}
+		v65_training_2 = {
+			picture = v65_spirit_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.024
+				experience_gain_army_unit_factor = 0.08
+			}
+		}
+		v65_training_3 = {
+			picture = v65_spirit_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.036
+				experience_gain_army_unit_factor = 0.12
+			}
+		}
+		v65_training_4 = {
+			picture = v65_spirit_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.048
+				experience_gain_army_unit_factor = 0.16
+			}
+		}
+		v65_training_5 = {
+			picture = v65_spirit_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.060
+				experience_gain_army_unit_factor = 0.20
+			}
+		}
+		v65_signals_1 = {
+			picture = v65_spirit_intelligence
+			allowed = {
+				always = no
+			}
+			modifier = {
+				recon_factor = 0.05
+				encryption_factor = 0.02
+			}
+		}
+		v65_signals_2 = {
+			picture = v65_spirit_intelligence
+			allowed = {
+				always = no
+			}
+			modifier = {
+				recon_factor = 0.10
+				encryption_factor = 0.04
+			}
+		}
+		v65_signals_3 = {
+			picture = v65_spirit_intelligence
+			allowed = {
+				always = no
+			}
+			modifier = {
+				recon_factor = 0.15
+				encryption_factor = 0.06
+			}
+		}
+		v65_signals_4 = {
+			picture = v65_spirit_intelligence
+			allowed = {
+				always = no
+			}
+			modifier = {
+				recon_factor = 0.20
+				encryption_factor = 0.08
+			}
+		}
+		v65_signals_5 = {
+			picture = v65_spirit_intelligence
+			allowed = {
+				always = no
+			}
+			modifier = {
+				recon_factor = 0.25
+				encryption_factor = 0.10
+			}
+		}
+		v65_logistics_1 = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				supply_consumption_factor = -0.02
+				production_factory_efficiency_gain_factor = 0.01
+			}
+		}
+		v65_logistics_2 = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				supply_consumption_factor = -0.04
+				production_factory_efficiency_gain_factor = 0.02
+			}
+		}
+		v65_logistics_3 = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				supply_consumption_factor = -0.06
+				production_factory_efficiency_gain_factor = 0.03
+			}
+		}
+		v65_logistics_4 = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				supply_consumption_factor = -0.08
+				production_factory_efficiency_gain_factor = 0.04
+			}
+		}
+		v65_logistics_5 = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				supply_consumption_factor = -0.10
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		v65_contracts_1 = {
+			picture = v65_spirit_contracts
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.025
+				stability_factor = -0.01
+			}
+		}
+		v65_contracts_2 = {
+			picture = v65_spirit_contracts
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.050
+				stability_factor = -0.02
+			}
+		}
+		v65_contracts_3 = {
+			picture = v65_spirit_contracts
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.075
+				stability_factor = -0.03
+			}
+		}
+		v65_contracts_4 = {
+			picture = v65_spirit_contracts
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.100
+				stability_factor = -0.04
+			}
+		}
+		v65_contracts_5 = {
+			picture = v65_spirit_contracts
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.125
+				stability_factor = -0.05
+			}
+		}
+		v65_decentralized_command = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = -0.15
+				planning_speed = -0.10
+			}
+		}
+		v65_local_command = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.08
+				supply_consumption_factor = -0.05
+			}
+		}
+		v65_reintegrated_command = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = 0.08
+				political_power_gain = 0.10
+			}
+		}
+		v65_jungle_revolution = {
+			picture = v65_spirit_revolution
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.15
+				supply_consumption_factor = -0.15
+			}
+		}
+		v65_social_mandate = {
+			picture = v65_spirit_mandate
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.15
+			}
+		}
+		v65_civilian_resentment = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.08
+				army_org_factor = -0.03
+			}
+		}
+		v65_weariness = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = -0.05
+				political_power_gain = -0.10
+			}
+		}
+		v65_exhaustion = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = -0.12
+				stability_factor = -0.06
+				political_power_gain = -0.20
+			}
+		}
+		v65_rotation = {
+			picture = v65_spirit_academy
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = -0.04
+				army_org_factor = 0.03
+			}
+		}
+		v65_policy_security_1 = {
+			picture = v65_spirit_security
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.015
+				army_org_factor = 0.01
+				stability_factor = -0.015
+			}
+		}
+		v65_policy_civilian_1 = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.02
+				political_power_gain = 0.04
+				production_factory_efficiency_gain_factor = 0.02
+				army_attack_factor = -0.01
+			}
+		}
+		v65_policy_security_2 = {
+			picture = v65_spirit_security
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.030
+				army_org_factor = 0.02
+				stability_factor = -0.030
+			}
+		}
+		v65_policy_civilian_2 = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.08
+				production_factory_efficiency_gain_factor = 0.04
+				army_attack_factor = -0.02
+			}
+		}
+		v65_policy_security_3 = {
+			picture = v65_spirit_security
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.045
+				army_org_factor = 0.03
+				stability_factor = -0.045
+			}
+		}
+		v65_policy_civilian_3 = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.06
+				political_power_gain = 0.12
+				production_factory_efficiency_gain_factor = 0.06
+				army_attack_factor = -0.03
+			}
+		}
+		v65_policy_security_4 = {
+			picture = v65_spirit_security
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.060
+				army_org_factor = 0.04
+				stability_factor = -0.060
+			}
+		}
+		v65_policy_civilian_4 = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.08
+				political_power_gain = 0.16
+				production_factory_efficiency_gain_factor = 0.08
+				army_attack_factor = -0.04
+			}
+		}
+		v65_policy_security_5 = {
+			picture = v65_spirit_security
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_defence_factor = 0.075
+				army_org_factor = 0.05
+				stability_factor = -0.075
+			}
+		}
+		v65_policy_civilian_5 = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.20
+				production_factory_efficiency_gain_factor = 0.10
+				army_attack_factor = -0.05
+			}
+		}
+		v65_memory_of_war = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.04
+				political_power_gain = 0.08
+			}
+		}
+		v65_fragile_peace = {
+			picture = v65_spirit_treaty
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.10
+				army_attack_factor = -0.05
+			}
+		}
+	}
+}
