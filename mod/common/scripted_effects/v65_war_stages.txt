@@ -1,0 +1,16 @@
+v65_check_war_stages = {
+ if = { limit = { tag = SVN exists = yes has_war_with = NVN }
+  if = { limit = { NOT = { has_country_flag = v65_highlands_lost } v65_highland_has_fallen = yes }
+   set_country_flag = v65_highlands_lost set_country_flag = v65_front_defeat set_country_flag = v65_crisis_active
+   add_timed_idea = { idea = v65_highland_disruption days = 90 }
+   country_event = { id = v65stages.1 days = 1 }
+   PKS = { if = { limit = { exists = yes } country_event = { id = v65stages.2 days = 1 } } }
+  }
+  if = { limit = { NOT = { has_country_flag = v65_saigon_lost } v65_saigon_has_fallen = yes }
+   set_country_flag = v65_saigon_lost add_ideas = v65_southern_holdouts
+   if = { limit = { controls_state = 28 } set_capital = { state = 28 } }
+   else = { set_capital = { state = 31 } }
+   country_event = { id = v65stages.3 days = 1 }
+  }
+ }
+}

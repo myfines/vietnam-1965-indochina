@@ -107,6 +107,8 @@ DATA={
 ('society','让金边之外的地方运转','地方社会不能只在边境危机时被记起。稳定的行政和生产，是中立政策真正的后方。','tree',[
 ('rice','恢复农产品流通','减少地方关卡对市场的阻隔，让农户愿意把粮食运出村庄。','civil'),('schools','培训基层行政人员','让地方具备处理账目、登记和民事争议的基本能力。','civil'),('health','省级救护体系','边境难民与伤员需要持续照顾，不能完全交给临时征用。','defence'),('budget','公开地方建设预算','把项目与拨款对照，使中央能够判断资源是否抵达目的地。','command'),('settlement','中立国家的长期安排','把边境管理、财政与地方建设编入同一份计划，避免每次危机都从头开始。','industry')])]
 }
+from campaign_routes import revise
+revise(DATA)
 CN={};EN={};manifest=[]
 def loc(key,cn,en=None):CN[key]=cn;EN[key]=en or cn
 REWARDS={
@@ -132,6 +134,7 @@ REWARDS={
 }
 # Use stable, documented country-scope effects for construction; forts are
 # separately placed at the actual DMZ province IDs in state history below.
+REWARDS.update({'sanctuary':'v65_open_sanctuary = yes','sanctuary_supply':'v65_sanctuary_pulse = yes','union_offer':'v65_offer_union = yes','union_preparation':'add_to_variable = { v65_park_influence = 1 } add_political_power = 35'})
 REWARDS['fort']='add_ideas = v65_prepared_defence army_experience = 10'
 for tag,branches in DATA.items():
  root=f'v65_{tag}_briefing';loc(root,{'SVN':'两场战争，一个西贡','PKS':'朴世诚：从归仁开始','NVN':'持久战争的两条战线','FNL':'南方的星火','DNM':'岘港军区的抉择','KHM':'战火边缘的王国'}[tag])
@@ -154,7 +157,10 @@ for tag,branches in DATA.items():
    if tag=='PKS' and key=='remain':x-=3
    if tag=='PKS' and key=='yushin':x+=3;row-=1
    if tag=='SVN' and key=='martial_focus':x-=3;exclusive='mutually_exclusive = { focus = v65_SVN_civilian }'
+   if reward=='union_offer':available='available = { v65_can_offer_union = yes }'
    node_icon={'training':'helmet','intel':'radio','civil':'tree','supply':'truck','road':'truck','arms':'factory','industry':'factory','transport':'truck','fort':'shield','defence':'shield','pacify':'tree','countertrail':'radio','crisis':'landmark','radio':'radio','lobby':'scroll','martial':'landmark','influence':'radio','funds':'scroll','patron':'landmark','guards':'shield','stay':'tree','usurp':'landmark','trail':'truck','infiltration':'tree','fnl_training':'helmet','fnl_arms':'factory','guerrilla':'tree','manpower':'helmet'}.get(reward,icon)
+   node_icon={'training':'doctrine','arms':'artillery','transport':'motorized','patron':'pressure','sanctuary':'sanctuary','sanctuary_supply':'truck','union_offer':'union','union_preparation':'scroll'}.get(reward,node_icon)
+   if key in ['elite','tiger']:node_icon='armor'
    tree+=f' focus = {{\n  id = {fid}\n  icon = GFX_v65_focus_{node_icon}\n  x = {x} y = {2+row*2} cost = {3 if row<2 else 5}\n  prerequisite = {{ focus = {parent} }}\n  {available}\n  {exclusive}\n  completion_reward = {{ {REWARDS[reward]} }}\n  ai_will_do = {{ factor = 1 }}\n }}\n'
    manifest.append({'tag':tag,'id':fid,'x':x,'y':2+row*2,'icon':node_icon});parent=fid
  if tag=='SVN':

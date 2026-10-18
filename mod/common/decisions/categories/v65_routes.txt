@@ -1,0 +1,2 @@
+v65_union = { icon = GFX_decision_generic_military allowed = { OR = { tag = PKS tag = SVN } } visible = { always = yes } }
+v65_cambodian_rear = { icon = GFX_decision_generic_military allowed = { OR = { tag = KHM tag = SVN tag = PKS tag = DNM } } visible = { always = yes } }

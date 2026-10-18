@@ -1,0 +1,31 @@
+add_namespace = v65routes
+country_event = { id = v65routes.1 title = v65routes.1.t desc = v65routes.1.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ immediate = { PKS = { clr_country_flag = v65_union_pending } }
+ option = { name = v65routes.1.a ai_chance = { factor = 70 }
+  trigger = { PKS = { exists = yes NOT = { has_war_with = SVN } } controls_state = 25 }
+  v65_finalize_union = yes
+ }
+ option = { name = v65routes.1.b ai_chance = { factor = 30 }
+  PKS = { set_country_flag = v65_union_refused country_event = { id = v65routes.3 days = 90 } }
+  add_political_power = 35
+ }
+}
+country_event = { id = v65routes.2 title = v65routes.2.t desc = v65routes.2.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65routes.2.a add_political_power = 50 }
+}
+country_event = { id = v65routes.3 hidden = yes is_triggered_only = yes immediate = { clr_country_flag = v65_union_refused } }
+country_event = { id = v65routes.4 title = v65routes.4.t desc = v65routes.4.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ trigger = { has_idea = v65_park_shadow_ruler }
+ option = { name = v65routes.4.a add_political_power = -75 add_stability = 0.03 }
+ option = { name = v65routes.4.b add_timed_idea = { idea = v65_faction_compromise days = 180 } }
+}
+country_event = { id = v65routes.5 title = v65routes.5.t desc = v65routes.5.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65routes.5.a add_political_power = 30 }
+}
+country_event = { id = v65routes.6 title = v65routes.6.t desc = v65routes.6.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { v65_sanctuary_operational = yes }
+ option = { name = v65routes.6.a ai_chance = { factor = 65 } add_stability = -0.03 add_political_power = -25 }
+ option = { name = v65routes.6.b ai_chance = { factor = 35 modifier = { factor = 3 check_variable = { v65_border_tension > 2 } } }
+  v65_close_sanctuary = yes add_political_power = 25
+ }
+}

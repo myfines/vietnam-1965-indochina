@@ -1,23 +1,27 @@
-"""Convert licensed Font Awesome glyphs and our original painting to game assets."""
+"""Bind native painted focus art and generate original faction flags."""
 from pathlib import Path
-import json,shutil,math
-from PIL import Image,ImageDraw,ImageFont,ImageOps
+import json,math
+from PIL import Image,ImageDraw
 R=Path(__file__).resolve().parents[1];M=R/'mod';ref=R/'runtime/reference'
-FONT=ref/'fa-solid-900.ttf'
-if not FONT.exists():raise SystemExit('Fetch Font Awesome Free fa-solid-900.ttf into runtime/reference first')
-icons={'flag':0xf024,'radio':0xf519,'shield':0xf3ed,'tree':0xf1bb,'factory':0xf275,'landmark':0xf66f,'helmet':0xf807,'scroll':0xf70e,'truck':0xf0d1}
-out=M/'gfx/interface/goals';out.mkdir(parents=True,exist_ok=True)
-font=ImageFont.truetype(str(FONT),43)
-for key,code in icons.items():
- im=Image.new('RGBA',(96,96));d=ImageDraw.Draw(im)
- d.polygon([(48,3),(85,20),(83,68),(48,92),(13,68),(11,20)],fill=(28,36,33,255),outline=(181,147,83,255),width=3)
- d.line([(48,8),(80,23),(78,65),(48,85),(18,65),(16,23),(48,8)],fill=(88,100,88,255),width=1)
- d.text((48,44),chr(code),font=font,anchor='mm',fill=(233,206,144,255),stroke_width=0)
- d.line((30,74,66,74),fill=(181,147,83,255),width=2)
- im.save(out/f'v65_{key}.dds')
-gfx='spriteTypes = {\n'+'\n'.join(f' spriteType = {{ name = "GFX_v65_focus_{k}" texturefile = "gfx/interface/goals/v65_{k}.dds" }}' for k in icons)+'\n}'
+# Reuse installed HOI4 painted focus textures, referenced rather than redistributed.
+# No downloaded game textures are stored in the public repository.
+textures={
+ 'flag':'goal_generic_propaganda','radio':'goal_generic_intelligence_exchange',
+ 'shield':'goal_generic_fortify_city','tree':'goal_generic_allies_build_infantry',
+ 'factory':'goal_generic_construction2','landmark':'focus_generic_treaty',
+ 'helmet':'focus_generic_military_academy','scroll':'focus_generic_diplomatic_treaty',
+ 'truck':'goal_generic_construct_infrastructure',
+ 'armor':'goal_generic_army_tanks','motorized':'goal_generic_army_motorized',
+ 'doctrine':'goal_generic_army_doctrines','industry':'goal_generic_construction',
+ 'artillery':'goal_generic_army_artillery','pressure':'goal_generic_forceful_treaty',
+ 'sanctuary':'focus_generic_coastal_fort','union':'focus_generic_treaty',
+}
+icons=textures
+out=M/'gfx/interface/goals'
+for old in out.glob('v65_*.dds'):old.unlink()
+gfx='spriteTypes = {\n'+'\n'.join(f' spriteType = {{ name = "GFX_v65_focus_{k}" texturefile = "gfx/interface/goals/{v}.dds" }}' for k,v in textures.items())+'\n}'
 (M/'interface/v65_focus_icons.gfx').write_text(gfx,encoding='utf-8')
-shutil.copyfile(ref/'FontAwesome-LICENSE.txt',R/'LICENSE-FontAwesome.txt')
+(R/'native-art-catalog.json').write_text(json.dumps(textures,indent=2),encoding='utf-8')
 # Our own faction flags. Four game sizes, no third-party flag artwork.
 for tag,colors in {'PKS':[(39,80,68),(227,208,149)],'DNM':[(166,95,36),(247,223,152)],'FNL':[(159,36,42),(32,98,162)]}.items():
  flag=Image.new('RGB',(82,52),colors[0]);d=ImageDraw.Draw(flag)
@@ -31,4 +35,4 @@ for tag,colors in {'PKS':[(39,80,68),(227,208,149)],'DNM':[(166,95,36),(247,223,
  for folder,size in [('',(82,52)),('medium',(41,26)),('small',(10,7))]:
   dest=M/'gfx/flags'/folder;dest.mkdir(parents=True,exist_ok=True)
   for suffix in ['','_neutrality','_communism','_fascism','_democratic']:flag.resize(size,Image.Resampling.LANCZOS).save(dest/f'{tag}{suffix}.tga')
-print('Focus art:',len(icons),'licensed glyphs; three faction flag sets')
+print('Focus art:',len(icons),'native painted references; three faction flag sets')

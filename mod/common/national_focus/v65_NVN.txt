@@ -27,7 +27,7 @@ focus_tree = {
  }
  focus = {
   id = v65_NVN_reserve
-  icon = GFX_v65_focus_helmet
+  icon = GFX_v65_focus_doctrine
   x = 0 y = 6 cost = 5
   prerequisite = { focus = v65_NVN_staff }
 
@@ -197,7 +197,7 @@ focus_tree = {
  }
  focus = {
   id = v65_NVN_workshops
-  icon = GFX_v65_focus_factory
+  icon = GFX_v65_focus_artillery
   x = 24 y = 4 cost = 3
   prerequisite = { focus = v65_NVN_economy }
 
@@ -207,7 +207,7 @@ focus_tree = {
  }
  focus = {
   id = v65_NVN_rails
-  icon = GFX_v65_focus_truck
+  icon = GFX_v65_focus_motorized
   x = 24 y = 6 cost = 5
   prerequisite = { focus = v65_NVN_workshops }
 

@@ -1,0 +1,19 @@
+{
+  "flag": "goal_generic_propaganda",
+  "radio": "goal_generic_intelligence_exchange",
+  "shield": "goal_generic_fortify_city",
+  "tree": "goal_generic_allies_build_infantry",
+  "factory": "goal_generic_construction2",
+  "landmark": "focus_generic_treaty",
+  "helmet": "focus_generic_military_academy",
+  "scroll": "focus_generic_diplomatic_treaty",
+  "truck": "goal_generic_construct_infrastructure",
+  "armor": "goal_generic_army_tanks",
+  "motorized": "goal_generic_army_motorized",
+  "doctrine": "goal_generic_army_doctrines",
+  "industry": "goal_generic_construction",
+  "artillery": "goal_generic_army_artillery",
+  "pressure": "goal_generic_forceful_treaty",
+  "sanctuary": "focus_generic_coastal_fort",
+  "union": "focus_generic_treaty"
+}

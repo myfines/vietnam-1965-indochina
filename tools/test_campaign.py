@@ -1,6 +1,6 @@
 """Regression checks for the playable campaign, not just balanced braces."""
 from pathlib import Path
-import sys,re,unittest
+import sys,re,unittest,json
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'vendor'))
 import pdx
@@ -15,12 +15,25 @@ class CampaignTests(unittest.TestCase):
         sprites=(ROOT/'mod/interface/v65_focus_icons.gfx').read_text()
         self.assertGreaterEqual(sprites.count('spriteType ='),9)
         for path in re.findall(r'texturefile = "([^"]+)"',sprites):
-            self.assertTrue((ROOT/'mod'/path).exists(),path)
+            self.assertTrue((ROOT/'mod'/path).exists() or (Path(json.loads((ROOT/'runtime/install-report.json').read_text())['game'])/path).exists(),path)
         people=list((ROOT/'mod/common/characters').glob('v65_*.txt'))
         text='\n'.join(p.read_text() for p in people)
         self.assertNotIn('Portrait_Asia_Generic',text)
         self.assertEqual(len(re.findall(r'\bname = v65_',text)),21)
         self.assertTrue((ROOT/'mod/gfx/leaders/v65/park_seicheng.dds').exists())
+    def test_union_and_neutral_sanctuary(self):
+        p=ROOT/'mod/common/scripted_effects/v65_union_sanctuary.txt'
+        self.assertTrue(p.exists(),'Missing negotiated union and Cambodian rear-base mechanics')
+        text=p.read_text(encoding='utf-8')
+        for effect in ['v65_finalize_union','v65_open_sanctuary','v65_close_sanctuary','v65_sanctuary_pulse']:
+            self.assertIn(effect+' =',text)
+        self.assertIn('is_ai = no',text)
+        self.assertIn('v65_park_shadow_ruler',text)
+        self.assertIn('NOT = { has_war = yes }',text)
+        decisions=(ROOT/'mod/common/decisions/v65_union_sanctuary.txt').read_text(encoding='utf-8')
+        self.assertIn('v65_request_union',decisions)
+        self.assertIn('v65_border_dossier',decisions)
+
     def test_focus_layout_and_descriptions(self):
         loc='\n'.join(p.read_text(encoding='utf-8-sig') for p in (ROOT/'mod/localisation/simp_chinese').glob('*.yml'))
         for tag in ['SVN','NVN','KHM','PKS','FNL','DNM']:

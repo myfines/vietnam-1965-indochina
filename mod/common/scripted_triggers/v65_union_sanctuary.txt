@@ -1,0 +1,17 @@
+v65_can_offer_union = {
+ tag = PKS exists = yes controls_state = 15
+ check_variable = { v65_park_influence > 4 }
+ NOT = { has_country_flag = v65_union_pending }
+ NOT = { has_country_flag = v65_union_refused }
+ NOT = { has_war_with = SVN }
+ is_in_faction_with = SVN
+ SVN = { exists = yes controls_state = 25 }
+ NOT = { AND = { is_ai = no SVN = { is_ai = no } } }
+}
+v65_sanctuary_operational = {
+ tag = KHM exists = yes NOT = { has_war = yes }
+ has_country_flag = v65_sanctuary_open
+ controls_state = 35 controls_state = 36
+ NVN = { exists = yes has_war_with = SVN }
+ FNL = { exists = yes has_war_with = SVN }
+}

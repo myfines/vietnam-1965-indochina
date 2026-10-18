@@ -1,11 +1,19 @@
 spriteTypes = {
- spriteType = { name = "GFX_v65_focus_flag" texturefile = "gfx/interface/goals/v65_flag.dds" }
- spriteType = { name = "GFX_v65_focus_radio" texturefile = "gfx/interface/goals/v65_radio.dds" }
- spriteType = { name = "GFX_v65_focus_shield" texturefile = "gfx/interface/goals/v65_shield.dds" }
- spriteType = { name = "GFX_v65_focus_tree" texturefile = "gfx/interface/goals/v65_tree.dds" }
- spriteType = { name = "GFX_v65_focus_factory" texturefile = "gfx/interface/goals/v65_factory.dds" }
- spriteType = { name = "GFX_v65_focus_landmark" texturefile = "gfx/interface/goals/v65_landmark.dds" }
- spriteType = { name = "GFX_v65_focus_helmet" texturefile = "gfx/interface/goals/v65_helmet.dds" }
- spriteType = { name = "GFX_v65_focus_scroll" texturefile = "gfx/interface/goals/v65_scroll.dds" }
- spriteType = { name = "GFX_v65_focus_truck" texturefile = "gfx/interface/goals/v65_truck.dds" }
+ spriteType = { name = "GFX_v65_focus_flag" texturefile = "gfx/interface/goals/goal_generic_propaganda.dds" }
+ spriteType = { name = "GFX_v65_focus_radio" texturefile = "gfx/interface/goals/goal_generic_intelligence_exchange.dds" }
+ spriteType = { name = "GFX_v65_focus_shield" texturefile = "gfx/interface/goals/goal_generic_fortify_city.dds" }
+ spriteType = { name = "GFX_v65_focus_tree" texturefile = "gfx/interface/goals/goal_generic_allies_build_infantry.dds" }
+ spriteType = { name = "GFX_v65_focus_factory" texturefile = "gfx/interface/goals/goal_generic_construction2.dds" }
+ spriteType = { name = "GFX_v65_focus_landmark" texturefile = "gfx/interface/goals/focus_generic_treaty.dds" }
+ spriteType = { name = "GFX_v65_focus_helmet" texturefile = "gfx/interface/goals/focus_generic_military_academy.dds" }
+ spriteType = { name = "GFX_v65_focus_scroll" texturefile = "gfx/interface/goals/focus_generic_diplomatic_treaty.dds" }
+ spriteType = { name = "GFX_v65_focus_truck" texturefile = "gfx/interface/goals/goal_generic_construct_infrastructure.dds" }
+ spriteType = { name = "GFX_v65_focus_armor" texturefile = "gfx/interface/goals/goal_generic_army_tanks.dds" }
+ spriteType = { name = "GFX_v65_focus_motorized" texturefile = "gfx/interface/goals/goal_generic_army_motorized.dds" }
+ spriteType = { name = "GFX_v65_focus_doctrine" texturefile = "gfx/interface/goals/goal_generic_army_doctrines.dds" }
+ spriteType = { name = "GFX_v65_focus_industry" texturefile = "gfx/interface/goals/goal_generic_construction.dds" }
+ spriteType = { name = "GFX_v65_focus_artillery" texturefile = "gfx/interface/goals/goal_generic_army_artillery.dds" }
+ spriteType = { name = "GFX_v65_focus_pressure" texturefile = "gfx/interface/goals/goal_generic_forceful_treaty.dds" }
+ spriteType = { name = "GFX_v65_focus_sanctuary" texturefile = "gfx/interface/goals/focus_generic_coastal_fort.dds" }
+ spriteType = { name = "GFX_v65_focus_union" texturefile = "gfx/interface/goals/focus_generic_treaty.dds" }
 }

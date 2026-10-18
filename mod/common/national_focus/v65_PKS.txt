@@ -4,7 +4,7 @@ focus_tree = {
  default = no
  reset_on_civilwar = no
  continuous_focus_position = { x = 0 y = 1500 }
- focus = { id = v65_PKS_briefing icon = GFX_v65_focus_flag x = 16 y = 0 cost = 2 completion_reward = { add_political_power = 50 } }
+ focus = { id = v65_PKS_briefing icon = GFX_v65_focus_flag x = 20 y = 0 cost = 2 completion_reward = { add_political_power = 50 } }
  focus = {
   id = v65_PKS_command
   icon = GFX_v65_focus_helmet
@@ -17,7 +17,7 @@ focus_tree = {
  }
  focus = {
   id = v65_PKS_battalion
-  icon = GFX_v65_focus_helmet
+  icon = GFX_v65_focus_doctrine
   x = 0 y = 4 cost = 3
   prerequisite = { focus = v65_PKS_command }
 
@@ -37,7 +37,7 @@ focus_tree = {
  }
  focus = {
   id = v65_PKS_tiger
-  icon = GFX_v65_focus_helmet
+  icon = GFX_v65_focus_armor
   x = 0 y = 8 cost = 5
   prerequisite = { focus = v65_PKS_quynhon }
 
@@ -57,7 +57,7 @@ focus_tree = {
  }
  focus = {
   id = v65_PKS_elite
-  icon = GFX_v65_focus_helmet
+  icon = GFX_v65_focus_armor
   x = 0 y = 12 cost = 5
   prerequisite = { focus = v65_PKS_fieldstaff }
 
@@ -107,7 +107,7 @@ focus_tree = {
  }
  focus = {
   id = v65_PKS_palace
-  icon = GFX_v65_focus_landmark
+  icon = GFX_v65_focus_pressure
   x = 8 y = 10 cost = 5
   prerequisite = { focus = v65_PKS_patron }
 
@@ -197,7 +197,7 @@ focus_tree = {
  }
  focus = {
   id = v65_PKS_trucks
-  icon = GFX_v65_focus_truck
+  icon = GFX_v65_focus_motorized
   x = 24 y = 4 cost = 3
   prerequisite = { focus = v65_PKS_business }
 
@@ -207,7 +207,7 @@ focus_tree = {
  }
  focus = {
   id = v65_PKS_repair
-  icon = GFX_v65_focus_factory
+  icon = GFX_v65_focus_artillery
   x = 24 y = 6 cost = 5
   prerequisite = { focus = v65_PKS_trucks }
 
@@ -303,6 +303,66 @@ focus_tree = {
   available = { SVN = { has_country_flag = v65_front_defeat exists = yes } NOT = { has_war_with = SVN } }
   mutually_exclusive = { focus = v65_PKS_remain }
   completion_reward = { v65_park_intervention = yes }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_PKS_union
+  icon = GFX_v65_focus_union
+  x = 40 y = 2 cost = 3
+  prerequisite = { focus = v65_PKS_briefing }
+
+
+  completion_reward = { add_political_power = 75 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_PKS_officer_exchange
+  icon = GFX_v65_focus_scroll
+  x = 40 y = 4 cost = 3
+  prerequisite = { focus = v65_PKS_union }
+
+
+  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_PKS_joint_accounts
+  icon = GFX_v65_focus_scroll
+  x = 40 y = 6 cost = 5
+  prerequisite = { focus = v65_PKS_officer_exchange }
+
+
+  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_PKS_cabinet_guarantees
+  icon = GFX_v65_focus_scroll
+  x = 40 y = 8 cost = 5
+  prerequisite = { focus = v65_PKS_joint_accounts }
+
+
+  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_PKS_hidden_council
+  icon = GFX_v65_focus_scroll
+  x = 40 y = 10 cost = 5
+  prerequisite = { focus = v65_PKS_cabinet_guarantees }
+
+
+  completion_reward = { add_to_variable = { v65_park_influence = 1 } add_political_power = 35 }
+  ai_will_do = { factor = 1 }
+ }
+ focus = {
+  id = v65_PKS_union_offer
+  icon = GFX_v65_focus_union
+  x = 40 y = 12 cost = 5
+  prerequisite = { focus = v65_PKS_hidden_council }
+  available = { v65_can_offer_union = yes }
+
+  completion_reward = { v65_offer_union = yes }
   ai_will_do = { factor = 1 }
  }
 }

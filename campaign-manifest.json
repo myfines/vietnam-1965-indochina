@@ -34,7 +34,7 @@
       "id": "v65_SVN_reserve",
       "x": 0,
       "y": 10,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "SVN",
@@ -69,7 +69,7 @@
       "id": "v65_SVN_rotation",
       "x": 8,
       "y": 8,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "SVN",
@@ -104,7 +104,7 @@
       "id": "v65_SVN_patrols",
       "x": 16,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "SVN",
@@ -146,7 +146,7 @@
       "id": "v65_SVN_workshops",
       "x": 24,
       "y": 6,
-      "icon": "factory"
+      "icon": "artillery"
     },
     {
       "tag": "SVN",
@@ -167,7 +167,7 @@
       "id": "v65_SVN_port",
       "x": 24,
       "y": 12,
-      "icon": "truck"
+      "icon": "motorized"
     },
     {
       "tag": "SVN",
@@ -230,7 +230,7 @@
       "id": "v65_PKS_battalion",
       "x": 0,
       "y": 4,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "PKS",
@@ -244,7 +244,7 @@
       "id": "v65_PKS_tiger",
       "x": 0,
       "y": 8,
-      "icon": "helmet"
+      "icon": "armor"
     },
     {
       "tag": "PKS",
@@ -258,7 +258,7 @@
       "id": "v65_PKS_elite",
       "x": 0,
       "y": 12,
-      "icon": "helmet"
+      "icon": "armor"
     },
     {
       "tag": "PKS",
@@ -293,7 +293,7 @@
       "id": "v65_PKS_palace",
       "x": 8,
       "y": 10,
-      "icon": "landmark"
+      "icon": "pressure"
     },
     {
       "tag": "PKS",
@@ -356,14 +356,14 @@
       "id": "v65_PKS_trucks",
       "x": 24,
       "y": 4,
-      "icon": "truck"
+      "icon": "motorized"
     },
     {
       "tag": "PKS",
       "id": "v65_PKS_repair",
       "x": 24,
       "y": 6,
-      "icon": "factory"
+      "icon": "artillery"
     },
     {
       "tag": "PKS",
@@ -429,6 +429,48 @@
       "icon": "landmark"
     },
     {
+      "tag": "PKS",
+      "id": "v65_PKS_union",
+      "x": 40,
+      "y": 2,
+      "icon": "union"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_officer_exchange",
+      "x": 40,
+      "y": 4,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_joint_accounts",
+      "x": 40,
+      "y": 6,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_cabinet_guarantees",
+      "x": 40,
+      "y": 8,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_hidden_council",
+      "x": 40,
+      "y": 10,
+      "icon": "scroll"
+    },
+    {
+      "tag": "PKS",
+      "id": "v65_PKS_union_offer",
+      "x": 40,
+      "y": 12,
+      "icon": "union"
+    },
+    {
       "tag": "NVN",
       "id": "v65_NVN_command",
       "x": 0,
@@ -447,7 +489,7 @@
       "id": "v65_NVN_reserve",
       "x": 0,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "NVN",
@@ -566,14 +608,14 @@
       "id": "v65_NVN_workshops",
       "x": 24,
       "y": 4,
-      "icon": "factory"
+      "icon": "artillery"
     },
     {
       "tag": "NVN",
       "id": "v65_NVN_rails",
       "x": 24,
       "y": 6,
-      "icon": "truck"
+      "icon": "motorized"
     },
     {
       "tag": "NVN",
@@ -615,7 +657,7 @@
       "id": "v65_FNL_cadres",
       "x": 0,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "FNL",
@@ -650,14 +692,14 @@
       "id": "v65_FNL_caches",
       "x": 8,
       "y": 4,
-      "icon": "factory"
+      "icon": "artillery"
     },
     {
       "tag": "FNL",
       "id": "v65_FNL_night",
       "x": 8,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "FNL",
@@ -783,7 +825,7 @@
       "id": "v65_DNM_reserve",
       "x": 0,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "DNM",
@@ -825,7 +867,7 @@
       "id": "v65_DNM_patrol",
       "x": 8,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "DNM",
@@ -860,14 +902,14 @@
       "id": "v65_DNM_dock",
       "x": 16,
       "y": 4,
-      "icon": "truck"
+      "icon": "motorized"
     },
     {
       "tag": "DNM",
       "id": "v65_DNM_repair",
       "x": 16,
       "y": 6,
-      "icon": "factory"
+      "icon": "artillery"
     },
     {
       "tag": "DNM",
@@ -951,7 +993,7 @@
       "id": "v65_KHM_patrol",
       "x": 0,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "KHM",
@@ -965,14 +1007,14 @@
       "id": "v65_KHM_neutrality",
       "x": 0,
       "y": 10,
-      "icon": "tree"
+      "icon": "sanctuary"
     },
     {
       "tag": "KHM",
       "id": "v65_KHM_mediation",
       "x": 0,
       "y": 12,
-      "icon": "landmark"
+      "icon": "truck"
     },
     {
       "tag": "KHM",
@@ -1000,7 +1042,7 @@
       "id": "v65_KHM_repair",
       "x": 8,
       "y": 8,
-      "icon": "factory"
+      "icon": "artillery"
     },
     {
       "tag": "KHM",
@@ -1035,7 +1077,7 @@
       "id": "v65_KHM_training",
       "x": 16,
       "y": 6,
-      "icon": "helmet"
+      "icon": "doctrine"
     },
     {
       "tag": "KHM",

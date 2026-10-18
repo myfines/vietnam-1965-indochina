@@ -1,0 +1,55 @@
+v65_offer_union = {
+ if = { limit = { v65_can_offer_union = yes }
+  set_country_flag = v65_union_pending
+  SVN = { country_event = { id = v65routes.1 days = 1 } }
+ }
+}
+v65_finalize_union = {
+ if = { limit = { PKS = { v65_can_offer_union = yes } SVN = { exists = yes controls_state = 25 } }
+  # Transfer the human before annexation. All other southern systems keep SVN.
+  SVN = { if = { limit = { PKS = { is_ai = no } } change_tag_from = PKS } }
+  PKS = {
+   if = { limit = { has_character = v65_park_seicheng } v65_park_seicheng = { set_nationality = SVN } }
+   if = { limit = { has_character = v65_kim_jong_pil } v65_kim_jong_pil = { set_nationality = SVN } }
+   if = { limit = { has_character = v65_kim_jae_gyu } v65_kim_jae_gyu = { set_nationality = SVN } }
+   if = { limit = { has_character = v65_park_chung_hee } v65_park_chung_hee = { set_nationality = SVN } }
+  }
+  SVN = {
+   annex_country = { target = PKS transfer_troops = yes }
+   15 = { add_core_of = SVN }
+   add_ideas = v65_park_shadow_ruler set_country_flag = v65_union_complete
+   add_stability = 0.05
+   if = { limit = { has_character = v65_nguyen_van_thieu }
+    promote_character = { character = v65_nguyen_van_thieu ideology = despotism }
+   }
+   country_event = { id = v65routes.2 days = 1 }
+   country_event = { id = v65routes.4 days = 45 }
+  }
+ }
+}
+v65_open_sanctuary = {
+ if = { limit = { tag = KHM NOT = { has_war = yes } controls_state = 35 controls_state = 36 }
+  set_country_flag = v65_sanctuary_open add_ideas = v65_neutral_sanctuary
+ }
+}
+v65_close_sanctuary = {
+ clr_country_flag = v65_sanctuary_open remove_ideas = v65_neutral_sanctuary
+}
+v65_sanctuary_pulse = {
+ if = { limit = { v65_sanctuary_operational = yes }
+  NVN = { add_to_variable = { v65_trail_level = 1 } clamp_variable = { var = v65_trail_level min = 0 max = 5 } }
+  FNL = { add_to_variable = { v65_infiltration = 1 } clamp_variable = { var = v65_infiltration min = 0 max = 3 }
+   add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 300 producer = NVN }
+  }
+  add_to_variable = { v65_border_tension = 1 } clamp_variable = { var = v65_border_tension min = 0 max = 3 }
+  if = { limit = { NOT = { has_country_flag = v65_sanctuary_discovered } }
+   set_country_flag = v65_sanctuary_discovered SVN = { country_event = { id = v65routes.5 days = 1 } }
+  }
+ }
+}
+v65_apply_border_pressure = {
+ KHM = { if = { limit = { v65_sanctuary_operational = yes }
+  add_to_variable = { v65_border_tension = 1 } clamp_variable = { var = v65_border_tension min = 0 max = 3 }
+  country_event = { id = v65routes.6 days = 1 }
+ } }
+}

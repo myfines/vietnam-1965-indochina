@@ -1,0 +1,2 @@
+v65_highland_has_fallen = { OR = { 18 = { is_controlled_by = NVN } 18 = { is_controlled_by = FNL } 16 = { is_controlled_by = NVN } 16 = { is_controlled_by = FNL } } }
+v65_saigon_has_fallen = { NOT = { controls_province = 305 } OR = { controls_state = 28 controls_state = 31 } }

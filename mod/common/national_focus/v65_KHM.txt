@@ -27,7 +27,7 @@ focus_tree = {
  }
  focus = {
   id = v65_KHM_patrol
-  icon = GFX_v65_focus_helmet
+  icon = GFX_v65_focus_doctrine
   x = 0 y = 6 cost = 5
   prerequisite = { focus = v65_KHM_border }
 
@@ -47,22 +47,22 @@ focus_tree = {
  }
  focus = {
   id = v65_KHM_neutrality
-  icon = GFX_v65_focus_tree
+  icon = GFX_v65_focus_sanctuary
   x = 0 y = 10 cost = 5
   prerequisite = { focus = v65_KHM_reports }
 
 
-  completion_reward = { add_stability = 0.04 }
+  completion_reward = { v65_open_sanctuary = yes }
   ai_will_do = { factor = 1 }
  }
  focus = {
   id = v65_KHM_mediation
-  icon = GFX_v65_focus_landmark
+  icon = GFX_v65_focus_truck
   x = 0 y = 12 cost = 5
   prerequisite = { focus = v65_KHM_neutrality }
 
 
-  completion_reward = { add_political_power = 75 }
+  completion_reward = { v65_sanctuary_pulse = yes }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -97,7 +97,7 @@ focus_tree = {
  }
  focus = {
   id = v65_KHM_repair
-  icon = GFX_v65_focus_factory
+  icon = GFX_v65_focus_artillery
   x = 8 y = 8 cost = 5
   prerequisite = { focus = v65_KHM_industry }
 
@@ -112,7 +112,7 @@ focus_tree = {
   prerequisite = { focus = v65_KHM_repair }
 
 
-  completion_reward = { add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 150 producer = ROOT } }
+  completion_reward = { v65_sanctuary_pulse = yes }
   ai_will_do = { factor = 1 }
  }
  focus = {
@@ -147,7 +147,7 @@ focus_tree = {
  }
  focus = {
   id = v65_KHM_training
-  icon = GFX_v65_focus_helmet
+  icon = GFX_v65_focus_doctrine
   x = 16 y = 6 cost = 5
   prerequisite = { focus = v65_KHM_staff }
 

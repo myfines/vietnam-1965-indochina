@@ -44,20 +44,58 @@ if balance:
  script+=check('FNL = { exists = yes num_divisions > 0 has_country_flag = v65_raid_fired }','GUERRILLAS_SURVIVE_AND_RAID')
  script+=check('PKS = { exists = yes } DNM = { exists = yes } SVN = { exists = yes }','SOUTHERN_FACTIONS_SURVIVE')
  script+=f' }} if = {{ limit = {{ date > 1965.11.28 }} log = "{end}" }} }} }} }}'
+routes=os.environ.get('V65_ROUTES_TEST')=='1'
+if routes:
+ expected=expected[:21]
+ script=script[:script.index('on_daily =')]+'''on_daily = { effect = {
+ if = { limit = { date > 1965.10.28 NOT = { has_global_flag = v65_routes_checked } } set_global_flag = v65_routes_checked
+ NVN = { set_variable = { v65_trail_level = 1 } } FNL = { set_variable = { v65_infiltration = 0 } }
+ KHM = { v65_open_sanctuary = yes v65_sanctuary_pulse = yes
+ '''
+ script+=check('has_country_flag = v65_sanctuary_open has_idea = v65_neutral_sanctuary NOT = { has_war = yes } NOT = { is_in_faction_with = NVN }','NEUTRAL_CAMBODIAN_REAR')
+ script+=check('NVN = { check_variable = { v65_trail_level = 2 } } FNL = { check_variable = { v65_infiltration = 1 } }','SANCTUARY_STRENGTHENS_REAR_WAR')
+ script+='v65_close_sanctuary = yes v65_sanctuary_pulse = yes '
+ script+=check('NOT = { has_country_flag = v65_sanctuary_open } NOT = { has_idea = v65_neutral_sanctuary } NVN = { check_variable = { v65_trail_level = 2 } }','CLOSURE_STOPS_LOGISTICS')
+ script+='v65_open_sanctuary = yes } SVN = { v65_apply_border_pressure = yes } KHM = { '
+ script+=check('check_variable = { v65_border_tension = 2 } NOT = { has_war = yes }','DIPLOMATIC_PRESSURE_WITHOUT_WAR')+' } '
+ script+='PKS = { if = { limit = { is_ai = no } log = "V65_PLAYER_TRANSFER_BRANCH" } set_variable = { v65_park_influence = 5 } '
+ script+=check('v65_can_offer_union = yes','NEGOTIATED_UNION_AVAILABLE')
+ script+='v65_finalize_union = yes } SVN = { '
+ script+=check('exists = yes owns_state = 15 owns_state = 25 has_idea = v65_park_shadow_ruler has_country_flag = v65_union_complete','UNION_TERRITORY_AND_SHADOW_RULER')
+ script+=check('has_character = v65_park_seicheng has_character = v65_kim_jong_pil has_country_leader = { character = v65_nguyen_van_thieu }','PARK_RETAINS_INFLUENCE_WITH_CIVILIAN_PRESIDENT')
+ script+=check('num_divisions > 15 has_war_with = NVN has_war_with = FNL','UNION_ARMY_AND_WAR_CONTINUE')+' } '
+ script+=check('PKS = { exists = no }','UNION_REPLACES_EXPEDITION_TAG')
+ script+=f' }} if = {{ limit = {{ date > 1965.11.03 }} log = "{end}" }} }} }} }}'
+stages=os.environ.get('V65_STAGES_TEST')=='1'
+if stages:
+ expected=expected[:21]
+ script=script[:script.index('on_daily =')]+'''on_daily = { effect = {
+ if = { limit = { date > 1965.10.28 NOT = { has_global_flag = v65_stages_checked } } set_global_flag = v65_stages_checked
+ SVN = { v65_check_war_stages = yes
+ '''
+ script+=check('has_country_flag = v65_highlands_lost has_country_flag = v65_front_defeat has_idea = v65_highland_disruption','HIGHLAND_DEFEAT_OPENS_POLITICAL_CRISIS')
+ script+=check('has_country_flag = v65_saigon_lost has_idea = v65_southern_holdouts capital_scope = { state = 28 }','SAIGON_FALL_RELOCATES_TO_MEKONG')
+ script+=f' }} }} if = {{ limit = {{ date > 1965.11.03 }} log = "{end}" }} }} }} }}'
 probe=O/'common/on_actions/v65_smoke_test.txt';define=O/'common/defines/zzz_smoke_test.lua'
 playset=U/'dlc_load.json';descriptor=U/'mod/v65_public.mod'
 old_load=playset.read_bytes() if playset.exists() else None
 old_descriptor=descriptor.read_bytes() if descriptor.exists() else None
 proc=None
+scenario_backups={}
 try:
- probe.write_text(script);define.write_text('NDefines.NGame.HANDS_OFF_START_TAG = "SVN"\n')
+ if stages:
+  # Force only defeat predicates; leave ownership, armies and AI fronts intact.
+  # The normal and natural-balance runs compile/use the real map predicates.
+  path=O/'common/scripted_triggers/v65_war_stages.txt';scenario_backups[path]=path.read_bytes()
+  path.write_text('v65_highland_has_fallen = { always = yes }\nv65_saigon_has_fallen = { always = yes }\n',encoding='utf-8')
+ probe.write_text(script);define.write_text('NDefines.NGame.HANDS_OFF_START_TAG = "'+'SVN'+'"\n')
  descriptor.parent.mkdir(exist_ok=True)
  descriptor.write_text((O/'descriptor.mod').read_text().replace('Vietnam 1965 - Indochina Theater','Vietnam 1965 Public')+'\npath="'+O.as_posix()+'"\n',encoding='utf-8')
  for charfile in (O/'common/characters').glob('v65_*.txt'):
   for picture in re.findall(r'large = "([^"]+)"',charfile.read_text()):assert (O/picture).exists(),picture
  d=json.loads(playset.read_text(encoding='utf-8-sig')) if playset.exists() else {'disabled_dlcs':[]}
  d['enabled_mods']=['mod/v65_public.mod'];playset.write_text(json.dumps(d))
- proc=subprocess.Popen([str(G/'hoi4.exe'),'-hands_off','-start_tag=SVN'],cwd=G)
+ proc=subprocess.Popen([str(G/'hoi4.exe'),'-hands_off','-start_tag='+'SVN'],cwd=G)
  print('Engine started; expected assertions:',len(expected),flush=True)
  deadline=time.monotonic()+180;saw_start=False
  while time.monotonic()<deadline:
@@ -71,12 +109,13 @@ try:
  markers=sorted(set(re.findall(r'V65_PASS_\w+',s)));assert set(markers)==set(expected),(markers,expected)
  errors=(U/'logs/error.log').read_text(encoding='utf-8',errors='replace').splitlines()
  mod_errors=[e for e in errors if not any(k in e for k in ['checksum','supported_version','thumbnail'])]
- result={'passed':not mod_errors,'markers':markers,'last_date':'1965.11.29' if balance else '1965.11.06','method':'real engine; hands-off; no UI automation','checked_at':datetime.datetime.now().isoformat(),'mod_runtime_errors':mod_errors}
- (OUT/('balance-engine-assertions.json' if balance else 'campaign-engine-assertions.json')).write_text(json.dumps(result,indent=2))
- assert not mod_errors,mod_errors
+ result={'passed':not mod_errors,'markers':markers,'last_date':'1965.11.04' if routes or stages else '1965.11.29' if balance else '1965.11.06','method':'real engine; hands-off; no UI automation','human_transfer_exercised':'V65_PLAYER_TRANSFER_BRANCH' in s,'checked_at':datetime.datetime.now().isoformat(),'mod_runtime_errors':mod_errors}
+ (OUT/('stages-engine-assertions.json' if stages else 'routes-engine-assertions.json' if routes else 'balance-engine-assertions.json' if balance else 'campaign-engine-assertions.json')).write_text(json.dumps(result,indent=2))
+ assert not mod_errors, f'{len(mod_errors)} runtime errors; complete evidence in {OUT}'
  print('PASS:',len(markers),'engine assertions; no mod runtime errors')
 finally:
  if proc and proc.poll() is None:proc.terminate();proc.wait(timeout=15)
+ for path,data in scenario_backups.items():path.write_bytes(data)
  for name in ['game','error']:
   p=U/f'logs/{name}.log'
   if p.exists():

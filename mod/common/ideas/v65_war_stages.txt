@@ -1,0 +1,4 @@
+ideas = { country = {
+ v65_highland_disruption = { picture = generic_army_chief allowed = { always = no } modifier = { army_org_factor = -0.05 supply_consumption_factor = 0.05 } }
+ v65_southern_holdouts = { picture = generic_army_chief allowed = { always = no } modifier = { surrender_limit = 0.15 army_defence_factor = 0.05 } }
+} }
