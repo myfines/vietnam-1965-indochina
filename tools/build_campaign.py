@@ -3,6 +3,8 @@ from pathlib import Path
 import json,re
 R=Path(__file__).resolve().parents[1];M=R/'mod'
 def put(path,text):
+ if str(path).endswith('.yml'):
+  text=re.sub(r'\[(?=[A-Z]{3}\.v65_)','[?',text)
  p=M/path;p.parent.mkdir(parents=True,exist_ok=True);text='\n'.join(line.rstrip() for line in text.splitlines()).rstrip();p.write_text(text+'\n',encoding='utf-8-sig' if str(path).endswith('.yml') else 'utf-8')
 
 # Each branch occupies its own six-column lane. Descriptions are narrative,

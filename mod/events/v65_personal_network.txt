@@ -1,0 +1,44 @@
+add_namespace = v65network
+country_event = { id = v65network.1 title = v65network.1.t desc = v65network.1.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.1.a v65_private_holiday = yes } }
+country_event = { id = v65network.10 title = v65network.10.t desc = v65network.10.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { has_global_flag = v65_pending_contact_SVN v65_park_partner_SVN = yes }
+ option = { name = v65network.10.a ai_chance = { factor = 80 } v65_accept_contact_SVN = yes }
+ option = { name = v65network.10.b ai_chance = { factor = 20 } clr_global_flag = v65_pending_contact_SVN } }
+country_event = { id = v65network.110 title = v65network.110.t desc = v65network.110.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.110.a } }
+country_event = { id = v65network.210 hidden = yes is_triggered_only = yes immediate = { clr_global_flag = v65_pending_contact_SVN } }
+country_event = { id = v65network.11 title = v65network.11.t desc = v65network.11.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { has_global_flag = v65_pending_contact_DNM v65_park_partner_DNM = yes }
+ option = { name = v65network.11.a ai_chance = { factor = 80 } v65_accept_contact_DNM = yes }
+ option = { name = v65network.11.b ai_chance = { factor = 20 } clr_global_flag = v65_pending_contact_DNM } }
+country_event = { id = v65network.111 title = v65network.111.t desc = v65network.111.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.111.a } }
+country_event = { id = v65network.211 hidden = yes is_triggered_only = yes immediate = { clr_global_flag = v65_pending_contact_DNM } }
+country_event = { id = v65network.12 title = v65network.12.t desc = v65network.12.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { has_global_flag = v65_pending_contact_HLC v65_park_partner_HLC = yes }
+ option = { name = v65network.12.a ai_chance = { factor = 80 } v65_accept_contact_HLC = yes }
+ option = { name = v65network.12.b ai_chance = { factor = 20 } clr_global_flag = v65_pending_contact_HLC } }
+country_event = { id = v65network.112 title = v65network.112.t desc = v65network.112.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.112.a } }
+country_event = { id = v65network.212 hidden = yes is_triggered_only = yes immediate = { clr_global_flag = v65_pending_contact_HLC } }
+country_event = { id = v65network.13 title = v65network.13.t desc = v65network.13.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { has_global_flag = v65_pending_contact_MKG v65_park_partner_MKG = yes }
+ option = { name = v65network.13.a ai_chance = { factor = 80 } v65_accept_contact_MKG = yes }
+ option = { name = v65network.13.b ai_chance = { factor = 20 } clr_global_flag = v65_pending_contact_MKG } }
+country_event = { id = v65network.113 title = v65network.113.t desc = v65network.113.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.113.a } }
+country_event = { id = v65network.213 hidden = yes is_triggered_only = yes immediate = { clr_global_flag = v65_pending_contact_MKG } }
+country_event = { id = v65network.14 title = v65network.14.t desc = v65network.14.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { has_global_flag = v65_pending_contact_BHD v65_park_partner_BHD = yes }
+ option = { name = v65network.14.a ai_chance = { factor = 80 } v65_accept_contact_BHD = yes }
+ option = { name = v65network.14.b ai_chance = { factor = 20 } clr_global_flag = v65_pending_contact_BHD } }
+country_event = { id = v65network.114 title = v65network.114.t desc = v65network.114.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.114.a } }
+country_event = { id = v65network.214 hidden = yes is_triggered_only = yes immediate = { clr_global_flag = v65_pending_contact_BHD } }
+country_event = { id = v65network.15 title = v65network.15.t desc = v65network.15.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { has_global_flag = v65_pending_contact_PHQ v65_park_partner_PHQ = yes }
+ option = { name = v65network.15.a ai_chance = { factor = 80 } v65_accept_contact_PHQ = yes }
+ option = { name = v65network.15.b ai_chance = { factor = 20 } clr_global_flag = v65_pending_contact_PHQ } }
+country_event = { id = v65network.115 title = v65network.115.t desc = v65network.115.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.115.a } }
+country_event = { id = v65network.215 hidden = yes is_triggered_only = yes immediate = { clr_global_flag = v65_pending_contact_PHQ } }
+country_event = { id = v65network.16 title = v65network.16.t desc = v65network.16.d picture = GFX_report_event_generic_sign_treaty is_triggered_only = yes
+ trigger = { has_global_flag = v65_pending_contact_KHM v65_park_partner_KHM = yes }
+ option = { name = v65network.16.a ai_chance = { factor = 80 } v65_accept_contact_KHM = yes }
+ option = { name = v65network.16.b ai_chance = { factor = 20 } clr_global_flag = v65_pending_contact_KHM } }
+country_event = { id = v65network.116 title = v65network.116.t desc = v65network.116.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65network.116.a } }
+country_event = { id = v65network.216 hidden = yes is_triggered_only = yes immediate = { clr_global_flag = v65_pending_contact_KHM } }

@@ -5,10 +5,6 @@ focus_tree = {
 	country = {
 		factor = 0
 	}
-	continuous_focus_position = {
-		x = 20
-		y = 1800
-	}
 	focus = {
 		id = v65_pgov_root
 		icon = GFX_v65_detail_command
@@ -982,5 +978,978 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	focus = {
+		id = v65chapter_svn_root
+		icon = GFX_v65_detail_command
+		x = 28
+		y = 18
+		cost = 2
+		available = {
+			has_country_flag = v65_union_complete
+		}
+		bypass = {
+			has_global_flag = v65chapter_root_claimed
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_root_claimed
+					}
+				}
+				set_global_flag = v65chapter_root_claimed
+				add_political_power = 20
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_reports_first_report
+		icon = GFX_v65_detail_ledger
+		x = 16
+		y = 20
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_root
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_reports_first_report_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_reports_first_report_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_reports_first_report_claimed
+				set_global_flag = v65chapter_route_reports
+				add_to_variable = {
+					v65_paper_victories = 1
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_reports_casualty_ledger
+		icon = GFX_v65_detail_inspect
+		x = 13
+		y = 24
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_reports_first_report
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_reports_share_credit
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_reports_casualty_ledger_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_reports_casualty_ledger_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_reports_casualty_ledger_claimed
+				add_to_variable = {
+					v65_paper_victories = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_100_launched
+						}
+					}
+					set_global_flag = v65chapter_event_100_launched
+					country_event = {
+						id = v65chapter.100
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_reports_share_credit
+		icon = GFX_v65_detail_payroll
+		x = 19
+		y = 24
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_reports_first_report
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_reports_casualty_ledger
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_reports_share_credit_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_reports_share_credit_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_reports_share_credit_claimed
+				add_to_variable = {
+					v65_paper_victories = 1
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_101_launched
+						}
+					}
+					set_global_flag = v65chapter_event_101_launched
+					country_event = {
+						id = v65chapter.101
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_reports_media_contract
+		icon = GFX_v65_detail_press
+		x = 16
+		y = 28
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_reports_casualty_ledger
+			focus = v65chapter_svn_reports_share_credit
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_reports_media_contract_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_reports_media_contract_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_reports_media_contract_claimed
+				add_to_variable = {
+					v65_paper_victories = 1
+				}
+				if = {
+					limit = {
+						has_global_flag = v65chapter_event_100_choice_a
+					}
+					add_to_variable = {
+						v65_paper_victories = 1
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = v65chapter_event_100_choice_b
+					}
+					SVN = {
+						add_to_variable = {
+							v65_network_DNM = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_102_launched
+						}
+					}
+					set_global_flag = v65chapter_event_102_launched
+					country_event = {
+						id = v65chapter.102
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_reports_procurement
+		icon = GFX_v65_detail_contracts
+		x = 13
+		y = 32
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_reports_media_contract
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_reports_fact_check
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_reports_procurement_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_reports_procurement_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_reports_procurement_claimed
+				add_to_variable = {
+					v65_paper_victories = 1
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_reports_fact_check
+		icon = GFX_v65_detail_inspect
+		x = 19
+		y = 32
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_reports_media_contract
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_reports_procurement
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_reports_fact_check_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_reports_fact_check_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_reports_fact_check_claimed
+				add_to_variable = {
+					v65_paper_victories = 1
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_reports_legacy
+		icon = GFX_v65_detail_mandate
+		x = 16
+		y = 36
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_reports_procurement
+			focus = v65chapter_svn_reports_fact_check
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_reports_legacy_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_reports_legacy_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_reports_legacy_claimed
+				add_to_variable = {
+					v65_paper_victories = 1
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_relations_officer_circle
+		icon = GFX_v65_detail_academy
+		x = 28
+		y = 20
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_root
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_relations_officer_circle_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_relations_officer_circle_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_relations_officer_circle_claimed
+				set_global_flag = v65chapter_route_relations
+				SVN = {
+					add_to_variable = {
+						v65_network_SVN = 2
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_relations_patronage
+		icon = GFX_v65_detail_adviser
+		x = 25
+		y = 24
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_relations_officer_circle
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_relations_cia_channel
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_relations_patronage_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_relations_patronage_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_relations_patronage_claimed
+				SVN = {
+					add_to_variable = {
+						v65_network_SVN = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_110_launched
+						}
+					}
+					set_global_flag = v65chapter_event_110_launched
+					country_event = {
+						id = v65chapter.110
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_relations_cia_channel
+		icon = GFX_v65_detail_intelligence
+		x = 31
+		y = 24
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_relations_officer_circle
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_relations_patronage
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_relations_cia_channel_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_relations_cia_channel_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_relations_cia_channel_claimed
+				SVN = {
+					add_to_variable = {
+						v65_network_SVN = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_111_launched
+						}
+					}
+					set_global_flag = v65chapter_event_111_launched
+					country_event = {
+						id = v65chapter.111
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_relations_south_partners
+		icon = GFX_v65_detail_proxy
+		x = 28
+		y = 28
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_relations_patronage
+			focus = v65chapter_svn_relations_cia_channel
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_relations_south_partners_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_relations_south_partners_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_relations_south_partners_claimed
+				SVN = {
+					add_to_variable = {
+						v65_network_SVN = 2
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = v65chapter_event_110_choice_a
+					}
+					SVN = {
+						add_to_variable = {
+							v65_network_SVN = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = v65chapter_event_110_choice_b
+					}
+					SVN = {
+						add_to_variable = {
+							v65_network_DNM = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_112_launched
+						}
+					}
+					set_global_flag = v65chapter_event_112_launched
+					country_event = {
+						id = v65chapter.112
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_relations_special_command
+		icon = GFX_v65_detail_staff
+		x = 25
+		y = 32
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_relations_south_partners
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_relations_militia_terms
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_relations_special_command_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_relations_special_command_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_relations_special_command_claimed
+				SVN = {
+					add_to_variable = {
+						v65_network_SVN = 2
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_relations_militia_terms
+		icon = GFX_v65_detail_garrison
+		x = 31
+		y = 32
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_relations_south_partners
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_relations_special_command
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_relations_militia_terms_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_relations_militia_terms_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_relations_militia_terms_claimed
+				SVN = {
+					add_to_variable = {
+						v65_network_SVN = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_113_launched
+						}
+					}
+					set_global_flag = v65chapter_event_113_launched
+					country_event = {
+						id = v65chapter.113
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_relations_network_compact
+		icon = GFX_v65_detail_treaty
+		x = 28
+		y = 36
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_relations_special_command
+			focus = v65chapter_svn_relations_militia_terms
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_relations_network_compact_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_relations_network_compact_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_relations_network_compact_claimed
+				SVN = {
+					add_to_variable = {
+						v65_network_SVN = 2
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_island_comfort_budget
+		icon = GFX_v65_detail_housing
+		x = 40
+		y = 20
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_root
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_island_comfort_budget_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_island_comfort_budget_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_island_comfort_budget_claimed
+				set_global_flag = v65chapter_route_island
+				SVN = {
+					add_to_variable = {
+						v65_private_wealth = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_120_launched
+						}
+					}
+					set_global_flag = v65chapter_event_120_launched
+					country_event = {
+						id = v65chapter.120
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_island_music_room
+		icon = GFX_v65_detail_leisure
+		x = 37
+		y = 24
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_island_comfort_budget
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_island_private_dining
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_island_music_room_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_island_music_room_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_island_music_room_claimed
+				SVN = {
+					add_to_variable = {
+						v65_private_wealth = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_121_launched
+						}
+					}
+					set_global_flag = v65chapter_event_121_launched
+					country_event = {
+						id = v65chapter.121
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_island_private_dining
+		icon = GFX_v65_detail_funds
+		x = 43
+		y = 24
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_island_comfort_budget
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_island_music_room
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_island_private_dining_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_island_private_dining_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_island_private_dining_claimed
+				SVN = {
+					add_to_variable = {
+						v65_private_wealth = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_122_launched
+						}
+					}
+					set_global_flag = v65chapter_event_122_launched
+					country_event = {
+						id = v65chapter.122
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_island_household
+		icon = GFX_v65_detail_housing
+		x = 40
+		y = 28
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_island_music_room
+			focus = v65chapter_svn_island_private_dining
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_island_household_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_island_household_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_island_household_claimed
+				SVN = {
+					add_to_variable = {
+						v65_private_wealth = 2
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = v65chapter_event_120_choice_a
+					}
+					SVN = {
+						add_to_variable = {
+							v65_network_SVN = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = v65chapter_event_120_choice_b
+					}
+					SVN = {
+						add_to_variable = {
+							v65_network_DNM = 3
+						}
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_island_phu_quoc_plan
+		icon = GFX_v65_detail_port
+		x = 37
+		y = 32
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_island_household
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_island_island_estate
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_island_phu_quoc_plan_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_island_phu_quoc_plan_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_island_phu_quoc_plan_claimed
+				SVN = {
+					add_to_variable = {
+						v65_private_wealth = 2
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = v65chapter_event_123_launched
+						}
+					}
+					set_global_flag = v65chapter_event_123_launched
+					country_event = {
+						id = v65chapter.123
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_island_island_estate
+		icon = GFX_v65_detail_contracts
+		x = 43
+		y = 32
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_island_household
+		}
+		mutually_exclusive = {
+			focus = v65chapter_svn_island_phu_quoc_plan
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_island_island_estate_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_island_island_estate_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_island_island_estate_claimed
+				SVN = {
+					add_to_variable = {
+						v65_private_wealth = 2
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	focus = {
+		id = v65chapter_svn_island_quiet_harbor
+		icon = GFX_v65_detail_warehouse
+		x = 40
+		y = 36
+		cost = 4
+		prerequisite = {
+			focus = v65chapter_svn_island_phu_quoc_plan
+			focus = v65chapter_svn_island_island_estate
+		}
+		bypass = {
+			has_global_flag = v65chapter_focus_island_quiet_harbor_claimed
+		}
+		available = {
+			always = yes
+			AND = {
+				has_country_flag = v65_union_complete
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = v65chapter_focus_island_quiet_harbor_claimed
+					}
+				}
+				set_global_flag = v65chapter_focus_island_quiet_harbor_claimed
+				SVN = {
+					add_to_variable = {
+						v65_private_wealth = 2
+					}
+				}
+				v65chapter_clamp = yes
+			}
+		}
+	}
+	continuous_focus_position = {
+		x = 0
+		y = 5180
 	}
 }

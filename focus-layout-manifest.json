@@ -1,0 +1,2564 @@
+{
+  "v65_BHD": {
+    "nodes": [
+      {
+        "id": "v65_BHD_briefing",
+        "x": 8.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_BHD_local_0_0",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_BHD_local_0_1",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_BHD_local_0_2",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_BHD_local_0_3",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_BHD_local_1_0",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_BHD_local_1_1",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_BHD_local_1_2",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_BHD_local_1_3",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_BHD_local_2_0",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_BHD_local_2_1",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_BHD_local_2_2",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_BHD_local_2_3",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_BHD_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_BHD_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_BHD_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_BHD_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_BHD_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_BHD_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_BHD_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_BHD_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_BHD_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_BHD_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_BHD_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_BHD_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_BHD_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_BHD_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_BHD_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_DNM": {
+    "nodes": [
+      {
+        "id": "v65_DNM_briefing",
+        "x": 12.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_DNM_command",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_DNM_officers",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_DNM_reserve",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_DNM_hue",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_DNM_reports",
+        "x": 0.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_DNM_agreement",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_DNM_defence",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_DNM_fort",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_DNM_patrol",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_DNM_supply",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_DNM_road",
+        "x": 8.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_DNM_elastic",
+        "x": 8.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_DNM_port",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_DNM_dock",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_DNM_repair",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_DNM_industry",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_DNM_police",
+        "x": 16.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_DNM_civic",
+        "x": 16.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_DNM_politics",
+        "x": 24.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_DNM_neutral",
+        "x": 24.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_DNM_liaison",
+        "x": 24.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_DNM_loyal",
+        "x": 24.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_DNM_autonomy",
+        "x": 24.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_DNM_refuge",
+        "x": 24.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_DNM_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_DNM_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_DNM_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_DNM_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_DNM_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_DNM_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_DNM_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_DNM_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_DNM_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_DNM_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_DNM_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_DNM_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_DNM_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_DNM_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_DNM_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_FNL": {
+    "nodes": [
+      {
+        "id": "v65_FNL_briefing",
+        "x": 12.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_FNL_command",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_FNL_cells",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_FNL_cadres",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_FNL_villages",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_FNL_political",
+        "x": 0.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_FNL_network",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_FNL_guerrilla",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_FNL_caches",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_FNL_night",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_FNL_ambush",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_FNL_disperse",
+        "x": 8.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_FNL_rear",
+        "x": 8.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_FNL_trail",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_FNL_runners",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_FNL_border",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_FNL_medics",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_FNL_liaison",
+        "x": 16.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_FNL_depots",
+        "x": 16.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_FNL_future",
+        "x": 24.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_FNL_assembly",
+        "x": 24.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_FNL_land",
+        "x": 24.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_FNL_recruit",
+        "x": 24.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_FNL_negotiation",
+        "x": 24.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_FNL_administration",
+        "x": 24.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_FNL_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_FNL_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_FNL_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_FNL_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_FNL_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_FNL_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_FNL_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_FNL_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_FNL_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_FNL_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_FNL_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_FNL_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_FNL_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_FNL_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_FNL_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_HLC": {
+    "nodes": [
+      {
+        "id": "v65_HLC_briefing",
+        "x": 8.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_HLC_local_0_0",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_HLC_local_0_1",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_HLC_local_0_2",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_HLC_local_0_3",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_HLC_local_1_0",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_HLC_local_1_1",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_HLC_local_1_2",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_HLC_local_1_3",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_HLC_local_2_0",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_HLC_local_2_1",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_HLC_local_2_2",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_HLC_local_2_3",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_HLC_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_HLC_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_HLC_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_HLC_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_HLC_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_HLC_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_HLC_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_HLC_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_HLC_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_HLC_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_HLC_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_HLC_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_HLC_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_HLC_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_HLC_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_KHM": {
+    "nodes": [
+      {
+        "id": "v65_KHM_briefing",
+        "x": 12.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_KHM_command",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_KHM_border",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_KHM_patrol",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_KHM_reports",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_KHM_neutrality",
+        "x": 0.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_KHM_mediation",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_KHM_economy",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_KHM_roads",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_KHM_industry",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_KHM_repair",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_KHM_port",
+        "x": 8.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_KHM_reserve",
+        "x": 8.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_KHM_security",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_KHM_staff",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_KHM_training",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_KHM_fort",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_KHM_police",
+        "x": 16.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_KHM_control",
+        "x": 16.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_KHM_society",
+        "x": 24.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_KHM_rice",
+        "x": 24.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_KHM_schools",
+        "x": 24.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_KHM_health",
+        "x": 24.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_KHM_budget",
+        "x": 24.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_KHM_settlement",
+        "x": 24.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_KHM_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_KHM_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_KHM_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_KHM_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_KHM_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_KHM_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_KHM_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_KHM_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_KHM_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_KHM_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_KHM_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_KHM_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_KHM_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_KHM_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_KHM_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_MKG": {
+    "nodes": [
+      {
+        "id": "v65_MKG_briefing",
+        "x": 8.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_MKG_local_0_0",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_MKG_local_0_1",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_MKG_local_0_2",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_MKG_local_0_3",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_MKG_local_1_0",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_MKG_local_1_1",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_MKG_local_1_2",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_MKG_local_1_3",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_MKG_local_2_0",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_MKG_local_2_1",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_MKG_local_2_2",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_MKG_local_2_3",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_MKG_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_MKG_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_MKG_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_MKG_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_MKG_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_MKG_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_MKG_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_MKG_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_MKG_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_MKG_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_MKG_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_MKG_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_MKG_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_MKG_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_MKG_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_NVN": {
+    "nodes": [
+      {
+        "id": "v65_NVN_briefing",
+        "x": 12.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_NVN_command",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_NVN_staff",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_NVN_reserve",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_NVN_supply",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_NVN_fort",
+        "x": 0.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_NVN_hold",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_NVN_trail",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_NVN_trail_depots",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_NVN_guides",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_NVN_repair",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_NVN_signals",
+        "x": 8.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_NVN_rear_offensive",
+        "x": 8.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_NVN_south",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_NVN_liaison",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_NVN_cadres",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_NVN_arms",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_NVN_coordination",
+        "x": 16.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_NVN_political_front",
+        "x": 16.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_NVN_economy",
+        "x": 24.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_NVN_workshops",
+        "x": 24.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_NVN_rails",
+        "x": 24.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_NVN_industry",
+        "x": 24.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_NVN_civil",
+        "x": 24.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_NVN_reserves",
+        "x": 24.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_NVN_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_NVN_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_NVN_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_NVN_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_NVN_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_NVN_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_NVN_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_NVN_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_NVN_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_NVN_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_NVN_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_NVN_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_NVN_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_NVN_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_NVN_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_PARK_GOVERNMENT": {
+    "nodes": [
+      {
+        "id": "v65_pgov_root",
+        "x": 20.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_pgov_command_roster",
+        "x": 0.0,
+        "y": 3.0
+      },
+      {
+        "id": "v65_pgov_command_personal",
+        "x": -2.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_command_council",
+        "x": 2.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_command_inspect",
+        "x": -2.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_command_compact",
+        "x": 2.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_command_reserve",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_pgov_command_orders",
+        "x": 0.0,
+        "y": 15.0
+      },
+      {
+        "id": "v65_pgov_finance_accounts",
+        "x": 10.0,
+        "y": 3.0
+      },
+      {
+        "id": "v65_pgov_finance_budget",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_finance_contracts",
+        "x": 12.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_finance_reconcile",
+        "x": 8.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_finance_report",
+        "x": 12.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_finance_repair",
+        "x": 10.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_pgov_finance_settle",
+        "x": 10.0,
+        "y": 15.0
+      },
+      {
+        "id": "v65_pgov_korea_liaison",
+        "x": 20.0,
+        "y": 3.0
+      },
+      {
+        "id": "v65_pgov_korea_cadre",
+        "x": 18.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_korea_training",
+        "x": 22.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_korea_airlift",
+        "x": 18.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_korea_advisers",
+        "x": 22.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_korea_rotation",
+        "x": 20.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_pgov_korea_channel",
+        "x": 20.0,
+        "y": 15.0
+      },
+      {
+        "id": "v65_pgov_rear_map",
+        "x": 30.0,
+        "y": 3.0
+      },
+      {
+        "id": "v65_pgov_rear_proxy",
+        "x": 28.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_rear_village",
+        "x": 32.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_rear_garrison",
+        "x": 28.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_rear_routes",
+        "x": 32.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_rear_intel",
+        "x": 30.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_pgov_rear_rear_order",
+        "x": 30.0,
+        "y": 15.0
+      },
+      {
+        "id": "v65_pgov_settlement_warehouses",
+        "x": 40.0,
+        "y": 3.0
+      },
+      {
+        "id": "v65_pgov_settlement_island",
+        "x": 38.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_settlement_mainland",
+        "x": 42.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_pgov_settlement_evacuation",
+        "x": 38.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_settlement_districts",
+        "x": 42.0,
+        "y": 9.0
+      },
+      {
+        "id": "v65_pgov_settlement_mandate",
+        "x": 40.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_pgov_settlement_regency",
+        "x": 40.0,
+        "y": 15.0
+      },
+      {
+        "id": "v65chapter_svn_root",
+        "x": 28.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65chapter_svn_reports_first_report",
+        "x": 16.0,
+        "y": 20.0
+      },
+      {
+        "id": "v65chapter_svn_reports_casualty_ledger",
+        "x": 13.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_svn_reports_share_credit",
+        "x": 19.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_svn_reports_media_contract",
+        "x": 16.0,
+        "y": 28.0
+      },
+      {
+        "id": "v65chapter_svn_reports_procurement",
+        "x": 13.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_svn_reports_fact_check",
+        "x": 19.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_svn_reports_legacy",
+        "x": 16.0,
+        "y": 36.0
+      },
+      {
+        "id": "v65chapter_svn_relations_officer_circle",
+        "x": 28.0,
+        "y": 20.0
+      },
+      {
+        "id": "v65chapter_svn_relations_patronage",
+        "x": 25.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_svn_relations_cia_channel",
+        "x": 31.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_svn_relations_south_partners",
+        "x": 28.0,
+        "y": 28.0
+      },
+      {
+        "id": "v65chapter_svn_relations_special_command",
+        "x": 25.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_svn_relations_militia_terms",
+        "x": 31.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_svn_relations_network_compact",
+        "x": 28.0,
+        "y": 36.0
+      },
+      {
+        "id": "v65chapter_svn_island_comfort_budget",
+        "x": 40.0,
+        "y": 20.0
+      },
+      {
+        "id": "v65chapter_svn_island_music_room",
+        "x": 37.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_svn_island_private_dining",
+        "x": 43.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_svn_island_household",
+        "x": 40.0,
+        "y": 28.0
+      },
+      {
+        "id": "v65chapter_svn_island_phu_quoc_plan",
+        "x": 37.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_svn_island_island_estate",
+        "x": 43.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_svn_island_quiet_harbor",
+        "x": 40.0,
+        "y": 36.0
+      }
+    ],
+    "continuous_panel_y": 5180,
+    "collisions": []
+  },
+  "v65_PHQ": {
+    "nodes": [
+      {
+        "id": "v65_PHQ_briefing",
+        "x": 8.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_PHQ_local_0_0",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PHQ_local_0_1",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PHQ_local_0_2",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PHQ_local_0_3",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PHQ_local_1_0",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PHQ_local_1_1",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PHQ_local_1_2",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PHQ_local_1_3",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PHQ_local_2_0",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PHQ_local_2_1",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PHQ_local_2_2",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PHQ_local_2_3",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PHQ_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_PHQ_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_PHQ_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_PHQ_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_PHQ_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_PHQ_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_PHQ_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_PHQ_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_PHQ_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_PHQ_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_PHQ_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_PHQ_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_PHQ_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_PHQ_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_PHQ_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_PKS": {
+    "nodes": [
+      {
+        "id": "v65_PKS_briefing",
+        "x": 20.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_PKS_command",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PKS_battalion",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PKS_quynhon",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PKS_tiger",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PKS_fieldstaff",
+        "x": 0.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_elite",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_PKS_reputation",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PKS_war_reports",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PKS_press",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PKS_patron",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PKS_palace",
+        "x": 8.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_promotion",
+        "x": 8.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_PKS_villages",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PKS_fees",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PKS_police",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PKS_village_bargain",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PKS_inspection",
+        "x": 16.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_trusted_villages",
+        "x": 16.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_PKS_business",
+        "x": 24.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PKS_trucks",
+        "x": 24.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PKS_repair",
+        "x": 24.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PKS_company",
+        "x": 24.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PKS_contracts",
+        "x": 24.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_independent",
+        "x": 24.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_PKS_power",
+        "x": 32.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PKS_guards",
+        "x": 32.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PKS_intelligence",
+        "x": 32.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PKS_capital_links",
+        "x": 32.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PKS_remain",
+        "x": 29.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_yushin",
+        "x": 35.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_union",
+        "x": 40.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PKS_officer_exchange",
+        "x": 40.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PKS_joint_accounts",
+        "x": 40.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PKS_cabinet_guarantees",
+        "x": 40.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PKS_hidden_council",
+        "x": 40.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_union_offer",
+        "x": 40.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_PKS_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_PKS_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_PKS_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_PKS_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_PKS_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_PKS_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_PKS_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_PKS_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_PKS_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_PKS_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_PKS_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_PKS_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_PKS_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_PKS_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_PKS_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_PKS_island_plan",
+        "x": 48.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_PKS_island_lease",
+        "x": 48.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_PKS_island_warehouse",
+        "x": 48.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_PKS_island_contracts",
+        "x": 48.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_PKS_island_cadres",
+        "x": 48.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_PKS_island_staff",
+        "x": 48.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_PKS_island_base",
+        "x": 48.0,
+        "y": 14.0
+      },
+      {
+        "id": "v65chapter_pks_root",
+        "x": 28.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65chapter_pks_reports_first_report",
+        "x": 16.0,
+        "y": 20.0
+      },
+      {
+        "id": "v65chapter_pks_reports_casualty_ledger",
+        "x": 13.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_pks_reports_share_credit",
+        "x": 19.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_pks_reports_media_contract",
+        "x": 16.0,
+        "y": 28.0
+      },
+      {
+        "id": "v65chapter_pks_reports_procurement",
+        "x": 13.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_pks_reports_fact_check",
+        "x": 19.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_pks_reports_legacy",
+        "x": 16.0,
+        "y": 36.0
+      },
+      {
+        "id": "v65chapter_pks_relations_officer_circle",
+        "x": 28.0,
+        "y": 20.0
+      },
+      {
+        "id": "v65chapter_pks_relations_patronage",
+        "x": 25.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_pks_relations_cia_channel",
+        "x": 31.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_pks_relations_south_partners",
+        "x": 28.0,
+        "y": 28.0
+      },
+      {
+        "id": "v65chapter_pks_relations_special_command",
+        "x": 25.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_pks_relations_militia_terms",
+        "x": 31.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_pks_relations_network_compact",
+        "x": 28.0,
+        "y": 36.0
+      },
+      {
+        "id": "v65chapter_pks_island_comfort_budget",
+        "x": 40.0,
+        "y": 20.0
+      },
+      {
+        "id": "v65chapter_pks_island_music_room",
+        "x": 37.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_pks_island_private_dining",
+        "x": 43.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65chapter_pks_island_household",
+        "x": 40.0,
+        "y": 28.0
+      },
+      {
+        "id": "v65chapter_pks_island_phu_quoc_plan",
+        "x": 37.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_pks_island_island_estate",
+        "x": 43.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65chapter_pks_island_quiet_harbor",
+        "x": 40.0,
+        "y": 36.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_RKH": {
+    "nodes": [
+      {
+        "id": "v65_RKH_briefing",
+        "x": 12.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_RKH_base_0_0",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_RKH_base_0_1",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_RKH_base_0_2",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_RKH_base_0_3",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_RKH_base_0_4",
+        "x": 0.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_RKH_base_0_5",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_RKH_base_1_0",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_RKH_base_1_1",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_RKH_base_1_2",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_RKH_base_1_3",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_RKH_base_1_4",
+        "x": 8.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_RKH_base_1_5",
+        "x": 8.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_RKH_base_2_0",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_RKH_base_2_1",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_RKH_base_2_2",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_RKH_base_2_3",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_RKH_base_2_4",
+        "x": 16.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_RKH_base_2_5",
+        "x": 16.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_RKH_base_3_0",
+        "x": 24.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_RKH_base_3_1",
+        "x": 24.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_RKH_base_3_2",
+        "x": 24.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_RKH_base_3_3",
+        "x": 24.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_RKH_base_3_4",
+        "x": 24.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_RKH_base_3_5",
+        "x": 24.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_RKH_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_RKH_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_RKH_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_RKH_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_RKH_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_RKH_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_RKH_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_RKH_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_RKH_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_RKH_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_RKH_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_RKH_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_RKH_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_RKH_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_RKH_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  },
+  "v65_SVN": {
+    "nodes": [
+      {
+        "id": "v65_SVN_briefing",
+        "x": 16.0,
+        "y": 0.0
+      },
+      {
+        "id": "v65_SVN_command",
+        "x": 0.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_SVN_roster",
+        "x": 0.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_SVN_reports",
+        "x": 0.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_SVN_liaison",
+        "x": 0.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_SVN_reserve",
+        "x": 0.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_SVN_unity",
+        "x": 0.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_SVN_front",
+        "x": 8.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_SVN_dmz",
+        "x": 8.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_SVN_hue",
+        "x": 8.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_SVN_rotation",
+        "x": 8.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_SVN_corridor",
+        "x": 8.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_SVN_hold_line",
+        "x": 8.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_SVN_villages",
+        "x": 16.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_SVN_register",
+        "x": 16.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_SVN_patrols",
+        "x": 16.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_SVN_amnesty",
+        "x": 16.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_SVN_countertrail",
+        "x": 16.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_SVN_rural_pact",
+        "x": 16.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_SVN_economy",
+        "x": 24.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_SVN_roads",
+        "x": 24.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_SVN_workshops",
+        "x": 24.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_SVN_supplies",
+        "x": 24.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_SVN_industry",
+        "x": 24.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_SVN_port",
+        "x": 24.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_SVN_politics",
+        "x": 32.0,
+        "y": 2.0
+      },
+      {
+        "id": "v65_SVN_civil",
+        "x": 32.0,
+        "y": 4.0
+      },
+      {
+        "id": "v65_SVN_crisis",
+        "x": 32.0,
+        "y": 6.0
+      },
+      {
+        "id": "v65_SVN_radio",
+        "x": 32.0,
+        "y": 8.0
+      },
+      {
+        "id": "v65_SVN_bargain",
+        "x": 32.0,
+        "y": 10.0
+      },
+      {
+        "id": "v65_SVN_martial_focus",
+        "x": 29.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_SVN_civilian",
+        "x": 35.0,
+        "y": 12.0
+      },
+      {
+        "id": "v65_SVN_act_1968",
+        "x": 4.0,
+        "y": 16.0
+      },
+      {
+        "id": "v65_SVN_act_1968_security",
+        "x": 0.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_SVN_act_1968_civilian",
+        "x": 8.0,
+        "y": 18.0
+      },
+      {
+        "id": "v65_SVN_act_1971",
+        "x": 4.0,
+        "y": 24.0
+      },
+      {
+        "id": "v65_SVN_act_1971_security",
+        "x": 0.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_SVN_act_1971_civilian",
+        "x": 8.0,
+        "y": 26.0
+      },
+      {
+        "id": "v65_SVN_act_1974",
+        "x": 4.0,
+        "y": 32.0
+      },
+      {
+        "id": "v65_SVN_act_1974_security",
+        "x": 0.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_SVN_act_1974_civilian",
+        "x": 8.0,
+        "y": 34.0
+      },
+      {
+        "id": "v65_SVN_act_1977",
+        "x": 4.0,
+        "y": 40.0
+      },
+      {
+        "id": "v65_SVN_act_1977_security",
+        "x": 0.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_SVN_act_1977_civilian",
+        "x": 8.0,
+        "y": 42.0
+      },
+      {
+        "id": "v65_SVN_act_1979",
+        "x": 4.0,
+        "y": 48.0
+      },
+      {
+        "id": "v65_SVN_act_1979_security",
+        "x": 0.0,
+        "y": 50.0
+      },
+      {
+        "id": "v65_SVN_act_1979_civilian",
+        "x": 8.0,
+        "y": 50.0
+      }
+    ],
+    "continuous_panel_y": 7000,
+    "collisions": []
+  }
+}

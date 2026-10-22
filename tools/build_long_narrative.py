@@ -2,9 +2,11 @@
 from build_campaign import put,M,R,REWARDS
 from long_foundation import ALL,PLAYABLE,REGIONS,loc_text
 from narrative_scenes import SCENES
+from chapter_scenes import SCENES as CHAPTER_SCENES
 from pathlib import Path
 import json,re
 
+SCENES = SCENES + CHAPTER_SCENES
 L={};events='add_namespace = v65story\n';schedule='on_actions = { on_daily = { effect = {\n'
 def recipients(tags,event_id):
  # Prefer the human in the relevant storyline; union always preserves SVN.
@@ -20,6 +22,8 @@ for ident,date,tags,title,body,a,ae,af,b,be,bf in SCENES:
  # A surviving alternative anchor is used if a Cambodian government disappears.
  def delayed():return f'{anchor} = {{ country_event = {{ id = v65story.{relay} days = 45 }} }}'
  ai_b=0 if ident==302 else 45
+ callback_a='SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes }' if ident>=5000 else 'add_to_variable = { v65_patronage = 2 } add_to_variable = { v65_war_fatigue = 1 }'
+ callback_b='add_to_variable = { v65_contract_credit = 1 }' if ident>=5000 else 'add_to_variable = { v65_public_trust = 3 } subtract_from_variable = { v65_local_unrest = 1 }'
  events+=f'''country_event = {{ id = {root} title = {root}.t desc = {root}.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  option = {{ name = {root}.a ai_chance = {{ factor = 55 }} set_global_flag = v65_story_{ident}_a {ae} v65_refresh_society = yes {delayed()} }}
  option = {{ name = {root}.b ai_chance = {{ factor = {ai_b} }} set_global_flag = v65_story_{ident}_b {be} v65_refresh_society = yes {delayed()} }}
@@ -29,8 +33,8 @@ country_event = {{ id = v65story.{sequel} immediate = {{ set_global_flag = v65_c
  desc = {{ trigger = {{ has_global_flag = v65_story_{ident}_a }} text = v65story.{sequel}.a }}
  desc = {{ trigger = {{ NOT = {{ has_global_flag = v65_story_{ident}_a }} }} text = v65story.{sequel}.b }}
  option = {{ name = v65story.{sequel}.next
-  if = {{ limit = {{ has_global_flag = v65_story_{ident}_a }} add_to_variable = {{ v65_patronage = 2 }} add_to_variable = {{ v65_war_fatigue = 1 }} }}
-  else = {{ add_to_variable = {{ v65_public_trust = 3 }} subtract_from_variable = {{ v65_local_unrest = 1 }} }} v65_refresh_society = yes
+  if = {{ limit = {{ has_global_flag = v65_story_{ident}_a }} {callback_a} }}
+  else = {{ {callback_b} }} v65_refresh_society = yes
  }}
 }}
 '''
@@ -38,11 +42,11 @@ country_event = {{ id = v65story.{sequel} immediate = {{ set_global_flag = v65_c
  schedule+=f'if = {{ limit = {{ date > {date} NOT = {{ has_global_flag = v65_scene_{ident}_sent }} {available} }} set_global_flag = v65_scene_{ident}_sent {recipients(tags,ident)} }}\n'
 
 ACTS=[
- (1968,'军援离开之后','撤军表使部队开始清点自己真正掌握的东西：仓库、军饷、村庄和能继续工作的维修队。对外援的依赖正在变成对军区和合同的依赖。'),
- (1971,'一张地图，几套命令','机动军、岛上后方与地方军区都希望获得更多资源。共同的敌人仍在，但谁来签发任命、谁来支付军饷，已经决定了命令能够走多远。'),
- (1974,'保存什么，放弃什么','西原与首都的危机让各派重新计算承诺。保存精锐、保护平民、保住政府与保护私人网络，越来越难同时做到。'),
- (1977,'战争进入地方社会','正规战线没有消除夜间的枪声。地方行政、难民安置与军官利益构成了另一张地图。继续征集容易，重建合作则需要兑现过去的承诺。'),
- (1979,'十四年以后','有些军官还在等待下一次攻势，有些家庭只希望知道明年的学校是否继续开门。十四年留下的机构、人情和伤口，必须由活下来的人接着管理。'),
+ (1968,'撤军以后谁签字','美国人的撤军表送到了。有人先算缺了多少火力，有人先问空下来的仓库归谁。军费照领，运输照办；只是每张单子多了几个必须打招呼的名字。'),
+ (1971,'一纸军令，几家生意','西贡要调兵，军区要欠饷，岛上要船。电话绕了一圈又回到原处。副官把几份条件抄到同一页：先说谁付钱，再谈谁听谁的。'),
+ (1974,'撤退也得有个说法','地图上的箭头又往南挪了一截。船位、黄金、装备和军官家属都在排队；战报还没定稿，几位司令已经替自己的撤退选好了名字。'),
+ (1977,'新番号，老熟人','县里的招牌换过几轮，收钱的人还是认得。新部队要编制，老军官要职位，商号说合同不能重签。司令部先把熟人的欠账列了出来。'),
+ (1979,'十四年的老客户','新来的参谋想把旧账清掉，秘书搬来了十四年的合同。每一摞都有人签过字，每一个签字的人都说自己的那笔特殊。今天的电话比昨天还多。'),
 ]
 for n,(year,title,body) in enumerate(ACTS,1):
  key=f'v65story.{800+n}';L.update({key+'.t':f'{year}：'+title,key+'.d':body+'\n\n案头的数字记录着此前的选择：民心、派系依赖、战争疲劳和军区关系都将带入这一幕。国策中的军事优先与社会契约互斥，新的阶段替换旧政策。',key+'.a':'继续写这一年的记录。'})
@@ -50,15 +54,15 @@ for n,(year,title,body) in enumerate(ACTS,1):
 L.update({
  'v65_story_archive':'战时档案与人物关系',
  'v65_story_archive_desc':'朴与西贡的互信：[SVN.v65_park_trust|0]　首都政治关系：[SVN.v65_thieu_trust|0]　离岛信任：[SVN.v65_island_trust|0]\n每年的关键场景按日期出现。选择会留下全局剧情标记，并在45天后的信件或报告中回响。正式合并会保留西贡作为后续剧情的锚点。',
- 'v65story.901.t':'十四年之后，留下来的是什么',
- 'v65story.901.d':'档案柜的最上层装着最早的证件与调令，下面几层是合同、撤退计划、安置名单和没有兑现的承诺。\n\n秘书问，最后一卷应该叫什么。没有人愿意把它简单地叫作胜利，或者失败。\n\n民心、派系网络与长期疲劳仍将影响今后的生活。这是十四年叙事的尾声；玩家可以保留现有秩序、在条件允许时推动停火，也可以继续战争。',
- 'v65story.901.park':'总统仍在台前。协调会的电话、任命名单与合同则经过另一张桌子。朴世诚没有需要公开宣布的头衔，却必须继续兑现对军区的保证。\n\n十四年把年轻军官变成了一个制度。人们记得他的方式，取决于制度给他们留下了什么。',
- 'v65story.901.island':'大陆的消息仍然乘船抵达。岛上已经有了新的学校、新的军营，也有了不认识大陆故乡的孩子。\n\n离岛政权可以继续准备返回，也可以先决定怎样让留在这里的人生活下去。',
- 'v65story.901.a':'承认我们维持下来的秩序，继续治理。',
- 'v65story.901.b':'以民意和疲劳为依据，结束目前的战争。',
- 'v65story.901.c':'战争还没有结束。',
- 'v65_memory_of_war':'十四年的共同记忆','v65_memory_of_war_desc':'共同经历提供了一点合作的基础，却不会抹去地方社会与军官网络之间的分歧。',
- 'v65_fragile_peace':'脆弱而真实的停火','v65_fragile_peace_desc':'停火使社会可以喘息。军队转向防御，未解决的争执仍需以制度与谈判处理。',
+ 'v65story.901.t':'第十四年的结算单',
+ 'v65story.901.d':'秘书把最后一年的账放上桌，又把前十三年的欠条压在底下。新来的参谋想按番号清账，刚查到第二页，就发现债主和领饷的人是同一批。\n\n“最后一卷叫什么？”\n“先别封卷，下个月的船还没到。”\n\n十四年叙事在这里结算。可以维持现有秩序，条件允许时推动停火，也可以继续战争；已有的人脉、民心与轮换缺额仍然有效。',
+ 'v65story.901.park':'总统的照片挂在门口，任命、合同和军区来电送到另一张桌子。朴不用为自己添一个头衔，秘书知道哪些文件要等他吃完饭再送。\n\n新参谋问这套手续是谁定的。老副官指了指柜里的合同：“先把这几笔续上，再问。”',
+ 'v65story.901.island':'船又到了。军官家属、机器零件和几箱没有写进货单的东西一起卸下，仓库里有人逐项签收。\n\n大陆上的番号换了几轮，岛上的商号还用原来的印章。今天先修船、发饷，至于明天挂哪面旗，等电话来了再说。',
+ 'v65story.901.a':'照旧开支，照旧签字。',
+ 'v65story.901.b':'把停火条件谈好，先恢复船期。',
+ 'v65story.901.c':'仗接着打，账也接着记。',
+ 'v65_memory_of_war':'十四年的关系户','v65_memory_of_war_desc':'熟人知道该找谁签字。旧合同和旧番号仍能让几家军区坐下来谈。',
+ 'v65_fragile_peace':'停火后的生意','v65_fragile_peace_desc':'船期可以重新排了，军队转向防御；各方继续商量欠饷、合同和驻地。',
 })
 events+='''country_event = { id = v65story.901 title = v65story.901.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
  desc = { trigger = { has_idea = v65_park_shadow_ruler } text = v65story.901.park }

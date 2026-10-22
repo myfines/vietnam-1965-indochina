@@ -12,6 +12,8 @@ TEXTURES={
  'inspect':'focus_generic_secret_service_agency',
  'reserve':'focus_generic_home_defense',
  'orders':'focus_generic_radio_communication',
+ 'radio':'focus_generic_radio_communication',
+ 'press':'focus_generic_printing_press',
  'treaty':'focus_generic_diplomatic_treaty',
  'autonomy':'focus_generic_treaty',
  'ledger':'focus_generic_currency_reforms',
@@ -59,6 +61,8 @@ TEXTURES={
  'trade':'focus_generic_trade_interdiction',
  'resources':'focus_generic_mining_industry',
  'civilian':'focus_generic_refit_civilian_ships',
+ 'leisure':'goal_generic_consumer_goods',
+ 'housing':'focus_generic_low_cost_housing',
 }
 for key,texture in TEXTURES.items():
  if not (game/f'gfx/interface/goals/{texture}.dds').exists():raise FileNotFoundError(f'Native focus texture {key}: {texture}')
@@ -68,6 +72,8 @@ for p in (M/'localisation/simp_chinese').glob('*.yml'):
   m=re.match(r'\s*(\w+):(?:\d+)?\s*"(.*)"',line)
   if m:L[m[1]]=m[2]
 phase=json.loads((R/'park-government-manifest.json').read_text(encoding='utf-8'))['art']
+chapter_art=json.loads((R/'chapter-focus-manifest.json').read_text(encoding='utf-8'))
+phase.update(chapter_art['art'])
 RULES=[
  ('navalinvasion',['登陆','渡海']),('airlift',['空运','直升机']),('airdefence',['防空']),('airtraining',['飞行员']),
  ('cas',['空中支援','轰炸']),('aircraft',['空军','航空']),('navy',['海军','舰队']),('coast',['海岸','沿岸']),

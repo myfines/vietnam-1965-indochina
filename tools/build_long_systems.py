@@ -105,6 +105,7 @@ v65_regional_outbreak = {
 '''
 targets={**{t:next((s for s in reversed(v[3]) if s!=v[2]),v[2]) for t,v in REGIONS.items()},'DNM':12,'PKS':15}
 for tag,sid in targets.items():
+ if sid == 31:continue  # Island unrest is politics; never teleport an FNL army across the sea.
  pid=next((p for p in provinces(sid) if p!=city(sid)),city(sid))
  effects+=f''' if = {{ limit = {{ tag = {tag} controls_province = {pid} FNL = {{ has_war_with = {tag} }} }}
   FNL = {{ set_province_controller = {pid}

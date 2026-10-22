@@ -13,6 +13,9 @@ import build_park_government
 import build_revision
 import build_intervention
 import build_allied_missions
+import build_personal_network
+import build_chapter_focus
 import build_focus_detail
+import build_focus_layout
 import build_command_interface
 import build_spirit_art

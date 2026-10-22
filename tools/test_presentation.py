@@ -34,7 +34,10 @@ class PresentationTests(unittest.TestCase):
         manifest=json.loads((R/'focus-art-manifest.json').read_text(encoding='utf-8'))
         self.assertGreaterEqual(len({x['texture'] for x in manifest['bindings']}),45)
         self.assertGreaterEqual(len({x['texture'] for x in manifest['assignments'].values()}),45)
-        self.assertEqual(len(manifest['assignments']),454)
+        self.assertTrue(all(x['texture'] for x in manifest['assignments'].values()),'Every focus icon must resolve to a texture')
+        self.assertGreaterEqual(len(manifest['assignments']),498)
+        narrative=json.loads((R/'narrative-manifest.json').read_text(encoding='utf-8'))
+        self.assertEqual(len(manifest['assignments']),narrative['total_focuses'])
 
     def test_rear_pressure_has_local_effects_and_local_response(self):
         dynamic=(M/'common/dynamic_modifiers/v65_rear.txt').read_text(encoding='utf-8')

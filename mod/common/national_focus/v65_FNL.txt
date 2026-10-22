@@ -9,10 +9,6 @@ focus_tree = {
 	}
 	default = no
 	reset_on_civilwar = no
-	continuous_focus_position = {
-		x = 0
-		y = 1500
-	}
 	focus = {
 		id = v65_FNL_briefing
 		icon = GFX_v65_focus_flag
@@ -789,7 +785,7 @@ focus_tree = {
 	}
 	focus = {
 		id = v65_FNL_act_1977
-		icon = GFX_v65_detail_civilian
+		icon = GFX_v65_focus_scroll
 		x = 4
 		y = 40
 		cost = 10
@@ -980,5 +976,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
+	}
+	continuous_focus_position = {
+		x = 0
+		y = 7000
 	}
 }

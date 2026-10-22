@@ -1,5 +1,5 @@
 {
-  "version": "0.7.1",
+  "version": "0.8.0",
   "focuses": [
     {
       "tag": "SVN",
@@ -1174,7 +1174,7 @@
     }
   },
   "expansion": {
-    "version": "0.7.1",
+    "version": "0.8.0",
     "years": [
       1965,
       1968,
@@ -1183,10 +1183,10 @@
       1977,
       1979
     ],
-    "story_events": 75,
-    "original_scene_chains": 23,
+    "story_events": 147,
+    "original_scene_chains": 47,
     "long_term_focuses": 165,
-    "total_focuses": 454,
+    "total_focuses": 498,
     "playable_at_start": [
       "SVN",
       "NVN",
@@ -1204,5 +1204,9 @@
     ],
     "intelligence": "narrative decisions; no agency requirement",
     "adaptation": "Original dialogue and alternate routes informed by private novel notes; no novel text distributed"
-  }
+  },
+  "chapter_choice_events": 11,
+  "chapter_scene_chains": 24,
+  "personal_network_partners": 7,
+  "adaptation": "Chapter-based adaptation of a user-provided novel; source text and reading drafts remain private; playable choices include alternate outcomes."
 }

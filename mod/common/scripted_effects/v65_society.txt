@@ -75,11 +75,6 @@ v65_regional_outbreak = {
    21 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 276" owner = FNL } }
   } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
  }
- if = { limit = { tag = PHQ controls_province = 361 FNL = { has_war_with = PHQ } }
-  FNL = { set_province_controller = 361
-   31 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 361" owner = FNL } }
-  } subtract_from_variable = { v65_local_unrest = 4 } country_event = { id = v65government.3 days = 1 }
- }
  if = { limit = { tag = DNM controls_province = 191 FNL = { has_war_with = DNM } }
   FNL = { set_province_controller = 191
    12 = { create_unit = { division = "name = \"Local Liberation Detachment\" division_template = \"Theater Infantry\" start_equipment_factor = 0.6 location = 191" owner = FNL } }

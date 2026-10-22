@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		v65_network_supply = {
+			picture = v65_spirit_supply
+			allowed = {
+				always = no
+			}
+			modifier = {
+				supply_consumption_factor = -0.1
+			}
+		}
+		v65_private_staff = {
+			picture = v65_spirit_staff
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+	}
+}

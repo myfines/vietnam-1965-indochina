@@ -4,6 +4,8 @@ spriteType = { name = "GFX_v65_detail_staff" texturefile = "gfx/interface/goals/
 spriteType = { name = "GFX_v65_detail_inspect" texturefile = "gfx/interface/goals/focus_generic_secret_service_agency.dds" }
 spriteType = { name = "GFX_v65_detail_reserve" texturefile = "gfx/interface/goals/focus_generic_home_defense.dds" }
 spriteType = { name = "GFX_v65_detail_orders" texturefile = "gfx/interface/goals/focus_generic_radio_communication.dds" }
+spriteType = { name = "GFX_v65_detail_radio" texturefile = "gfx/interface/goals/focus_generic_radio_communication.dds" }
+spriteType = { name = "GFX_v65_detail_press" texturefile = "gfx/interface/goals/focus_generic_printing_press.dds" }
 spriteType = { name = "GFX_v65_detail_treaty" texturefile = "gfx/interface/goals/focus_generic_diplomatic_treaty.dds" }
 spriteType = { name = "GFX_v65_detail_autonomy" texturefile = "gfx/interface/goals/focus_generic_treaty.dds" }
 spriteType = { name = "GFX_v65_detail_ledger" texturefile = "gfx/interface/goals/focus_generic_currency_reforms.dds" }
@@ -51,4 +53,6 @@ spriteType = { name = "GFX_v65_detail_revolution" texturefile = "gfx/interface/g
 spriteType = { name = "GFX_v65_detail_trade" texturefile = "gfx/interface/goals/focus_generic_trade_interdiction.dds" }
 spriteType = { name = "GFX_v65_detail_resources" texturefile = "gfx/interface/goals/focus_generic_mining_industry.dds" }
 spriteType = { name = "GFX_v65_detail_civilian" texturefile = "gfx/interface/goals/focus_generic_refit_civilian_ships.dds" }
+spriteType = { name = "GFX_v65_detail_leisure" texturefile = "gfx/interface/goals/goal_generic_consumer_goods.dds" }
+spriteType = { name = "GFX_v65_detail_housing" texturefile = "gfx/interface/goals/focus_generic_low_cost_housing.dds" }
 }

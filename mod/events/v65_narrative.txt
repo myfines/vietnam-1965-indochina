@@ -394,6 +394,408 @@ country_event = { id = v65story.1608 immediate = { set_global_flag = v65_callbac
   else = { add_to_variable = { v65_public_trust = 3 } subtract_from_variable = { v65_local_unrest = 1 } } v65_refresh_society = yes
  }
 }
+country_event = { id = v65story.5101 title = v65story.5101.t desc = v65story.5101.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5101.a ai_chance = { factor = 55 } set_global_flag = v65_story_5101_a add_to_variable = { v65_personal_network = 5 } add_to_variable = { v65_contract_credit = 3 } SVN = { add_to_variable = { v65_private_wealth = 3 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7101 days = 45 } } }
+ option = { name = v65story.5101.b ai_chance = { factor = 45 } set_global_flag = v65_story_5101_b add_political_power = -30 SVN = { add_to_variable = { v65_island_trust = 3 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7101 days = 45 } } }
+}
+country_event = { id = v65story.7101 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6101 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6101 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6101 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6101 days = 1 } } }
+ } }
+country_event = { id = v65story.6101 immediate = { set_global_flag = v65_callback_5101 } title = v65story.6101.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5101_a } text = v65story.6101.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5101_a } } text = v65story.6101.b }
+ option = { name = v65story.6101.next
+  if = { limit = { has_global_flag = v65_story_5101_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5102 title = v65story.5102.t desc = v65story.5102.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5102.a ai_chance = { factor = 55 } set_global_flag = v65_story_5102_a add_to_variable = { v65_personal_network = 6 } add_to_variable = { v65_contract_credit = 5 } SVN = { add_to_variable = { v65_private_wealth = 4 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7102 days = 45 } } }
+ option = { name = v65story.5102.b ai_chance = { factor = 45 } set_global_flag = v65_story_5102_b add_political_power = -25 SVN = { add_to_variable = { v65_island_trust = 4 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7102 days = 45 } } }
+}
+country_event = { id = v65story.7102 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6102 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6102 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6102 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6102 days = 1 } } }
+ } }
+country_event = { id = v65story.6102 immediate = { set_global_flag = v65_callback_5102 } title = v65story.6102.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5102_a } text = v65story.6102.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5102_a } } text = v65story.6102.b }
+ option = { name = v65story.6102.next
+  if = { limit = { has_global_flag = v65_story_5102_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5103 title = v65story.5103.t desc = v65story.5103.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5103.a ai_chance = { factor = 55 } set_global_flag = v65_story_5103_a add_to_variable = { v65_personal_network = 4 } SVN = { add_to_variable = { v65_private_wealth = 2 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7103 days = 45 } } }
+ option = { name = v65story.5103.b ai_chance = { factor = 45 } set_global_flag = v65_story_5103_b add_political_power = -20 v65_upgrade_signals = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7103 days = 45 } } }
+}
+country_event = { id = v65story.7103 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6103 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6103 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6103 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6103 days = 1 } } }
+ } }
+country_event = { id = v65story.6103 immediate = { set_global_flag = v65_callback_5103 } title = v65story.6103.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5103_a } text = v65story.6103.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5103_a } } text = v65story.6103.b }
+ option = { name = v65story.6103.next
+  if = { limit = { has_global_flag = v65_story_5103_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5104 title = v65story.5104.t desc = v65story.5104.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5104.a ai_chance = { factor = 55 } set_global_flag = v65_story_5104_a add_political_power = -15 SVN = { add_to_variable = { v65_private_comfort = 4 } add_to_variable = { v65_private_wealth = -2 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } add_to_variable = { v65_personal_network = 3 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7104 days = 45 } } }
+ option = { name = v65story.5104.b ai_chance = { factor = 45 } set_global_flag = v65_story_5104_b add_political_power = -20 v65_upgrade_signals = yes SVN = { add_to_variable = { v65_private_comfort = -2 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7104 days = 45 } } }
+}
+country_event = { id = v65story.7104 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6104 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6104 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6104 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6104 days = 1 } } }
+ } }
+country_event = { id = v65story.6104 immediate = { set_global_flag = v65_callback_5104 } title = v65story.6104.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5104_a } text = v65story.6104.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5104_a } } text = v65story.6104.b }
+ option = { name = v65story.6104.next
+  if = { limit = { has_global_flag = v65_story_5104_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5105 title = v65story.5105.t desc = v65story.5105.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5105.a ai_chance = { factor = 55 } set_global_flag = v65_story_5105_a add_political_power = 55 add_to_variable = { v65_personal_network = 4 } set_country_flag = v65_inflated_reports v65_refresh_society = yes SVN = { country_event = { id = v65story.7105 days = 45 } } }
+ option = { name = v65story.5105.b ai_chance = { factor = 45 } set_global_flag = v65_story_5105_b add_political_power = -20 subtract_from_variable = { v65_war_fatigue = 3 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7105 days = 45 } } }
+}
+country_event = { id = v65story.7105 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6105 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6105 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6105 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6105 days = 1 } } }
+ } }
+country_event = { id = v65story.6105 immediate = { set_global_flag = v65_callback_5105 } title = v65story.6105.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5105_a } text = v65story.6105.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5105_a } } text = v65story.6105.b }
+ option = { name = v65story.6105.next
+  if = { limit = { has_global_flag = v65_story_5105_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5106 title = v65story.5106.t desc = v65story.5106.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5106.a ai_chance = { factor = 55 } set_global_flag = v65_story_5106_a add_political_power = -15 SVN = { add_to_variable = { v65_private_comfort = 5 } add_to_variable = { v65_private_wealth = -3 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } add_to_variable = { v65_personal_network = 4 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7106 days = 45 } } }
+ option = { name = v65story.5106.b ai_chance = { factor = 45 } set_global_flag = v65_story_5106_b add_political_power = -30 SVN = { add_to_variable = { v65_private_comfort = -2 } add_to_variable = { v65_island_trust = 5 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } clamp_variable = { var = v65_island_trust min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7106 days = 45 } } }
+}
+country_event = { id = v65story.7106 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6106 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6106 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6106 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6106 days = 1 } } }
+ } }
+country_event = { id = v65story.6106 immediate = { set_global_flag = v65_callback_5106 } title = v65story.6106.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5106_a } text = v65story.6106.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5106_a } } text = v65story.6106.b }
+ option = { name = v65story.6106.next
+  if = { limit = { has_global_flag = v65_story_5106_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5107 title = v65story.5107.t desc = v65story.5107.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5107.a ai_chance = { factor = 55 } set_global_flag = v65_story_5107_a add_to_variable = { v65_contract_credit = 8 } SVN = { add_to_variable = { v65_private_wealth = 7 } add_to_variable = { v65_island_trust = 4 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } clamp_variable = { var = v65_island_trust min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7107 days = 45 } } }
+ option = { name = v65story.5107.b ai_chance = { factor = 45 } set_global_flag = v65_story_5107_b add_political_power = -30 v65_upgrade_logistics = yes SVN = { add_to_variable = { v65_island_trust = 3 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7107 days = 45 } } }
+}
+country_event = { id = v65story.7107 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6107 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6107 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6107 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6107 days = 1 } } }
+ } }
+country_event = { id = v65story.6107 immediate = { set_global_flag = v65_callback_5107 } title = v65story.6107.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5107_a } text = v65story.6107.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5107_a } } text = v65story.6107.b }
+ option = { name = v65story.6107.next
+  if = { limit = { has_global_flag = v65_story_5107_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5108 title = v65story.5108.t desc = v65story.5108.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5108.a ai_chance = { factor = 55 } set_global_flag = v65_story_5108_a v65_upgrade_training = yes add_to_variable = { v65_personal_network = 4 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7108 days = 45 } } }
+ option = { name = v65story.5108.b ai_chance = { factor = 45 } set_global_flag = v65_story_5108_b add_political_power = -20 v65_upgrade_logistics = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7108 days = 45 } } }
+}
+country_event = { id = v65story.7108 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6108 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6108 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6108 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6108 days = 1 } } }
+ } }
+country_event = { id = v65story.6108 immediate = { set_global_flag = v65_callback_5108 } title = v65story.6108.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5108_a } text = v65story.6108.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5108_a } } text = v65story.6108.b }
+ option = { name = v65story.6108.next
+  if = { limit = { has_global_flag = v65_story_5108_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5109 title = v65story.5109.t desc = v65story.5109.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5109.a ai_chance = { factor = 55 } set_global_flag = v65_story_5109_a SVN = { add_to_variable = { v65_private_wealth = 5 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } add_to_variable = { v65_contract_credit = 4 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7109 days = 45 } } }
+ option = { name = v65story.5109.b ai_chance = { factor = 45 } set_global_flag = v65_story_5109_b add_political_power = -35 SVN = { add_to_variable = { v65_island_trust = 6 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7109 days = 45 } } }
+}
+country_event = { id = v65story.7109 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6109 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6109 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6109 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6109 days = 1 } } }
+ } }
+country_event = { id = v65story.6109 immediate = { set_global_flag = v65_callback_5109 } title = v65story.6109.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5109_a } text = v65story.6109.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5109_a } } text = v65story.6109.b }
+ option = { name = v65story.6109.next
+  if = { limit = { has_global_flag = v65_story_5109_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5110 title = v65story.5110.t desc = v65story.5110.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5110.a ai_chance = { factor = 55 } set_global_flag = v65_story_5110_a v65_upgrade_signals = yes add_to_variable = { v65_personal_network = 4 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7110 days = 45 } } }
+ option = { name = v65story.5110.b ai_chance = { factor = 45 } set_global_flag = v65_story_5110_b add_political_power = -20 add_to_variable = { v65_contract_credit = 3 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7110 days = 45 } } }
+}
+country_event = { id = v65story.7110 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6110 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6110 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6110 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6110 days = 1 } } }
+ } }
+country_event = { id = v65story.6110 immediate = { set_global_flag = v65_callback_5110 } title = v65story.6110.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5110_a } text = v65story.6110.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5110_a } } text = v65story.6110.b }
+ option = { name = v65story.6110.next
+  if = { limit = { has_global_flag = v65_story_5110_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5111 title = v65story.5111.t desc = v65story.5111.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5111.a ai_chance = { factor = 55 } set_global_flag = v65_story_5111_a add_political_power = -15 add_to_variable = { v65_personal_network = 6 } SVN = { add_to_variable = { v65_private_wealth = 3 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7111 days = 45 } } }
+ option = { name = v65story.5111.b ai_chance = { factor = 45 } set_global_flag = v65_story_5111_b add_political_power = -25 SVN = { add_to_variable = { v65_island_trust = 5 } clamp_variable = { var = v65_island_trust min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7111 days = 45 } } }
+}
+country_event = { id = v65story.7111 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6111 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6111 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6111 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6111 days = 1 } } }
+ } }
+country_event = { id = v65story.6111 immediate = { set_global_flag = v65_callback_5111 } title = v65story.6111.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5111_a } text = v65story.6111.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5111_a } } text = v65story.6111.b }
+ option = { name = v65story.6111.next
+  if = { limit = { has_global_flag = v65_story_5111_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5112 title = v65story.5112.t desc = v65story.5112.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5112.a ai_chance = { factor = 55 } set_global_flag = v65_story_5112_a add_to_variable = { v65_personal_network = 7 } set_country_flag = v65_inflated_reports v65_refresh_society = yes SVN = { country_event = { id = v65story.7112 days = 45 } } }
+ option = { name = v65story.5112.b ai_chance = { factor = 45 } set_global_flag = v65_story_5112_b add_political_power = -30 SVN = { add_to_variable = { v65_park_trust = 3 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7112 days = 45 } } }
+}
+country_event = { id = v65story.7112 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6112 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6112 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6112 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6112 days = 1 } } }
+ } }
+country_event = { id = v65story.6112 immediate = { set_global_flag = v65_callback_5112 } title = v65story.6112.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5112_a } text = v65story.6112.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5112_a } } text = v65story.6112.b }
+ option = { name = v65story.6112.next
+  if = { limit = { has_global_flag = v65_story_5112_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5113 title = v65story.5113.t desc = v65story.5113.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5113.a ai_chance = { factor = 55 } set_global_flag = v65_story_5113_a SVN = { add_to_variable = { v65_island_trust = 7 } } add_to_variable = { v65_personal_network = 5 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7113 days = 45 } } }
+ option = { name = v65story.5113.b ai_chance = { factor = 45 } set_global_flag = v65_story_5113_b add_political_power = -35 v65_upgrade_staff = yes SVN = { subtract_from_variable = { v65_island_trust = 3 } clamp_variable = { var = v65_island_trust min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7113 days = 45 } } }
+}
+country_event = { id = v65story.7113 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6113 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6113 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6113 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6113 days = 1 } } }
+ } }
+country_event = { id = v65story.6113 immediate = { set_global_flag = v65_callback_5113 } title = v65story.6113.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5113_a } text = v65story.6113.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5113_a } } text = v65story.6113.b }
+ option = { name = v65story.6113.next
+  if = { limit = { has_global_flag = v65_story_5113_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5114 title = v65story.5114.t desc = v65story.5114.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5114.a ai_chance = { factor = 55 } set_global_flag = v65_story_5114_a add_to_variable = { v65_personal_network = 7 } add_to_variable = { v65_contract_credit = 6 } add_political_power = 50 v65_refresh_society = yes SVN = { country_event = { id = v65story.7114 days = 45 } } }
+ option = { name = v65story.5114.b ai_chance = { factor = 45 } set_global_flag = v65_story_5114_b add_political_power = -40 v65_upgrade_staff = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7114 days = 45 } } }
+}
+country_event = { id = v65story.7114 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6114 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6114 days = 1 } } }
+ } }
+country_event = { id = v65story.6114 immediate = { set_global_flag = v65_callback_5114 } title = v65story.6114.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5114_a } text = v65story.6114.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5114_a } } text = v65story.6114.b }
+ option = { name = v65story.6114.next
+  if = { limit = { has_global_flag = v65_story_5114_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5115 title = v65story.5115.t desc = v65story.5115.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5115.a ai_chance = { factor = 55 } set_global_flag = v65_story_5115_a add_political_power = 70 add_to_variable = { v65_personal_network = 5 } add_to_variable = { v65_contract_credit = 5 } set_country_flag = v65_inflated_reports v65_refresh_society = yes SVN = { country_event = { id = v65story.7115 days = 45 } } }
+ option = { name = v65story.5115.b ai_chance = { factor = 45 } set_global_flag = v65_story_5115_b add_political_power = -35 v65_upgrade_signals = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7115 days = 45 } } }
+}
+country_event = { id = v65story.7115 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6115 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6115 days = 1 } } }
+ } }
+country_event = { id = v65story.6115 immediate = { set_global_flag = v65_callback_5115 } title = v65story.6115.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5115_a } text = v65story.6115.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5115_a } } text = v65story.6115.b }
+ option = { name = v65story.6115.next
+  if = { limit = { has_global_flag = v65_story_5115_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5116 title = v65story.5116.t desc = v65story.5116.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5116.a ai_chance = { factor = 55 } set_global_flag = v65_story_5116_a add_war_support = 0.03 add_to_variable = { v65_war_fatigue = 6 } add_to_variable = { v65_personal_network = 3 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7116 days = 45 } } }
+ option = { name = v65story.5116.b ai_chance = { factor = 45 } set_global_flag = v65_story_5116_b v65_upgrade_training = yes add_political_power = -25 v65_refresh_society = yes SVN = { country_event = { id = v65story.7116 days = 45 } } }
+}
+country_event = { id = v65story.7116 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6116 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6116 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6116 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6116 days = 1 } } }
+ } }
+country_event = { id = v65story.6116 immediate = { set_global_flag = v65_callback_5116 } title = v65story.6116.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5116_a } text = v65story.6116.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5116_a } } text = v65story.6116.b }
+ option = { name = v65story.6116.next
+  if = { limit = { has_global_flag = v65_story_5116_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5117 title = v65story.5117.t desc = v65story.5117.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5117.a ai_chance = { factor = 55 } set_global_flag = v65_story_5117_a add_manpower = 2500 add_to_variable = { v65_war_fatigue = 5 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7117 days = 45 } } }
+ option = { name = v65story.5117.b ai_chance = { factor = 45 } set_global_flag = v65_story_5117_b add_manpower = 500 add_political_power = -20 v65_upgrade_training = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7117 days = 45 } } }
+}
+country_event = { id = v65story.7117 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6117 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6117 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6117 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6117 days = 1 } } }
+ } }
+country_event = { id = v65story.6117 immediate = { set_global_flag = v65_callback_5117 } title = v65story.6117.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5117_a } text = v65story.6117.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5117_a } } text = v65story.6117.b }
+ option = { name = v65story.6117.next
+  if = { limit = { has_global_flag = v65_story_5117_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5118 title = v65story.5118.t desc = v65story.5118.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5118.a ai_chance = { factor = 55 } set_global_flag = v65_story_5118_a v65_upgrade_logistics = yes add_to_variable = { v65_war_fatigue = 4 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7118 days = 45 } } }
+ option = { name = v65story.5118.b ai_chance = { factor = 45 } set_global_flag = v65_story_5118_b v65_upgrade_signals = yes add_political_power = -20 v65_refresh_society = yes SVN = { country_event = { id = v65story.7118 days = 45 } } }
+}
+country_event = { id = v65story.7118 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6118 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6118 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6118 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6118 days = 1 } } }
+ } }
+country_event = { id = v65story.6118 immediate = { set_global_flag = v65_callback_5118 } title = v65story.6118.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5118_a } text = v65story.6118.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5118_a } } text = v65story.6118.b }
+ option = { name = v65story.6118.next
+  if = { limit = { has_global_flag = v65_story_5118_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5119 title = v65story.5119.t desc = v65story.5119.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5119.a ai_chance = { factor = 55 } set_global_flag = v65_story_5119_a add_political_power = 45 set_country_flag = v65_inflated_reports add_to_variable = { v65_contract_credit = 3 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7119 days = 45 } } }
+ option = { name = v65story.5119.b ai_chance = { factor = 45 } set_global_flag = v65_story_5119_b add_political_power = -20 v65_upgrade_signals = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7119 days = 45 } } }
+}
+country_event = { id = v65story.7119 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6119 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6119 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6119 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6119 days = 1 } } }
+ } }
+country_event = { id = v65story.6119 immediate = { set_global_flag = v65_callback_5119 } title = v65story.6119.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5119_a } text = v65story.6119.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5119_a } } text = v65story.6119.b }
+ option = { name = v65story.6119.next
+  if = { limit = { has_global_flag = v65_story_5119_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5120 title = v65story.5120.t desc = v65story.5120.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5120.a ai_chance = { factor = 55 } set_global_flag = v65_story_5120_a add_manpower = 1800 add_to_variable = { v65_war_fatigue = 6 } add_to_variable = { v65_personal_network = 4 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7120 days = 45 } } }
+ option = { name = v65story.5120.b ai_chance = { factor = 45 } set_global_flag = v65_story_5120_b v65_upgrade_training = yes add_political_power = -25 v65_refresh_society = yes SVN = { country_event = { id = v65story.7120 days = 45 } } }
+}
+country_event = { id = v65story.7120 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6120 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6120 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6120 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6120 days = 1 } } }
+ } }
+country_event = { id = v65story.6120 immediate = { set_global_flag = v65_callback_5120 } title = v65story.6120.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5120_a } text = v65story.6120.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5120_a } } text = v65story.6120.b }
+ option = { name = v65story.6120.next
+  if = { limit = { has_global_flag = v65_story_5120_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5121 title = v65story.5121.t desc = v65story.5121.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5121.a ai_chance = { factor = 55 } set_global_flag = v65_story_5121_a add_political_power = -15 SVN = { add_to_variable = { v65_private_comfort = 7 } add_to_variable = { v65_private_wealth = 3 } add_to_variable = { v65_network_SVN = 3 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } clamp_variable = { var = v65_network_SVN min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7121 days = 45 } } }
+ option = { name = v65story.5121.b ai_chance = { factor = 45 } set_global_flag = v65_story_5121_b add_political_power = -15 SVN = { subtract_from_variable = { v65_private_comfort = 3 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7121 days = 45 } } }
+}
+country_event = { id = v65story.7121 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6121 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6121 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6121 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6121 days = 1 } } }
+ } }
+country_event = { id = v65story.6121 immediate = { set_global_flag = v65_callback_5121 } title = v65story.6121.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5121_a } text = v65story.6121.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5121_a } } text = v65story.6121.b }
+ option = { name = v65story.6121.next
+  if = { limit = { has_global_flag = v65_story_5121_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5122 title = v65story.5122.t desc = v65story.5122.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5122.a ai_chance = { factor = 55 } set_global_flag = v65_story_5122_a add_political_power = -15 SVN = { add_to_variable = { v65_private_comfort = 5 } add_to_variable = { v65_private_wealth = -3 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } } add_to_variable = { v65_personal_network = 2 } v65_refresh_society = yes SVN = { country_event = { id = v65story.7122 days = 45 } } }
+ option = { name = v65story.5122.b ai_chance = { factor = 45 } set_global_flag = v65_story_5122_b add_political_power = -15 SVN = { subtract_from_variable = { v65_private_comfort = 3 } clamp_variable = { var = v65_private_comfort min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7122 days = 45 } } }
+}
+country_event = { id = v65story.7122 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6122 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6122 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6122 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6122 days = 1 } } }
+ } }
+country_event = { id = v65story.6122 immediate = { set_global_flag = v65_callback_5122 } title = v65story.6122.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5122_a } text = v65story.6122.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5122_a } } text = v65story.6122.b }
+ option = { name = v65story.6122.next
+  if = { limit = { has_global_flag = v65_story_5122_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5123 title = v65story.5123.t desc = v65story.5123.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5123.a ai_chance = { factor = 55 } set_global_flag = v65_story_5123_a v65_upgrade_logistics = yes SVN = { add_to_variable = { v65_private_wealth = 5 } add_to_variable = { v65_island_trust = 4 } clamp_variable = { var = v65_private_wealth min = 0 max = 100 } clamp_variable = { var = v65_island_trust min = 0 max = 100 } } v65_refresh_society = yes SVN = { country_event = { id = v65story.7123 days = 45 } } }
+ option = { name = v65story.5123.b ai_chance = { factor = 45 } set_global_flag = v65_story_5123_b add_political_power = -35 SVN = { add_to_variable = { v65_island_trust = 5 } } v65_upgrade_training = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7123 days = 45 } } }
+}
+country_event = { id = v65story.7123 hidden = yes is_triggered_only = yes immediate = { if = { limit = { SVN = { exists = yes is_ai = no } } SVN = { country_event = { id = v65story.6123 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6123 days = 1 } } }
+else_if = { limit = { SVN = { exists = yes } } SVN = { country_event = { id = v65story.6123 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6123 days = 1 } } }
+ } }
+country_event = { id = v65story.6123 immediate = { set_global_flag = v65_callback_5123 } title = v65story.6123.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5123_a } text = v65story.6123.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5123_a } } text = v65story.6123.b }
+ option = { name = v65story.6123.next
+  if = { limit = { has_global_flag = v65_story_5123_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
+country_event = { id = v65story.5124 title = v65story.5124.t desc = v65story.5124.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ option = { name = v65story.5124.a ai_chance = { factor = 55 } set_global_flag = v65_story_5124_a add_political_power = 60 add_to_variable = { v65_personal_network = 5 } set_country_flag = v65_inflated_reports v65_refresh_society = yes SVN = { country_event = { id = v65story.7124 days = 45 } } }
+ option = { name = v65story.5124.b ai_chance = { factor = 45 } set_global_flag = v65_story_5124_b add_political_power = -30 v65_upgrade_signals = yes v65_refresh_society = yes SVN = { country_event = { id = v65story.7124 days = 45 } } }
+}
+country_event = { id = v65story.7124 hidden = yes is_triggered_only = yes immediate = { if = { limit = { PKS = { exists = yes is_ai = no } } PKS = { country_event = { id = v65story.6124 days = 1 } } }
+else_if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65story.6124 days = 1 } } }
+ } }
+country_event = { id = v65story.6124 immediate = { set_global_flag = v65_callback_5124 } title = v65story.6124.t picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ desc = { trigger = { has_global_flag = v65_story_5124_a } text = v65story.6124.a }
+ desc = { trigger = { NOT = { has_global_flag = v65_story_5124_a } } text = v65story.6124.b }
+ option = { name = v65story.6124.next
+  if = { limit = { has_global_flag = v65_story_5124_a } SVN = { add_to_variable = { v65_private_wealth = 2 } v65_refresh_personal_network = yes } }
+  else = { add_to_variable = { v65_contract_credit = 1 } } v65_refresh_society = yes
+ }
+}
 country_event = { id = v65story.801 title = v65story.801.t desc = v65story.801.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65story.801.a } }
 country_event = { id = v65story.802 title = v65story.802.t desc = v65story.802.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65story.802.a } }
 country_event = { id = v65story.803 title = v65story.803.t desc = v65story.803.d picture = GFX_report_event_generic_read_write is_triggered_only = yes option = { name = v65story.803.a } }

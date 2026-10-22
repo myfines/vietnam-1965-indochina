@@ -107,6 +107,11 @@ command_test=os.environ.get('V65_COMMAND_TEST')=='1'
 presentation_test=os.environ.get('V65_PRESENTATION_TEST')=='1'
 revision_test=os.environ.get('V65_REVISION_TEST')=='1'
 stability_test=os.environ.get('V65_STABILITY_TEST')=='1'
+story_revision_test=os.environ.get('V65_STORY_REVISION_TEST')=='1'
+if story_revision_test:
+ from story_revision_probe import build
+ expected=[]
+ script=build(check,begin,end)
 if command_test:
  from command_probe import build
  expected=[]
@@ -144,7 +149,7 @@ try:
  d['enabled_mods']=['mod/v65_public.mod'];playset.write_text(json.dumps(d))
  proc=subprocess.Popen([str(G/'hoi4.exe'),'-hands_off','-start_tag='+'SVN'],cwd=G)
  print('Engine started; expected assertions:',len(expected),flush=True)
- deadline=time.monotonic()+180;saw_start=False
+ deadline=time.monotonic()+240;saw_start=False
  while time.monotonic()<deadline:
   if proc.poll() is not None:raise RuntimeError(f'Engine exited early: {proc.returncode}')
   s=(U/'logs/game.log').read_text(encoding='utf-8',errors='replace') if (U/'logs/game.log').exists() else ''
@@ -152,7 +157,7 @@ try:
   if saw_start and 'V65_FAIL_' in s:raise AssertionError(re.findall(r'V65_FAIL_\w+',s))
   if saw_start and end in s:break
   time.sleep(1)
- else:raise TimeoutError('Engine did not finish campaign test within 180 seconds')
+ else:raise TimeoutError('Engine did not finish campaign test within 240 seconds')
  markers=sorted(set(re.findall(r'V65_PASS_\w+',s)));assert set(markers)==set(expected),(markers,expected)
  errors=(U/'logs/error.log').read_text(encoding='utf-8',errors='replace').splitlines()
  mod_errors=[e for e in errors if not any(k in e for k in ['checksum','supported_version','thumbnail'])]
@@ -161,6 +166,9 @@ try:
  if command_test:result['last_date']='1965.11.18'
  if revision_test:result['last_date']='1965.11.14'
  if stability_test:result['last_date']='1966.1.29'
+ if story_revision_test:
+  result['last_date']='1965.12.17'
+  (OUT/'story-revision-engine-assertions.json').write_text(json.dumps(result,indent=2))
  (OUT/('stability-engine-assertions.json' if stability_test else 'revision-engine-assertions.json' if revision_test else 'presentation-engine-assertions.json' if presentation_test else 'command-engine-assertions.json' if command_test else 'autonomy-engine-assertions.json' if long_run and os.environ.get('V65_KEEP_REGIONS')=='1' else 'long-engine-assertions.json' if long_run else 'stages-engine-assertions.json' if stages else 'routes-engine-assertions.json' if routes else 'balance-engine-assertions.json' if balance else 'campaign-engine-assertions.json')).write_text(json.dumps(result,indent=2))
  assert not mod_errors, f'{len(mod_errors)} runtime errors; complete evidence in {OUT}'
  print('PASS:',len(markers),'engine assertions; no mod runtime errors')

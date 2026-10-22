@@ -1,0 +1,129 @@
+v65_refresh_personal_network = {
+ clamp_variable = { var = v65_private_wealth min = 0 max = 100 }
+ clamp_variable = { var = v65_private_comfort min = 0 max = 100 }
+ clamp_variable = { var = v65_network_SVN min = 0 max = 100 }
+ clamp_variable = { var = v65_network_DNM min = 0 max = 100 }
+ clamp_variable = { var = v65_network_HLC min = 0 max = 100 }
+ clamp_variable = { var = v65_network_MKG min = 0 max = 100 }
+ clamp_variable = { var = v65_network_BHD min = 0 max = 100 }
+ clamp_variable = { var = v65_network_PHQ min = 0 max = 100 }
+ clamp_variable = { var = v65_network_KHM min = 0 max = 100 }
+}
+v65_private_holiday = { if = { limit = { v65_personal_network_actor = yes SVN = { check_variable = { v65_private_wealth > 9 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 10 } add_to_variable = { v65_private_comfort = 15 } v65_refresh_personal_network = yes }
+ add_political_power = 15 add_timed_idea = { idea = v65_private_staff days = 45 }
+} }
+v65_accept_contact_SVN = { if = { limit = { tag = SVN has_global_flag = v65_pending_contact_SVN v65_park_partner_SVN = yes }
+ clr_global_flag = v65_pending_contact_SVN add_political_power = 20
+ SVN = { add_to_variable = { v65_network_SVN = 20 } v65_refresh_personal_network = yes }
+ if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65network.110 days = 1 } } }
+ else = { SVN = { country_event = { id = v65network.110 days = 1 } } }
+} }
+v65_open_contact_SVN = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_SVN = yes NOT = { tag = SVN } NOT = { has_global_flag = v65_pending_contact_SVN } }
+ set_global_flag = v65_pending_contact_SVN SVN = { country_event = { id = v65network.10 days = 1 } }
+ SVN = { country_event = { id = v65network.210 days = 30 } }
+} }
+v65_network_depot_SVN = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_SVN = yes NOT = { tag = SVN } SVN = { check_variable = { v65_network_SVN > 24 } check_variable = { v65_private_wealth > 7 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_SVN = 3 } v65_refresh_personal_network = yes }
+ add_timed_idea = { idea = v65_network_supply days = 90 }
+ SVN = { add_timed_idea = { idea = v65_network_supply days = 90 } subtract_from_variable = { v65_local_unrest = 1 } v65_refresh_society = yes }
+} }
+v65_accept_contact_DNM = { if = { limit = { tag = DNM has_global_flag = v65_pending_contact_DNM v65_park_partner_DNM = yes }
+ clr_global_flag = v65_pending_contact_DNM add_political_power = 20
+ SVN = { add_to_variable = { v65_network_DNM = 20 } v65_refresh_personal_network = yes }
+ if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65network.111 days = 1 } } }
+ else = { SVN = { country_event = { id = v65network.111 days = 1 } } }
+} }
+v65_open_contact_DNM = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_DNM = yes NOT = { tag = DNM } NOT = { has_global_flag = v65_pending_contact_DNM } }
+ set_global_flag = v65_pending_contact_DNM DNM = { country_event = { id = v65network.11 days = 1 } }
+ SVN = { country_event = { id = v65network.211 days = 30 } }
+} }
+v65_network_depot_DNM = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_DNM = yes NOT = { tag = DNM } SVN = { check_variable = { v65_network_DNM > 24 } check_variable = { v65_private_wealth > 7 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_DNM = 3 } v65_refresh_personal_network = yes }
+ add_timed_idea = { idea = v65_network_supply days = 90 }
+ DNM = { add_timed_idea = { idea = v65_network_supply days = 90 } subtract_from_variable = { v65_local_unrest = 1 } v65_refresh_society = yes }
+} }
+v65_accept_contact_HLC = { if = { limit = { tag = HLC has_global_flag = v65_pending_contact_HLC v65_park_partner_HLC = yes }
+ clr_global_flag = v65_pending_contact_HLC add_political_power = 20
+ SVN = { add_to_variable = { v65_network_HLC = 20 } v65_refresh_personal_network = yes }
+ if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65network.112 days = 1 } } }
+ else = { SVN = { country_event = { id = v65network.112 days = 1 } } }
+} }
+v65_open_contact_HLC = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_HLC = yes NOT = { tag = HLC } NOT = { has_global_flag = v65_pending_contact_HLC } }
+ set_global_flag = v65_pending_contact_HLC HLC = { country_event = { id = v65network.12 days = 1 } }
+ SVN = { country_event = { id = v65network.212 days = 30 } }
+} }
+v65_network_depot_HLC = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_HLC = yes NOT = { tag = HLC } SVN = { check_variable = { v65_network_HLC > 24 } check_variable = { v65_private_wealth > 7 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_HLC = 3 } v65_refresh_personal_network = yes }
+ add_timed_idea = { idea = v65_network_supply days = 90 }
+ HLC = { add_timed_idea = { idea = v65_network_supply days = 90 } subtract_from_variable = { v65_local_unrest = 1 } v65_refresh_society = yes }
+} }
+v65_accept_contact_MKG = { if = { limit = { tag = MKG has_global_flag = v65_pending_contact_MKG v65_park_partner_MKG = yes }
+ clr_global_flag = v65_pending_contact_MKG add_political_power = 20
+ SVN = { add_to_variable = { v65_network_MKG = 20 } v65_refresh_personal_network = yes }
+ if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65network.113 days = 1 } } }
+ else = { SVN = { country_event = { id = v65network.113 days = 1 } } }
+} }
+v65_open_contact_MKG = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_MKG = yes NOT = { tag = MKG } NOT = { has_global_flag = v65_pending_contact_MKG } }
+ set_global_flag = v65_pending_contact_MKG MKG = { country_event = { id = v65network.13 days = 1 } }
+ SVN = { country_event = { id = v65network.213 days = 30 } }
+} }
+v65_network_depot_MKG = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_MKG = yes NOT = { tag = MKG } SVN = { check_variable = { v65_network_MKG > 24 } check_variable = { v65_private_wealth > 7 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_MKG = 3 } v65_refresh_personal_network = yes }
+ add_timed_idea = { idea = v65_network_supply days = 90 }
+ MKG = { add_timed_idea = { idea = v65_network_supply days = 90 } subtract_from_variable = { v65_local_unrest = 1 } v65_refresh_society = yes }
+} }
+v65_accept_contact_BHD = { if = { limit = { tag = BHD has_global_flag = v65_pending_contact_BHD v65_park_partner_BHD = yes }
+ clr_global_flag = v65_pending_contact_BHD add_political_power = 20
+ SVN = { add_to_variable = { v65_network_BHD = 20 } v65_refresh_personal_network = yes }
+ if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65network.114 days = 1 } } }
+ else = { SVN = { country_event = { id = v65network.114 days = 1 } } }
+} }
+v65_open_contact_BHD = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_BHD = yes NOT = { tag = BHD } NOT = { has_global_flag = v65_pending_contact_BHD } }
+ set_global_flag = v65_pending_contact_BHD BHD = { country_event = { id = v65network.14 days = 1 } }
+ SVN = { country_event = { id = v65network.214 days = 30 } }
+} }
+v65_network_depot_BHD = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_BHD = yes NOT = { tag = BHD } SVN = { check_variable = { v65_network_BHD > 24 } check_variable = { v65_private_wealth > 7 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_BHD = 3 } v65_refresh_personal_network = yes }
+ add_timed_idea = { idea = v65_network_supply days = 90 }
+ BHD = { add_timed_idea = { idea = v65_network_supply days = 90 } subtract_from_variable = { v65_local_unrest = 1 } v65_refresh_society = yes }
+} }
+v65_accept_contact_PHQ = { if = { limit = { tag = PHQ has_global_flag = v65_pending_contact_PHQ v65_park_partner_PHQ = yes }
+ clr_global_flag = v65_pending_contact_PHQ add_political_power = 20
+ SVN = { add_to_variable = { v65_network_PHQ = 20 } v65_refresh_personal_network = yes }
+ if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65network.115 days = 1 } } }
+ else = { SVN = { country_event = { id = v65network.115 days = 1 } } }
+} }
+v65_open_contact_PHQ = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_PHQ = yes NOT = { tag = PHQ } NOT = { has_global_flag = v65_pending_contact_PHQ } }
+ set_global_flag = v65_pending_contact_PHQ PHQ = { country_event = { id = v65network.15 days = 1 } }
+ SVN = { country_event = { id = v65network.215 days = 30 } }
+} }
+v65_network_depot_PHQ = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_PHQ = yes NOT = { tag = PHQ } SVN = { check_variable = { v65_network_PHQ > 24 } check_variable = { v65_private_wealth > 7 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_PHQ = 3 } v65_refresh_personal_network = yes }
+ add_timed_idea = { idea = v65_network_supply days = 90 }
+ PHQ = { add_timed_idea = { idea = v65_network_supply days = 90 } subtract_from_variable = { v65_local_unrest = 1 } v65_refresh_society = yes }
+} }
+v65_accept_contact_KHM = { if = { limit = { tag = KHM has_global_flag = v65_pending_contact_KHM v65_park_partner_KHM = yes }
+ clr_global_flag = v65_pending_contact_KHM add_political_power = 20
+ SVN = { add_to_variable = { v65_network_KHM = 20 } v65_refresh_personal_network = yes }
+ if = { limit = { PKS = { exists = yes } } PKS = { country_event = { id = v65network.116 days = 1 } } }
+ else = { SVN = { country_event = { id = v65network.116 days = 1 } } }
+} }
+v65_open_contact_KHM = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_KHM = yes NOT = { tag = KHM } NOT = { has_global_flag = v65_pending_contact_KHM } }
+ set_global_flag = v65_pending_contact_KHM KHM = { country_event = { id = v65network.16 days = 1 } }
+ SVN = { country_event = { id = v65network.216 days = 30 } }
+} }
+v65_network_depot_KHM = { if = { limit = { v65_personal_network_actor = yes v65_park_partner_KHM = yes NOT = { tag = KHM } SVN = { check_variable = { v65_network_KHM > 24 } check_variable = { v65_private_wealth > 7 } } }
+ SVN = { subtract_from_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_KHM = 3 } v65_refresh_personal_network = yes }
+ add_timed_idea = { idea = v65_network_supply days = 90 }
+ KHM = { add_timed_idea = { idea = v65_network_supply days = 90 } subtract_from_variable = { v65_local_unrest = 1 } v65_refresh_society = yes }
+} }
+v65_network_dividend = {
+if = { limit = { v65_park_partner_SVN = yes check_variable = { v65_network_SVN > 49 } PKS = { exists = yes } } add_to_variable = { v65_private_wealth = 1 } }
+if = { limit = { v65_park_partner_DNM = yes check_variable = { v65_network_DNM > 49 }  } add_to_variable = { v65_private_wealth = 1 } }
+if = { limit = { v65_park_partner_HLC = yes check_variable = { v65_network_HLC > 49 }  } add_to_variable = { v65_private_wealth = 1 } }
+if = { limit = { v65_park_partner_MKG = yes check_variable = { v65_network_MKG > 49 }  } add_to_variable = { v65_private_wealth = 1 } }
+if = { limit = { v65_park_partner_BHD = yes check_variable = { v65_network_BHD > 49 }  } add_to_variable = { v65_private_wealth = 1 } }
+if = { limit = { v65_park_partner_PHQ = yes check_variable = { v65_network_PHQ > 49 }  } add_to_variable = { v65_private_wealth = 1 } }
+if = { limit = { v65_park_partner_KHM = yes check_variable = { v65_network_KHM > 49 }  } add_to_variable = { v65_private_wealth = 1 } }
+v65_refresh_personal_network = yes }

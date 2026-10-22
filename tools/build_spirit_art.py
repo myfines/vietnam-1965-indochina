@@ -33,13 +33,17 @@ put(Path('interface/v65_spirit_art.gfx'),'spriteTypes = { '+' '.join(f'spriteTyp
 count=len(catalog['assignments'])
 for filename in ['narrative-manifest.json','campaign-manifest.json']:
     path=R/filename;d=json.loads(path.read_text())
-    d['version']='0.7.1'
+    d['version']='0.8.0'
+    d['chapter_choice_events']=11
+    d['chapter_scene_chains']=24
+    d['personal_network_partners']=7
+    d['adaptation']='Chapter-based adaptation of a user-provided novel; source text and reading drafts remain private; playable choices include alternate outcomes.'
     # The campaign manifest uses a nested narrative section in some source revisions.
     def update(obj):
         if isinstance(obj,dict):
             for k,v in obj.items():
                 if k=='total_focuses':obj[k]=count
-                elif k=='version':obj[k]='0.7.1'
+                elif k=='version':obj[k]='0.8.0'
                 elif isinstance(v,(dict,list)):update(v)
         elif isinstance(obj,list):
             for v in obj:update(v)

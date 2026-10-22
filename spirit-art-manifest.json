@@ -88,6 +88,8 @@
     "v65_overseas_channel": "treaty",
     "v65_island_logistics": "supply",
     "v65_settled_regency": "mandate",
+    "v65_network_supply": "supply",
+    "v65_private_staff": "staff",
     "v65_martial_law": "treaty",
     "v65_guard_network": "treaty",
     "v65_trail_network": "treaty",

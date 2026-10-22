@@ -1,0 +1,8 @@
+v65_personal_network_actor = { OR = { tag = PKS has_idea = v65_park_shadow_ruler } }
+v65_park_partner_SVN = { SVN = { exists = yes capital_scope = { is_fully_controlled_by = SVN } } if = { limit = { PKS = { exists = yes } } SVN = { NOT = { has_war_with = PKS } } } else = { SVN = { NOT = { has_war_with = SVN } } } }
+v65_park_partner_DNM = { DNM = { exists = yes capital_scope = { is_fully_controlled_by = DNM } } if = { limit = { PKS = { exists = yes } } DNM = { NOT = { has_war_with = PKS } } } else = { DNM = { NOT = { has_war_with = SVN } } } }
+v65_park_partner_HLC = { HLC = { exists = yes capital_scope = { is_fully_controlled_by = HLC } } if = { limit = { PKS = { exists = yes } } HLC = { NOT = { has_war_with = PKS } } } else = { HLC = { NOT = { has_war_with = SVN } } } }
+v65_park_partner_MKG = { MKG = { exists = yes capital_scope = { is_fully_controlled_by = MKG } } if = { limit = { PKS = { exists = yes } } MKG = { NOT = { has_war_with = PKS } } } else = { MKG = { NOT = { has_war_with = SVN } } } }
+v65_park_partner_BHD = { BHD = { exists = yes capital_scope = { is_fully_controlled_by = BHD } } if = { limit = { PKS = { exists = yes } } BHD = { NOT = { has_war_with = PKS } } } else = { BHD = { NOT = { has_war_with = SVN } } } }
+v65_park_partner_PHQ = { PHQ = { exists = yes capital_scope = { is_fully_controlled_by = PHQ } } if = { limit = { PKS = { exists = yes } } PHQ = { NOT = { has_war_with = PKS } } } else = { PHQ = { NOT = { has_war_with = SVN } } } }
+v65_park_partner_KHM = { KHM = { exists = yes capital_scope = { is_fully_controlled_by = KHM } } if = { limit = { PKS = { exists = yes } } KHM = { NOT = { has_war_with = PKS } } } else = { KHM = { NOT = { has_war_with = SVN } } } }

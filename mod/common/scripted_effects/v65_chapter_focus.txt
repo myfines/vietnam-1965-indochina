@@ -1,0 +1,13 @@
+v65chapter_clamp = {
+ if = { limit = { SVN = { exists = yes } } SVN = {
+  clamp_variable = { var = v65_private_wealth min = 0 max = 100 }
+  clamp_variable = { var = v65_private_comfort min = 0 max = 100 }
+  clamp_variable = { var = v65_network_SVN min = 0 max = 100 }
+  clamp_variable = { var = v65_network_DNM min = 0 max = 100 }
+  clamp_variable = { var = v65_network_HLC min = 0 max = 100 }
+  clamp_variable = { var = v65_network_MKG min = 0 max = 100 }
+  clamp_variable = { var = v65_network_BHD min = 0 max = 100 }
+  clamp_variable = { var = v65_network_PHQ min = 0 max = 100 }
+  clamp_variable = { var = v65_network_KHM min = 0 max = 100 }
+ } }
+}
