@@ -1,0 +1,17 @@
+add_namespace = v65north
+country_event = { id = v65north.1 title = v65north.1.t desc = v65north.1.d
+ picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ trigger = { tag = NVN NOT = { has_global_flag = v65_north_story_started } }
+ immediate = { set_global_flag = v65_north_story_started }
+ option = { name = v65north.1.a army_experience = 10 add_timed_idea = { idea = v65_prepared_defence days = 60 }
+  if = { limit = { FNL = { exists = yes has_war_with = SVN } } FNL = { country_event = { id = v65north.2 days = 3 } } } }
+ option = { name = v65north.1.b add_to_variable = { v65_trail_level = 1 } clamp_variable = { var = v65_trail_level min = 0 max = 6 } add_political_power = 15
+  if = { limit = { FNL = { exists = yes has_war_with = SVN } } FNL = { country_event = { id = v65north.2 days = 3 } } } }
+}
+country_event = { id = v65north.2 title = v65north.2.t desc = v65north.2.d
+ picture = GFX_report_event_generic_read_write is_triggered_only = yes
+ trigger = { tag = FNL NOT = { has_global_flag = v65_south_delay_resolved } }
+ immediate = { set_global_flag = v65_south_delay_resolved }
+ option = { name = v65north.2.a add_to_variable = { v65_infiltration = 1 } clamp_variable = { var = v65_infiltration min = 0 max = 3 } }
+ option = { name = v65north.2.b army_experience = 8 }
+}

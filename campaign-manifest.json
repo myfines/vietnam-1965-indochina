@@ -1,5 +1,5 @@
 {
-  "version": "0.8.0",
+  "version": "0.9.0",
   "focuses": [
     {
       "tag": "SVN",
@@ -1174,7 +1174,7 @@
     }
   },
   "expansion": {
-    "version": "0.8.0",
+    "version": "0.9.0",
     "years": [
       1965,
       1968,
@@ -1208,5 +1208,8 @@
   "chapter_choice_events": 11,
   "chapter_scene_chains": 24,
   "personal_network_partners": 7,
+  "guest_story_events": 8,
+  "north_story_events": 2,
+  "park_travel_destinations": 8,
   "adaptation": "Chapter-based adaptation of a user-provided novel; source text and reading drafts remain private; playable choices include alternate outcomes."
 }

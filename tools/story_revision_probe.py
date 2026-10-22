@@ -4,6 +4,11 @@
 def build(check, begin, end):
     s = f'on_actions = {{ on_startup = {{ effect = {{ log = "{begin}" }} }} on_daily = {{ effect = {{ '
     s += 'if = { limit = { date > 1965.10.28 NOT = { has_global_flag = v65_personal_network_probe } } set_global_flag = v65_personal_network_probe '
+    s += 'PKS = { '+check('has_country_leader = { character = v65_chae_myeong_sin }','CHAE_COMMANDS_THEATER_AT_START')
+    s += 'v65_park_visit_DNM = yes '+check('SVN = { check_variable = { v65_park_host = 3 } owns_state = 11 } owns_state = 15 DNM = { owns_state = 12 }','PARK_VISITS_WITHOUT_ANNEXATION')
+    s += 'v65_park_visit_SVN = yes '+check('SVN = { check_variable = { v65_park_host = 3 } }','TRAVEL_COOLDOWN_BLOCKS_DUPLICATE')
+    s += 'clr_global_flag = v65_park_visit_cooldown v65_park_visit_PKS = yes '+check('SVN = { check_variable = { v65_park_host = 1 } }','PARK_CAN_RETURN_WITHOUT_MOVING_CAPITAL')
+    s += 'clr_global_flag = v65_park_visit_cooldown } '
 
     # Give the permanent SVN ledger stable values before exercising production effects.
     s += 'SVN = { set_variable = { v65_private_wealth = 40 } set_variable = { v65_private_comfort = 20 } '
@@ -52,14 +57,18 @@ def build(check, begin, end):
 
     # Follow the existing takeover probe path and assert the permanent variables survive annexation.
     s += 'SVN = { set_variable = { v65_private_wealth = 37 } set_variable = { v65_private_comfort = 42 } } '
-    s += 'PKS = { set_variable = { v65_park_influence = 6 } v65_finalize_union = yes } '
+    s += 'PKS = { clr_global_flag = v65_park_visit_cooldown v65_park_visit_SVN = yes '
+    s += check('has_global_flag = v65_park_visit_cooldown SVN = { check_variable = { v65_park_visit_days = 30 } }','PRE_UNION_TRAVEL_TIMER_IS_ARMED')
+    s += 'set_variable = { v65_park_influence = 6 } v65_finalize_union = yes } '
     s += 'SVN = { '+check('has_country_flag = v65_union_complete check_variable = { v65_private_wealth = 37 } check_variable = { v65_private_comfort = 42 }','UNION_PRESERVES_SVN_PRIVATE_ANCHORS')+' } '
 
     s += '} '
     s += 'if = { limit = { date > 1965.11.10 NOT = { has_global_flag = v65_story_probe_mirror } } set_global_flag = v65_story_probe_mirror SVN = { '
     s += check('has_focus_tree = v65_park_government has_completed_focus = v65chapter_svn_reports_first_report has_completed_focus = v65chapter_svn_reports_casualty_ledger','TAKEOVER_BYPASSES_ALREADY_CLAIMED_STORY_FOCUSES')+' } } '
     s += 'if = { limit = { date > 1965.12.16 NOT = { has_global_flag = v65_story_probe_callback } } set_global_flag = v65_story_probe_callback '
-    s += check('has_global_flag = v65_callback_5101','CHAPTER_SCENE_REACHES_FORTY_FIVE_DAY_CALLBACK')+' } '
+    s += check('has_global_flag = v65_callback_5101','CHAPTER_SCENE_REACHES_FORTY_FIVE_DAY_CALLBACK')
+    s += check('NOT = { has_global_flag = v65_park_visit_cooldown }','TRAVEL_COOLDOWN_EXPIRES_AFTER_PKS_ANNEXATION')
+    s += check('SVN = { check_variable = { v65_park_visit_days < 1 } }','TRAVEL_COUNTDOWN_REACHES_ZERO')+' } '
     s += f'if = {{ limit = {{ date > 1965.12.17 }} log = "{end}" }} }} }} }}'
     return s
 

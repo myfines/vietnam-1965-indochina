@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		v65_personal_staff = {
-			picture = v65_spirit_staff
+			picture = v65_spirit_adviser
 			allowed = {
 				always = no
 			}
@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		v65_regular_payroll = {
-			picture = v65_spirit_funds
+			picture = v65_spirit_payroll
 			allowed = {
 				always = no
 			}
@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		v65_overseas_channel = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_navy
 			allowed = {
 				always = no
 			}
@@ -51,7 +51,7 @@ ideas = {
 			}
 		}
 		v65_island_logistics = {
-			picture = v65_spirit_supply
+			picture = v65_spirit_warehouse
 			allowed = {
 				always = no
 			}
@@ -61,7 +61,7 @@ ideas = {
 			}
 		}
 		v65_settled_regency = {
-			picture = v65_spirit_mandate
+			picture = v65_spirit_housing
 			allowed = {
 				always = no
 			}

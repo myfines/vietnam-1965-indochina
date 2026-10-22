@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		v65_central_respected = {
-			picture = v65_spirit_staff
+			picture = v65_spirit_command
 			allowed = {
 				always = no
 			}
@@ -11,7 +11,7 @@ ideas = {
 			}
 		}
 		v65_central_discredited = {
-			picture = v65_spirit_staff
+			picture = v65_spirit_inspect
 			allowed = {
 				always = no
 			}
@@ -21,7 +21,7 @@ ideas = {
 			}
 		}
 		v65_park_inside = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_regency
 			allowed = {
 				always = no
 			}

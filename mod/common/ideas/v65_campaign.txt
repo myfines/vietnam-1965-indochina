@@ -30,7 +30,7 @@ ideas = {
 			}
 		}
 		v65_regional_network = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_radio
 			allowed = {
 				always = no
 			}
@@ -40,7 +40,7 @@ ideas = {
 			}
 		}
 		v65_dmz_standoff = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_fort
 			allowed = {
 				always = no
 			}
@@ -50,7 +50,7 @@ ideas = {
 			}
 		}
 		v65_defeat_shock = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_evacuation
 			allowed = {
 				always = no
 			}

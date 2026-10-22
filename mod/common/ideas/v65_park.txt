@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		v65_park_patron = {
-			picture = v65_spirit_funds
+			picture = v65_spirit_mandate
 			allowed = {
 				always = no
 			}

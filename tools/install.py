@@ -67,6 +67,9 @@ for path in (out/'localisation').rglob('*.yml'):
  path.write_text(text+'\n',encoding='utf-8-sig')
 from hydrate_portraits import hydrate
 hydrate(out)
+# No verified historical portrait is bundled for Chae: use an explicitly documented
+# native generic placeholder locally, never Park's face under Chae's name.
+shutil.copyfile(game/'gfx/leaders/Asia/Portrait_Asia_Generic_1.dds',out/'gfx/leaders/v65/chae_myeong_sin.dds')
 from hydrate_spirit_art import hydrate as hydrate_spirits
 hydrate_spirits(game,out)
 errors=hm.check_mod(out)

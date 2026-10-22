@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		v65_park_shadow_ruler = {
-			picture = v65_spirit_mandate
+			picture = v65_spirit_regency
 			allowed = {
 				always = no
 			}
@@ -23,7 +23,7 @@ ideas = {
 			}
 		}
 		v65_faction_compromise = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_autonomy
 			allowed = {
 				always = no
 			}

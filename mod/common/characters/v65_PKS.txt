@@ -2,6 +2,11 @@ characters = {
 v65_park_seicheng = {
  name = v65_park_seicheng
  portraits = { civilian = { large = "gfx/leaders/v65/park_seicheng.dds" small = "gfx/leaders/v65/park_seicheng.dds" } army = { large = "gfx/leaders/v65/park_seicheng.dds" small = "gfx/leaders/v65/park_seicheng.dds" } }
+ corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
+}
+v65_chae_myeong_sin = {
+ name = v65_chae_myeong_sin
+ portraits = { civilian = { large = "gfx/leaders/v65/chae_myeong_sin.dds" small = "gfx/leaders/v65/chae_myeong_sin.dds" } army = { large = "gfx/leaders/v65/chae_myeong_sin.dds" small = "gfx/leaders/v65/chae_myeong_sin.dds" } }
  country_leader = { ideology = despotism expire = "1990.1.1" }
  corps_commander = { skill = 3 attack_skill = 3 defense_skill = 4 planning_skill = 3 logistics_skill = 3 traits = { } }
 }

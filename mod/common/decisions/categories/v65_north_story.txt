@@ -1,0 +1,12 @@
+v65_north_plans = {
+	icon = GFX_decision_category_generic_communist_revolution
+	allowed = {
+		OR = {
+			tag = NVN
+			tag = FNL
+		}
+	}
+	visible = {
+		always = yes
+	}
+}

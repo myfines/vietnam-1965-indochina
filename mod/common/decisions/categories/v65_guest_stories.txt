@@ -1,0 +1,26 @@
+v65_guest_stories = {
+	icon = GFX_decision_category_generic_foreign_policy
+	allowed = {
+		OR = {
+			tag = SVN
+			tag = PKS
+			tag = PHQ
+			tag = DNM
+			tag = HLC
+			tag = MKG
+			tag = BHD
+		}
+	}
+	visible = {
+		SVN = {
+			exists = yes
+		}
+		PHQ = {
+			exists = yes
+			controls_province = 361
+			NOT = {
+				has_war_with = SVN
+			}
+		}
+	}
+}

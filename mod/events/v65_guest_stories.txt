@@ -1,0 +1,42 @@
+add_namespace = v65guest
+country_event = { id = v65guest.1 title = v65guest.1.t desc = v65guest.1.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { has_global_flag = v65_guest_talks_open OR = { DNM = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } HLC = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } MKG = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } BHD = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } } PHQ = { exists = yes controls_province = 361 NOT = { has_war_with = SVN } } }
+ option = { trigger = { DNM = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } NOT = { tag = DNM } } name = v65guest.1.a
+  set_global_flag = v65_guest_target_DNM DNM = { country_event = { id = v65guest.2 } } }
+ option = { trigger = { HLC = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } NOT = { tag = HLC } } name = v65guest.1.b
+  set_global_flag = v65_guest_target_HLC HLC = { country_event = { id = v65guest.2 } } }
+ option = { trigger = { MKG = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } NOT = { tag = MKG } } name = v65guest.1.c
+  set_global_flag = v65_guest_target_MKG MKG = { country_event = { id = v65guest.2 } } }
+ option = { trigger = { BHD = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } NOT = { tag = BHD } } name = v65guest.1.e
+  set_global_flag = v65_guest_target_BHD BHD = { country_event = { id = v65guest.2 } } }
+ option = { name = v65guest.cancel v65_guest_clear = yes }
+}
+country_event = { id = v65guest.2 title = v65guest.2.t desc = v65guest.2.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { has_global_flag = v65_guest_talks_open OR = { has_global_flag = v65_guest_target_DNM has_global_flag = v65_guest_target_HLC has_global_flag = v65_guest_target_MKG has_global_flag = v65_guest_target_BHD } OR = { AND = { has_global_flag = v65_guest_target_DNM DNM = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_HLC HLC = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_MKG MKG = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_BHD BHD = { exists = yes has_war_with = SVN } } } }
+ option = { name = v65guest.2.a ai_chance = { factor = 70 } set_global_flag = v65_guest_preliminary_agreed PHQ = { country_event = { id = v65guest.3 } } }
+ option = { name = v65guest.2.b ai_chance = { factor = 30 } v65_guest_clear = yes } }
+country_event = { id = v65guest.3 title = v65guest.3.t desc = v65guest.3.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { has_global_flag = v65_guest_talks_open has_global_flag = v65_guest_preliminary_agreed OR = { AND = { has_global_flag = v65_guest_target_DNM DNM = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_HLC HLC = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_MKG MKG = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_BHD BHD = { exists = yes has_war_with = SVN } } } SVN = { exists = yes } }
+ option = { name = v65guest.3.a ai_chance = { factor = 75 } set_global_flag = v65_guest_island_agreed SVN = { country_event = { id = v65guest.4 } } }
+ option = { name = v65guest.3.b ai_chance = { factor = 25 } v65_guest_clear = yes } }
+country_event = { id = v65guest.4 title = v65guest.4.t desc = v65guest.4.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { has_global_flag = v65_guest_talks_open has_global_flag = v65_guest_island_agreed OR = { AND = { has_global_flag = v65_guest_target_DNM DNM = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_HLC HLC = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_MKG MKG = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_BHD BHD = { exists = yes has_war_with = SVN } } } }
+ option = { name = v65guest.4.a ai_chance = { factor = 80 } set_global_flag = v65_guest_central_agreed if = { limit = { has_global_flag = v65_guest_target_DNM DNM = { has_war_with = SVN } } DNM = { country_event = { id = v65guest.5 } } } if = { limit = { has_global_flag = v65_guest_target_HLC HLC = { has_war_with = SVN } } HLC = { country_event = { id = v65guest.5 } } } if = { limit = { has_global_flag = v65_guest_target_MKG MKG = { has_war_with = SVN } } MKG = { country_event = { id = v65guest.5 } } } if = { limit = { has_global_flag = v65_guest_target_BHD BHD = { has_war_with = SVN } } BHD = { country_event = { id = v65guest.5 } } } }
+ option = { name = v65guest.4.b ai_chance = { factor = 20 } v65_guest_clear = yes } }
+country_event = { id = v65guest.5 title = v65guest.5.t desc = v65guest.5.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { has_global_flag = v65_guest_talks_open has_global_flag = v65_guest_central_agreed OR = { has_global_flag = v65_guest_target_DNM has_global_flag = v65_guest_target_HLC has_global_flag = v65_guest_target_MKG has_global_flag = v65_guest_target_BHD } OR = { AND = { has_global_flag = v65_guest_target_DNM DNM = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_HLC HLC = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_MKG MKG = { exists = yes has_war_with = SVN } } AND = { has_global_flag = v65_guest_target_BHD BHD = { exists = yes has_war_with = SVN } } } SVN = { exists = yes } }
+ option = { name = v65guest.5.a ai_chance = { factor = 75 } set_global_flag = v65_guest_region_agreed v65_guest_finish = yes }
+ option = { name = v65guest.5.b ai_chance = { factor = 25 } v65_guest_clear = yes } }
+country_event = { id = v65guest.6 title = v65guest.6.t desc = v65guest.6.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { NOT = { has_global_flag = v65_guest_scene_294 } date > 1975.3.15 }
+ immediate = { set_global_flag = v65_guest_scene_294 }
+ option = { name = v65guest.6.a } }
+country_event = { id = v65guest.7 title = v65guest.7.t desc = v65guest.7.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { NOT = { has_global_flag = v65_guest_scene_310 } date > 1975.4.01 }
+ immediate = { set_global_flag = v65_guest_scene_310 }
+ option = { name = v65guest.7.a } }
+country_event = { id = v65guest.8 title = v65guest.8.t desc = v65guest.8.d picture = GFX_report_event_generic_diplomacy is_triggered_only = yes
+ trigger = { NOT = { has_global_flag = v65_guest_scene_327 } date > 1975.6.01 }
+ immediate = { set_global_flag = v65_guest_scene_327 }
+ option = { name = v65guest.8.a } }
+country_event = { id = v65guest.99 hidden = yes is_triggered_only = yes immediate = { v65_guest_clear = yes clr_global_flag = v65_guest_cooldown } }

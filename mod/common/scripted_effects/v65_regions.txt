@@ -191,7 +191,7 @@ v65_regional_reintegration_PHQ = {
 			set_country_flag = v65_preserve_minh
 		}
 		PHQ = {
-			v65_island_council = {
+			v65_li_weiyan = {
 				set_nationality = SVN
 			}
 		}

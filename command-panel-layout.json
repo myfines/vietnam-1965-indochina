@@ -6,9 +6,9 @@
       "name": "title",
       "kind": "text",
       "key": "v65_panel_title",
-      "x": 16,
+      "x": 24,
       "y": 12,
-      "width": 440,
+      "width": 432,
       "height": 28,
       "font": "hoi_24header"
     },
@@ -124,11 +124,11 @@
     {
       "name": "portrait_PKS",
       "kind": "portrait",
-      "texture": "gfx/leaders/v65/park_seicheng.dds",
+      "texture": "gfx/flags/PKS.tga",
       "x": 256,
-      "y": 177,
+      "y": 195,
       "width": 50,
-      "height": 67
+      "height": 32
     },
     {
       "name": "label_HLC",

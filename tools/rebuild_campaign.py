@@ -15,7 +15,14 @@ import build_intervention
 import build_allied_missions
 import build_personal_network
 import build_chapter_focus
+import build_park_presence
+import build_source_prose
+build_source_prose.main()
+import build_guest_stories
+build_guest_stories.generate()
+import build_north_stories
 import build_focus_detail
 import build_focus_layout
 import build_command_interface
+import build_category_art
 import build_spirit_art

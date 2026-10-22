@@ -1,0 +1,20 @@
+{
+  "v65_theater": "GFX_decision_category_military_operation",
+  "v65_allied_missions": "GFX_decision_category_generic_foreign_policy",
+  "v65_story_archive": "GFX_decision_category_generic_propaganda",
+  "v65_command_politics": "GFX_decision_category_generic_political_actions",
+  "v65_contract_operations": "GFX_decision_category_generic_arms_trade",
+  "v65_story_governance": "GFX_decision_category_generic_economy",
+  "v65_guest_stories": "GFX_decision_category_generic_foreign_policy",
+  "v65_us_mission": "GFX_decision_category_military_operation",
+  "v65_north_plans": "GFX_decision_category_generic_communist_revolution",
+  "v65_personal_connections": "GFX_decision_category_generic_trade",
+  "v65_politics": "GFX_decision_category_generic_crisis",
+  "v65_park": "GFX_decision_category_generic_foreign_policy",
+  "v65_trail": "GFX_decision_category_generic_mountain_fortification",
+  "v65_rear_networks": "GFX_decision_category_generic_fortification",
+  "v65_regional_government": "GFX_decision_category_generic_political_actions",
+  "v65_private_war": "GFX_decision_category_generic_arms_trade",
+  "v65_union": "GFX_decision_category_generic_political_actions",
+  "v65_cambodian_rear": "GFX_decision_category_generic_trade"
+}

@@ -1,0 +1,32 @@
+v65_park_visit_PKS = { if = { limit = { v65_personal_network_actor = yes PKS = { exists = yes capital_scope = { is_fully_controlled_by = PKS } } NOT = { has_global_flag = v65_park_visit_cooldown } }
+ SVN = { set_variable = { v65_park_host = 1 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }
+v65_park_visit_SVN = { if = { limit = { v65_personal_network_actor = yes SVN = { exists = yes capital_scope = { is_fully_controlled_by = SVN } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = SVN } }
+ SVN = { set_variable = { v65_park_host = 2 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }
+v65_park_visit_DNM = { if = { limit = { v65_personal_network_actor = yes DNM = { exists = yes capital_scope = { is_fully_controlled_by = DNM } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = DNM } }
+ SVN = { set_variable = { v65_park_host = 3 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }
+v65_park_visit_HLC = { if = { limit = { v65_personal_network_actor = yes HLC = { exists = yes capital_scope = { is_fully_controlled_by = HLC } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = HLC } }
+ SVN = { set_variable = { v65_park_host = 4 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }
+v65_park_visit_MKG = { if = { limit = { v65_personal_network_actor = yes MKG = { exists = yes capital_scope = { is_fully_controlled_by = MKG } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = MKG } }
+ SVN = { set_variable = { v65_park_host = 5 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }
+v65_park_visit_BHD = { if = { limit = { v65_personal_network_actor = yes BHD = { exists = yes capital_scope = { is_fully_controlled_by = BHD } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = BHD } }
+ SVN = { set_variable = { v65_park_host = 6 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }
+v65_park_visit_PHQ = { if = { limit = { v65_personal_network_actor = yes PHQ = { exists = yes capital_scope = { is_fully_controlled_by = PHQ } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = PHQ } }
+ SVN = { set_variable = { v65_park_host = 7 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }
+v65_park_visit_KHM = { if = { limit = { v65_personal_network_actor = yes KHM = { exists = yes capital_scope = { is_fully_controlled_by = KHM } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = KHM } }
+ SVN = { set_variable = { v65_park_host = 8 } set_variable = { v65_park_visit_days = 30 } }
+ set_global_flag = v65_park_visit_cooldown
+ } }

@@ -128,6 +128,11 @@ if stability_test:
  from stability_probe import build
  expected=[]
  script=build(check,begin,end)
+guest_test=os.environ.get('V65_GUEST_TEST')=='1'
+if guest_test:
+ from guest_story_probe import build
+ expected=[]
+ script=build(check,begin,end)
 probe=O/'common/on_actions/v65_smoke_test.txt';define=O/'common/defines/zzz_smoke_test.lua'
 playset=U/'dlc_load.json';descriptor=U/'mod/v65_public.mod'
 old_load=playset.read_bytes() if playset.exists() else None
@@ -166,6 +171,9 @@ try:
  if command_test:result['last_date']='1965.11.18'
  if revision_test:result['last_date']='1965.11.14'
  if stability_test:result['last_date']='1966.1.29'
+ if guest_test:
+  result['last_date']='1965.11.17'
+  (OUT/'guest-engine-assertions.json').write_text(json.dumps(result,indent=2))
  if story_revision_test:
   result['last_date']='1965.12.17'
   (OUT/'story-revision-engine-assertions.json').write_text(json.dumps(result,indent=2))

@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		v65_highland_disruption = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_map
 			allowed = {
 				always = no
 			}
@@ -11,7 +11,7 @@ ideas = {
 			}
 		}
 		v65_southern_holdouts = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_reserve
 			allowed = {
 				always = no
 			}

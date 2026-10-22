@@ -11,6 +11,7 @@ add_political_power = 150
 add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 8000 producer = PKS }
 add_equipment_to_stockpile = { type = motorized_equipment_1 amount = 200 producer = PKS }
 recruit_character = v65_park_seicheng
+recruit_character = v65_chae_myeong_sin
 recruit_character = v65_kim_jong_pil
 recruit_character = v65_kim_jae_gyu
 recruit_character = v65_park_chung_hee

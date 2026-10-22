@@ -7,6 +7,22 @@ sys.path.insert(0,str(R/'vendor'));import pdx
 catalog=json.loads((R/'focus-art-manifest.json').read_text(encoding='utf-8'))
 sources={x['name'].removeprefix('GFX_v65_detail_'):x['texture'] for x in catalog['bindings']}
 sources.update(rokflag='gfx/flags/KOR_democratic.tga',rocflag='gfx/flags/CHI_neutrality.tga')
+# Distinguish political conditions instead of sending every unmatched idea to a treaty.
+specific={
+ 'local_partnership':'village','regional_network':'radio','dmz_standoff':'fort',
+ 'defeat_shock':'evacuation','central_respected':'command','central_discredited':'inspect',
+ 'park_inside':'regency','decentralized_command':'map','local_command':'garrison',
+ 'reintegrated_command':'orders','civilian_resentment':'payroll','weariness':'rotation',
+ 'exhaustion':'repair','rotation':'rotation','memory_of_war':'ledger','fragile_peace':'trade',
+ 'park_patron':'mandate','personal_staff':'adviser','command_council':'staff',
+ 'regular_payroll':'payroll','overseas_channel':'navy','island_logistics':'warehouse',
+ 'settled_regency':'housing','network_supply':'roads','private_staff':'leisure',
+ 'martial_law':'command','guard_network':'garrison','trail_network':'mountain',
+ 'civil_admin':'civilian','park_coercion_spirit':'security','democratic_general':'press',
+ 'clique_contract_block':'contracts','clique_staff_block':'inspect','clique_proxy_block':'proxy',
+ 'park_shadow_ruler':'regency','neutral_sanctuary':'port','faction_compromise':'autonomy',
+ 'highland_disruption':'map','southern_holdouts':'reserve',
+}
 rules=[('airlift',['us_firepower']),('revolution',['jungle','revolution']),('contract',['contract','daihai']),('staff',['staff','command','central','council']),('training',['training','rotation']),('intelligence',['intelligence','signals','spy']),('supply',['supply','logistics','exhaustion','weariness']),('security',['security','coercion','guerrilla','pressure']),('port',['island','sanctuary']),('mandate',['mandate','regency','democratic','ruler']),('funds',['payroll','patron','fund','clique']),('reinforce',['prepared','defence'])]
 assignments={};used={}
 for path in sorted((M/'common/ideas').glob('v65*.txt')):
@@ -21,7 +37,14 @@ for path in sorted((M/'common/ideas').glob('v65*.txt')):
                 # All roles must refer to a real catalog entry; no generic missing picture fallback.
                 if role=='contract':role='contracts'
                 if role=='training':role='academy'
+                role=specific.get(key.removeprefix('v65_'),role)
+                if key.startswith('v65_policy_civilian_'):role='housing'
                 texture=sources[role]
+                # Related levels keep their subject but expose the current tier in the art.
+                tier=re.fullmatch(r'v65_(staff|training|signals|logistics|contracts)_([1-5])',key)
+                support=re.fullmatch(r'v65_us_firepower_(75|50|25)',key)
+                if tier:role=role+'_rank'+tier[2]
+                if support:role='airlift_support'+support[1]
                 picture='v65_spirit_'+role
                 body[:]=[(k,op,picture if k=='picture' else v) for k,op,v in body]
                 if not any(k=='picture' for k,_,v in body):body.insert(0,('picture','=',picture))
@@ -33,19 +56,22 @@ put(Path('interface/v65_spirit_art.gfx'),'spriteTypes = { '+' '.join(f'spriteTyp
 count=len(catalog['assignments'])
 for filename in ['narrative-manifest.json','campaign-manifest.json']:
     path=R/filename;d=json.loads(path.read_text())
-    d['version']='0.8.0'
+    d['version']='0.9.0'
     d['chapter_choice_events']=11
     d['chapter_scene_chains']=24
     d['personal_network_partners']=7
+    d['guest_story_events']=8
+    d['north_story_events']=2
+    d['park_travel_destinations']=8
     d['adaptation']='Chapter-based adaptation of a user-provided novel; source text and reading drafts remain private; playable choices include alternate outcomes.'
     # The campaign manifest uses a nested narrative section in some source revisions.
     def update(obj):
         if isinstance(obj,dict):
             for k,v in obj.items():
                 if k=='total_focuses':obj[k]=count
-                elif k=='version':obj[k]='0.8.0'
+                elif k=='version':obj[k]='0.9.0'
                 elif isinstance(v,(dict,list)):update(v)
         elif isinstance(obj,list):
             for v in obj:update(v)
     update(d);path.write_text(json.dumps(d,ensure_ascii=True,indent=2),encoding='utf-8')
-print('Explicit spirit art:',len(assignments),'spirits;',len(used),'locally hydrated subjects')
+print('Explicit spirit art:',len(assignments),'spirits;',len(used),'variants;',len(set(used.values())),'native subjects')

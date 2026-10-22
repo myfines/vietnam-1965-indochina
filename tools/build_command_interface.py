@@ -8,29 +8,36 @@ from long_foundation import loc_text
 W,H=480,548
 CARDS=[
  ('DNM','岘港军区','吴光长','ngo_quang_truong'),
- ('PKS','朴系远征集团','朴世诚','park_seicheng'),
+ ('PKS','驻越韩军司令部','[PKS.GetLeader]',None),
  ('HLC','西原军区','阮庆','nguyen_khanh'),
  ('BHD','东南军区','阮玉鸾','nguyen_ngoc_loan'),
  ('MKG','湄公河军区','陈文海','tran_van_hai'),
- ('PHQ','富国岛特别区','军政委员会',None),
+ ('PHQ','富国岛特别区','[PHQ.GetLeader]',None),
 ]
 out=M/'gfx/interface/v65_command';out.mkdir(parents=True,exist_ok=True)
-bg=Image.new('RGBA',(W,H),(24,31,30,255));d=ImageDraw.Draw(bg)
-d.rectangle((1,1,W-2,H-2),outline=(141,125,83),width=1)
-d.rectangle((1,1,W-2,5),fill=(166,144,87))
-d.line((14,47,466,47),fill=(91,98,84))
-d.line((14,135,466,135),fill=(141,125,83))
+bg=Image.new('RGBA',(W,H),(19,27,34,255));d=ImageDraw.Draw(bg)
+# Quiet map-table geometry: inset brass rule, pale labels, separate data fields.
+for row in range(H):
+ shade=round(5*row/H)
+ d.line((0,row,W,row),fill=(23-shade,33-shade,42-shade,255))
+d.rectangle((1,1,W-2,H-2),outline=(126,113,83),width=1)
+d.rectangle((5,5,W-6,H-6),outline=(50,63,70),width=1)
+d.rectangle((12,11,15,39),fill=(195,166,108))
+d.line((18,47,462,47),fill=(88,99,102))
+d.rectangle((12,77,467,131),fill=(14,23,29),outline=(64,80,87))
 for n in range(6):
  x=12+(n%2)*234;y=146+(n//2)*112
- d.rectangle((x,y,x+221,y+103),fill=(33,41,38),outline=(76,85,73))
- d.rectangle((x+1,y+1,x+220,y+22),fill=(48,57,48))
- d.rectangle((x+9,y+30,x+61,y+100),fill=(15,21,20),outline=(106,107,83))
+ d.rectangle((x+2,y+3,x+223,y+105),fill=(9,16,21))
+ d.rectangle((x,y,x+221,y+103),fill=(29,42,50),outline=(70,89,96))
+ d.rectangle((x+1,y+1,x+220,y+23),fill=(43,57,64))
+ d.line((x+9,y+23,x+212,y+23),fill=(142,126,88))
+ d.rectangle((x+9,y+30,x+61,y+100),fill=(12,20,25),outline=(127,117,93))
 d.line((14,493,466,493),fill=(91,98,84))
 bg.save(out/'dossier.dds')
 # Native sprite frames are numbered from one: frame one is an empty bar.
 bar=Image.new('RGBA',(110*101,2),(53,60,51,255));draw=ImageDraw.Draw(bar)
 for n in range(101):
- if n:draw.rectangle((n*110,0,n*110+round(109*n/100),1),fill=(175,151,88))
+ if n:draw.rectangle((n*110,0,n*110+round(109*n/100),1),fill=(197,169,112))
 bar.save(out/'prestige.dds')
 gfx='spriteTypes = {\n spriteType = { name = "GFX_v65_dossier" texturefile = "gfx/interface/v65_command/dossier.dds" }\n spriteType = { name = "GFX_v65_prestige" texturefile = "gfx/interface/v65_command/prestige.dds" noOfFrames = 101 }\n'
 gui=f'guiTypes = {{ containerWindowType = {{ name = "v65_command_window" size = {{ width = {W} height = {H} }}\n iconType = {{ name = "dossier" spriteType = "GFX_v65_dossier" position = {{ x = 0 y = 0 }} alwaystransparent = yes }}\n'
@@ -39,7 +46,7 @@ L={
  'v65_panel_title':'南方军政协调处',
  'v65_panel_caption':'军饷 · 任命 · 作战指挥',
  'v65_panel_prestige':'中央威望  [?SVN.v65_central_prestige|0] / 100',
- 'v65_panel_footer':'调令需要有人执行，军饷需要有人签字。',
+ 'v65_panel_footer':'朴的行程：[v65_park_where]',
  'v65_panel_hint':'下方决议办理拨款、设区、划区与抗命。',
  'v65_panel_inactive':'无独立司令部',
  'v65_panel_rebel':'§R已起兵§!', 'v65_panel_refused':'§R拒绝调令§!',
@@ -50,7 +57,7 @@ def text(name,key,x,y,width,height=22,font='hoi_16mbs'):
  global gui
  gui+=f'instantTextBoxType = {{ name = "{name}" position = {{ x = {x} y = {y} }} font = "{font}" text = "{key}" maxWidth = {width} maxHeight = {height} fixedsize = yes }}\n'
  widgets.append(dict(name=name,kind='text',key=key,x=x,y=y,width=width,height=height,font=font))
-text('title','v65_panel_title',16,12,440,28,'hoi_24header')
+text('title','v65_panel_title',24,12,432,28,'hoi_24header')
 text('caption','v65_panel_caption',17,56,440)
 text('prestige_value','v65_panel_prestige',17,81,440,24,'hoi_18mbs')
 gui+='iconType = { name = "prestige_bar" scale = 4 spriteType = "GFX_v65_prestige" position = { x = 18 y = 115 } alwaystransparent = yes }\n'
@@ -70,7 +77,7 @@ for n,(tag,title,person,portrait) in enumerate(CARDS):
  text('person_'+tag,'v65_person_'+tag,x+71,y+29,146,20)
  text('metrics_'+tag,'v65_metrics_'+tag,x+71,y+53,146,20)
  text('status_'+tag,'v65_status_'+tag,x+71,y+78,146,20)
- texture=f'gfx/leaders/v65/{portrait}.dds' if portrait else 'gfx/flags/PHQ.tga'
+ texture=f'gfx/leaders/v65/{portrait}.dds' if portrait else f'gfx/flags/{tag}.tga'
  gfx+=f'spriteType = {{ name = "GFX_v65_card_{tag}" texturefile = "{texture}" }}\n'
  # Portrait source dimensions are inspected, rather than assuming a shared aspect ratio.
  candidates=[M/texture,R/'runtime/theater-mod'/texture]

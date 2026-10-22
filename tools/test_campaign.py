@@ -19,7 +19,7 @@ class CampaignTests(unittest.TestCase):
         people=list((ROOT/'mod/common/characters').glob('v65_*.txt'))
         text='\n'.join(p.read_text() for p in people)
         self.assertNotIn('Portrait_Asia_Generic',text)
-        self.assertEqual(len(re.findall(r'\bname = v65_',text)),26)
+        self.assertEqual(len(re.findall(r'\bname = v65_',text)),27)
         self.assertTrue((ROOT/'mod/gfx/leaders/v65/park_seicheng.dds').exists())
     def test_union_and_neutral_sanctuary(self):
         p=ROOT/'mod/common/scripted_effects/v65_union_sanctuary.txt'

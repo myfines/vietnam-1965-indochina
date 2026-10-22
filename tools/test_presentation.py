@@ -8,6 +8,12 @@ M = R / 'mod'
 
 
 class PresentationTests(unittest.TestCase):
+    def test_category_icons_are_category_illustrations(self):
+        d=json.loads((R/'category-art-manifest.json').read_text())
+        self.assertGreaterEqual(len(d),18)
+        self.assertGreaterEqual(len(set(d.values())),10)
+        self.assertTrue(all(v.startswith('GFX_decision_category_') for v in d.values()))
+
     def test_command_panel_is_attached_and_widgets_fit(self):
         category = (M/'common/decisions/categories/v65_command.txt').read_text(encoding='utf-8')
         self.assertIn('scripted_gui = v65_command_panel', category)

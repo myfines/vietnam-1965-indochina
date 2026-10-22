@@ -1,0 +1,10 @@
+v65_north_plans = {
+ v65_north_reassess = { icon = generic_prepare_civil_war cost = 15
+ visible = { tag = NVN NOT = { has_global_flag = v65_north_story_started } }
+ available = { has_war_with = SVN NOT = { controls_state = 9 } }
+ complete_effect = { country_event = { id = v65north.1 } } ai_will_do = { factor = 2 } }
+ v65_south_delay = { icon = generic_prepare_civil_war cost = 15
+ visible = { tag = FNL NOT = { has_global_flag = v65_south_delay_resolved } }
+ available = { has_war_with = SVN NVN = { exists = yes has_war_with = SVN NOT = { controls_state = 9 } } }
+ complete_effect = { country_event = { id = v65north.2 } } ai_will_do = { factor = 2 } }
+}

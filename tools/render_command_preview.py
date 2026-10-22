@@ -1,31 +1,34 @@
-"""Render the authored layout for inspection; this is not a game screenshot."""
+"""Render authored panel geometry offline; this is not an in-game screenshot."""
 from pathlib import Path
 import json,re
-from PIL import Image,ImageDraw,ImageFont
-
-R=Path(__file__).resolve().parents[1];M=R/'mod';runtime=R/'runtime/theater-mod'
-layout=json.loads((R/'command-panel-layout.json').read_text(encoding='utf-8'))
-im=Image.open(M/'gfx/interface/v65_command/dossier.dds').convert('RGBA')
-loc={}
-for p in (M/'localisation/simp_chinese').glob('*v65_panel*.yml'):
- for l in p.read_text(encoding='utf-8-sig').splitlines():
-  m=re.match(r'\s*(\w+):0 "(.*)"',l)
-  if m:loc[m[1]]=m[2]
-sample={'SVN.v65_central_prestige':'55','DNM.v65_regional_loyalty':'65','DNM.v65_rear_hotspots':'0'}
-font_path='C:/Windows/Fonts/msyh.ttc';draw=ImageDraw.Draw(im)
+from PIL import Image,ImageDraw,ImageFont,ImageOps
+R=Path(__file__).resolve().parents[1];M=R/'mod';O=R/'runtime/theater-mod'
+font=Path('C:/Windows/Fonts/msyh.ttc')
+layout=json.loads((R/'command-panel-layout.json').read_text())
+panel=Image.open(M/'gfx/interface/v65_command/dossier.dds').convert('RGBA')
+L={m[0]:m[1] for m in re.findall(r'^ ([^:]+):0 "(.*)"$',(M/'localisation/simp_chinese/zzzzzzzz_v65_panel_l_simp_chinese.yml').read_text(encoding='utf-8-sig'),re.M)}
+draw=ImageDraw.Draw(panel)
 for w in layout['widgets']:
- if w['kind']=='portrait':
-  path=next((p for p in [M/w['texture'],runtime/w['texture']] if p.exists()),None)
-  if path:
-   pic=Image.open(path).convert('RGBA');pic.thumbnail((w['width'],w['height']),Image.Resampling.LANCZOS);im.alpha_composite(pic,(w['x'],w['y']))
- else:
-  text=loc.get(w['key'],w['key'])
-  text=re.sub(r'\[\?([^]|]+)\|0\]',lambda m:sample.get(m[1],'0'),text)
-  if w['name'].startswith('status_'):text='独立指挥' if w['name'] in ['status_DNM','status_PKS'] else '无独立司令部'
-  size=24 if '24' in w['font'] else 18 if '18' in w['font'] else 14
-  font=ImageFont.truetype(font_path,size)
-  draw.text((w['x'],w['y']-1),text,font=font,fill=(221,215,187))
-draw.rectangle((18,115,18+round(439*.55),122),fill=(175,151,88))
-dest=R/'runtime/previews';dest.mkdir(exist_ok=True)
-im.convert('RGB').resize((960,1096),Image.Resampling.LANCZOS).save(dest/'command-dossier-layout.png')
-print('Layout preview saved; live game rendering has not been inspected.')
+    if w['kind']=='portrait':
+        p=O/w['texture']
+        if p.exists():
+            with Image.open(p) as im:
+                im=ImageOps.contain(im.convert('RGBA'),(w['width'],w['height']))
+                panel.alpha_composite(im,(w['x'],w['y']))
+    else:
+        value=L[w['key']].replace('[PKS.GetLeader]','蔡命新').replace('[PHQ.GetLeader]','李威炎').replace('[v65_park_where]','韩军本部').replace('[v65_park_metrics]','人脉 0  军援 0')
+        value=re.sub(r'\[\?[^\]]+\]',lambda m:'0' if 'rear_hotspots' in m[0] else '65' if 'regional_loyalty' in m[0] else '55',value)
+        value=re.sub(r'\[v65_status_text_[A-Z]+\]','依指挥协定听令',value)
+        draw.text((w['x'],w['y']),value,fill='#dfdacb',font=ImageFont.truetype(str(font),22 if '24header' in w['font'] else 14))
+draw.rectangle((18,115,457,122),fill='#353c33');draw.rectangle((18,115,260,122),fill='#c5a970')
+out=R/'runtime/test-results';out.mkdir(parents=True,exist_ok=True)
+panel.convert('RGB').save(out/'command-panel-preview.png')
+manifest=json.loads((R/'spirit-art-manifest.json').read_text())
+roles=sorted(manifest['sources']);sheet=Image.new('RGB',(640,((len(roles)+7)//8)*100),'#131b22');d=ImageDraw.Draw(sheet)
+for i,role in enumerate(roles):
+    p=O/f'gfx/interface/v65_spirits/{role}.dds'
+    if p.exists():
+        with Image.open(p) as im:sheet.paste(im.convert('RGB'),(8+(i%8)*80,(i//8)*100))
+    d.text((4+(i%8)*80,66+(i//8)*100),role,fill='#dfdacb',font=ImageFont.truetype(str(font),10))
+sheet.save(out/'spirit-atlas-preview.png')
+print('Offline command and spirit atlas previews written')

@@ -1,0 +1,11 @@
+on_actions = {
+ on_startup = { effect = { SVN = { if = { limit = { NOT = { has_country_flag = v65_presence_initialized } }
+ set_country_flag = v65_presence_initialized set_variable = { v65_park_host = 1 } } } } }
+ on_daily = { effect = {
+ if = { limit = { has_global_flag = v65_park_visit_cooldown }
+  SVN = { subtract_from_variable = { v65_park_visit_days = 1 } }
+  if = { limit = { SVN = { check_variable = { v65_park_visit_days < 1 } } } clr_global_flag = v65_park_visit_cooldown }
+ }
+ SVN = { if = { limit = { has_country_flag = v65_union_complete check_variable = { v65_park_host = 1 } }
+ set_variable = { v65_park_host = 2 } } } } }
+}

@@ -53,7 +53,7 @@ put(Path('history/units/KHM_1965.txt'),TEMPLATE+'\nunits = {\n'+'\n'.join(f' div
 p=M/'common/bookmarks/v65.txt';text=p.read_text(encoding='utf-8');text=text[:-4]+' RKH = { history = V65_RKH_DESC ideology = communism }\n} }\n';p.write_text(text,encoding='utf-8')
 
 # Names are authoritative in one replacement file, not competing overlays.
-base={'SVN':('越南共和国','Republic of Vietnam'),'NVN':('北越','North Vietnam'),'FNL':('南方民族解放阵线','National Liberation Front'),'PKS':('朴世诚远征集团','Park Expeditionary Group'),'DNM':('岘港军区','Da Nang Military Command'),'KHM':('柬埔寨王国','Kingdom of Cambodia')}
+base={'SVN':('越南共和国','Republic of Vietnam'),'NVN':('北越','North Vietnam'),'FNL':('南方民族解放阵线','National Liberation Front'),'PKS':('驻越韩军','ROK Forces in Vietnam'),'DNM':('岘港军区','Da Nang Military Command'),'KHM':('柬埔寨王国','Kingdom of Cambodia')}
 base.update({t:(v[0],v[1]) for t,v in EXTRA.items()})
 pattern=r'\s*(?:'+'|'.join(ALL)+r')(?:_(?:DEF|ADJ|neutrality|communism|democratic|fascism)(?:_(?:DEF|ADJ))?)?:\d'
 for p in (M/'localisation').rglob('*.yml'):

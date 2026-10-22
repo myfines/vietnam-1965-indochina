@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "generated_by": "tools/build_source_prose.py",
+  "localization_file": "mod/localisation/simp_chinese/zzzzzzzzzzzzzz_v65_source_prose_l_simp_chinese.yml",
+  "mappings": [
+    {
+      "loc_key": "v65story.5104.d",
+      "scene_id": 5104,
+      "passage_id": "ch147_quy_nhon_morning",
+      "chapter": 147,
+      "quote_sha256": "5e393574cec221eed8e9dc6ff6ce757fca3b18da5cb43c97a3307fc11e749a02"
+    },
+    {
+      "loc_key": "v65story.5107.d",
+      "scene_id": 5107,
+      "passage_id": "ch165_island_assets",
+      "chapter": 165,
+      "quote_sha256": "2f24ecd9d12f8e9ae76d4de26683fcc5c43235abaede471a95e786b23da4a08b"
+    },
+    {
+      "loc_key": "v65story.5113.d",
+      "scene_id": 5113,
+      "passage_id": "ch185_phu_quoc_101st",
+      "chapter": 185,
+      "quote_sha256": "db1634264ecc9db35bf5dcdb7e94dc9e8075842337133f0259486a0659452cdd"
+    },
+    {
+      "loc_key": "v65story.5114.d",
+      "scene_id": 5114,
+      "passage_id": "ch194_revolution_guard",
+      "chapter": 194,
+      "quote_sha256": "8399eb00659c693589938cc6f2069fe4388cfe3f2a5fde21fecc2b0bb81c6df3"
+    },
+    {
+      "loc_key": "v65story.5116.d",
+      "scene_id": 5116,
+      "passage_id": "ch211_hue_force_list",
+      "chapter": 211,
+      "quote_sha256": "d630a7d15768defae04f72cf5771e9d3cdf30d1d3b9067e2e2b6bcdbb7d749bb"
+    },
+    {
+      "loc_key": "v65story.5119.d",
+      "scene_id": 5119,
+      "passage_id": "ch241_nguyen_minh_appointment",
+      "chapter": 241,
+      "quote_sha256": "c23d9008a245b70eac566145633610a382f9713bfd4c3369ffd545f7aa0d4bb2"
+    },
+    {
+      "loc_key": "v65story.5121.d",
+      "scene_id": 5121,
+      "passage_id": "ch249_beach_vacation",
+      "chapter": 249,
+      "quote_sha256": "be1358d35d0c3d3843b152287432baaa0f81b04353322c253f73c5950271af01"
+    },
+    {
+      "loc_key": "v65story.5124.d",
+      "scene_id": 5124,
+      "passage_id": "ch280_special_operation_rationale",
+      "chapter": 280,
+      "quote_sha256": "e27c27dde19076cbb18a87c87c4c2861e4317d503382823144214f01f99d35d0"
+    },
+    {
+      "loc_key": "V65_PKS_DESC",
+      "passage_id": "ch3_park_battalion",
+      "chapter": 3,
+      "quote_sha256": "65dfc67d680a702c2c0e748715a17414d255be4f54cde86f582a1e85a6caf69b"
+    },
+    {
+      "loc_key": "v65chapter_pks_root_desc",
+      "passage_id": "ch3_park_battalion",
+      "chapter": 3,
+      "quote_sha256": "65dfc67d680a702c2c0e748715a17414d255be4f54cde86f582a1e85a6caf69b"
+    },
+    {
+      "loc_key": "v65chapter_pks_relations_special_command_desc",
+      "passage_id": "ch159_joint_command",
+      "chapter": 159,
+      "quote_sha256": "cffb923203fcb9977f26c1996f7a69774504bad78c0746c31d4b035b822d5583"
+    },
+    {
+      "loc_key": "v65chapter_svn_relations_special_command_desc",
+      "passage_id": "ch159_joint_command",
+      "chapter": 159,
+      "quote_sha256": "cffb923203fcb9977f26c1996f7a69774504bad78c0746c31d4b035b822d5583"
+    },
+    {
+      "loc_key": "v65chapter_pks_relations_militia_terms_desc",
+      "passage_id": "ch165_island_assets",
+      "chapter": 165,
+      "quote_sha256": "2f24ecd9d12f8e9ae76d4de26683fcc5c43235abaede471a95e786b23da4a08b"
+    },
+    {
+      "loc_key": "v65chapter_svn_relations_militia_terms_desc",
+      "passage_id": "ch165_island_assets",
+      "chapter": 165,
+      "quote_sha256": "2f24ecd9d12f8e9ae76d4de26683fcc5c43235abaede471a95e786b23da4a08b"
+    },
+    {
+      "loc_key": "v65chapter_pks_island_phu_quoc_plan_desc",
+      "passage_id": "ch165_island_command_meeting",
+      "chapter": 165,
+      "quote_sha256": "12844f997fc19c44771796f8935efae580ad330b3167021df64fb7bfa709016b"
+    },
+    {
+      "loc_key": "v65chapter_svn_island_phu_quoc_plan_desc",
+      "passage_id": "ch165_island_command_meeting",
+      "chapter": 165,
+      "quote_sha256": "12844f997fc19c44771796f8935efae580ad330b3167021df64fb7bfa709016b"
+    },
+    {
+      "loc_key": "v65_DNM_hue_desc",
+      "passage_id": "ch211_hue_force_list",
+      "chapter": 211,
+      "quote_sha256": "d630a7d15768defae04f72cf5771e9d3cdf30d1d3b9067e2e2b6bcdbb7d749bb"
+    },
+    {
+      "loc_key": "v65_NVN_hold_desc",
+      "passage_id": "ch254_nvn_withdrawal_debate",
+      "chapter": 254,
+      "quote_sha256": "2dfee5b4324ed287823554f277ec96c573805696a5bef30e9936517053ba77a5"
+    },
+    {
+      "loc_key": "v65_NVN_rear_offensive_desc",
+      "passage_id": "ch254_nvn_rear_guerilla_delay",
+      "chapter": 254,
+      "quote_sha256": "79258bd7bb8e483d1bb4a03dff9322b44202270f48b832fa53748dbfacff36da"
+    },
+    {
+      "loc_key": "v65_personal_connections_desc",
+      "passage_id": "ch185_phu_quoc_101st",
+      "chapter": 185,
+      "quote_sha256": "db1634264ecc9db35bf5dcdb7e94dc9e8075842337133f0259486a0659452cdd",
+      "preserved_existing_mechanics_text": true
+    },
+    {
+      "loc_key": "v65_personal_staff_desc",
+      "passage_id": "ch159_joint_command",
+      "chapter": 159,
+      "quote_sha256": "cffb923203fcb9977f26c1996f7a69774504bad78c0746c31d4b035b822d5583"
+    },
+    {
+      "loc_key": "v65_daihai_contracts_desc",
+      "passage_id": "ch165_island_assets",
+      "chapter": 165,
+      "quote_sha256": "2f24ecd9d12f8e9ae76d4de26683fcc5c43235abaede471a95e786b23da4a08b"
+    },
+    {
+      "loc_key": "v65_island_logistics_desc",
+      "passage_id": "ch185_phu_quoc_101st",
+      "chapter": 185,
+      "quote_sha256": "db1634264ecc9db35bf5dcdb7e94dc9e8075842337133f0259486a0659452cdd"
+    },
+    {
+      "loc_key": "v65_network_supply_desc",
+      "passage_id": "ch165_island_assets",
+      "chapter": 165,
+      "quote_sha256": "2f24ecd9d12f8e9ae76d4de26683fcc5c43235abaede471a95e786b23da4a08b"
+    },
+    {
+      "loc_key": "v65_private_staff_desc",
+      "passage_id": "ch249_beach_vacation",
+      "chapter": 249,
+      "quote_sha256": "be1358d35d0c3d3843b152287432baaa0f81b04353322c253f73c5950271af01"
+    },
+    {
+      "loc_key": "v65_rotation_desc",
+      "passage_id": "ch168_quy_nhon_withdrawal",
+      "chapter": 168,
+      "quote_sha256": "b5472ba461d7508d724cc8d8eb71389057e815a14e96feb9a550d2fab7744003"
+    },
+    {
+      "loc_key": "v65_park_shadow_ruler_desc",
+      "passage_id": "ch194_revolution_guard",
+      "chapter": 194,
+      "quote_sha256": "8399eb00659c693589938cc6f2069fe4388cfe3f2a5fde21fecc2b0bb81c6df3"
+    },
+    {
+      "loc_key": "v65_trail_network_desc",
+      "passage_id": "ch216_trail_reinforcements",
+      "chapter": 216,
+      "quote_sha256": "bf6bf51990416ba36178e5868a9476611bbfea36639af0f7400f4261df72c9a6"
+    },
+    {
+      "loc_key": "v65network.1.d",
+      "passage_id": "ch249_beach_vacation",
+      "chapter": 249,
+      "quote_sha256": "be1358d35d0c3d3843b152287432baaa0f81b04353322c253f73c5950271af01"
+    }
+  ],
+  "unmapped_scene_ids": [
+    5101,
+    5102,
+    5103,
+    5105,
+    5106,
+    5108,
+    5109,
+    5110,
+    5111,
+    5112,
+    5115,
+    5117,
+    5118,
+    5120,
+    5122,
+    5123
+  ]
+}

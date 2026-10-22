@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		v65_network_supply = {
-			picture = v65_spirit_supply
+			picture = v65_spirit_roads
 			allowed = {
 				always = no
 			}
@@ -10,7 +10,7 @@ ideas = {
 			}
 		}
 		v65_private_staff = {
-			picture = v65_spirit_staff
+			picture = v65_spirit_leisure
 			allowed = {
 				always = no
 			}

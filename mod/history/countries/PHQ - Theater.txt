@@ -9,4 +9,4 @@ set_technology = { infantry_weapons = 1 infantry_weapons1 = 1 infantry_weapons2 
 add_ideas = { limited_conscription partial_economic_mobilisation export_focus }
 add_political_power = 150
 add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 12000 producer = PHQ }
-recruit_character = v65_island_council
+recruit_character = v65_li_weiyan

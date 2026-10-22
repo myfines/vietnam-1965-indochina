@@ -1,7 +1,7 @@
 ideas = {
 	country = {
 		v65_martial_law = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_command
 			allowed = {
 				always = no
 			}
@@ -12,7 +12,7 @@ ideas = {
 			}
 		}
 		v65_guard_network = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_garrison
 			allowed = {
 				always = no
 			}
@@ -22,7 +22,7 @@ ideas = {
 			}
 		}
 		v65_trail_network = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_mountain
 			allowed = {
 				always = no
 			}
@@ -31,7 +31,7 @@ ideas = {
 			}
 		}
 		v65_civil_admin = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_civilian
 			allowed = {
 				always = no
 			}

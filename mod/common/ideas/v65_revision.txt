@@ -11,7 +11,7 @@ ideas = {
 			}
 		}
 		v65_democratic_general = {
-			picture = v65_spirit_mandate
+			picture = v65_spirit_press
 			allowed = {
 				always = no
 			}
@@ -31,7 +31,7 @@ ideas = {
 			}
 		}
 		v65_clique_staff_block = {
-			picture = v65_spirit_staff
+			picture = v65_spirit_inspect
 			allowed = {
 				always = no
 			}
@@ -41,7 +41,7 @@ ideas = {
 			}
 		}
 		v65_clique_proxy_block = {
-			picture = v65_spirit_funds
+			picture = v65_spirit_proxy
 			allowed = {
 				always = no
 			}

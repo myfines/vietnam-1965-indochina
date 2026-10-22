@@ -5,37 +5,37 @@ country_event = { id = v65chapter.100 title = v65chapter.100.t desc = v65chapter
  option = { name = v65chapter.100.a SVN = { add_to_variable = { v65_private_wealth = 12 } add_to_variable = { v65_network_SVN = 5 } add_to_variable = { v65_network_KHM = 8 } } add_to_variable = { v65_paper_victories = 1 } add_political_power = 15 set_global_flag = v65chapter_event_100_choice_a set_global_flag = v65chapter_event_100_resolved v65chapter_clamp = yes }
  option = { name = v65chapter.100.b SVN = { add_to_variable = { v65_network_DNM = 5 } add_to_variable = { v65_network_HLC = 8 } add_to_variable = { v65_network_MKG = 8 } add_to_variable = { v65_network_BHD = 5 } } add_manpower = 1000 add_to_variable = { v65_personal_network = 2 } set_global_flag = v65chapter_event_100_choice_b set_global_flag = v65chapter_event_100_resolved v65chapter_clamp = yes }
 }
-# Source chapters: 第45–62章
+# Source chapters: 第61章
 country_event = { id = v65chapter.101 title = v65chapter.101.t desc = v65chapter.101.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  trigger = { NOT = { has_global_flag = v65chapter_event_101_resolved } }
  option = { name = v65chapter.101.a SVN = { add_to_variable = { v65_network_SVN = 10 } add_to_variable = { v65_private_wealth = 5 } } add_to_variable = { v65_paper_victories = 2 } add_political_power = 20 set_global_flag = v65chapter_event_101_choice_a set_global_flag = v65chapter_event_101_resolved v65chapter_clamp = yes }
  option = { name = v65chapter.101.b SVN = { add_to_variable = { v65_network_DNM = 8 } add_to_variable = { v65_network_HLC = 5 } add_to_variable = { v65_network_MKG = 5 } add_to_variable = { v65_private_wealth = 3 } } add_to_variable = { v65_personal_network = 2 } add_manpower = 1000 set_global_flag = v65chapter_event_101_choice_b set_global_flag = v65chapter_event_101_resolved v65chapter_clamp = yes }
 }
-# Source chapters: 第17、78–79、108章
+# Source chapters: 第108章
 country_event = { id = v65chapter.102 title = v65chapter.102.t desc = v65chapter.102.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  trigger = { NOT = { has_global_flag = v65chapter_event_102_resolved } }
  option = { name = v65chapter.102.a SVN = { add_to_variable = { v65_private_wealth = 10 } add_to_variable = { v65_private_comfort = 5 } add_to_variable = { v65_network_SVN = 5 } } add_stability = 0.03 set_global_flag = v65chapter_event_102_choice_a set_global_flag = v65chapter_event_102_resolved v65chapter_clamp = yes }
  option = { name = v65chapter.102.b SVN = { add_to_variable = { v65_network_SVN = 5 } add_to_variable = { v65_network_DNM = 5 } } army_experience = 10 set_global_flag = v65chapter_event_102_choice_b set_global_flag = v65chapter_event_102_resolved v65chapter_clamp = yes }
 }
-# Source chapters: 第31–40、70–74、113–114章
+# Source chapters: 第40章
 country_event = { id = v65chapter.110 title = v65chapter.110.t desc = v65chapter.110.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  trigger = { NOT = { has_global_flag = v65chapter_event_110_resolved } }
  option = { name = v65chapter.110.a SVN = { add_to_variable = { v65_network_SVN = 10 } add_to_variable = { v65_network_DNM = 5 } } add_command_power = 15 set_global_flag = v65chapter_event_110_choice_a set_global_flag = v65chapter_event_110_resolved v65chapter_clamp = yes }
  option = { name = v65chapter.110.b SVN = { add_to_variable = { v65_network_HLC = 8 } add_to_variable = { v65_network_MKG = 8 } add_to_variable = { v65_network_BHD = 5 } } add_manpower = 1200 set_global_flag = v65chapter_event_110_choice_b set_global_flag = v65chapter_event_110_resolved v65chapter_clamp = yes }
 }
-# Source chapters: 第61–67、74、97–102章
+# Source chapters: 第61章
 country_event = { id = v65chapter.111 title = v65chapter.111.t desc = v65chapter.111.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  trigger = { NOT = { has_global_flag = v65chapter_event_111_resolved } }
  option = { name = v65chapter.111.a SVN = { add_to_variable = { v65_network_SVN = 8 } add_to_variable = { v65_private_wealth = 12 } } add_political_power = 25 set_global_flag = v65chapter_event_111_choice_a set_global_flag = v65chapter_event_111_resolved v65chapter_clamp = yes }
  option = { name = v65chapter.111.b SVN = { add_to_variable = { v65_network_PHQ = 12 } add_to_variable = { v65_network_KHM = 5 } } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 500 producer = ROOT } set_global_flag = v65chapter_event_111_choice_b set_global_flag = v65chapter_event_111_resolved v65chapter_clamp = yes }
 }
-# Source chapters: 第64–67、100–102、137–140章
+# Source chapters: 第137章
 country_event = { id = v65chapter.112 title = v65chapter.112.t desc = v65chapter.112.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  trigger = { NOT = { has_global_flag = v65chapter_event_112_resolved } }
  option = { name = v65chapter.112.a SVN = { add_to_variable = { v65_network_BHD = 8 } add_to_variable = { v65_network_MKG = 8 } add_to_variable = { v65_private_wealth = 5 } } add_equipment_to_stockpile = { type = infantry_equipment_2 amount = 600 producer = ROOT } set_global_flag = v65chapter_event_112_choice_a set_global_flag = v65chapter_event_112_resolved v65chapter_clamp = yes }
  option = { name = v65chapter.112.b SVN = { add_to_variable = { v65_network_SVN = 10 } add_to_variable = { v65_network_PHQ = 4 } } add_political_power = 30 set_global_flag = v65chapter_event_112_choice_b set_global_flag = v65chapter_event_112_resolved v65chapter_clamp = yes }
 }
-# Source chapters: 第137–140章
+# Source chapters: 第137章
 country_event = { id = v65chapter.113 title = v65chapter.113.t desc = v65chapter.113.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  trigger = { NOT = { has_global_flag = v65chapter_event_113_resolved } }
  option = { name = v65chapter.113.a SVN = { add_to_variable = { v65_network_HLC = 8 } add_to_variable = { v65_network_MKG = 8 } add_to_variable = { v65_network_BHD = 8 } add_to_variable = { v65_private_wealth = 8 } } add_manpower = 2000 set_global_flag = v65chapter_event_113_choice_a set_global_flag = v65chapter_event_113_resolved v65chapter_clamp = yes }
@@ -59,7 +59,7 @@ country_event = { id = v65chapter.122 title = v65chapter.122.t desc = v65chapter
  option = { trigger = { SVN = { check_variable = { v65_private_wealth > 2 } } } name = v65chapter.122.a SVN = { add_to_variable = { v65_private_comfort = 10 } add_to_variable = { v65_private_wealth = -3 } } add_to_variable = { v65_personal_network = 2 } set_global_flag = v65chapter_event_122_choice_a set_global_flag = v65chapter_event_122_resolved v65chapter_clamp = yes }
  option = { name = v65chapter.122.b SVN = { add_to_variable = { v65_private_wealth = 8 } add_to_variable = { v65_network_KHM = 6 } add_to_variable = { v65_network_SVN = 3 } } add_to_variable = { v65_paper_victories = 1 } add_stability = 0.01 set_global_flag = v65chapter_event_122_choice_b set_global_flag = v65chapter_event_122_resolved v65chapter_clamp = yes }
 }
-# Source chapters: 第65–67、74、97–102、110、133–135章
+# Source chapters: 第134章
 country_event = { id = v65chapter.123 title = v65chapter.123.t desc = v65chapter.123.d picture = GFX_report_event_generic_read_write is_triggered_only = yes
  trigger = { NOT = { has_global_flag = v65chapter_event_123_resolved } }
  option = { trigger = { SVN = { check_variable = { v65_private_wealth > 7 } } } name = v65chapter.123.a SVN = { add_to_variable = { v65_private_comfort = 15 } add_to_variable = { v65_private_wealth = -8 } add_to_variable = { v65_network_PHQ = 5 } } add_stability = 0.02 set_global_flag = v65chapter_event_123_choice_a set_global_flag = v65chapter_event_123_resolved v65chapter_clamp = yes }

@@ -3,7 +3,7 @@ REGIONS={
  'HLC':('西原军区','Central Highlands Command',16,[14,16,18,20],'92 123 80','nguyen_khanh','阮庆','VIE/GENERALS/Nguyen_Khanh.dds'),
  'MKG':('湄公河军区','Mekong Command',28,[27,28,29],'94 148 160','tran_van_hai','陈文海','VIE/GENERALS/Tran_Van_Hai.dds'),
  'BHD':('东南军区','Southeastern Command',22,[21,22],'172 119 81','nguyen_ngoc_loan','阮玉鸾','VIE/GENERALS/Nguyen_Ngoc_Loan.dds'),
- 'PHQ':('富国岛特别区','Phu Quoc Special Zone',31,[31],'88 104 174','island_council','富国岛军政委员会',None),
+ 'PHQ':('富国岛特别区','Phu Quoc Special Zone',31,[31],'88 104 174','li_weiyan','李威炎',None),
 }
 PLAYABLE=['SVN','NVN','FNL','PKS','DNM','KHM','RKH']
 ALL=PLAYABLE+list(REGIONS)

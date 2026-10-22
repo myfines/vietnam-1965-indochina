@@ -1,6 +1,6 @@
 guiTypes = { containerWindowType = { name = "v65_command_window" size = { width = 480 height = 548 }
  iconType = { name = "dossier" spriteType = "GFX_v65_dossier" position = { x = 0 y = 0 } alwaystransparent = yes }
-instantTextBoxType = { name = "title" position = { x = 16 y = 12 } font = "hoi_24header" text = "v65_panel_title" maxWidth = 440 maxHeight = 28 fixedsize = yes }
+instantTextBoxType = { name = "title" position = { x = 24 y = 12 } font = "hoi_24header" text = "v65_panel_title" maxWidth = 432 maxHeight = 28 fixedsize = yes }
 instantTextBoxType = { name = "caption" position = { x = 17 y = 56 } font = "hoi_16mbs" text = "v65_panel_caption" maxWidth = 440 maxHeight = 22 fixedsize = yes }
 instantTextBoxType = { name = "prestige_value" position = { x = 17 y = 81 } font = "hoi_18mbs" text = "v65_panel_prestige" maxWidth = 440 maxHeight = 24 fixedsize = yes }
 iconType = { name = "prestige_bar" scale = 4 spriteType = "GFX_v65_prestige" position = { x = 18 y = 115 } alwaystransparent = yes }
@@ -13,7 +13,7 @@ instantTextBoxType = { name = "label_PKS" position = { x = 255 y = 149 } font = 
 instantTextBoxType = { name = "person_PKS" position = { x = 317 y = 175 } font = "hoi_16mbs" text = "v65_person_PKS" maxWidth = 146 maxHeight = 20 fixedsize = yes }
 instantTextBoxType = { name = "metrics_PKS" position = { x = 317 y = 199 } font = "hoi_16mbs" text = "v65_metrics_PKS" maxWidth = 146 maxHeight = 20 fixedsize = yes }
 instantTextBoxType = { name = "status_PKS" position = { x = 317 y = 224 } font = "hoi_16mbs" text = "v65_status_PKS" maxWidth = 146 maxHeight = 20 fixedsize = yes }
-iconType = { name = "portrait_PKS" spriteType = "GFX_v65_card_PKS" position = { x = 256.00 y = 177.35 } scale = 0.3205 alwaystransparent = yes }
+iconType = { name = "portrait_PKS" spriteType = "GFX_v65_card_PKS" position = { x = 256.00 y = 195.15 } scale = 0.6098 alwaystransparent = yes }
 instantTextBoxType = { name = "label_HLC" position = { x = 21 y = 261 } font = "hoi_16mbs" text = "v65_panel_HLC" maxWidth = 205 maxHeight = 20 fixedsize = yes }
 instantTextBoxType = { name = "person_HLC" position = { x = 83 y = 287 } font = "hoi_16mbs" text = "v65_person_HLC" maxWidth = 146 maxHeight = 20 fixedsize = yes }
 instantTextBoxType = { name = "metrics_HLC" position = { x = 83 y = 311 } font = "hoi_16mbs" text = "v65_metrics_HLC" maxWidth = 146 maxHeight = 20 fixedsize = yes }

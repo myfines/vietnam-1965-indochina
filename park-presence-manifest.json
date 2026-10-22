@@ -1,0 +1,15 @@
+{
+  "hosts": {
+    "PKS": "韩军本部",
+    "SVN": "西贡",
+    "DNM": "岘港",
+    "HLC": "西原",
+    "MKG": "湄公河",
+    "BHD": "东南军区",
+    "PHQ": "富国岛",
+    "KHM": "金边"
+  },
+  "territory_transfer": false,
+  "starting_commander": "Chae Myeong-sin",
+  "park_role": "corps_commander"
+}

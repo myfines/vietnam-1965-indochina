@@ -1,0 +1,34 @@
+v65_personal_connections = {
+v65_park_visit_PKS = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes PKS = { exists = yes } }
+ available = { v65_personal_network_actor = yes PKS = { exists = yes capital_scope = { is_fully_controlled_by = PKS } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { SVN = { check_variable = { v65_park_host = 1 } } } }
+ complete_effect = { v65_park_visit_PKS = yes } ai_will_do = { factor = 0 } }
+v65_park_visit_SVN = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes SVN = { exists = yes } }
+ available = { v65_personal_network_actor = yes SVN = { exists = yes capital_scope = { is_fully_controlled_by = SVN } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = SVN } NOT = { SVN = { check_variable = { v65_park_host = 2 } } } }
+ complete_effect = { v65_park_visit_SVN = yes } ai_will_do = { factor = 0 } }
+v65_park_visit_DNM = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes DNM = { exists = yes } }
+ available = { v65_personal_network_actor = yes DNM = { exists = yes capital_scope = { is_fully_controlled_by = DNM } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = DNM } NOT = { SVN = { check_variable = { v65_park_host = 3 } } } }
+ complete_effect = { v65_park_visit_DNM = yes } ai_will_do = { factor = 0 } }
+v65_park_visit_HLC = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes HLC = { exists = yes } }
+ available = { v65_personal_network_actor = yes HLC = { exists = yes capital_scope = { is_fully_controlled_by = HLC } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = HLC } NOT = { SVN = { check_variable = { v65_park_host = 4 } } } }
+ complete_effect = { v65_park_visit_HLC = yes } ai_will_do = { factor = 0 } }
+v65_park_visit_MKG = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes MKG = { exists = yes } }
+ available = { v65_personal_network_actor = yes MKG = { exists = yes capital_scope = { is_fully_controlled_by = MKG } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = MKG } NOT = { SVN = { check_variable = { v65_park_host = 5 } } } }
+ complete_effect = { v65_park_visit_MKG = yes } ai_will_do = { factor = 0 } }
+v65_park_visit_BHD = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes BHD = { exists = yes } }
+ available = { v65_personal_network_actor = yes BHD = { exists = yes capital_scope = { is_fully_controlled_by = BHD } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = BHD } NOT = { SVN = { check_variable = { v65_park_host = 6 } } } }
+ complete_effect = { v65_park_visit_BHD = yes } ai_will_do = { factor = 0 } }
+v65_park_visit_PHQ = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes PHQ = { exists = yes } }
+ available = { v65_personal_network_actor = yes PHQ = { exists = yes capital_scope = { is_fully_controlled_by = PHQ } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = PHQ } NOT = { SVN = { check_variable = { v65_park_host = 7 } } } }
+ complete_effect = { v65_park_visit_PHQ = yes } ai_will_do = { factor = 0 } }
+v65_park_visit_KHM = { icon = generic_political_discourse cost = 15
+ visible = { v65_personal_network_actor = yes KHM = { exists = yes } }
+ available = { v65_personal_network_actor = yes KHM = { exists = yes capital_scope = { is_fully_controlled_by = KHM } } NOT = { has_global_flag = v65_park_visit_cooldown } NOT = { has_war_with = KHM } NOT = { SVN = { check_variable = { v65_park_host = 8 } } } }
+ complete_effect = { v65_park_visit_KHM = yes } ai_will_do = { factor = 0 } }
+}

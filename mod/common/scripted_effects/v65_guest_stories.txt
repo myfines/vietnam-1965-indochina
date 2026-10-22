@@ -1,0 +1,7 @@
+v65_guest_clear = { clr_global_flag = v65_guest_talks_open clr_global_flag = v65_guest_preliminary_agreed clr_global_flag = v65_guest_region_agreed clr_global_flag = v65_guest_island_agreed clr_global_flag = v65_guest_central_agreed clr_global_flag = v65_guest_target_DNM clr_global_flag = v65_guest_target_HLC clr_global_flag = v65_guest_target_MKG clr_global_flag = v65_guest_target_BHD }
+v65_guest_finish = { if = { limit = {
+ has_global_flag = v65_guest_talks_open has_global_flag = v65_guest_region_agreed
+ has_global_flag = v65_guest_island_agreed has_global_flag = v65_guest_central_agreed
+ NOT = { has_country_flag = v65_guest_mediated } OR = { AND = { tag = DNM has_global_flag = v65_guest_target_DNM } AND = { tag = HLC has_global_flag = v65_guest_target_HLC } AND = { tag = MKG has_global_flag = v65_guest_target_MKG } AND = { tag = BHD has_global_flag = v65_guest_target_BHD } } PHQ = { exists = yes controls_province = 361 NOT = { has_war_with = SVN } }
+ has_war_with = SVN SVN = { exists = yes }
+ } white_peace = SVN set_country_flag = v65_guest_mediated set_global_flag = v65_guest_success v65_guest_clear = yes } }

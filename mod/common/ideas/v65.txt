@@ -13,7 +13,7 @@ ideas = {
 			}
 		}
 		v65_local_partnership = {
-			picture = v65_spirit_treaty
+			picture = v65_spirit_village
 			allowed = {
 				original_tag = SVN
 			}

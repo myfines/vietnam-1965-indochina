@@ -13,7 +13,7 @@ ideas = {
 			}
 		}
 		v65_us_firepower_75 = {
-			picture = v65_spirit_airlift
+			picture = v65_spirit_airlift_support75
 			allowed = {
 				always = no
 			}
@@ -25,7 +25,7 @@ ideas = {
 			}
 		}
 		v65_us_firepower_50 = {
-			picture = v65_spirit_airlift
+			picture = v65_spirit_airlift_support50
 			allowed = {
 				always = no
 			}
@@ -37,7 +37,7 @@ ideas = {
 			}
 		}
 		v65_us_firepower_25 = {
-			picture = v65_spirit_airlift
+			picture = v65_spirit_airlift_support25
 			allowed = {
 				always = no
 			}

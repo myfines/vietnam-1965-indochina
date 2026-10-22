@@ -1,0 +1,10 @@
+defined_text = { name = v65_park_where
+text = { trigger = { SVN = { check_variable = { v65_park_host = 1 } } } localization_key = v65_park_at_PKS }
+text = { trigger = { SVN = { check_variable = { v65_park_host = 2 } } } localization_key = v65_park_at_SVN }
+text = { trigger = { SVN = { check_variable = { v65_park_host = 3 } } } localization_key = v65_park_at_DNM }
+text = { trigger = { SVN = { check_variable = { v65_park_host = 4 } } } localization_key = v65_park_at_HLC }
+text = { trigger = { SVN = { check_variable = { v65_park_host = 5 } } } localization_key = v65_park_at_MKG }
+text = { trigger = { SVN = { check_variable = { v65_park_host = 6 } } } localization_key = v65_park_at_BHD }
+text = { trigger = { SVN = { check_variable = { v65_park_host = 7 } } } localization_key = v65_park_at_PHQ }
+text = { trigger = { SVN = { check_variable = { v65_park_host = 8 } } } localization_key = v65_park_at_KHM }
+text = { localization_key = v65_park_where_unknown } }

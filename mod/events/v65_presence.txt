@@ -1,0 +1,3 @@
+add_namespace = v65presence
+country_event = { id = v65presence.1 hidden = yes is_triggered_only = yes
+ immediate = { clr_global_flag = v65_park_visit_cooldown } }

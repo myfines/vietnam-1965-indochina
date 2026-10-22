@@ -1,0 +1,10 @@
+v65_guest_stories = {
+ v65_guest_mediation = {
+  icon = generic_political_discourse cost = 25
+  visible = { OR = { tag = SVN tag = PKS tag = PHQ tag = DNM tag = HLC tag = MKG tag = BHD } OR = { DNM = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } HLC = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } MKG = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } BHD = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } } PHQ = { exists = yes controls_province = 361 NOT = { has_war_with = SVN } } NOT = { has_global_flag = v65_guest_talks_open } }
+  available = { OR = { DNM = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } HLC = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } MKG = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } BHD = { exists = yes has_war_with = SVN NOT = { has_country_flag = v65_guest_mediated } } } PHQ = { exists = yes controls_province = 361 NOT = { has_war_with = SVN } } NOT = { has_global_flag = v65_guest_cooldown } }
+  days_re_enable = 30
+  complete_effect = { set_global_flag = v65_guest_talks_open set_global_flag = v65_guest_cooldown country_event = { id = v65guest.1 } country_event = { id = v65guest.99 days = 30 } }
+  ai_will_do = { factor = 0 }
+ }
+}
